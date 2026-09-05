@@ -1,0 +1,81 @@
+import { QrCode } from "lucide-react";
+import BottomNav from "@/components/BottomNav";
+import { SCAD_APPS, ECOSYSTEM_REVEAL_THRESHOLD } from "@/lib/data/scadApps";
+
+// ダミーデータ(実装時はセッション/DBから取得)
+const mockUser = {
+  displayName: "ゲストユーザー",
+  soloRank: "ソロ活はじめました",
+  visitCount: 5,
+};
+
+export default function MyPage() {
+  const showEcosystem = mockUser.visitCount >= ECOSYSTEM_REVEAL_THRESHOLD;
+
+  return (
+    <div className="mx-auto min-h-screen max-w-md bg-gray-50 pb-16">
+      {/* ユーザーマイカード */}
+      <section className="bg-white px-4 py-6">
+        <div className="flex items-center gap-4">
+          <div className="h-16 w-16 rounded-full bg-orange-100" />
+          <div>
+            <p className="font-bold">{mockUser.displayName}</p>
+            {/* ランク詳細・来店ログ・スタンプは「ソロ活」タブに集約(重複表示を解消) */}
+            <a
+              href="/logs"
+              className="text-sm text-orange-500 underline underline-offset-2"
+            >
+              {mockUser.soloRank} · 来店{mockUser.visitCount}件を見る
+            </a>
+          </div>
+        </div>
+
+        {/* ソロ活シェアQR: 行った店・レビューを友達に共有する導線として再定義 */}
+        <button className="mt-4 flex w-full items-center justify-center gap-2 rounded-full border py-2 text-sm text-gray-600">
+          <QrCode size={16} />
+          行きつけの店をシェアするQRを表示
+        </button>
+      </section>
+
+      {/* App Info: アコーディオンで折りたたみ、初見の情報量を抑える */}
+      <section className="mt-2 bg-white px-4 py-4">
+        <details>
+          <summary className="cursor-pointer text-sm font-medium">
+            SCAD-SOLOについて
+          </summary>
+          <div className="mt-2 space-y-1 text-xs text-gray-500">
+            <p>コンセプト: 1人でも気兼ねなく行ける店を、すぐに見つける。</p>
+            <p>バージョン: 1.0.0</p>
+            <a href="/terms" className="text-orange-500 underline">
+              利用規約
+            </a>
+          </div>
+        </details>
+      </section>
+
+      {/* エコシステムセクション: 来店実績が一定数貯まってから表示(離脱防止) */}
+      {showEcosystem && (
+        <section id="ecosystem" className="mt-2 bg-white px-4 py-4">
+          <p className="mb-3 text-xs text-gray-400">
+            ✉️ @motion.imaging がおすすめする関連サービス
+          </p>
+          <div className="space-y-3">
+            {SCAD_APPS.filter((app) => !app.isCurrent).map((app) => (
+              <a
+                key={app.id}
+                href={app.url}
+                className="block rounded-xl border p-3"
+              >
+                <p className="text-sm font-bold">{app.name}</p>
+                <p className="text-xs text-gray-400">{app.tagline}</p>
+                <p className="mt-1 text-xs text-orange-500">{app.benefit}</p>
+              </a>
+            ))}
+          </div>
+        </section>
+      )}
+
+      <BottomNav />
+    </div>
+  );
+}

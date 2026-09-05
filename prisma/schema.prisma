@@ -1,0 +1,129 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+// ============================================================
+// ユーザー
+// ============================================================
+model UserProfile {
+  id           String            @id @default(cuid())
+  userId       String            @unique // 認証プロバイダ由来のID。将来のSCAD共通アカウント統合を見据え外部IDを保持
+  displayName  String
+  soloRank     SoloRank          @default(BEGINNER)
+  visitCount   Int               @default(0)
+  visitLogs    VisitLog[]
+  stamps       Stamp[]
+  achievements UserAchievement[]
+  createdAt    DateTime          @default(now())
+}
+
+// ============================================================
+// スポット(恒常的に存在する場所)
+// ============================================================
+model Spot {
+  id               String     @id @default(cuid())
+  name             String
+  category         Category   // 大分類
+  subCategories    String[]   @default([]) // 小分類タグ: "カラオケ","サウナ","撮影","ツーリング" 等。複合スポット対応
+  address          String
+  latitude         Float
+  longitude        Float
+  hasCounterSeat   Boolean    @default(true)
+  senberoAvailable Boolean    @default(false)
+  soloFriendliness Int        @default(5) // 1-10
+  visitLogs        VisitLog[]
+  events           Event[]
+  createdAt        DateTime   @default(now())
+
+  @@index([category])
+  @@index([latitude, longitude])
+  @@index([subCategories], type: Gin) // 配列タグ検索用
+}
+
+// ============================================================
+// イベント(期間限定の催し。Spotとはライフサイクルが異なるため分離)
+// ============================================================
+model Event {
+  id          String   @id @default(cuid())
+  title       String
+  description String?
+  startDate   DateTime
+  endDate     DateTime
+  imageUrl    String?
+  tags        String[] @default([]) // "美術館","花火","オープン" 等
+
+  // 店舗に紐づくイベント(任意)
+  spotId      String?
+  spot        Spot?    @relation(fields: [spotId], references: [id])
+
+  // 店舗に紐づかない屋外イベント用
+  address     String?
+  latitude    Float?
+  longitude   Float?
+
+  createdAt   DateTime @default(now())
+
+  @@index([startDate, endDate]) // 「開催中のみ表示」「終了後は自動非表示」用
+  @@index([latitude, longitude])
+}
+
+// ============================================================
+// 来店ログ & スタンプ
+// ============================================================
+model VisitLog {
+  id        String      @id @default(cuid())
+  userId    String
+  user      UserProfile @relation(fields: [userId], references: [userId])
+  spotId    String
+  spot      Spot        @relation(fields: [spotId], references: [id])
+  comment   String?
+  imageUrl  String?
+  stamp     Stamp?
+  visitedAt DateTime    @default(now())
+
+  @@index([userId, spotId]) // 同一店の来店回数集計(常連判定)用
+}
+
+model Stamp {
+  id         String      @id @default(cuid())
+  userId     String
+  user       UserProfile @relation(fields: [userId], references: [userId])
+  visitLogId String      @unique
+  visitLog   VisitLog    @relation(fields: [visitLogId], references: [id])
+  designId   String      // lib/stamps.ts の STAMP_DESIGNS を参照
+  createdAt  DateTime    @default(now())
+}
+
+// ============================================================
+// 実績(記念日・常連バッジ・将来のバッジをすべてここで扱う)
+// key の例: "visit:10" (来店10回) / "regular:<spotId>" (同一店3回) / "days:100" (初来店から100日)
+// ============================================================
+model UserAchievement {
+  id         String      @id @default(cuid())
+  userId     String
+  user       UserProfile @relation(fields: [userId], references: [userId])
+  key        String
+  label      String
+  achievedAt DateTime    @default(now())
+  notified   Boolean     @default(false) // 未通知の実績だけをバナー表示する
+
+  @@unique([userId, key]) // 同じ実績を二重付与しない
+  @@index([userId, notified])
+}
+
+enum Category {
+  SOLO_NOMI
+  SOLO_MESHI
+  SOLO_SPOT
+}
+
+enum SoloRank {
+  BEGINNER // 1〜3回
+  REGULAR  // 4〜9回
+  MASTER   // 10回以上
+}

@@ -1,0 +1,100 @@
+"use client";
+
+import { useState } from "react";
+import { useParams, useRouter } from "next/navigation";
+import BottomNav, { NAV_HEIGHT } from "@/components/BottomNav";
+import AnniversaryBanner from "@/components/AnniversaryBanner";
+
+// チェックイン画面: 検索→来店→記録→シェアを結ぶ要。
+//   到着 → 「チェックインする」(1タップ) → スタンプ+実績+アクティビティ+シェア が1画面に出る
+//   → 「Threadsでシェア」(1タップ) で完結。ゲーム系はここに内包し、ナビには出さない。
+
+type CheckinResult = {
+  spot: { name: string };
+  rankLabel: string;
+  visitCount: number;
+  stamp: { emoji: string; label: string };
+  newAchievements: { key: string; label: string }[];
+  activities: { id: string; emoji: string; title: string; description: string; status: string }[];
+  share: { intentUrl: string };
+};
+
+export default function CheckinPage() {
+  const { spotId } = useParams<{ spotId: string }>();
+  const router = useRouter();
+  const [result, setResult] = useState<CheckinResult | null>(null);
+  const [loading, setLoading] = useState(false);
+
+  const checkin = async () => {
+    setLoading(true);
+    try {
+      const res = await fetch("/api/logs", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", "x-user-id": "demo-user" }, // TODO: 認証導入後はヘッダ付与を共通fetchに移す
+        body: JSON.stringify({ spotId }),
+      });
+      if (res.ok) setResult(await res.json());
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  return (
+    <div className="mx-auto min-h-dvh max-w-md bg-gray-50" style={{ paddingBottom: NAV_HEIGHT }}>
+      <header className="flex items-center gap-2 border-b bg-white px-4 py-3">
+        <button onClick={() => router.back()} className="text-xs text-gray-400">← 戻る</button>
+        <h1 className="text-base font-bold">チェックイン</h1>
+      </header>
+
+      {!result ? (
+        <div className="flex flex-col items-center px-6 pt-16">
+          <p className="text-sm text-gray-500">お店に着いたらタップ</p>
+          <button onClick={checkin} disabled={loading}
+            className="mt-6 h-40 w-40 rounded-full bg-orange-500 text-lg font-bold text-white shadow-xl active:scale-95 disabled:opacity-50">
+            {loading ? "記録中..." : "チェックイン"}
+          </button>
+        </div>
+      ) : (
+        <div className="space-y-3 px-4 pt-4">
+          {/* スタンプ獲得 */}
+          <section className="rounded-2xl bg-white p-5 text-center">
+            <p className="text-5xl">{result.stamp.emoji}</p>
+            <p className="mt-2 font-bold">{result.stamp.label}</p>
+            <p className="text-xs text-gray-400">{result.spot.name} · 来店{result.visitCount}回 · {result.rankLabel}</p>
+          </section>
+
+          {/* 実績(新規達成時のみ) */}
+          {result.newAchievements.map((a) => (
+            <AnniversaryBanner key={a.key} milestone={{ count: 0, label: a.label, message: "おめでとう!" }} />
+          ))}
+
+          {/* シェア: 最重要CTAとして最上段に */}
+          <a href={result.share.intentUrl} target="_blank" rel="noreferrer"
+            className="block rounded-full bg-black py-3 text-center text-sm font-bold text-white">
+            Threadsでシェア
+          </a>
+
+          {/* 今夜のアクティビティ(場所の種類に応じて最大3件) */}
+          {result.activities.length > 0 && (
+            <section className="rounded-2xl bg-white p-4">
+              <p className="mb-2 text-xs text-gray-400">今夜のソロ活アクティビティ</p>
+              <div className="space-y-2">
+                {result.activities.map((a) => (
+                  <div key={a.id} className="flex items-center gap-3 rounded-xl border p-3 opacity-90">
+                    <span className="text-2xl">{a.emoji}</span>
+                    <div className="flex-1">
+                      <p className="text-sm font-medium">{a.title}</p>
+                      <p className="text-[11px] text-gray-400">{a.description}</p>
+                    </div>
+                    {a.status === "coming_soon" && <span className="text-[10px] text-gray-400">近日</span>}
+                  </div>
+                ))}
+              </div>
+            </section>
+          )}
+        </div>
+      )}
+      <BottomNav />
+    </div>
+  );
+}
