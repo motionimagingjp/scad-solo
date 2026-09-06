@@ -1,16 +1,16 @@
 import { QrCode } from "lucide-react";
 import BottomNav from "@/components/BottomNav";
-import { SCAD_APPS, ECOSYSTEM_REVEAL_THRESHOLD } from "@/lib/data/scadApps";
+import { SCAD_APPS, ECOSYSTEM_REVEAL_THRESHOLD, RANK_THRESHOLDS } from "@/lib/data/scadApps";
+import { prisma } from "@/lib/prisma";
 
-// ダミーデータ(実装時はセッション/DBから取得)
-const mockUser = {
-  displayName: "ゲストユーザー",
-  soloRank: "ソロ活はじめました",
-  visitCount: 5,
-};
+const DEMO_USER_ID = "demo-user"; // TODO: 認証導入後は getUserIdFromRequest 相当の実ユーザーIDに置き換え
 
-export default function MyPage() {
-  const showEcosystem = mockUser.visitCount >= ECOSYSTEM_REVEAL_THRESHOLD;
+export default async function MyPage() {
+  const profile = await prisma.userProfile.findUnique({ where: { userId: DEMO_USER_ID } });
+  const displayName = profile?.displayName ?? "ゲストユーザー";
+  const visitCount = profile?.visitCount ?? 0;
+  const rankLabel = profile ? RANK_THRESHOLDS[profile.soloRank].label : RANK_THRESHOLDS.BEGINNER.label;
+  const showEcosystem = visitCount >= ECOSYSTEM_REVEAL_THRESHOLD;
 
   return (
     <div className="mx-auto min-h-screen max-w-md bg-gray-50 pb-16">
@@ -19,13 +19,13 @@ export default function MyPage() {
         <div className="flex items-center gap-4">
           <div className="h-16 w-16 rounded-full bg-orange-100" />
           <div>
-            <p className="font-bold">{mockUser.displayName}</p>
+            <p className="font-bold">{displayName}</p>
             {/* ランク詳細・来店ログ・スタンプは「ソロ活」タブに集約(重複表示を解消) */}
             <a
               href="/logs"
               className="text-sm text-orange-500 underline underline-offset-2"
             >
-              {mockUser.soloRank} · 来店{mockUser.visitCount}件を見る
+              {rankLabel} · 来店{visitCount}件を見る
             </a>
           </div>
         </div>
