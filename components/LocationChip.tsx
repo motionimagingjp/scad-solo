@@ -8,6 +8,9 @@ import type { BaseLocation } from "@/lib/useBaseLocation";
 // 提案の基準地を常時表示し、タップで「現在地 / 駅名指定」に切り替えるための部品。
 // 駅名→座標の変換はブラウザ側から呼ぶ(APIキーがリファラー制限のため、サーバー側からは呼べない)。
 
+// これらが末尾にあれば、駅名以外の地名指定とみなしてそのまま検索する
+const AREA_SUFFIX = /(駅|区|市|町|村|丁目|通り|公園|口)$/;
+
 export default function LocationChip({
   location,
   onSelectManual,
@@ -32,19 +35,27 @@ export default function LocationChip({
     try {
       const google = await loadGoogleMaps(apiKey);
       const geocoder = new google.maps.Geocoder();
-      const { results } = await geocoder.geocode({ address: keyword, region: "jp" });
-      const hit = results?.[0];
-      if (!hit) {
-        setError("その場所は見つかりませんでした");
+
+      // 「渋谷」のような省略形は駅として探したいので、まず「駅」を補って検索する。
+      // それで見つからなければ入力そのままで再検索する(地名・施設名も拾えるように)。
+      const candidates = AREA_SUFFIX.test(keyword) ? [keyword] : [`${keyword}駅`, keyword];
+      for (const address of candidates) {
+        const { results } = await geocoder
+          .geocode({ address, componentRestrictions: { country: "jp" } })
+          .catch(() => ({ results: [] }));
+        const hit = results?.[0];
+        if (!hit) continue;
+
+        onSelectManual({
+          lat: hit.geometry.location.lat(),
+          lng: hit.geometry.location.lng(),
+          label: address,
+        });
+        setQuery("");
+        setOpen(false);
         return;
       }
-      onSelectManual({
-        lat: hit.geometry.location.lat(),
-        lng: hit.geometry.location.lng(),
-        label: keyword,
-      });
-      setQuery("");
-      setOpen(false);
+      setError("その場所は見つかりませんでした");
     } catch {
       setError("検索に失敗しました。通信環境を確認してください");
     } finally {
