@@ -5,6 +5,9 @@ import { RANK_THRESHOLDS } from "@/lib/data/scadApps";
 
 // ソロ活タブ・マイページ用の集約API。POST /api/logs で書き込んだ実データを返す。
 
+// DB(シンガポール)と同じリージョンで動かす
+export const preferredRegion = "sin1";
+
 export async function GET(req: NextRequest) {
   const userId = getUserIdFromRequest(req);
   if (!userId) return NextResponse.json({ error: "unauthorized" }, { status: 401 });

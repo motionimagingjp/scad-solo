@@ -8,6 +8,10 @@ import { pickActivities } from "@/lib/data/activities";
 
 // 純粋なJSON API。Next.jsの画面状態には一切依存せず、SwiftUIからも同じレスポンスをそのまま使える。
 
+// DB(Neon)はシンガポールにあり、この処理は1回の記録で8回ほどDBと往復する。
+// 既定の米国東部で動かすと往復ごとに太平洋を越えるため、DBと同じリージョンに寄せる。
+export const preferredRegion = "sin1";
+
 export async function POST(req: NextRequest) {
   const userId = getUserIdFromRequest(req);
   if (!userId) return NextResponse.json({ error: "unauthorized" }, { status: 401 });

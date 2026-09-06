@@ -6,6 +6,9 @@ import { prisma } from "@/lib/prisma";
 // ワイン・カラオケ等)は subCategories のタグとして扱う。
 // UIに出すフィルターは必ずここで実際に効くものだけにする(押しても効かない飾りを作らない)。
 
+// DB(シンガポール)と同じリージョンで動かす
+export const preferredRegion = "sin1";
+
 const FIELD_FILTERS: Record<string, "hasCounterSeat" | "senberoAvailable"> = {
   "カウンター席": "hasCounterSeat",
   "せんべろ": "senberoAvailable",
