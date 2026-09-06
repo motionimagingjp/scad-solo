@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { Trash2 } from "lucide-react";
 import BottomNav from "@/components/BottomNav";
 import StampCard from "@/components/StampCard";
 import AnniversaryBanner from "@/components/AnniversaryBanner";
@@ -21,13 +22,31 @@ type MeResponse = {
 
 export default function SoloActivityPage() {
   const [me, setMe] = useState<MeResponse | null>(null);
+  const [deletingId, setDeletingId] = useState<string | null>(null);
 
-  useEffect(() => {
+  const loadMe = () =>
     fetch("/api/me", { headers: { "x-user-id": "demo-user" } }) // TODO: 認証導入後はヘッダ付与を共通fetchに移す
       .then((res) => (res.ok ? res.json() : null))
       .then(setMe)
       .catch(() => setMe(null));
+
+  useEffect(() => {
+    loadMe();
   }, []);
+
+  const deleteLog = async (logId: string) => {
+    if (!confirm("この来店ログを削除しますか?来店回数・スタンプにも反映されます。")) return;
+    setDeletingId(logId);
+    try {
+      const res = await fetch(`/api/logs/${logId}`, {
+        method: "DELETE",
+        headers: { "x-user-id": "demo-user" }, // TODO: 認証導入後はヘッダ付与を共通fetchに移す
+      });
+      if (res.ok) await loadMe();
+    } finally {
+      setDeletingId(null);
+    }
+  };
 
   if (!me) {
     return (
@@ -75,12 +94,22 @@ export default function SoloActivityPage() {
         ) : (
           <ul className="space-y-2">
             {me.visitLogs.map((log) => (
-              <li key={log.id} className="border-b pb-2 text-sm last:border-0">
-                <p className="font-medium">{log.spotName}</p>
-                <p className="text-[11px] text-gray-400">
-                  {new Date(log.visitedAt).toLocaleDateString("ja-JP")}
-                  {log.comment && ` · ${log.comment}`}
-                </p>
+              <li key={log.id} className="flex items-center justify-between gap-2 border-b pb-2 text-sm last:border-0">
+                <div>
+                  <p className="font-medium">{log.spotName}</p>
+                  <p className="text-[11px] text-gray-400">
+                    {new Date(log.visitedAt).toLocaleDateString("ja-JP")}
+                    {log.comment && ` · ${log.comment}`}
+                  </p>
+                </div>
+                <button
+                  onClick={() => deleteLog(log.id)}
+                  disabled={deletingId === log.id}
+                  aria-label="この来店ログを削除"
+                  className="shrink-0 p-1 text-gray-300 disabled:opacity-40"
+                >
+                  <Trash2 size={16} />
+                </button>
               </li>
             ))}
           </ul>
