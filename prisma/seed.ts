@@ -21,20 +21,21 @@ type DemoSpot = {
 
 const DEMO_SPOTS: DemoSpot[] = [
   // --- 渋谷エリア ---
-  { id: "spot_demo", name: "立飲み・〇〇", category: "SOLO_NOMI", subCategories: [], address: "東京都渋谷区テスト1-1-1", latitude: 35.6595, longitude: 139.7005, hasCounterSeat: true, senberoAvailable: true, soloFriendliness: 8 },
+  { id: "spot_demo", name: "立飲み・〇〇", category: "SOLO_NOMI", subCategories: ["立ち飲み", "ビール"], address: "東京都渋谷区テスト1-1-1", latitude: 35.6595, longitude: 139.7005, hasCounterSeat: true, senberoAvailable: true, soloFriendliness: 8 },
   { id: "spot_demo_karaoke", name: "ソロカラオケ・△△", category: "SOLO_SPOT", subCategories: ["カラオケ"], address: "東京都渋谷区テスト1-2-2", latitude: 35.661, longitude: 139.702, hasCounterSeat: false, senberoAvailable: false, soloFriendliness: 9 },
-  { id: "spot_demo_sauna", name: "サウナ・□□", category: "SOLO_SPOT", subCategories: ["サウナ"], address: "東京都渋谷区テスト1-3-3", latitude: 35.658, longitude: 139.699, hasCounterSeat: false, senberoAvailable: false, soloFriendliness: 7 },
-  { id: "spot_demo_kakuuchi", name: "角打ち・◇◇", category: "SOLO_NOMI", subCategories: [], address: "東京都渋谷区テスト2-1-1", latitude: 35.6572, longitude: 139.7031, hasCounterSeat: true, senberoAvailable: true, soloFriendliness: 9 },
-  { id: "spot_demo_wine", name: "ワインバー・☆☆", category: "SOLO_NOMI", subCategories: [], address: "東京都渋谷区テスト2-2-2", latitude: 35.6608, longitude: 139.6982, hasCounterSeat: true, senberoAvailable: false, soloFriendliness: 7 },
-  { id: "spot_demo_sake", name: "日本酒バル・※※", category: "SOLO_NOMI", subCategories: [], address: "東京都渋谷区テスト2-3-3", latitude: 35.6563, longitude: 139.6994, hasCounterSeat: true, senberoAvailable: false, soloFriendliness: 8 },
+  { id: "spot_demo_sauna", name: "サウナ・□□", category: "SOLO_SPOT", subCategories: ["サウナ", "女性ひとり歓迎"], address: "東京都渋谷区テスト1-3-3", latitude: 35.658, longitude: 139.699, hasCounterSeat: false, senberoAvailable: false, soloFriendliness: 7 },
+  { id: "spot_demo_kakuuchi", name: "角打ち・◇◇", category: "SOLO_NOMI", subCategories: ["立ち飲み", "日本酒", "ビール"], address: "東京都渋谷区テスト2-1-1", latitude: 35.6572, longitude: 139.7031, hasCounterSeat: true, senberoAvailable: true, soloFriendliness: 9 },
+  { id: "spot_demo_wine", name: "ワインバー・☆☆", category: "SOLO_NOMI", subCategories: ["ワイン", "女性ひとり歓迎"], address: "東京都渋谷区テスト2-2-2", latitude: 35.6608, longitude: 139.6982, hasCounterSeat: true, senberoAvailable: false, soloFriendliness: 7 },
+  { id: "spot_demo_sake", name: "日本酒バル・※※", category: "SOLO_NOMI", subCategories: ["日本酒"], address: "東京都渋谷区テスト2-3-3", latitude: 35.6563, longitude: 139.6994, hasCounterSeat: true, senberoAvailable: false, soloFriendliness: 8 },
   { id: "spot_demo_ramen", name: "一人ラーメン・▲▲", category: "SOLO_MESHI", subCategories: [], address: "東京都渋谷区テスト3-1-1", latitude: 35.6588, longitude: 139.7042, hasCounterSeat: true, senberoAvailable: false, soloFriendliness: 10 },
-  { id: "spot_demo_yakitori", name: "焼き鳥・◎◎", category: "SOLO_NOMI", subCategories: [], address: "東京都渋谷区テスト3-2-2", latitude: 35.6621, longitude: 139.7008, hasCounterSeat: true, senberoAvailable: true, soloFriendliness: 8 },
+  { id: "spot_demo_yakitori", name: "焼き鳥・◎◎", category: "SOLO_NOMI", subCategories: ["ビール"], address: "東京都渋谷区テスト3-2-2", latitude: 35.6621, longitude: 139.7008, hasCounterSeat: true, senberoAvailable: true, soloFriendliness: 8 },
 
   // --- 池袋エリア ---
-  { id: "spot_demo_ike_tachinomi", name: "立飲み・▽▽", category: "SOLO_NOMI", subCategories: [], address: "東京都豊島区テスト1-1-1", latitude: 35.7295, longitude: 139.7109, hasCounterSeat: true, senberoAvailable: true, soloFriendliness: 9 },
-  { id: "spot_demo_ike_sake", name: "日本酒処・◆◆", category: "SOLO_NOMI", subCategories: [], address: "東京都豊島区テスト1-2-2", latitude: 35.7312, longitude: 139.7135, hasCounterSeat: true, senberoAvailable: false, soloFriendliness: 8 },
+  { id: "spot_demo_ike_tachinomi", name: "立飲み・▽▽", category: "SOLO_NOMI", subCategories: ["立ち飲み", "ビール"], address: "東京都豊島区テスト1-1-1", latitude: 35.7295, longitude: 139.7109, hasCounterSeat: true, senberoAvailable: true, soloFriendliness: 9 },
+  { id: "spot_demo_ike_sake", name: "日本酒処・◆◆", category: "SOLO_NOMI", subCategories: ["日本酒", "女性ひとり歓迎"], address: "東京都豊島区テスト1-2-2", latitude: 35.7312, longitude: 139.7135, hasCounterSeat: true, senberoAvailable: false, soloFriendliness: 8 },
   { id: "spot_demo_ike_sauna", name: "サウナ・▼▼", category: "SOLO_SPOT", subCategories: ["サウナ"], address: "東京都豊島区テスト2-1-1", latitude: 35.7268, longitude: 139.7091, hasCounterSeat: false, senberoAvailable: false, soloFriendliness: 8 },
-  { id: "spot_demo_ike_karaoke", name: "ソロカラオケ・◇▽", category: "SOLO_SPOT", subCategories: ["カラオケ"], address: "東京都豊島区テスト2-2-2", latitude: 35.7331, longitude: 139.7118, hasCounterSeat: false, senberoAvailable: false, soloFriendliness: 9 },
+  { id: "spot_demo_ike_karaoke", name: "ソロカラオケ・◇▽", category: "SOLO_SPOT", subCategories: ["カラオケ", "女性ひとり歓迎"], address: "東京都豊島区テスト2-2-2", latitude: 35.7331, longitude: 139.7118, hasCounterSeat: false, senberoAvailable: false, soloFriendliness: 9 },
+  { id: "spot_demo_ike_wine", name: "ワイン酒場・◇◆", category: "SOLO_NOMI", subCategories: ["ワイン", "立ち飲み"], address: "東京都豊島区テスト2-3-3", latitude: 35.7304, longitude: 139.7088, hasCounterSeat: true, senberoAvailable: false, soloFriendliness: 8 },
   { id: "spot_demo_ike_meshi", name: "一人定食・○△", category: "SOLO_MESHI", subCategories: [], address: "東京都豊島区テスト3-1-1", latitude: 35.7281, longitude: 139.7152, hasCounterSeat: true, senberoAvailable: false, soloFriendliness: 10 },
 ];
 

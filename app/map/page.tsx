@@ -11,7 +11,11 @@ import { distanceLabel, haversineMeters } from "@/lib/geo";
 import { useBaseLocation } from "@/lib/useBaseLocation";
 
 // 地図画面: 「今夜の3軒」で決めきれない人向けの補助。自分でエリアを見渡して探せる。
-const QUICK_FILTERS = ["カウンター席", "せんべろ", "相席なし", "今すぐ入れる", "カラオケ", "サウナ", "イベント"];
+//
+// フィルターは「おひとり様が実際に店を選ぶ基準」に揃えてある。
+// 旧版にあった「相席なし」「今すぐ入れる」「イベント」は、対応するデータを持っておらず
+// 押しても結果が変わらない飾りだったため外した(空席状況や相席可否を取れるようになったら戻す)。
+const QUICK_FILTERS = ["カウンター席", "立ち飲み", "せんべろ", "日本酒", "ワイン", "ビール", "カラオケ", "サウナ", "女性ひとり歓迎"];
 
 export default function MapPage() {
   const { location, setManualLocation, requestGps } = useBaseLocation();
