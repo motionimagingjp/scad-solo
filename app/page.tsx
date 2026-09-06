@@ -106,7 +106,7 @@ export default function HomePage() {
               href={`/checkin/${spot.id}`}
               className="mt-3 block rounded-full bg-orange-500 py-3 text-center text-sm font-bold text-white"
             >
-              この店に決めてチェックイン
+              今夜はここにする
             </Link>
           </div>
         ))}
