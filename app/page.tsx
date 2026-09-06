@@ -30,8 +30,10 @@ export default function HomePage() {
   const [shownIds, setShownIds] = useState<Set<string>>(new Set());
   const [redraws, setRedraws] = useState(0);
 
+  // 「ソロ飲み」ルーレットなので、飲み屋(SOLO_NOMI)だけを抽選対象にする。
+  // サウナやラーメン屋が混ざると体験が壊れるため、大分類でAPI側で絞る。
   useEffect(() => {
-    fetch("/api/spots")
+    fetch("/api/spots?category=SOLO_NOMI")
       .then((res) => (res.ok ? res.json() : { spots: [] }))
       .then((data) => setSpots(data.spots ?? []))
       .catch(() => setSpots([]));
