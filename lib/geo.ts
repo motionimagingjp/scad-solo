@@ -11,8 +11,11 @@ export function haversineMeters(a: LatLng, b: LatLng): number {
   return 2 * R * Math.asin(Math.sqrt(h));
 }
 
-/** 徒歩分速80mで概算した「徒歩n分」ラベル */
-export function walkMinutesLabel(meters: number): string {
-  const minutes = Math.max(1, Math.round(meters / 80));
-  return `徒歩${minutes}分`;
+/**
+ * 距離ラベル。徒歩圏(約20分=1.6km)までは「徒歩n分」、それ以上は「約n.nkm」。
+ * 遠い店に「徒歩300分」と出すと壊れて見えるため、表記を切り替える。
+ */
+export function distanceLabel(meters: number): string {
+  if (meters <= 1600) return `徒歩${Math.max(1, Math.round(meters / 80))}分`;
+  return `約${(meters / 1000).toFixed(1)}km`;
 }

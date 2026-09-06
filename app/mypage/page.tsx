@@ -8,6 +8,9 @@ const DEMO_USER_ID = "demo-user"; // TODO: 認証導入後は getUserIdFromReque
 // 来店回数などライブのDB値を出すページなので、ビルド時の静的生成(キャッシュ)を禁止する
 export const dynamic = "force-dynamic";
 
+// DB(シンガポール)と同じリージョンで動かす
+export const preferredRegion = "sin1";
+
 export default async function MyPage() {
   const profile = await prisma.userProfile.findUnique({ where: { userId: DEMO_USER_ID } });
   const displayName = profile?.displayName ?? "ゲストユーザー";

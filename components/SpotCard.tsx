@@ -21,7 +21,7 @@ export default function SpotCard({ spot, onClose }: { spot: SpotSummary; onClose
         {spot.subCategories.length > 0 && ` · ${spot.subCategories.join("・")}`}
       </p>
       <Link href={`/checkin/${spot.id}`} className="mt-3 block rounded-full bg-orange-500 py-3 text-center text-sm font-bold text-white">
-        この店に決めてチェックイン
+        今夜はここにする
       </Link>
     </div>
   );

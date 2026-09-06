@@ -28,8 +28,10 @@ model UserProfile {
 model Spot {
   id               String     @id @default(cuid())
   name             String
-  category         Category   // 大分類
-  subCategories    String[]   @default([]) // 小分類タグ: "カラオケ","サウナ","撮影","ツーリング" 等。複合スポット対応
+  category         Category // 大分類
+  // 小分類タグ。場所の種類("カラオケ","サウナ")と店選びの基準("立ち飲み","日本酒",
+  // "ワイン","ビール","女性ひとり歓迎")を同じ配列で持ち、検索フィルターと1対1で対応させる
+  subCategories    String[]   @default([])
   address          String
   latitude         Float
   longitude        Float
@@ -58,15 +60,15 @@ model Event {
   tags        String[] @default([]) // "美術館","花火","オープン" 等
 
   // 店舗に紐づくイベント(任意)
-  spotId      String?
-  spot        Spot?    @relation(fields: [spotId], references: [id])
+  spotId String?
+  spot   Spot?   @relation(fields: [spotId], references: [id])
 
   // 店舗に紐づかない屋外イベント用
-  address     String?
-  latitude    Float?
-  longitude   Float?
+  address   String?
+  latitude  Float?
+  longitude Float?
 
-  createdAt   DateTime @default(now())
+  createdAt DateTime @default(now())
 
   @@index([startDate, endDate]) // 「開催中のみ表示」「終了後は自動非表示」用
   @@index([latitude, longitude])
@@ -95,7 +97,7 @@ model Stamp {
   user       UserProfile @relation(fields: [userId], references: [userId])
   visitLogId String      @unique
   visitLog   VisitLog    @relation(fields: [visitLogId], references: [id])
-  designId   String      // lib/stamps.ts の STAMP_DESIGNS を参照
+  designId   String // lib/stamps.ts の STAMP_DESIGNS を参照
   createdAt  DateTime    @default(now())
 }
 
@@ -124,6 +126,6 @@ enum Category {
 
 enum SoloRank {
   BEGINNER // 1〜3回
-  REGULAR  // 4〜9回
-  MASTER   // 10回以上
+  REGULAR // 4〜9回
+  MASTER // 10回以上
 }
