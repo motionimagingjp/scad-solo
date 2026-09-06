@@ -53,17 +53,20 @@ export default function MapPage() {
         <LocationChip location={location} onSelectManual={setManualLocation} onRequestGps={requestGps} />
       </header>
 
-      {/* フィルター: 横スクロール1行。上部を抑えて地図を最大化 */}
-      <div className="flex gap-2 overflow-x-auto border-b bg-white px-3 py-2">
-        {QUICK_FILTERS.map((f) => {
-          const on = active.has(f);
-          return (
-            <button key={f} onClick={() => toggle(f)}
-              className={`whitespace-nowrap rounded-full border px-3 py-1 text-xs ${on ? "border-orange-400 bg-orange-50 text-orange-600" : "text-gray-600"}`}>
-              {f}
-            </button>
-          );
-        })}
+      {/* フィルター: 横スクロール1行。上部を抑えて地図を最大化。右端は横スクロールできる合図としてグラデーションを重ねる */}
+      <div className="relative border-b bg-white">
+        <div className="flex gap-2 overflow-x-auto px-3 py-2">
+          {QUICK_FILTERS.map((f) => {
+            const on = active.has(f);
+            return (
+              <button key={f} onClick={() => toggle(f)}
+                className={`whitespace-nowrap rounded-full border px-3 py-1 text-xs ${on ? "border-orange-400 bg-orange-50 text-orange-600" : "text-gray-600"}`}>
+                {f}
+              </button>
+            );
+          })}
+        </div>
+        <div className="pointer-events-none absolute inset-y-0 right-0 w-8 bg-gradient-to-l from-white to-transparent" />
       </div>
 
       <div className="relative flex-1 bg-gray-200">

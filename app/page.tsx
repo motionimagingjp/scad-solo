@@ -16,6 +16,7 @@ import { useBaseLocation } from "@/lib/useBaseLocation";
 const PICK_SIZE = 3;
 const MAX_REDRAWS = 2;
 const POOL_SIZE = 15; // 近い順にこの件数までを抽選対象にする
+const MAX_DISTANCE_METERS = 5000; // これより遠い店は「今夜」の範囲外として抽選対象から外す
 
 // 飲みに絞った気分の指定。複数選ぶと「ワインが飲めてカウンターがある店」のように絞り込まれる。
 // カラオケ・サウナは飲みではないので、ここには置かず地図側のフィルターに残してある。
@@ -49,7 +50,8 @@ export default function HomePage() {
       .catch(() => setSpots([]));
   }, [modes]);
 
-  // 基準地からの近い順。距離ラベルもここで確定させる
+  // 基準地からの近い順。5km圏外の店は「今夜ふらっと」の範囲外として除外する
+  // (店が少ないエリアだと無理に遠方を出してしまい、「約28km」のような結果になるため)。
   const pool = useMemo(() => {
     if (!spots || !location) return null;
     return spots
@@ -57,6 +59,7 @@ export default function HomePage() {
         spot: s,
         meters: haversineMeters(location, { lat: s.latitude, lng: s.longitude }),
       }))
+      .filter(({ meters }) => meters <= MAX_DISTANCE_METERS)
       .sort((a, b) => a.meters - b.meters)
       .slice(0, POOL_SIZE)
       .map(({ spot, meters }) => ({ ...spot, distanceLabel: distanceLabel(meters) }));
@@ -98,30 +101,33 @@ export default function HomePage() {
         <p className="mt-1 text-xs text-gray-400">この中から選べば、もう迷わない</p>
       </div>
 
-      {/* 気分のモード。何も選ばなければ「おまかせ」 */}
-      <div className="mt-3 flex gap-2 overflow-x-auto px-4 pb-1">
-        <button
-          onClick={() => setModes(new Set())}
-          className={`whitespace-nowrap rounded-full border px-3 py-1 text-xs ${
-            modes.size === 0 ? "border-orange-400 bg-orange-50 text-orange-600" : "bg-white text-gray-600"
-          }`}
-        >
-          おまかせ
-        </button>
-        {MODES.map((mode) => {
-          const on = modes.has(mode);
-          return (
-            <button
-              key={mode}
-              onClick={() => toggleMode(mode)}
-              className={`whitespace-nowrap rounded-full border px-3 py-1 text-xs ${
-                on ? "border-orange-400 bg-orange-50 text-orange-600" : "bg-white text-gray-600"
-              }`}
-            >
-              {mode}
-            </button>
-          );
-        })}
+      {/* 気分のモード。何も選ばなければ「おまかせ」。右端は横スクロールできる合図としてグラデーションを重ねる */}
+      <div className="relative mt-3">
+        <div className="flex gap-2 overflow-x-auto px-4 pb-1">
+          <button
+            onClick={() => setModes(new Set())}
+            className={`whitespace-nowrap rounded-full border px-3 py-1 text-xs ${
+              modes.size === 0 ? "border-orange-400 bg-orange-50 text-orange-600" : "bg-white text-gray-600"
+            }`}
+          >
+            おまかせ
+          </button>
+          {MODES.map((mode) => {
+            const on = modes.has(mode);
+            return (
+              <button
+                key={mode}
+                onClick={() => toggleMode(mode)}
+                className={`whitespace-nowrap rounded-full border px-3 py-1 text-xs ${
+                  on ? "border-orange-400 bg-orange-50 text-orange-600" : "bg-white text-gray-600"
+                }`}
+              >
+                {mode}
+              </button>
+            );
+          })}
+        </div>
+        <div className="pointer-events-none absolute inset-y-0 right-0 w-8 bg-gradient-to-l from-gray-50 to-transparent" />
       </div>
 
       <div className="space-y-3 px-4 pt-4">
