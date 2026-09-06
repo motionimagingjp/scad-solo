@@ -1,16 +1,20 @@
 "use client";
 
-import { MapPin, BookImage, MessageCircle, User } from "lucide-react";
+import { Dices, Map as MapIcon, BookImage, User } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-// 検索を最優先タブに配置。ナビ高さは 56px 固定(NAV_HEIGHT)で、他コンポーネントはこの値を基準に配置する。
+// ナビ高さは 56px 固定(NAV_HEIGHT)で、他コンポーネントはこの値を基準に配置する。
+//
+// AI相談タブは廃止した。モードボタンで大半の要望が指定できるようになり、
+// 残る自由入力はルーレット画面に置く方が「ハズレた直後に相談する」動線に合うため。
+// 地図は自分で見渡したい人向けにナビへ戻してある。
 export const NAV_HEIGHT = 56;
 
 const NAV_ITEMS = [
-  { href: "/", label: "さがす", icon: MapPin },
+  { href: "/", label: "ルーレット", icon: Dices },
+  { href: "/map", label: "地図", icon: MapIcon },
   { href: "/logs", label: "ソロ活", icon: BookImage },
-  { href: "/chat", label: "AI相談", icon: MessageCircle },
   { href: "/mypage", label: "マイページ", icon: User },
 ];
 

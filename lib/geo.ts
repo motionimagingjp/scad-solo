@@ -19,3 +19,12 @@ export function distanceLabel(meters: number): string {
   if (meters <= 1600) return `徒歩${Math.max(1, Math.round(meters / 80))}分`;
   return `約${(meters / 1000).toFixed(1)}km`;
 }
+
+/**
+ * Googleマップで開くURL。店名ではなく座標で開く。
+ * 店名検索だと同名の別店舗に飛ぶことがあるが、座標なら必ずその場所を指す。
+ */
+export function googleMapsUrl(spot: { name: string; latitude: number; longitude: number }): string {
+  const query = encodeURIComponent(`${spot.latitude},${spot.longitude}`);
+  return `https://www.google.com/maps/search/?api=1&query=${query}`;
+}

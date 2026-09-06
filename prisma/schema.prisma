@@ -33,6 +33,9 @@ model Spot {
   // "ワイン","ビール","女性ひとり歓迎")を同じ配列で持ち、検索フィルターと1対1で対応させる
   subCategories    String[]   @default([])
   address          String
+  // 推し文。「一人客が7割のカウンター」のような一言で、カードに出して決め手にする。
+  // AI検索で店を取り込む際は、店の情報と一緒にこの一言も生成させる
+  tagline          String?
   latitude         Float
   longitude        Float
   hasCounterSeat   Boolean    @default(true)

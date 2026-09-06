@@ -45,6 +45,8 @@ export async function GET(req: NextRequest) {
       subCategories: s.subCategories,
       hasCounterSeat: s.hasCounterSeat,
       senberoAvailable: s.senberoAvailable,
+      address: s.address,
+      tagline: s.tagline,
       latitude: s.latitude,
       longitude: s.longitude,
     })),
