@@ -9,7 +9,7 @@ import type { SpotSummary } from "@/components/SpotCard";
 import { distanceLabel, haversineMeters } from "@/lib/geo";
 import { useBaseLocation } from "@/lib/useBaseLocation";
 
-// 「今夜のソロ飲みを1秒で決める」の中心画面。
+// 「ソロ飲みルーレット」: 今夜のソロ飲みを1秒で決める中心画面。
 // 一覧から選ばせるのではなく、アプリ側が3軒に絞って提示する。引き直しは2回まで
 // (無制限にすると結局「迷う」体験に戻るため)。
 
@@ -79,7 +79,10 @@ export default function HomePage() {
       </header>
 
       <div className="px-4 pt-5">
-        <p className="text-lg font-bold">今夜の3軒</p>
+        <p className="flex items-center gap-1.5 text-lg font-bold">
+          <Dices size={20} className="text-orange-500" />
+          ソロ飲みルーレット
+        </p>
         <p className="mt-1 text-xs text-gray-400">この中から選べば、もう迷わない</p>
       </div>
 
