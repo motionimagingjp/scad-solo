@@ -24,8 +24,9 @@ export default function SoloActivityPage() {
 
   useEffect(() => {
     fetch("/api/me", { headers: { "x-user-id": "demo-user" } }) // TODO: 認証導入後はヘッダ付与を共通fetchに移す
-      .then((res) => res.json())
-      .then(setMe);
+      .then((res) => (res.ok ? res.json() : null))
+      .then(setMe)
+      .catch(() => setMe(null));
   }, []);
 
   if (!me) {
