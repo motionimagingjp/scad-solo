@@ -8,6 +8,7 @@ import { NAV_HEIGHT } from "@/components/BottomNav";
 export type SpotSummary = {
   id: string; name: string; category: string; subCategories: string[];
   hasCounterSeat: boolean; senberoAvailable: boolean; distanceLabel?: string;
+  latitude: number; longitude: number;
 };
 
 export default function SpotCard({ spot, onClose }: { spot: SpotSummary; onClose: () => void }) {

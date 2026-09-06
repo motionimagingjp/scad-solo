@@ -1,9 +1,11 @@
 "use client";
 
-import { useState } from "react";
-import { MapPin, MessageCircle } from "lucide-react";
+import { useCallback, useEffect, useState } from "react";
+import { MessageCircle } from "lucide-react";
 import BottomNav, { NAV_HEIGHT } from "@/components/BottomNav";
 import SpotCard, { type SpotSummary } from "@/components/SpotCard";
+import SearchMap from "@/components/SearchMap";
+import { haversineMeters, walkMinutesLabel } from "@/lib/geo";
 
 // 「1秒で決める」導線:
 //   起動 → 現在地周辺の地図がすぐ出る(0タップ) → ピン(1タップ) → チェックイン(2タップ)
@@ -11,18 +13,41 @@ import SpotCard, { type SpotSummary } from "@/components/SpotCard";
 
 const QUICK_FILTERS = ["カウンター席", "せんべろ", "相席なし", "今すぐ入れる", "カラオケ", "サウナ", "イベント"];
 
-// ダミー(実装時は /api/spots?lat=..&lng=..&filters=.. から取得)
-const MOCK_SPOT: SpotSummary = {
-  id: "spot_demo", name: "立飲み・〇〇", category: "SOLO_NOMI", subCategories: [],
-  hasCounterSeat: true, senberoAvailable: true, distanceLabel: "徒歩3分",
-};
-
 export default function HomePage() {
   const [active, setActive] = useState<Set<string>>(new Set());
   const [selected, setSelected] = useState<SpotSummary | null>(null);
+  const [spots, setSpots] = useState<SpotSummary[]>([]);
+  const [userLocation, setUserLocation] = useState<{ lat: number; lng: number } | null>(null);
 
   const toggle = (f: string) =>
     setActive((prev) => { const n = new Set(prev); n.has(f) ? n.delete(f) : n.add(f); return n; });
+
+  // 現在地取得(拒否・非対応でも検索自体は続行する)
+  useEffect(() => {
+    if (!navigator.geolocation) return;
+    navigator.geolocation.getCurrentPosition(
+      (pos) => setUserLocation({ lat: pos.coords.latitude, lng: pos.coords.longitude }),
+      () => {},
+    );
+  }, []);
+
+  // フィルター変更のたびに検索し直す
+  useEffect(() => {
+    const params = active.size > 0 ? `?filters=${encodeURIComponent([...active].join(","))}` : "";
+    fetch(`/api/spots${params}`)
+      .then((res) => (res.ok ? res.json() : { spots: [] }))
+      .then((data) => setSpots(data.spots ?? []))
+      .catch(() => setSpots([]));
+  }, [active]);
+
+  const spotsWithDistance = userLocation
+    ? spots.map((s) => ({
+        ...s,
+        distanceLabel: walkMinutesLabel(haversineMeters(userLocation, { lat: s.latitude, lng: s.longitude })),
+      }))
+    : spots;
+
+  const handleSelect = useCallback((spot: SpotSummary) => setSelected(spot), []);
 
   return (
     <div className="mx-auto flex h-dvh max-w-md flex-col bg-gray-50" style={{ paddingBottom: NAV_HEIGHT }}>
@@ -44,11 +69,9 @@ export default function HomePage() {
         })}
       </div>
 
-      {/* 地図: 残り領域を全て使う。実装時はここを地図ライブラリのコンテナに置き換え */}
+      {/* 地図: 残り領域を全て使う */}
       <div className="relative flex-1 bg-gray-200">
-        <button onClick={() => setSelected(MOCK_SPOT)} className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-orange-500" aria-label="店舗ピン">
-          <MapPin size={36} fill="currentColor" className="text-orange-500" />
-        </button>
+        <SearchMap spots={spotsWithDistance} userLocation={userLocation} onSelectSpot={handleSelect} />
 
         {/* AI相談への導線。カードが開いている時はカードの上に退避 */}
         {!selected && (
