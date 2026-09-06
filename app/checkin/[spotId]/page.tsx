@@ -1,14 +1,17 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useParams, useRouter } from "next/navigation";
 import BottomNav, { NAV_HEIGHT } from "@/components/BottomNav";
 import AnniversaryBanner from "@/components/AnniversaryBanner";
 
-// 決定画面: 検索→決定→記録→シェアを結ぶ要。
+// 結果画面: 検索→決定→記録→シェアを結ぶ要。
 //   記録するのは「来店した証明」ではなく「今夜ここに決めた」という意思決定。
-//   店の前でアプリを開き直す人はいないので、探している最中に押せる文言にしてある。
-//   決定 → スタンプ+実績+アクティビティ+シェア が1画面に出る → 「Threadsでシェア」で完結。
+//   決定は一覧の「今夜はここにする」で完了しているため、確認は挟まずこの画面到達時に記録する。
+//   記録 → スタンプ+実績+アクティビティ+シェア が1画面に出る → 「Threadsでシェア」で完結。
+
+// リロードでの二重記録を防ぐため、結果はセッション内で保持する
+const RESULT_CACHE_PREFIX = "scad-solo:decision:";
 
 type CheckinResult = {
   spot: { name: string };
@@ -24,57 +27,57 @@ export default function CheckinPage() {
   const { spotId } = useParams<{ spotId: string }>();
   const router = useRouter();
   const [result, setResult] = useState<CheckinResult | null>(null);
-  const [loading, setLoading] = useState(false);
-  const [spot, setSpot] = useState<{ name: string; hasCounterSeat: boolean; senberoAvailable: boolean; subCategories: string[] } | null>(null);
+  const [failed, setFailed] = useState(false);
+  const startedRef = useRef(false);
 
-  // 何を選んでいるかを決定前に確認できるようにする
   useEffect(() => {
-    fetch(`/api/spots/${spotId}`)
-      .then((res) => (res.ok ? res.json() : null))
-      .then(setSpot)
-      .catch(() => setSpot(null));
-  }, [spotId]);
+    if (startedRef.current) return; // 開発時の二重実行(StrictMode)を防ぐ
+    startedRef.current = true;
 
-  const checkin = async () => {
-    setLoading(true);
+    const cacheKey = `${RESULT_CACHE_PREFIX}${spotId}`;
     try {
-      const res = await fetch("/api/logs", {
-        method: "POST",
-        headers: { "Content-Type": "application/json", "x-user-id": "demo-user" }, // TODO: 認証導入後はヘッダ付与を共通fetchに移す
-        body: JSON.stringify({ spotId }),
-      });
-      if (res.ok) setResult(await res.json());
-    } finally {
-      setLoading(false);
-    }
-  };
+      const cached = sessionStorage.getItem(cacheKey);
+      if (cached) {
+        setResult(JSON.parse(cached));
+        return;
+      }
+    } catch {}
+
+    fetch("/api/logs", {
+      method: "POST",
+      headers: { "Content-Type": "application/json", "x-user-id": "demo-user" }, // TODO: 認証導入後はヘッダ付与を共通fetchに移す
+      body: JSON.stringify({ spotId }),
+    })
+      .then((res) => (res.ok ? res.json() : null))
+      .then((data) => {
+        if (!data) {
+          setFailed(true);
+          return;
+        }
+        setResult(data);
+        try {
+          sessionStorage.setItem(cacheKey, JSON.stringify(data));
+        } catch {}
+      })
+      .catch(() => setFailed(true));
+  }, [spotId]);
 
   return (
     <div className="mx-auto min-h-dvh max-w-md bg-gray-50" style={{ paddingBottom: NAV_HEIGHT }}>
       <header className="flex items-center gap-2 border-b bg-white px-4 py-3">
         <button onClick={() => router.back()} className="text-xs text-gray-400">← 戻る</button>
-        <h1 className="text-base font-bold">今夜の店を決める</h1>
+        <h1 className="text-base font-bold">今夜の一軒</h1>
       </header>
 
-      {!result ? (
-        <div className="flex flex-col items-center px-6 pt-10">
-          <p className="text-xl font-bold">{spot?.name ?? "..."}</p>
-          {spot && (
-            <p className="mt-1 text-xs text-gray-400">
-              {[
-                spot.hasCounterSeat && "カウンター席",
-                spot.senberoAvailable && "せんべろ",
-                ...spot.subCategories,
-              ].filter(Boolean).join(" · ")}
-            </p>
-          )}
-          <p className="mt-6 text-sm text-gray-500">この店で決まり?</p>
-          <button onClick={checkin} disabled={loading}
-            className="mt-4 h-40 w-40 rounded-full bg-orange-500 text-lg font-bold text-white shadow-xl active:scale-95 disabled:opacity-50">
-            {loading ? "記録中..." : "ここに決めた"}
+      {failed ? (
+        <div className="flex flex-col items-center px-6 pt-16 text-center">
+          <p className="text-sm text-gray-500">記録できませんでした</p>
+          <button onClick={() => router.back()} className="mt-4 rounded-full border bg-white px-6 py-2 text-sm text-gray-600">
+            戻ってやり直す
           </button>
-          <p className="mt-4 text-[11px] text-gray-400">決めた時点で記録されます</p>
         </div>
+      ) : !result ? (
+        <p className="px-6 pt-20 text-center text-sm text-gray-400">記録しています...</p>
       ) : (
         <div className="space-y-3 px-4 pt-4">
           {/* スタンプ獲得 */}
