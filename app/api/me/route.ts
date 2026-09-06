@@ -19,14 +19,12 @@ export async function GET(req: NextRequest) {
       visitCount: 0,
       soloRank: "BEGINNER" as const,
       rankLabel: RANK_THRESHOLDS.BEGINNER.label,
-      stamps: [],
       visitLogs: [],
       newAchievements: [],
     });
   }
 
-  const [stamps, visitLogs, unnotified] = await Promise.all([
-    prisma.stamp.findMany({ where: { userId }, orderBy: { createdAt: "desc" } }),
+  const [visitLogs, unnotified] = await Promise.all([
     prisma.visitLog.findMany({
       where: { userId },
       orderBy: { visitedAt: "desc" },
@@ -49,7 +47,6 @@ export async function GET(req: NextRequest) {
     visitCount: user.visitCount,
     soloRank: user.soloRank,
     rankLabel: RANK_THRESHOLDS[user.soloRank].label,
-    stamps: stamps.map((s) => ({ designId: s.designId, createdAt: s.createdAt })),
     visitLogs: visitLogs.map((v) => ({
       id: v.id,
       spotName: v.spot.name,

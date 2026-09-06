@@ -17,7 +17,6 @@ type CheckinResult = {
   spot: { name: string };
   rankLabel: string;
   visitCount: number;
-  stamp: { emoji: string; label: string };
   newAchievements: { key: string; label: string }[];
   activities: { id: string; emoji: string; title: string; description: string; status: string }[];
   share: { intentUrl: string };
@@ -80,11 +79,11 @@ export default function CheckinPage() {
         <p className="px-6 pt-20 text-center text-sm text-gray-400">記録しています...</p>
       ) : (
         <div className="space-y-3 px-4 pt-4">
-          {/* スタンプ獲得 */}
+          {/* 記録できたことの確認 */}
           <section className="rounded-2xl bg-white p-5 text-center">
-            <p className="text-5xl">{result.stamp.emoji}</p>
-            <p className="mt-2 font-bold">{result.stamp.label}</p>
-            <p className="text-xs text-gray-400">{result.spot.name} · 来店{result.visitCount}回 · {result.rankLabel}</p>
+            <p className="text-xs text-gray-400">今夜はここに決めました</p>
+            <p className="mt-1 text-xl font-bold">{result.spot.name}</p>
+            <p className="mt-1 text-xs text-gray-400">来店{result.visitCount}回 · {result.rankLabel}</p>
           </section>
 
           {/* 実績(新規達成時のみ) */}

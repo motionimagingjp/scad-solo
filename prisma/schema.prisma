@@ -17,7 +17,6 @@ model UserProfile {
   soloRank     SoloRank          @default(BEGINNER)
   visitCount   Int               @default(0)
   visitLogs    VisitLog[]
-  stamps       Stamp[]
   achievements UserAchievement[]
   createdAt    DateTime          @default(now())
 }
@@ -78,7 +77,7 @@ model Event {
 }
 
 // ============================================================
-// 来店ログ & スタンプ
+// 来店ログ
 // ============================================================
 model VisitLog {
   id        String      @id @default(cuid())
@@ -86,22 +85,12 @@ model VisitLog {
   user      UserProfile @relation(fields: [userId], references: [userId])
   spotId    String
   spot      Spot        @relation(fields: [spotId], references: [id])
+  // ユーザーが自分用に残すメモ(使った金額・誰と会ったか等)。後から編集できる
   comment   String?
   imageUrl  String?
-  stamp     Stamp?
   visitedAt DateTime    @default(now())
 
   @@index([userId, spotId]) // 同一店の来店回数集計(常連判定)用
-}
-
-model Stamp {
-  id         String      @id @default(cuid())
-  userId     String
-  user       UserProfile @relation(fields: [userId], references: [userId])
-  visitLogId String      @unique
-  visitLog   VisitLog    @relation(fields: [visitLogId], references: [id])
-  designId   String // lib/stamps.ts の STAMP_DESIGNS を参照
-  createdAt  DateTime    @default(now())
 }
 
 // ============================================================

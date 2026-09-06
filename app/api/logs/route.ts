@@ -5,7 +5,7 @@ import { prisma } from "@/lib/prisma";
 import { getUserIdFromRequest } from "@/lib/auth";
 import { RANK_THRESHOLDS } from "@/lib/data/scadApps";
 import { calcRank, detectVisitMilestones, detectRegularBadge } from "@/lib/rank";
-import { pickStampDesign, buildThreadsSharePayload } from "@/lib/stamps";
+import { buildThreadsSharePayload } from "@/lib/share";
 import { pickActivities } from "@/lib/data/activities";
 
 // 純粋なJSON API。Next.jsの画面状態には一切依存せず、SwiftUIからも同じレスポンスをそのまま使える。
@@ -50,11 +50,10 @@ export async function POST(req: NextRequest) {
     detectRegularBadge(spot.id, spot.name, visitsAtSpot, achievedKeys),
   ].filter((a): a is NonNullable<typeof a> => a !== null);
 
-  // スタンプの絵柄は来店ログIDから決まる。IDと日時を先に採番しておけば、
-  // 書き込み結果を待たずに全ての値が確定し、書き込みを1往復にまとめられる。
+  // IDと日時を先に採番しておけば書き込み結果を待たずに全ての値が確定し、
+  // 書き込みを1往復にまとめられる。
   const visitLogId = randomUUID();
   const visitedAt = new Date();
-  const stamp = pickStampDesign(visitLogId);
 
   const writes: Prisma.PrismaPromise<unknown>[] = [
     prisma.visitLog.create({ data: { id: visitLogId, userId, spotId, comment, imageUrl, visitedAt } }),
@@ -62,7 +61,6 @@ export async function POST(req: NextRequest) {
       where: { userId },
       data: { visitCount: { increment: 1 }, soloRank: newRank },
     }),
-    prisma.stamp.create({ data: { userId, visitLogId, designId: stamp.id } }),
   ];
   if (newAchievements.length) {
     writes.push(
@@ -80,9 +78,8 @@ export async function POST(req: NextRequest) {
     visitCount,
     soloRank: newRank,
     rankLabel: RANK_THRESHOLDS[newRank].label,
-    stamp,
     newAchievements,                 // バナー表示対象。空配列なら何も出さない
-    activities: pickActivities(spot.category, spot.subCategories), // チェックイン画面に出すアクティビティ
-    share: buildThreadsSharePayload({ spotName: spot.name, stamp }),
+    activities: pickActivities(spot.category, spot.subCategories), // 決定後の画面に出すアクティビティ
+    share: buildThreadsSharePayload({ spotName: spot.name, visitCount }),
   });
 }
