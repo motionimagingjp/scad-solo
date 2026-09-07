@@ -1,5 +1,6 @@
 import { QrCode } from "lucide-react";
 import BottomNav from "@/components/BottomNav";
+import ShareAppButton from "@/components/ShareAppButton";
 import { SCAD_APPS, ECOSYSTEM_REVEAL_THRESHOLD, RANK_THRESHOLDS } from "@/lib/data/scadApps";
 import { prisma } from "@/lib/prisma";
 
@@ -57,6 +58,7 @@ export default async function MyPage() {
             </a>
           </div>
         </details>
+        <ShareAppButton />
       </section>
 
       {/* エコシステムセクション: 来店実績が一定数貯まってから表示(離脱防止) */}
