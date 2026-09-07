@@ -98,7 +98,7 @@ export default function HomePage() {
           <Dices size={20} className="text-orange-500" />
           ソロ飲みルーレット
         </p>
-        <p className="mt-1 text-xs text-gray-400">この中から選べば、もう迷わない</p>
+        <p className="mt-1 text-xs text-gray-400">今日の運命店舗はこれ!</p>
       </div>
 
       {/* 気分のモード。何も選ばなければ「おまかせ」。右端は横スクロールできる合図としてグラデーションを重ねる */}

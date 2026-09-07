@@ -1,6 +1,6 @@
 "use client";
 
-import { Dices, Map as MapIcon, BookImage, User } from "lucide-react";
+import { Dices, Map as MapIcon, Gamepad2, User } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -9,12 +9,14 @@ import { usePathname } from "next/navigation";
 // AI相談タブは廃止した。モードボタンで大半の要望が指定できるようになり、
 // 残る自由入力はルーレット画面に置く方が「ハズレた直後に相談する」動線に合うため。
 // 地図は自分で見渡したい人向けにナビへ戻してある。
+// 「ソロ活」タブも廃止し、この枠は「ゲーム」に差し替えた。来店ログはマイページからの
+// リンクで十分たどり着け、常設タブにするほどではないと判断したため。
 export const NAV_HEIGHT = 56;
 
 const NAV_ITEMS = [
   { href: "/", label: "ルーレット", icon: Dices },
   { href: "/map", label: "地図", icon: MapIcon },
-  { href: "/logs", label: "ソロ活", icon: BookImage },
+  { href: "/games", label: "ゲーム", icon: Gamepad2 },
   { href: "/mypage", label: "マイページ", icon: User },
 ];
 
