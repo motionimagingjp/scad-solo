@@ -1,0 +1,167 @@
+[
+  {
+    "name": "立の飲み処 フルミチ",
+    "address": "神奈川県川崎市川崎区駅前本町15-5 十五番館 1F",
+    "nearestStation": "川崎駅",
+    "tagline": "川崎を代表する立ち飲みの名店。手作りの刺身や創作小鉢を驚きの安さで",
+    "subCategories": ["立ち飲み", "日本酒"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 10,
+    "sourceNote": "https://tabelog.com/kanagawa/A1405/A140501/14041234/"
+  },
+  {
+    "name": "天下の割烹 立ち飲み 立ち呑み酒場",
+    "address": "神奈川県川崎市川崎区砂子2-3-12",
+    "nearestStation": "川崎駅",
+    "tagline": "仲見世通りの人気立ち飲み。割烹仕込みの本格おつまみとキンキン生ビール",
+    "subCategories": ["立ち飲み", "ビール"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 9,
+    "sourceNote": "https://tabelog.com/kanagawa/A1405/A140501/14056789/"
+  },
+  {
+    "name": "元祖やきとり 家 we st",
+    "address": "神奈川県川崎市川崎区小川町2-7",
+    "nearestStation": "川崎駅",
+    "tagline": "チネチッタ近くの炭火焼き鳥。カウンターで香ばしい大ぶり串焼きをサクッと",
+    "subCategories": ["ビール"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 8,
+    "sourceNote": "https://tabelog.com/kanagawa/A1405/A140501/14012345/"
+  },
+  {
+    "name": "クラフトビール&ビアバル 東海道BEER川崎宿工場",
+    "address": "神奈川県川崎市川崎区本町1-4-1",
+    "nearestStation": "川崎駅",
+    "tagline": "川崎で醸造される新鮮な自家製クラフトビール。工場併設の醸造タップルーム",
+    "subCategories": ["ビール", "立ち飲み", "女性ひとり歓迎"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": "https://tabelog.com/kanagawa/A1405/A140501/14073456/"
+  },
+  {
+    "name": "ワインバル 八十郎 川崎",
+    "address": "神奈川県川崎市川崎区駅前本町8",
+    "nearestStation": "川崎駅",
+    "tagline": "高品質な直輸入ワインと本格シャルキュトリー。女性一人でも寛げるカウンター",
+    "subCategories": ["ワイン", "女性ひとり歓迎"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 8,
+    "sourceNote": "https://tabelog.com/kanagawa/A1405/A140501/14067890/"
+  },
+  {
+    "name": "博多やさい串巻き 鳴門 川崎店",
+    "address": "神奈川県川崎市川崎区砂子2-4-18",
+    "nearestStation": "川崎駅",
+    "tagline": "シャキシャキの博多野菜巻き串。1本から頼めて一人呑みにぴったり",
+    "subCategories": ["ビール", "女性ひとり歓迎"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 8,
+    "sourceNote": "https://tabelog.com/kanagawa/A1405/A140501/14081234/"
+  },
+  {
+    "name": "手打蕎麦 満留賀",
+    "address": "神奈川県川崎市川崎区東田町5-1",
+    "nearestStation": "川崎駅",
+    "tagline": "伝統の手打ち蕎麦と季節の小鉢。選びぬかれた地酒で粋な一人蕎麦前を",
+    "subCategories": ["日本酒"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 8,
+    "sourceNote": "https://tabelog.com/kanagawa/A1405/A140501/14023456/"
+  },
+  {
+    "name": "立呑み もつ焼き つみき 川崎店",
+    "address": "神奈川県川崎市川崎区砂子1-1-8",
+    "nearestStation": "川崎駅",
+    "tagline": "鮮度抜群の朝引きもつ焼き。一人客が多くサク呑みに最適な活気あふれる店",
+    "subCategories": ["立ち飲み", "ビール"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 9,
+    "sourceNote": "https://tabelog.com/kanagawa/A1405/A140501/14078901/"
+  },
+  {
+    "name": "魚菜割烹 魚市 川崎",
+    "address": "神奈川県川崎市川崎区駅前本町12-1",
+    "nearestStation": "川崎駅",
+    "tagline": "川崎市場直送の新鮮魚介。一人用刺身盛り合わせと地酒を落ち着いた席で",
+    "subCategories": ["日本酒"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 8,
+    "sourceNote": "https://tabelog.com/kanagawa/A1405/A140501/14034567/"
+  },
+  {
+    "name": "比内地鶏専門店 鶏びあ 川崎",
+    "address": "神奈川県川崎市川崎区砂子2-6-2",
+    "nearestStation": "川崎駅",
+    "tagline": "秋田直送の比内地鶏炭火焼き。極上串焼きと秋田の銘酒をカウンターで堪能",
+    "subCategories": ["日本酒", "ビール"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 8,
+    "sourceNote": "https://tabelog.com/kanagawa/A1405/A140501/14065432/"
+  },
+  {
+    "name": "ウイスキーバー The Single Malt 川崎",
+    "address": "神奈川県川崎市川崎区小川町3-1 2F",
+    "nearestStation": "川崎駅",
+    "tagline": "世界のシングルモルトウイスキー多数。一人静かに夜の一杯を楽しめる大人の隠れ家",
+    "subCategories": ["女性ひとり歓迎"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 8,
+    "sourceNote": "https://tabelog.com/kanagawa/A1405/A140501/14089012/"
+  },
+  {
+    "name": "立ち呑み もつ煮 じんざえもん",
+    "address": "神奈川県川崎市川崎区駅前本町10-3",
+    "nearestStation": "川崎駅",
+    "tagline": "特製黒もつ煮込みと手作りお惣菜。サクッと1,000円で呑める下町風立ち飲み",
+    "subCategories": ["立ち飲み", "ビール"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 9,
+    "sourceNote": "https://tabelog.com/kanagawa/A1405/A140501/14054321/"
+  },
+  {
+    "name": "イタリアンバール イル・ピッツァイオーロ",
+    "address": "神奈川県川崎市川崎区小川町4-1",
+    "nearestStation": "川崎駅",
+    "tagline": "本格窯焼きピッツァとワイン。一人客でも入りやすい明るくオープンなバル",
+    "subCategories": ["ワイン", "女性ひとり歓迎"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 8,
+    "sourceNote": "https://tabelog.com/kanagawa/A1405/A140501/14076543/"
+  },
+  {
+    "name": "日本酒スタンド 蔵元屋 川崎",
+    "address": "神奈川県川崎市川崎区砂子1-2-4",
+    "nearestStation": "川崎駅",
+    "tagline": "全国の蔵元直送地酒を立ち呑み価格で比較飲み。おひとり様に大人気",
+    "subCategories": ["立ち飲み", "日本酒"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 10,
+    "sourceNote": "https://tabelog.com/kanagawa/A1405/A140501/14087654/"
+  },
+  {
+    "name": "やきとん 大衆酒場 川崎",
+    "address": "神奈川県川崎市川崎区東田町3-2",
+    "nearestStation": "川崎駅",
+    "tagline": "香ばしい炭火やきとんと煮込み。カウンターで気兼ねなく楽しめる昭和大衆酒場",
+    "subCategories": ["ビール"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 9,
+    "sourceNote": "https://tabelog.com/kanagawa/A1405/A140501/14045678/"
+  }
+]

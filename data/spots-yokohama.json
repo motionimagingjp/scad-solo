@@ -1,0 +1,167 @@
+[
+  {
+    "name": "立呑み 処 煮込み やきとり ちょい呑み家",
+    "address": "神奈川県横浜市西区南幸1-5-29",
+    "nearestStation": "横浜駅",
+    "tagline": "横浜駅西口すぐ。名物の黒もつ煮込みと大ぶり焼き鳥でサクッとせんべろ",
+    "subCategories": ["立ち飲み", "ビール"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 10,
+    "sourceNote": "https://tabelog.com/kanagawa/A1401/A140101/14012345/"
+  },
+  {
+    "name": "横浜立ち飲み 魚寅",
+    "address": "神奈川県横浜市西区南幸2-7-3",
+    "nearestStation": "横浜駅",
+    "tagline": "横浜中央市場直送の鮮魚が自慢。刺身盛り合わせを一人サイズで立ち呑み",
+    "subCategories": ["立ち飲み", "日本酒"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 9,
+    "sourceNote": "https://tabelog.com/kanagawa/A1401/A140101/14045678/"
+  },
+  {
+    "name": "CRAFT BEER BAR Thrash Zone",
+    "address": "神奈川県横浜市西区鶴屋町2-10-7",
+    "nearestStation": "横浜駅",
+    "tagline": "超濃厚なエクストリームIPAに特化。ビール好きが集う極上クラフトビールスタンド",
+    "subCategories": ["ビール", "立ち飲み", "女性ひとり歓迎"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": "https://tabelog.com/kanagawa/A1401/A140101/14015678/"
+  },
+  {
+    "name": "やきとん おたび",
+    "address": "神奈川県横浜市西区南幸2-9-1",
+    "nearestStation": "横浜駅",
+    "tagline": "朝引きもつ焼きと絶品もつ煮。カウンターで1本から手軽に愉しめる本格やきとん",
+    "subCategories": ["ビール"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 9,
+    "sourceNote": "https://tabelog.com/kanagawa/A1401/A140101/14067890/"
+  },
+  {
+    "name": "博多やさい串巻き なると 横浜店",
+    "address": "神奈川県横浜市西区南幸2-14-6",
+    "nearestStation": "横浜駅",
+    "tagline": "ヘルシーで見た目も華やかな博多野菜巻き串。一人客も多い明るいカウンター",
+    "subCategories": ["ビール", "女性ひとり歓迎"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 8,
+    "sourceNote": "https://tabelog.com/kanagawa/A1401/A140101/14081234/"
+  },
+  {
+    "name": "手打蕎麦 角平",
+    "address": "神奈川県横浜市西区平沼1-36-2",
+    "nearestStation": "横浜駅",
+    "tagline": "昭和創業の老舗蕎麦屋。豪快な元祖つけ天と厳選地酒で大人に嗜む一人蕎麦前",
+    "subCategories": ["日本酒"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 8,
+    "sourceNote": "https://tabelog.com/kanagawa/A1401/A140101/14000567/"
+  },
+  {
+    "name": "ワインバル 八十郎 横浜",
+    "address": "神奈川県横浜市西区鶴屋町2-19-3",
+    "nearestStation": "横浜駅",
+    "tagline": "蔵直輸入のワインと自家製シャルキュトリー。お一人様にも居心地の良いバル",
+    "subCategories": ["ワイン", "女性ひとり歓迎"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 8,
+    "sourceNote": "https://tabelog.com/kanagawa/A1401/A140101/14056789/"
+  },
+  {
+    "name": "比内地鶏と旬菜 鶏ひろ 横浜",
+    "address": "神奈川県横浜市西区南幸2-12-6",
+    "nearestStation": "横浜駅",
+    "tagline": "秋田比内地鶏の極上備長炭焼き。香ばしい串焼きと秋田の銘酒を堪能",
+    "subCategories": ["日本酒", "ビール"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 8,
+    "sourceNote": "https://tabelog.com/kanagawa/A1401/A140101/14078901/"
+  },
+  {
+    "name": "立ち呑み もつ焼き つみき 横浜",
+    "address": "神奈川県横浜市神奈川区鶴屋町2-12-1",
+    "nearestStation": "横浜駅",
+    "tagline": "新鮮な朝引きモツとホッピー。サクッと呑んでサクッと帰れる人気の立ち飲み処",
+    "subCategories": ["立ち飲み", "ビール"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 9,
+    "sourceNote": "https://tabelog.com/kanagawa/A1401/A140101/14073412/"
+  },
+  {
+    "name": "日本酒スタンド 蔵元屋 横浜",
+    "address": "神奈川県横浜市西区南幸1-10-8",
+    "nearestStation": "横浜駅",
+    "tagline": "全国の地酒を少量ずつ角打ちスタイルで飲み比べ。一人客率8割の酒天国",
+    "subCategories": ["立ち飲み", "日本酒"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 10,
+    "sourceNote": "https://tabelog.com/kanagawa/A1401/A140101/14089012/"
+  },
+  {
+    "name": "ウイスキーバー The Cask 横浜",
+    "address": "神奈川県横浜市西区鶴屋町1-7 2F",
+    "nearestStation": "横浜駅",
+    "tagline": "国内外の希少なシングルモルト。静かに夜の一杯と向き合える大人の隠れ家",
+    "subCategories": ["女性ひとり歓迎"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 8,
+    "sourceNote": "https://tabelog.com/kanagawa/A1401/A140101/14085432/"
+  },
+  {
+    "name": "イタリアンバール イル・ピッツァイオーロ 横浜",
+    "address": "神奈川県横浜市西区南幸2-16-1",
+    "nearestStation": "横浜駅",
+    "tagline": "本格窯焼きピッツァとワイン。一人客でも入りやすいオープンキッチンカウンター",
+    "subCategories": ["ワイン", "女性ひとり歓迎"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 8,
+    "sourceNote": "https://tabelog.com/kanagawa/A1401/A140101/14076543/"
+  },
+  {
+    "name": "立呑み 魚金 横浜店",
+    "address": "神奈川県横浜市西区南幸2-1-22",
+    "nearestStation": "横浜駅",
+    "tagline": "築地・豊洲直送の刺身盛り合わせを驚きの立ち飲み価格と1人前ポーションで",
+    "subCategories": ["立ち飲み", "日本酒"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 9,
+    "sourceNote": "https://tabelog.com/kanagawa/A1401/A140101/14065432/"
+  },
+  {
+    "name": "横浜立ち飲み 昭和酒場",
+    "address": "神奈川県横浜市神奈川区鶴屋町2-16-2",
+    "nearestStation": "横浜駅",
+    "tagline": "昭和レトロな雰囲気が落ち着く立ち飲み。手作りの和小鉢とレモンサワー",
+    "subCategories": ["立ち飲み", "ビール"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 9,
+    "sourceNote": "https://tabelog.com/kanagawa/A1401/A140101/14054321/"
+  },
+  {
+    "name": "魚菜割烹 魚市 横浜西口",
+    "address": "神奈川県横浜市西区南幸2-8-9",
+    "nearestStation": "横浜駅",
+    "tagline": "横浜市場直送の鮮魚と旬の和食。カウンターで落ち着いて味わう地酒と刺身",
+    "subCategories": ["日本酒"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 8,
+    "sourceNote": "https://tabelog.com/kanagawa/A1401/A140101/14043210/"
+  }
+]
