@@ -1,0 +1,167 @@
+[
+  {
+    "name": "もつ焼きパラダイス富士(予約必須)",
+    "address": "東京都豊島区池袋2-63-6 1F",
+    "nearestStation": "池袋駅",
+    "tagline": "池袋で超絶人気のもつ焼き専門店。鮮度抜群の希少部位串と煮込みをカウンターで",
+    "subCategories": ["ビール"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": "https://tabelog.com/tokyo/A1305/A130501/13254321/"
+  },
+  {
+    "name": "立ち飲み あらし",
+    "address": "東京都豊島区西池袋1-38-1",
+    "nearestStation": "池袋駅",
+    "tagline": "池袋西口の隠れ家立ち飲み。名物のモツ煮込みと旬の小鉢でサクッとせんべろ",
+    "subCategories": ["立ち飲み", "日本酒"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 10,
+    "sourceNote": "https://tabelog.com/tokyo/A1305/A130501/13245678/"
+  },
+  {
+    "name": "立ち飲み アーニー",
+    "address": "東京都豊島区東池袋1-39-11",
+    "nearestStation": "池袋駅",
+    "tagline": "ポップでアットホームな雰囲気が人気。クラフトビールと手作りおつまみを立ち呑みで",
+    "subCategories": ["立ち飲み", "ビール", "女性ひとり歓迎"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 9,
+    "sourceNote": "https://tabelog.com/tokyo/A1305/A130501/13251234/"
+  },
+  {
+    "name": "岩瀬蒸店",
+    "address": "東京都豊島区東池袋1-40-9",
+    "nearestStation": "池袋駅",
+    "tagline": "アツアツの蒸し料理とシュウマイが絶品。一人でも立ち寄りやすい大人気の立ち飲み居酒屋",
+    "subCategories": ["立ち飲み", "ビール"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 9,
+    "sourceNote": "https://tabelog.com/tokyo/A1305/A130501/13230123/"
+  },
+  {
+    "name": "やきとん 千登利",
+    "address": "東京都豊島区西池袋1-34-3",
+    "nearestStation": "池袋駅",
+    "tagline": "昭和創業の老舗やきとん。コの字カウンターで炭火串焼きと黒生ビールを愉しむ",
+    "subCategories": ["ビール"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 9,
+    "sourceNote": "https://tabelog.com/tokyo/A1305/A130501/13003889/"
+  },
+  {
+    "name": "酒場 ふくろ",
+    "address": "東京都豊島区西池袋1-14-2",
+    "nearestStation": "池袋駅",
+    "tagline": "朝から呑める西口の老舗大衆酒場。豊富な小鉢とホッピーで気ままな一人時間",
+    "subCategories": ["ビール"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 9,
+    "sourceNote": "https://tabelog.com/tokyo/A1305/A130501/13003878/"
+  },
+  {
+    "name": "呑場 詰所",
+    "address": "東京都豊島区東池袋1-31-8 1F",
+    "nearestStation": "池袋駅",
+    "tagline": "カウンター中心の路地裏酒場。日替わりの小鉢とこだわり日本酒でサク飲み",
+    "subCategories": ["日本酒", "立ち飲み"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 9,
+    "sourceNote": "https://tabelog.com/tokyo/A1305/A130501/13251235/"
+  },
+  {
+    "name": "ビアパブ CAMDEN 池袋東口店",
+    "address": "東京都豊島区東池袋1-7-2 東進ビル 2F",
+    "nearestStation": "池袋駅",
+    "tagline": "国内外の厳選クラフトビールと名物バーガー。お一人様も通いやすい本格タップルーム",
+    "subCategories": ["ビール", "女性ひとり歓迎"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": "https://tabelog.com/tokyo/A1305/A130501/13130835/"
+  },
+  {
+    "name": "立呑み 喜多屋",
+    "address": "東京都豊島区西池袋1-35-7",
+    "nearestStation": "池袋駅",
+    "tagline": "池袋西口の立ち飲み聖地。手作りの旬のアテが格安で味わえるせんべろの極み",
+    "subCategories": ["立ち飲み", "日本酒"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 9,
+    "sourceNote": "https://tabelog.com/tokyo/A1305/A130501/13125218/"
+  },
+  {
+    "name": "手打蕎麦 寓",
+    "address": "東京都豊島区南池袋2-13-10",
+    "nearestStation": "池袋駅",
+    "tagline": "南池袋の隠れ家蕎麦屋。店主厳選の地酒と旬のおつまみで粋に蕎麦前を楽しむ",
+    "subCategories": ["日本酒"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 8,
+    "sourceNote": "https://tabelog.com/tokyo/A1305/A130501/13045612/"
+  },
+  {
+    "name": "三兵酒店",
+    "address": "東京都豊島区西池袋1-31-5",
+    "nearestStation": "池袋駅",
+    "tagline": "西口ロサ会館そばの角打ち風立ち飲み。缶詰や乾物とキンキンの缶チューハイ",
+    "subCategories": ["立ち飲み"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 9,
+    "sourceNote": "https://tabelog.com/tokyo/A1305/A130501/13059082/"
+  },
+  {
+    "name": "ワインカフェ 池袋",
+    "address": "東京都豊島区南池袋2-27-2 筑摩ビル B1F",
+    "nearestStation": "池袋駅",
+    "tagline": "グラスワインが常時10種以上。一人客歓迎の静かで落ち着く地下バル",
+    "subCategories": ["ワイン", "女性ひとり歓迎"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 8,
+    "sourceNote": "https://tabelog.com/tokyo/A1305/A130501/13149811/"
+  },
+  {
+    "name": "クアトロフォリオ",
+    "address": "東京都豊島区東池袋1-38-1 豊島ビル 1F",
+    "nearestStation": "池袋駅",
+    "tagline": "イタリア直送ワインと本格小皿イタリアン。女性一人でも入りやすい隠れ家バル",
+    "subCategories": ["ワイン", "女性ひとり歓迎"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 8,
+    "sourceNote": "https://tabelog.com/tokyo/A1305/A130501/13160291/"
+  },
+  {
+    "name": "宮崎地鶏 炭火焼 ぐんけい 池袋店",
+    "address": "東京都豊島区東池袋1-40-7",
+    "nearestStation": "池袋駅",
+    "tagline": "宮崎名物プレミアム地鶏のモモ焼き。カウンターで本格芋焼酎とともに堪能",
+    "subCategories": ["ビール"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 8,
+    "sourceNote": "https://tabelog.com/tokyo/A1305/A130501/13038912/"
+  },
+  {
+    "name": "サシノミ 池袋店",
+    "address": "東京都豊島区西池袋3-29-11 1F",
+    "nearestStation": "池袋駅",
+    "tagline": "1人前ポーションの刺身や小鉢が充実。一人飲みに特化した快適なカウンター酒場",
+    "subCategories": ["日本酒", "女性ひとり歓迎"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 10,
+    "sourceNote": "https://tabelog.com/tokyo/A1305/A130501/13261234/"
+  }
+]
