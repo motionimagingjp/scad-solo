@@ -61,12 +61,16 @@ const ALL_CANDIDATES: SpotCandidate[] = [
   ...yokohama,
 ] as SpotCandidate[];
 
-async function geocode(address: string, apiKey: string): Promise<{ lat: number; lng: number } | null> {
+type GeocodeResult = { ok: true; lat: number; lng: number } | { ok: false; status: string; message?: string };
+
+async function geocode(address: string, apiKey: string): Promise<GeocodeResult> {
   const url = `https://maps.googleapis.com/maps/api/geocode/json?address=${encodeURIComponent(address)}&key=${apiKey}`;
   const res = await fetch(url);
   const data = await res.json();
   const loc = data?.results?.[0]?.geometry?.location;
-  return loc ? { lat: loc.lat, lng: loc.lng } : null;
+  if (loc) return { ok: true, lat: loc.lat, lng: loc.lng };
+  // status(REQUEST_DENIED等)とerror_messageをそのまま返し、失敗原因をレスポンスから直接わかるようにする
+  return { ok: false, status: data?.status ?? `HTTP_${res.status}`, message: data?.error_message };
 }
 
 export async function GET(req: NextRequest) {
@@ -83,14 +87,20 @@ export async function GET(req: NextRequest) {
   const limit = Number(searchParams.get("limit") ?? String(ALL_CANDIDATES.length));
   const batch = ALL_CANDIDATES.slice(offset, offset + limit);
 
-  const results: { name: string; action: "created" | "updated" | "geocode_failed" }[] = [];
+  const results: {
+    name: string;
+    action: "created" | "updated" | "geocode_failed";
+    geocodeStatus?: string;
+    geocodeMessage?: string;
+  }[] = [];
 
   for (const candidate of batch) {
-    const coords = await geocode(candidate.address, apiKey);
-    if (!coords) {
-      results.push({ name: candidate.name, action: "geocode_failed" });
+    const geo = await geocode(candidate.address, apiKey);
+    if (!geo.ok) {
+      results.push({ name: candidate.name, action: "geocode_failed", geocodeStatus: geo.status, geocodeMessage: geo.message });
       continue;
     }
+    const coords = geo;
 
     const existing = await prisma.spot.findFirst({
       where: { name: candidate.name, address: candidate.address },
