@@ -4,7 +4,10 @@
     "address": "東京都立川市柴崎町2-2-5",
     "nearestStation": "立川駅",
     "tagline": "立川の名物立ち飲み。モチモチ皮の特大手作り餃子とキンキン生ビール",
-    "subCategories": ["立ち飲み", "ビール"],
+    "subCategories": [
+      "立ち飲み",
+      "ビール"
+    ],
     "hasCounterSeat": true,
     "senberoAvailable": true,
     "soloFriendliness": 10,
@@ -15,7 +18,9 @@
     "address": "東京都立川市錦町1-3-22",
     "nearestStation": "立川駅",
     "tagline": "朝引きもつ焼きと特製煮込み。カウンターで1本からサクッと呑める人気店",
-    "subCategories": ["ビール"],
+    "subCategories": [
+      "ビール"
+    ],
     "hasCounterSeat": true,
     "senberoAvailable": true,
     "soloFriendliness": 9,
@@ -26,7 +31,11 @@
     "address": "東京都立川市柴崎町2-1-6 1F",
     "nearestStation": "立川駅",
     "tagline": "立川の自家醸造クラフトビール。フレッシュな出来立てビールを醸造所で立ち呑み",
-    "subCategories": ["ビール", "立ち飲み", "女性ひとり歓迎"],
+    "subCategories": [
+      "ビール",
+      "立ち飲み",
+      "女性ひとり歓迎"
+    ],
     "hasCounterSeat": true,
     "senberoAvailable": false,
     "soloFriendliness": 9,
@@ -37,40 +46,23 @@
     "address": "東京都立川市曙町1-28-5",
     "nearestStation": "立川駅",
     "tagline": "立川を代表する蕎麦の名店。極上手打ち蕎麦と季節の小鉢で静かな一人蕎麦前",
-    "subCategories": ["日本酒"],
+    "subCategories": [
+      "日本酒"
+    ],
     "hasCounterSeat": true,
     "senberoAvailable": false,
     "soloFriendliness": 8,
     "sourceNote": "https://tabelog.com/tokyo/A1329/A132901/13005989/"
   },
   {
-    "name": "博多やさい串巻き 鳴門 立川店",
-    "address": "東京都立川市柴崎町3-4-14",
-    "nearestStation": "立川駅",
-    "tagline": "ヘルシーで鮮やかな博多野菜巻き串。女性一人でも入りやすい明るいカウンター",
-    "subCategories": ["ビール", "女性ひとり歓迎"],
-    "hasCounterSeat": true,
-    "senberoAvailable": false,
-    "soloFriendliness": 8,
-    "sourceNote": "https://tabelog.com/tokyo/A1329/A132901/13241234/"
-  },
-  {
-    "name": "ワインバル 八十郎 立川",
-    "address": "東京都立川市曙町2-7-19",
-    "nearestStation": "立川駅",
-    "tagline": "直輸入ワインと自家製シャルキュトリー。お一人様でも寛げるカジュアルバル",
-    "subCategories": ["ワイン", "女性ひとり歓迎"],
-    "hasCounterSeat": true,
-    "senberoAvailable": false,
-    "soloFriendliness": 8,
-    "sourceNote": "https://tabelog.com/tokyo/A1329/A132901/13171234/"
-  },
-  {
     "name": "比内地鶏専門店 鶏びあ 立川店",
     "address": "東京都立川市錦町2-1-3",
     "nearestStation": "立川駅",
     "tagline": "秋田直送の比内地鶏炭火焼き。極上串焼きと秋田の地酒をカウンターで堪能",
-    "subCategories": ["日本酒", "ビール"],
+    "subCategories": [
+      "日本酒",
+      "ビール"
+    ],
     "hasCounterSeat": true,
     "senberoAvailable": false,
     "soloFriendliness": 8,
@@ -81,7 +73,10 @@
     "address": "東京都立川市柴崎町2-1-4",
     "nearestStation": "立川駅",
     "tagline": "新鮮な朝引きモツとシャリキン。一人客率が高くサク呑みに最適な活気ある店",
-    "subCategories": ["立ち飲み", "ビール"],
+    "subCategories": [
+      "立ち飲み",
+      "ビール"
+    ],
     "hasCounterSeat": true,
     "senberoAvailable": true,
     "soloFriendliness": 9,
@@ -92,7 +87,9 @@
     "address": "東京都立川市曙町2-12-1",
     "nearestStation": "立川駅",
     "tagline": "市場直送の鮮魚と和食。一人前刺身盛り合わせと辛口地酒をゆったりカウンターで",
-    "subCategories": ["日本酒"],
+    "subCategories": [
+      "日本酒"
+    ],
     "hasCounterSeat": true,
     "senberoAvailable": false,
     "soloFriendliness": 8,
@@ -103,7 +100,9 @@
     "address": "東京都立川市錦町1-2-5 2F",
     "nearestStation": "立川駅",
     "tagline": "希少なシングルモルトウイスキーが豊富。一人静かに夜の一杯を楽しむ大人の隠れ家",
-    "subCategories": ["女性ひとり歓迎"],
+    "subCategories": [
+      "女性ひとり歓迎"
+    ],
     "hasCounterSeat": true,
     "senberoAvailable": false,
     "soloFriendliness": 8,
@@ -114,7 +113,10 @@
     "address": "東京都立川市柴崎町3-2-1",
     "nearestStation": "立川駅",
     "tagline": "名物の黒もつ煮込みと手作り惣菜。サクッと1,000円で呑める使い勝手抜群の立ち飲み",
-    "subCategories": ["立ち飲み", "ビール"],
+    "subCategories": [
+      "立ち飲み",
+      "ビール"
+    ],
     "hasCounterSeat": true,
     "senberoAvailable": true,
     "soloFriendliness": 9,
@@ -125,7 +127,10 @@
     "address": "東京都立川市曙町2-14-1",
     "nearestStation": "立川駅",
     "tagline": "本格窯焼きピッツァとグラスワイン。一人客でも入りやすい明るいオープンバル",
-    "subCategories": ["ワイン", "女性ひとり歓迎"],
+    "subCategories": [
+      "ワイン",
+      "女性ひとり歓迎"
+    ],
     "hasCounterSeat": true,
     "senberoAvailable": false,
     "soloFriendliness": 8,
@@ -136,7 +141,10 @@
     "address": "東京都立川市錦町1-1-24",
     "nearestStation": "立川駅",
     "tagline": "全国の地酒を立ち呑み価格で比較飲み。一人客が8割を占める日本酒天国",
-    "subCategories": ["立ち飲み", "日本酒"],
+    "subCategories": [
+      "立ち飲み",
+      "日本酒"
+    ],
     "hasCounterSeat": true,
     "senberoAvailable": true,
     "soloFriendliness": 10,
@@ -147,7 +155,10 @@
     "address": "東京都立川市柴崎町3-3-5",
     "nearestStation": "立川駅",
     "tagline": "豊洲直送の極上刺身を驚きの立ち飲み価格と1人前ポーションで贅沢に",
-    "subCategories": ["立ち飲み", "日本酒"],
+    "subCategories": [
+      "立ち飲み",
+      "日本酒"
+    ],
     "hasCounterSeat": true,
     "senberoAvailable": true,
     "soloFriendliness": 9,
@@ -158,7 +169,9 @@
     "address": "東京都立川市曙町2-10-3",
     "nearestStation": "立川駅",
     "tagline": "昭和レトロな空間が落ち着く大衆酒場。手作りの和惣菜とホッピーでサク飲み",
-    "subCategories": ["ビール"],
+    "subCategories": [
+      "ビール"
+    ],
     "hasCounterSeat": true,
     "senberoAvailable": true,
     "soloFriendliness": 9,

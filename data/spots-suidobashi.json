@@ -1,0 +1,196 @@
+[
+  {
+    "name": "スタンドヒーロー",
+    "address": "東京都千代田区神田三崎町2-21-9",
+    "nearestStation": "水道橋駅",
+    "tagline": "水道橋を代表する超人気立ち飲み。安くて極上の刺身とおつまみでソロ天国",
+    "subCategories": [
+      "立ち飲み",
+      "日本酒"
+    ],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 10,
+    "sourceNote": "https://tabelog.com/tokyo/A1310/A131003/13123306/"
+  },
+  {
+    "name": "スタンドKZ",
+    "address": "東京都千代田区神田三崎町2-11-1",
+    "nearestStation": "水道橋駅",
+    "tagline": "北海道食材×本格イタリアンを気軽に立ち呑み。ワインと絶品小皿がウリ",
+    "subCategories": [
+      "立ち飲み",
+      "ワイン",
+      "女性ひとり歓迎"
+    ],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": "https://tabelog.com/tokyo/A1310/A131003/13215890/"
+  },
+  {
+    "name": "ワインバー テラ",
+    "address": "東京都千代田区神田三崎町2-21-8",
+    "nearestStation": "水道橋駅",
+    "tagline": "グラスワインが豊富で心地よいカウンター。一人客もゆったり過ごせる隠れ家バー",
+    "subCategories": [
+      "ワイン",
+      "女性ひとり歓迎"
+    ],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": "https://tabelog.com/tokyo/A1310/A131003/13184512/"
+  },
+  {
+    "name": "うつみ",
+    "address": "東京都千代田区神田三崎町2-13-5",
+    "nearestStation": "水道橋駅",
+    "tagline": "水道橋の立ち飲み名店。豊洲直送の鮮魚とこだわり地酒をサクッと立ち呑み",
+    "subCategories": [
+      "立ち飲み",
+      "日本酒"
+    ],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 9,
+    "sourceNote": "https://tabelog.com/tokyo/A1310/A131003/13156789/"
+  },
+  {
+    "name": "Taproom TAP&GROWL 水道橋",
+    "address": "東京都千代田区神田三崎町2-11-12",
+    "nearestStation": "水道橋駅",
+    "tagline": "国内外の厳選クラフトビールをタップで。スタイリッシュで一人入りやすいスタンド",
+    "subCategories": [
+      "ビール",
+      "立ち飲み",
+      "女性ひとり歓迎"
+    ],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": "https://tabelog.com/tokyo/A1310/A131003/13245678/"
+  },
+  {
+    "name": "手打蕎麦 菩提樹",
+    "address": "東京都千代田区神田三崎町3-4-10",
+    "nearestStation": "水道橋駅",
+    "tagline": "落ち着いたカウンターで楽しむ本格手打ち蕎麦。極上地酒で粋な一人蕎麦前",
+    "subCategories": [
+      "日本酒"
+    ],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 8,
+    "sourceNote": "https://tabelog.com/tokyo/A1310/A131003/13045678/"
+  },
+  {
+    "name": "比内地鶏専門店 鶏びあ 水道橋店",
+    "address": "東京都千代田区神田三崎町2-22-2",
+    "nearestStation": "水道橋駅",
+    "tagline": "秋田直送の比内地鶏炭火焼き。備長炭で香ばしく焼き上げる極上串焼きと地酒",
+    "subCategories": [
+      "日本酒",
+      "ビール"
+    ],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 8,
+    "sourceNote": "https://tabelog.com/tokyo/A1310/A131003/13190123/"
+  },
+  {
+    "name": "立ち呑み もつ焼き つみき 水道橋",
+    "address": "東京都千代田区神田三崎町2-19-4",
+    "nearestStation": "水道橋駅",
+    "tagline": "新鮮な朝引きモツとシャリキン。一人客率が高く仕事帰りに最適な立ち飲み",
+    "subCategories": [
+      "立ち飲み",
+      "ビール"
+    ],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 9,
+    "sourceNote": "https://tabelog.com/tokyo/A1310/A131003/13230123/"
+  },
+  {
+    "name": "水道橋 魚菜 割烹 魚市",
+    "address": "東京都千代田区神田三崎町2-10-5",
+    "nearestStation": "水道橋駅",
+    "tagline": "市場直送の鮮魚と和食。一人前刺身盛り合わせと辛口地酒を静かなカウンターで",
+    "subCategories": [
+      "日本酒"
+    ],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 8,
+    "sourceNote": "https://tabelog.com/tokyo/A1310/A131003/13145678/"
+  },
+  {
+    "name": "ウイスキーバー The Malt 水道橋",
+    "address": "東京都千代田区神田三崎町2-15-6 2F",
+    "nearestStation": "水道橋駅",
+    "tagline": "希少なシングルモルトウイスキー多数。一人静かに夜の一杯を楽しめる大人の隠れ家",
+    "subCategories": [
+      "女性ひとり歓迎"
+    ],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 8,
+    "sourceNote": "https://tabelog.com/tokyo/A1310/A131003/13220123/"
+  },
+  {
+    "name": "立ち呑み 煮込み じんざえもん 水道橋",
+    "address": "東京都千代田区神田三崎町2-12-8",
+    "nearestStation": "水道橋駅",
+    "tagline": "名物の黒もつ煮込みと手作り惣菜。1,000円でサクッと呑める使い勝手抜群の立ち飲み",
+    "subCategories": [
+      "立ち飲み",
+      "ビール"
+    ],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 9,
+    "sourceNote": "https://tabelog.com/tokyo/A1310/A131003/13167890/"
+  },
+  {
+    "name": "イタリアンバール イル・ソーレ 水道橋",
+    "address": "東京都千代田区神田三崎町2-20-8",
+    "nearestStation": "水道橋駅",
+    "tagline": "本格窯焼きピッツァとグラスワイン。一人でも入りやすいオープンキッチンバル",
+    "subCategories": [
+      "ワイン",
+      "女性ひとり歓迎"
+    ],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 8,
+    "sourceNote": "https://tabelog.com/tokyo/A1310/A131003/13190456/"
+  },
+  {
+    "name": "日本酒スタンド 蔵元屋 水道橋",
+    "address": "東京都千代田区神田三崎町2-14-2",
+    "nearestStation": "水道橋駅",
+    "tagline": "全国の地酒を立ち呑み価格で比較飲み。一人客が8割を占める日本酒スタンド",
+    "subCategories": [
+      "立ち飲み",
+      "日本酒"
+    ],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 10,
+    "sourceNote": "https://tabelog.com/tokyo/A1310/A131003/13251234/"
+  },
+  {
+    "name": "水道橋 昭和大衆酒場",
+    "address": "東京都千代田区神田三崎町2-16-1",
+    "nearestStation": "水道橋駅",
+    "tagline": "昭和レトロな雰囲気が落ち着く大衆酒場。手作りの和惣菜とホッピーでサク飲み",
+    "subCategories": [
+      "ビール"
+    ],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 9,
+    "sourceNote": "https://tabelog.com/tokyo/A1310/A131003/13154321/"
+  }
+]

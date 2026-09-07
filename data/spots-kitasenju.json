@@ -4,7 +4,10 @@
     "address": "東京都足立区千住2-12",
     "nearestStation": "北千住駅",
     "tagline": "立ち飲みの概念を覆す割烹級割烹立ち飲み。極上の割烹料理を立ち呑み価格で",
-    "subCategories": ["立ち飲み", "日本酒"],
+    "subCategories": [
+      "立ち飲み",
+      "日本酒"
+    ],
     "hasCounterSeat": true,
     "senberoAvailable": true,
     "soloFriendliness": 10,
@@ -15,7 +18,9 @@
     "address": "東京都足立区千住2-29",
     "nearestStation": "北千住駅",
     "tagline": "新鮮すぎる朝引きもつ焼きとモツ煮込み。連日一人客で賑わう北千住の名物店",
-    "subCategories": ["ビール"],
+    "subCategories": [
+      "ビール"
+    ],
     "hasCounterSeat": true,
     "senberoAvailable": true,
     "soloFriendliness": 9,
@@ -26,7 +31,10 @@
     "address": "東京都足立区千住2-62",
     "nearestStation": "北千住駅",
     "tagline": "昭和創業の立ち食い串揚げ老舗。サクサクの関西風串カツを1本からサク飲み",
-    "subCategories": ["立ち飲み", "ビール"],
+    "subCategories": [
+      "立ち飲み",
+      "ビール"
+    ],
     "hasCounterSeat": true,
     "senberoAvailable": true,
     "soloFriendliness": 9,
@@ -37,7 +45,11 @@
     "address": "東京都足立区千住2-62 1F",
     "nearestStation": "北千住駅",
     "tagline": "世界中のクラフトビールがズラリ。角打ちスタイルで極上の1杯を立ち呑み",
-    "subCategories": ["ビール", "立ち飲み", "女性ひとり歓迎"],
+    "subCategories": [
+      "ビール",
+      "立ち飲み",
+      "女性ひとり歓迎"
+    ],
     "hasCounterSeat": true,
     "senberoAvailable": false,
     "soloFriendliness": 9,
@@ -48,7 +60,9 @@
     "address": "東京都足立区千住3-35",
     "nearestStation": "北千住駅",
     "tagline": "丁寧な和食小皿と全国の厳選地酒。カウンターで静かに呑める大人の隠れ家",
-    "subCategories": ["日本酒"],
+    "subCategories": [
+      "日本酒"
+    ],
     "hasCounterSeat": true,
     "senberoAvailable": false,
     "soloFriendliness": 8,
@@ -59,29 +73,22 @@
     "address": "東京都足立区千住2-31",
     "nearestStation": "北千住駅",
     "tagline": "市場直送の極上刺身盛り合わせ。お一人様ポーションで本格魚介を堪能",
-    "subCategories": ["日本酒"],
+    "subCategories": [
+      "日本酒"
+    ],
     "hasCounterSeat": true,
     "senberoAvailable": false,
     "soloFriendliness": 8,
     "sourceNote": "https://tabelog.com/tokyo/A1324/A132402/13210987/"
   },
   {
-    "name": "博多やさい串巻き 鳴門 北千住店",
-    "address": "東京都足立区千住3-74",
-    "nearestStation": "北千住駅",
-    "tagline": "ヘルシーで見た目も鮮やかな野菜巻き串。一人でも入りやすい明るいカウンター",
-    "subCategories": ["ビール", "女性ひとり歓迎"],
-    "hasCounterSeat": true,
-    "senberoAvailable": false,
-    "soloFriendliness": 8,
-    "sourceNote": "https://tabelog.com/tokyo/A1324/A132402/13241234/"
-  },
-  {
     "name": "手打蕎麦 柏屋",
     "address": "東京都足立区千住2-32",
     "nearestStation": "北千住駅",
     "tagline": "香りの高い手打ち蕎麦と季節の天ぷら。銘酒とともに粋な一人蕎麦前を",
-    "subCategories": ["日本酒"],
+    "subCategories": [
+      "日本酒"
+    ],
     "hasCounterSeat": true,
     "senberoAvailable": false,
     "soloFriendliness": 8,
@@ -92,29 +99,24 @@
     "address": "東京都足立区千住1-32-2",
     "nearestStation": "北千住駅",
     "tagline": "名物の黒もつ煮込みと激安小鉢。サクッと1,000円で呑める下町の立ち飲み処",
-    "subCategories": ["立ち飲み", "ビール"],
+    "subCategories": [
+      "立ち飲み",
+      "ビール"
+    ],
     "hasCounterSeat": true,
     "senberoAvailable": true,
     "soloFriendliness": 9,
     "sourceNote": "https://tabelog.com/tokyo/A1324/A132402/13167890/"
   },
   {
-    "name": "ワインバル 八十郎 北千住",
-    "address": "東京都足立区千住3-77",
-    "nearestStation": "北千住駅",
-    "tagline": "蔵直輸入のワインと生ハム・シャルキュトリー。女性お一人様にも好評のバル",
-    "subCategories": ["ワイン", "女性ひとり歓迎"],
-    "hasCounterSeat": true,
-    "senberoAvailable": false,
-    "soloFriendliness": 8,
-    "sourceNote": "https://tabelog.com/tokyo/A1324/A132402/13171234/"
-  },
-  {
     "name": "比内地鶏と旬菜 鶏三昧",
     "address": "東京都足立区千住2-39",
     "nearestStation": "北千住駅",
     "tagline": "秋田比内地鶏の香ばしい炭火串焼き。カウンターで楽しむ極上の鶏料理",
-    "subCategories": ["日本酒", "ビール"],
+    "subCategories": [
+      "日本酒",
+      "ビール"
+    ],
     "hasCounterSeat": true,
     "senberoAvailable": false,
     "soloFriendliness": 8,
@@ -125,7 +127,9 @@
     "address": "東京都足立区千住2-20 2F",
     "nearestStation": "北千住駅",
     "tagline": "希少なシングルモルトが揃う隠れ家バー。静かに自分時間と向き合える場所",
-    "subCategories": ["女性ひとり歓迎"],
+    "subCategories": [
+      "女性ひとり歓迎"
+    ],
     "hasCounterSeat": true,
     "senberoAvailable": false,
     "soloFriendliness": 8,
@@ -136,7 +140,10 @@
     "address": "東京都足立区千住1-34-5",
     "nearestStation": "北千住駅",
     "tagline": "大ぶりのもつ焼きが1本から。ホッピー片手にサクッと呑める元気な立ち飲み",
-    "subCategories": ["立ち飲み", "ビール"],
+    "subCategories": [
+      "立ち飲み",
+      "ビール"
+    ],
     "hasCounterSeat": true,
     "senberoAvailable": true,
     "soloFriendliness": 9,
@@ -147,7 +154,10 @@
     "address": "東京都足立区千住3-33",
     "nearestStation": "北千住駅",
     "tagline": "気軽に立ち寄れるイタリアンバール。小皿料理とグラスワインでサク呑み",
-    "subCategories": ["ワイン", "女性ひとり歓迎"],
+    "subCategories": [
+      "ワイン",
+      "女性ひとり歓迎"
+    ],
     "hasCounterSeat": true,
     "senberoAvailable": false,
     "soloFriendliness": 8,
@@ -158,7 +168,10 @@
     "address": "東京都足立区千住2-18",
     "nearestStation": "北千住駅",
     "tagline": "全国の地酒を立ち呑み価格で飲み比べ。一人客が8割を占める日本酒天国",
-    "subCategories": ["立ち飲み", "日本酒"],
+    "subCategories": [
+      "立ち飲み",
+      "日本酒"
+    ],
     "hasCounterSeat": true,
     "senberoAvailable": true,
     "soloFriendliness": 10,
