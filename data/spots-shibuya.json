@@ -1,0 +1,167 @@
+[
+  {
+    "name": "209スタンド",
+    "address": "東京都渋谷区道玄坂2-28-1 椎津ビル2F",
+    "nearestStation": "渋谷駅",
+    "tagline": "自然派ワイン100種と本格フレンチ小皿を一人サイズで楽しめるバル",
+    "subCategories": ["ワイン", "女性ひとり歓迎"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": "https://bimi.jorudan.co.jp/topics/72857.html"
+  },
+  {
+    "name": "青森の郷土料理 らせら",
+    "address": "東京都渋谷区道玄坂1-20-12 MT道玄坂B1F",
+    "nearestStation": "渋谷駅",
+    "tagline": "青森の地酒とイカゴロ焼き。アットホームで心が和むご当地居酒屋",
+    "subCategories": ["日本酒"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 8,
+    "sourceNote": "https://bimi.jorudan.co.jp/topics/72857.html"
+  },
+  {
+    "name": "ひない小町 渋谷店",
+    "address": "東京都渋谷区道玄坂1-15-3 プリメーラ道玄坂1F",
+    "nearestStation": "渋谷駅",
+    "tagline": "秋田比内地鶏の極上焼き鳥と地酒。カウンターで味わう究極の秋田料理",
+    "subCategories": ["日本酒"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 8,
+    "sourceNote": "https://tabelog.com/tokyo/A1303/A130301/13010620/"
+  },
+  {
+    "name": "博多串焼き・やさい巻 串むすび 渋谷店",
+    "address": "東京都渋谷区道玄坂2-29-18",
+    "nearestStation": "渋谷駅",
+    "tagline": "シャキシャキの野菜巻きと博多串焼き。カウンターでサクッと一人呑み",
+    "subCategories": ["ビール"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 8,
+    "sourceNote": "https://tabelog.com/tokyo/A1303/A130301/13175110/"
+  },
+  {
+    "name": "Goodbeer Faucets",
+    "address": "東京都渋谷区松濤1-29-1 クロスロードビル2F",
+    "nearestStation": "渋谷駅",
+    "tagline": "常時40種以上の国内外クラフトビールが楽しめる極上タップルーム",
+    "subCategories": ["ビール", "立ち飲み", "女性ひとり歓迎"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": "https://tabelog.com/tokyo/A1303/A130301/13134608/"
+  },
+  {
+    "name": "恋文酒場 かっぱ 渋谷駅前店",
+    "address": "東京都渋谷区道玄坂1-3-5",
+    "nearestStation": "渋谷駅",
+    "tagline": "駅前0次会の代表格。サクッと立ち呑める気軽さと白レバームースが名物",
+    "subCategories": ["立ち飲み", "ワイン"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 9,
+    "sourceNote": "https://note.com/gourmania2020/n/n6e963832791d"
+  },
+  {
+    "name": "ONDO",
+    "address": "東京都渋谷区渋谷3-21-3 渋谷ストリーム1F",
+    "nearestStation": "渋谷駅",
+    "tagline": "渋谷ストリーム直結。炭火の音をBGMにサクッと呑める炉端立ち飲み",
+    "subCategories": ["立ち飲み", "日本酒"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": "https://note.com/gourmania2020/n/n6e963832791d"
+  },
+  {
+    "name": "酒場 てづか",
+    "address": "東京都渋谷区道玄坂1-11-1 第22興和ビル1F",
+    "nearestStation": "渋谷駅",
+    "tagline": "外から中の様子が見えて安心。スタイリッシュなカウンターで楽しむ創作酒場",
+    "subCategories": ["女性ひとり歓迎", "ビール"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 8,
+    "sourceNote": "https://rurubu.jp/andmore/article/10181"
+  },
+  {
+    "name": "富士屋本店",
+    "address": "東京都渋谷区桜丘町16-10",
+    "nearestStation": "渋谷駅",
+    "tagline": "渋谷の立ち飲み聖地。本格洋食小皿と豊富なワインをサクッと楽しむ",
+    "subCategories": ["立ち飲み", "ワイン", "日本酒"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 9,
+    "sourceNote": "https://tabelog.com/tokyo/A1303/A130301/13264627/"
+  },
+  {
+    "name": "串亭 渋谷ストリーム",
+    "address": "東京都渋谷区渋谷3-21-3 渋谷ストリーム3F",
+    "nearestStation": "渋谷駅",
+    "tagline": "目の前で1本ずつ揚がる贅沢串揚げ。一人おまかせコースが人気のカウンター",
+    "subCategories": ["ビール", "女性ひとり歓迎"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 8,
+    "sourceNote": "https://bimi.jorudan.co.jp/topics/72857.html"
+  },
+  {
+    "name": "神山",
+    "address": "東京都渋谷区神山町10-8",
+    "nearestStation": "渋谷駅",
+    "tagline": "奥渋谷の落ち着く手打ち蕎麦屋。旬の絶品つまみと日本酒でじっくり蕎麦前",
+    "subCategories": ["日本酒"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 8,
+    "sourceNote": "https://bimi.jorudan.co.jp/topics/72857.html"
+  },
+  {
+    "name": "やきとん ささや",
+    "address": "東京都渋谷区道玄坂2-7-3",
+    "nearestStation": "渋谷駅",
+    "tagline": "道玄坂すぐのカウンター専門やきとん。1本から頼める本格炭火串焼き",
+    "subCategories": ["ビール"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 9,
+    "sourceNote": "https://tabelog.com/tokyo/A1303/A130301/13125211/"
+  },
+  {
+    "name": "ワインバー ぐりとぐら",
+    "address": "東京都渋谷区宇田川町33-8",
+    "nearestStation": "渋谷駅",
+    "tagline": "グラスワインが豊富で一品料理も丁寧。女性お一人様も多い隠れ家バー",
+    "subCategories": ["ワイン", "女性ひとり歓迎"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 8,
+    "sourceNote": "https://tabelog.com/tokyo/A1303/A130301/13110901/"
+  },
+  {
+    "name": "ビストロ ミートマン 渋谷",
+    "address": "東京都渋谷区渋谷1-5-6",
+    "nearestStation": "渋谷駅",
+    "tagline": "活気あるオープンキッチンカウンター。1人前肉料理とワインがウリ",
+    "subCategories": ["ワイン", "女性ひとり歓迎"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 8,
+    "sourceNote": "https://tabelog.com/tokyo/A1303/A130301/13156689/"
+  },
+  {
+    "name": "立呑ひよし",
+    "address": "東京都渋谷区道玄坂2-20-1",
+    "nearestStation": "渋谷駅",
+    "tagline": "道玄坂の個人経営老舗立ち飲み。安くて旨いアテと昭和レトロな空間",
+    "subCategories": ["立ち飲み", "ビール"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 9,
+    "sourceNote": "https://tabelog.com/tokyo/A1303/A130301/13049100/"
+  }
+]

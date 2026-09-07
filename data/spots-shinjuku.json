@@ -1,0 +1,167 @@
+[
+  {
+    "name": "ベルゴロド(BERG)",
+    "address": "東京都新宿区新宿3-38-1 ルミネエスト新宿 B1F",
+    "nearestStation": "新宿駅",
+    "tagline": "新宿東口改札スグ。クラフトビールと職人ソーセージが味わえる名店ビアスタンド",
+    "subCategories": ["立ち飲み", "ビール", "女性ひとり歓迎"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 10,
+    "sourceNote": "https://tabelog.com/tokyo/A1304/A130401/13000852/"
+  },
+  {
+    "name": "うなぎ 串焼き カブト",
+    "address": "東京都新宿区西新宿1-2-11 新宿思い出横丁",
+    "nearestStation": "新宿駅",
+    "tagline": "昭和創業のうなぎ串焼き専門店。香ばしい部位串と酒をカウンターで嗜む",
+    "subCategories": ["日本酒", "ビール"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": "https://tabelog.com/tokyo/A1304/A130401/13000848/"
+  },
+  {
+    "name": "博多劇場 新宿店",
+    "address": "東京都新宿区西新宿1-12-6 西新宿126ビル 1F",
+    "nearestStation": "新宿駅",
+    "tagline": "パリッとした鉄鍋一口餃子と博多串焼き。カウンターでサクッと呑める博多屋台流",
+    "subCategories": ["ビール"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 8,
+    "sourceNote": "https://tabelog.com/tokyo/A1304/A130401/13184288/"
+  },
+  {
+    "name": "YONA YONA BEER WORKS 新宿東口店",
+    "address": "東京都新宿区新宿3-28-10 ヒューマックスパビリオン新宿東口 B1F",
+    "nearestStation": "新宿駅",
+    "tagline": "ヤッホーブルーイング公式。出来立てよなよなエールとローストチキンをカウンターで",
+    "subCategories": ["ビール", "女性ひとり歓迎"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 8,
+    "sourceNote": "https://tabelog.com/tokyo/A1304/A130401/13205796/"
+  },
+  {
+    "name": "日本酒バル 晴ル",
+    "address": "東京都新宿区西新宿7-16-2 1F",
+    "nearestStation": "新宿駅",
+    "tagline": "全国の厳選日本酒と丁寧な和食小皿。おひとり様に優しい落ち着いた隠れ家",
+    "subCategories": ["日本酒", "女性ひとり歓迎"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": "https://tabelog.com/tokyo/A1304/A130401/13164998/"
+  },
+  {
+    "name": "立呑み もつ焼 ウッチャン 西新宿店",
+    "address": "東京都新宿区西新宿1-2-7 思い出横丁",
+    "nearestStation": "新宿駅",
+    "tagline": "思い出横丁の行列店。新鮮すぎる朝引きもつ焼きとキンキンに冷えたシャリキン",
+    "subCategories": ["立ち飲み", "ビール"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 9,
+    "sourceNote": "https://tabelog.com/tokyo/A1304/A130401/13044431/"
+  },
+  {
+    "name": "手打蕎麦 渡邊",
+    "address": "東京都新宿区西新宿1-12-10",
+    "nearestStation": "新宿駅",
+    "tagline": "西新宿の老舗蕎麦屋。季節の旬菜と天ぷら、極上地酒でじっくり蕎麦前を満喫",
+    "subCategories": ["日本酒"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 8,
+    "sourceNote": "https://tabelog.com/tokyo/A1304/A130401/13000788/"
+  },
+  {
+    "name": "ワインバー エスカルゴ",
+    "address": "東京都新宿区新宿3-11-6 エビスビル 1F",
+    "nearestStation": "新宿駅",
+    "tagline": "新宿三丁目の本格ワインバー。グラスで楽しめるグラスワインと本格フレンチ小皿",
+    "subCategories": ["ワイン", "女性ひとり歓迎"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": "https://tabelog.com/tokyo/A1304/A130401/13142205/"
+  },
+  {
+    "name": "宮崎県日向市恵比寿物産館 居酒屋 日向",
+    "address": "東京都新宿区新宿3-20-8 渡辺ビル 2F",
+    "nearestStation": "新宿駅",
+    "tagline": "宮崎直送の地鶏炭火焼きとチキン南蛮。本場焼酎をカウンターで味わすご当地酒場",
+    "subCategories": ["ビール"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 8,
+    "sourceNote": "https://tabelog.com/tokyo/A1304/A130401/13040989/"
+  },
+  {
+    "name": "Craft Beer Server Land",
+    "address": "東京都新宿区西新宿7-9-15 ダイカンプラザビジネス清田ビル B1F",
+    "nearestStation": "新宿駅",
+    "tagline": "日本全国のクラフトビールがズラリ。一人でも入りやすい地下のビール専門店",
+    "subCategories": ["ビール", "女性ひとり歓迎"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": "https://tabelog.com/tokyo/A1304/A130401/13158022/"
+  },
+  {
+    "name": "やきとん ささもと",
+    "address": "東京都新宿区西新宿1-2-7 思い出横丁",
+    "nearestStation": "新宿駅",
+    "tagline": "煮込みと串焼きの超名店。秘伝のタレで煮込んだ串煮込みを赤ワインで流し込む",
+    "subCategories": ["ワイン", "立ち飲み"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 9,
+    "sourceNote": "https://tabelog.com/tokyo/A1304/A130401/13000839/"
+  },
+  {
+    "name": "沖縄料理 いちゃりば",
+    "address": "東京都新宿区新宿3-34-11 ピースビル B1F",
+    "nearestStation": "新宿駅",
+    "tagline": "本格泡盛とラフテー・海ぶどう。一人でサクッと沖縄気分になれる気軽なカウンター",
+    "subCategories": ["ビール"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 8,
+    "sourceNote": "https://tabelog.com/tokyo/A1304/A130401/13123890/"
+  },
+  {
+    "name": "Bar&Dining MASH BROS",
+    "address": "東京都新宿区歌舞伎町1-1-5 新宿ゴールデン街 G2通り 2F",
+    "nearestStation": "新宿駅",
+    "tagline": "ゴールデン街の一角。ウイスキーとクラフトジンが充実したアットホームなバー",
+    "subCategories": ["女性ひとり歓迎"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 8,
+    "sourceNote": "https://tabelog.com/tokyo/A1304/A130401/13239821/"
+  },
+  {
+    "name": "築地銀だこ ハイボール酒場 新宿東口店",
+    "address": "東京都新宿区新宿3-21-4",
+    "nearestStation": "新宿駅",
+    "tagline": "焼きたてアツアツのたこ焼きと強炭酸ハイボール。立ち飲みエリアでサク呑み",
+    "subCategories": ["立ち飲み", "ビール"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 9,
+    "sourceNote": "https://tabelog.com/tokyo/A1304/A130401/13110023/"
+  },
+  {
+    "name": "立ち飲み まぁちゃん",
+    "address": "東京都新宿区西新宿7-13-7 タカギビル 1F",
+    "nearestStation": "新宿駅",
+    "tagline": "西新宿の路地裏。安くて手作りのアテが揃うアットホームな立ち飲み居酒屋",
+    "subCategories": ["立ち飲み", "日本酒"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 9,
+    "sourceNote": "https://tabelog.com/tokyo/A1304/A130401/13129801/"
+  }
+]
