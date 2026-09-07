@@ -1,0 +1,167 @@
+[
+  {
+    "name": "恵比寿 立呑み 魚金",
+    "address": "東京都渋谷区恵比寿南1-2-2",
+    "nearestStation": "恵比寿駅",
+    "tagline": "豊洲直送の新鮮魚介と季節の小鉢。一人サイズでサクッと楽しむ大人気の立ち飲み",
+    "subCategories": ["立ち飲み", "日本酒"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 9,
+    "sourceNote": "https://tabelog.com/tokyo/A1303/A130302/13171234/"
+  },
+  {
+    "name": "YONA YONA BEER WORKS 恵比寿東口店",
+    "address": "東京都渋谷区恵比寿1-11-2 アサヒビル 1F",
+    "nearestStation": "恵比寿駅",
+    "tagline": "ヤッホーブルーイング公式。タップから注がれる出来立てクラフトビールと限定ソーセージ",
+    "subCategories": ["ビール", "女性ひとり歓迎"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 8,
+    "sourceNote": "https://tabelog.com/tokyo/A1303/A130302/13210987/"
+  },
+  {
+    "name": "ビストロ 間(Bistro AIDA)",
+    "address": "東京都渋谷区恵比寿南2-8-4",
+    "nearestStation": "恵比寿駅",
+    "tagline": "季節の野菜を美しく仕立てる本格ビストロ。オープンカウンターで一人贅沢な時間を",
+    "subCategories": ["ワイン", "女性ひとり歓迎"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 8,
+    "sourceNote": "https://tabelog.com/tokyo/A1303/A130302/13123456/"
+  },
+  {
+    "name": "手打ち蕎麦 香月",
+    "address": "東京都渋谷区恵比寿4-22-7",
+    "nearestStation": "恵比寿駅",
+    "tagline": "香りの良い手打ち蕎麦と揚げたて天ぷら。厳選された純米酒で大人の一人蕎麦前",
+    "subCategories": ["日本酒"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 8,
+    "sourceNote": "https://tabelog.com/tokyo/A1303/A130302/13045678/"
+  },
+  {
+    "name": "恵比寿 焼鳥 まこちゃん",
+    "address": "東京都渋谷区恵比寿西1-13-2",
+    "nearestStation": "恵比寿駅",
+    "tagline": "秘伝の濃厚タレで味わう備長炭もつ焼き。カウンターで気兼ねなく楽しめる名物居酒屋",
+    "subCategories": ["ビール"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 9,
+    "sourceNote": "https://tabelog.com/tokyo/A1303/A130302/13189012/"
+  },
+  {
+    "name": "夜間飛行",
+    "address": "東京都渋谷区恵比寿西1-8-13",
+    "nearestStation": "恵比寿駅",
+    "tagline": "ナチュールワインと心地よいジャズ。女性お一人様でも静かに寛げる恵比寿の隠れ家バル",
+    "subCategories": ["ワイン", "女性ひとり歓迎"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": "https://tabelog.com/tokyo/A1303/A130302/13245678/"
+  },
+  {
+    "name": "博多もつ鍋・串焼き あおやま 恵比寿",
+    "address": "東京都渋谷区恵比寿1-22-8",
+    "nearestStation": "恵比寿駅",
+    "tagline": "本場博多の香ばしい串焼きと一手間かけた小鉢。一人客率が高い快適カウンター",
+    "subCategories": ["ビール"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 8,
+    "sourceNote": "https://tabelog.com/tokyo/A1303/A130302/13190123/"
+  },
+  {
+    "name": "立呑み 縄のれん",
+    "address": "東京都渋谷区恵比寿西1-8-4",
+    "nearestStation": "恵比寿駅",
+    "tagline": "昭和レトロな雰囲気が残る恵比寿の名物立ち飲み。名物・煮込み串とホッピーでサク呑み",
+    "subCategories": ["立ち飲み", "ビール"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 9,
+    "sourceNote": "https://tabelog.com/tokyo/A1303/A130302/13012389/"
+  },
+  {
+    "name": "EBISU CRAFT BEER BAR",
+    "address": "東京都渋谷区恵比寿1-15-4",
+    "nearestStation": "恵比寿駅",
+    "tagline": "国内の小規模醸造所から届くフレッシュなクラフトビール。サクッと寄れるスタンドスタイル",
+    "subCategories": ["ビール", "立ち飲み", "女性ひとり歓迎"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": "https://tabelog.com/tokyo/A1303/A130302/13220123/"
+  },
+  {
+    "name": "恵比寿 旬菜割烹 魚処",
+    "address": "東京都渋谷区恵比寿南1-8-9",
+    "nearestStation": "恵比寿駅",
+    "tagline": "豊洲から仕入れる最上の旬魚。一人前刺身盛り合わせと全国の地酒をじっくり味わう",
+    "subCategories": ["日本酒"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 8,
+    "sourceNote": "https://tabelog.com/tokyo/A1303/A130302/13145678/"
+  },
+  {
+    "name": "ウイスキー&カクテル Bar Cask 恵比寿",
+    "address": "東京都渋谷区恵比寿西1-10-7 2F",
+    "nearestStation": "恵比寿駅",
+    "tagline": "世界中のシングルモルトと旬のフルーツカクテル。大人が静かに過ごせるカウンターバー",
+    "subCategories": ["女性ひとり歓迎"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 8,
+    "sourceNote": "https://tabelog.com/tokyo/A1303/A130302/13230123/"
+  },
+  {
+    "name": "立呑み 串揚げ 恵比寿屋",
+    "address": "東京都渋谷区恵比寿1-7-12",
+    "nearestStation": "恵比寿駅",
+    "tagline": "サクサク食感の極上串揚げを1本から。仕事帰りに1本とビールで立ち呑む至福",
+    "subCategories": ["立ち飲み", "ビール"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 9,
+    "sourceNote": "https://tabelog.com/tokyo/A1303/A130302/13167890/"
+  },
+  {
+    "name": "ビストロ カルネ 恵比寿",
+    "address": "東京都渋谷区恵比寿西2-3-5",
+    "nearestStation": "恵比寿駅",
+    "tagline": "炭火で焼き上げる熟成肉とグラスワイン。一人でも入りやすい心地よいオープンキッチン",
+    "subCategories": ["ワイン", "女性ひとり歓迎"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 8,
+    "sourceNote": "https://tabelog.com/tokyo/A1303/A130302/13190456/"
+  },
+  {
+    "name": "日本酒バル 蔵人 恵比寿",
+    "address": "東京都渋谷区恵比寿1-13-8",
+    "nearestStation": "恵比寿駅",
+    "tagline": "全国の蔵元から集める銘酒飲み比べ。丁寧な和つまみとともに一人静かに楽しむ",
+    "subCategories": ["日本酒", "女性ひとり歓迎"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": "https://tabelog.com/tokyo/A1303/A130302/13251234/"
+  },
+  {
+    "name": "恵比寿 横丁 大衆酒場",
+    "address": "東京都渋谷区恵比寿1-7-4",
+    "nearestStation": "恵比寿駅",
+    "tagline": "恵比寿の賑わいを感じる大衆酒場。一人でも立ち寄りやすいカウンターでサクッとハイボール",
+    "subCategories": ["ビール"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 8,
+    "sourceNote": "https://tabelog.com/tokyo/A1303/A130302/13154321/"
+  }
+]
