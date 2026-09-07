@@ -3,7 +3,7 @@ import { PrismaClient, type Category } from "@prisma/client";
 const prisma = new PrismaClient();
 
 // 動作確認用のダミー店舗。実在の店ではないため、名前は記号のままにしてある。
-// ルーレットの抽選と場所切り替えを体感できるよう、渋谷・池袋の2エリアに分けて配置する。
+// 距離順の絞り込みと場所切り替えを体感できるよう、渋谷・池袋の2エリアに分けて配置する。
 // 実店舗データが揃い次第、ここは丸ごと差し替える。
 
 type DemoSpot = {

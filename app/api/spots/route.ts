@@ -6,7 +6,7 @@ import { prisma } from "@/lib/prisma";
 // カウンター席・せんべろはSpotの専用フィールド、それ以外の条件(立ち飲み・日本酒・
 // ワイン・カラオケ等)は subCategories のタグとして扱う。
 // UIに出すフィルターは必ずここで実際に効くものだけにする(押しても効かない飾りを作らない)。
-// category を指定すると大分類で絞る(ソロ飲みルーレットは SOLO_NOMI だけを対象にする)。
+// category を指定すると大分類で絞る(「今夜の3軒」は SOLO_NOMI だけを対象にする)。
 
 // DB(シンガポール)と同じリージョンで動かす
 export const preferredRegion = "sin1";
