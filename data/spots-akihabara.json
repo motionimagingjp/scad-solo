@@ -1,0 +1,167 @@
+[
+  {
+    "name": "立ち呑み もつ焼き つみき 秋葉原店",
+    "address": "東京都千代田区神田佐久間町2-11",
+    "nearestStation": "秋葉原駅",
+    "tagline": "秋葉原を代表する立ち飲みの名店。新鮮な朝引きもつ焼きとキンキン生ビール",
+    "subCategories": ["立ち飲み", "ビール"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 10,
+    "sourceNote": "https://tabelog.com/tokyo/A1310/A131001/13182109/"
+  },
+  {
+    "name": "常陸野ブルーイング 秋葉原",
+    "address": "東京都千代田区神田花岡町1-1 mAAch ecute 神田万世橋 1F",
+    "nearestStation": "秋葉原駅",
+    "tagline": "木内酒造直営。神田川沿いのロケーションで味わう極上ネストビール",
+    "subCategories": ["ビール", "立ち飲み", "女性ひとり歓迎"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": "https://tabelog.com/tokyo/A1310/A131001/13156890/"
+  },
+  {
+    "name": "やきとん やまちゃん",
+    "address": "東京都千代田区神田佐久間町3-1",
+    "nearestStation": "秋葉原駅",
+    "tagline": "昭和レトロな大衆立ち飲み。名物の味噌もつ煮込みと大ぶり串焼きでせんべろ",
+    "subCategories": ["立ち飲み", "ビール"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 9,
+    "sourceNote": "https://tabelog.com/tokyo/A1310/A131001/13123891/"
+  },
+  {
+    "name": "旬鮮和食 匠 秋葉原",
+    "address": "東京都千代田区神田松永町17",
+    "nearestStation": "秋葉原駅",
+    "tagline": "全国から届く銘酒と旬の鮮魚。一人でじっくり味わえる落ち着いた和食カウンター",
+    "subCategories": ["日本酒"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 8,
+    "sourceNote": "https://tabelog.com/tokyo/A1310/A131001/13145678/"
+  },
+  {
+    "name": "立呑み 串揚げ 兆",
+    "address": "東京都千代田区神田佐久間町1-14",
+    "nearestStation": "秋葉原駅",
+    "tagline": "サクサクの揚げたて串揚げを1本から。仕事帰りにサクッと寄れる高架下立ち飲み",
+    "subCategories": ["立ち飲み", "ビール"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 9,
+    "sourceNote": "https://tabelog.com/tokyo/A1310/A131001/13160912/"
+  },
+  {
+    "name": "ワインバル 八十郎 秋葉原",
+    "address": "東京都千代田区神田練塀町8-2",
+    "nearestStation": "秋葉原駅",
+    "tagline": "自社輸入のこだわりワインと自家製ソーセージ。女性一人でも入りやすいバル",
+    "subCategories": ["ワイン", "女性ひとり歓迎"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 8,
+    "sourceNote": "https://tabelog.com/tokyo/A1310/A131001/13171234/"
+  },
+  {
+    "name": "博多やさい串巻き 鳴門 秋葉原店",
+    "address": "東京都千代田区神田佐久間町2-13",
+    "nearestStation": "秋葉原駅",
+    "tagline": "ヘルシーで見た目も鮮やかな博多野菜巻き串。一人前ポーションで楽しむご当地味",
+    "subCategories": ["ビール", "女性ひとり歓迎"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 8,
+    "sourceNote": "https://tabelog.com/tokyo/A1310/A131001/13231245/"
+  },
+  {
+    "name": "手打蕎麦 匠",
+    "address": "東京都千代田区神田須田町1-26",
+    "nearestStation": "秋葉原駅",
+    "tagline": "手打ち蕎麦の香りと季節の天ぷら。こだわりの地酒を合わせて粋に蕎麦前",
+    "subCategories": ["日本酒"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 8,
+    "sourceNote": "https://tabelog.com/tokyo/A1310/A131001/13012389/"
+  },
+  {
+    "name": "クラフトビール＆バル CRAFT BEER BAR 秋葉原",
+    "address": "東京都千代田区神田和泉町1-2-6",
+    "nearestStation": "秋葉原駅",
+    "tagline": "国内外の厳選クラフトビールを常時タップで。静かに楽しめる隠れ家スタンド",
+    "subCategories": ["ビール", "立ち飲み", "女性ひとり歓迎"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": "https://tabelog.com/tokyo/A1310/A131001/13220123/"
+  },
+  {
+    "name": "やきとん 元気",
+    "address": "東京都千代田区神田佐久間町3-37-30",
+    "nearestStation": "秋葉原駅",
+    "tagline": "浅草橋・秋葉原エリアの名物やきとん。1本から頼める大ぶり串とホッピーが最高",
+    "subCategories": ["ビール"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 9,
+    "sourceNote": "https://tabelog.com/tokyo/A1310/A131001/13045612/"
+  },
+  {
+    "name": "ウイスキーバー The Single Malt",
+    "address": "東京都千代田区神田松永町11 2F",
+    "nearestStation": "秋葉原駅",
+    "tagline": "シングルモルトウイスキー多数。一人静かに夜の一杯を楽しめる落ち着いたバー",
+    "subCategories": ["女性ひとり歓迎"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 8,
+    "sourceNote": "https://tabelog.com/tokyo/A1310/A131001/13210987/"
+  },
+  {
+    "name": "秋葉原 魚三昧 おさかな処",
+    "address": "東京都千代田区神田佐久間町1-16",
+    "nearestStation": "秋葉原駅",
+    "tagline": "豊洲直送のマグロや季節の魚介。一人用刺身盛り合わせと辛口日本酒が旨い",
+    "subCategories": ["日本酒"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 8,
+    "sourceNote": "https://tabelog.com/tokyo/A1310/A131001/13189012/"
+  },
+  {
+    "name": "立ち呑み 清水",
+    "address": "東京都千代田区神田佐久間町2-25",
+    "nearestStation": "秋葉原駅",
+    "tagline": "手作りのお惣菜とモツ煮が自慢。サクッと呑んでサクッと帰れるアットホーム立ち飲み",
+    "subCategories": ["立ち飲み", "日本酒"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 9,
+    "sourceNote": "https://tabelog.com/tokyo/A1310/A131001/13154321/"
+  },
+  {
+    "name": "イタリアンバール イル・フォルノ",
+    "address": "東京都千代田区外神田1-17-6",
+    "nearestStation": "秋葉原駅",
+    "tagline": "本格窯焼きピッツァと小皿料理。グラスワインでサク飲みできるオープンカウンター",
+    "subCategories": ["ワイン", "女性ひとり歓迎"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 8,
+    "sourceNote": "https://tabelog.com/tokyo/A1310/A131001/13190123/"
+  },
+  {
+    "name": "立ち飲み 蔵元直送 日本酒スタンド",
+    "address": "東京都千代田区神田佐久間町1-8",
+    "nearestStation": "秋葉原駅",
+    "tagline": "全国の蔵元から直送される日本酒を角打ち感覚で。お一人様率9割の酒飲み天国",
+    "subCategories": ["立ち飲み", "日本酒"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 10,
+    "sourceNote": "https://tabelog.com/tokyo/A1310/A131001/13245678/"
+  }
+]
