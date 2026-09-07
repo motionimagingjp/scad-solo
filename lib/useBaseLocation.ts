@@ -16,11 +16,13 @@ export type BaseLocation = {
 
 const STORAGE_KEY = "scad-solo:base-location";
 
-// 位置情報もIP推定も使えない場合の最終フォールバック
+// 位置情報もIP推定も使えない場合の最終フォールバック。
+// 東京駅を起点にすると5km圏内に新橋・秋葉原・水道橋の実データがあり、
+// 初見(出張者・観光客含む)でも結果が空にならない
 const DEFAULT_LOCATION: BaseLocation = {
-  lat: 35.658034,
-  lng: 139.701636,
-  label: "渋谷駅",
+  lat: 35.681236,
+  lng: 139.767125,
+  label: "東京駅",
   source: "default",
 };
 

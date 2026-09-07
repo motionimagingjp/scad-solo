@@ -1,9 +1,28 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
+// og:image等の絶対URL解決に必要。VercelのProduction URLを優先し、
+// プレビュー環境ではVERCEL_URL、ローカルではlocalhostにフォールバックする
+const SITE_URL = process.env.VERCEL_PROJECT_PRODUCTION_URL
+  ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
+  : process.env.VERCEL_URL
+    ? `https://${process.env.VERCEL_URL}`
+    : "http://localhost:3000";
+
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
   title: "SCAD-SOLO",
   description: "今夜のソロ飲みを1秒で決める",
+  openGraph: {
+    title: "SCAD-SOLO",
+    description: "今夜のソロ飲みを1秒で決める",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "SCAD-SOLO",
+    description: "今夜のソロ飲みを1秒で決める",
+  },
 };
 
 export default function RootLayout({
