@@ -22,6 +22,9 @@ const MAX_DISTANCE_METERS = 5000; // これより遠い店は「今夜」の範�
 // カラオケ・サウナは飲みではないので、ここには置かず地図側のフィルターに残してある。
 const MODES = ["カウンター席", "立ち飲み", "せんべろ", "日本酒", "ワイン", "ビール", "女性ひとり歓迎"];
 
+// 「このエリアにはデータがない」空状態から1タップで実データのあるエリアへ逃がすための固定値
+const TOKYO_STATION = { lat: 35.681236, lng: 139.767125, label: "東京駅" };
+
 export default function HomePage() {
   const { location, setManualLocation, requestGps } = useBaseLocation();
   const [modes, setModes] = useState<Set<string>>(new Set());
@@ -124,13 +127,27 @@ export default function HomePage() {
         {loading && <p className="py-10 text-center text-xs text-gray-400">お店を探しています...</p>}
 
         {!loading && picks.length === 0 && (
-          <div className="rounded-2xl bg-white p-6 text-center">
-            <p className="text-sm text-gray-500">
-              {modes.size > 0 ? "条件に合うお店が見つかりませんでした" : "この周辺にはまだ登録されたお店がありません"}
-            </p>
-            <p className="mt-2 text-xs text-gray-400">
-              {modes.size > 0 ? "モードを減らすか、別のエリアを試してみてください" : "上の場所ボタンから、別のエリアを指定してみてください"}
-            </p>
+          <div className="relative overflow-hidden rounded-2xl bg-white p-6 text-center">
+            <div
+              className="pointer-events-none absolute inset-0 bg-cover bg-center opacity-10"
+              style={{ backgroundImage: "url(/images/bar-mood.jpg)" }}
+            />
+            <div className="relative">
+              <p className="text-sm text-gray-500">
+                {modes.size > 0 ? "条件に合うお店が見つかりませんでした" : "この周辺にはまだ登録されたお店がありません"}
+              </p>
+              <p className="mt-2 text-xs text-gray-400">
+                {modes.size > 0 ? "モードを減らすか、別のエリアを試してみてください" : "上の場所ボタンから、別のエリアを指定してみてください"}
+              </p>
+              {modes.size === 0 && (
+                <button
+                  onClick={() => setManualLocation(TOKYO_STATION)}
+                  className="mt-4 rounded-full border border-orange-400 bg-orange-50 px-4 py-2 text-xs font-medium text-orange-600"
+                >
+                  東京駅エリアを見る
+                </button>
+              )}
+            </div>
           </div>
         )}
 
