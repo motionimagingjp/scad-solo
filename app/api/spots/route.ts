@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { Category } from "@prisma/client";
+import { Category, SpotStatus } from "@prisma/client";
 import { prisma } from "@/lib/prisma";
 
 // 「さがす」画面用の検索API。
@@ -23,7 +23,8 @@ export async function GET(req: NextRequest) {
   const filters = (searchParams.get("filters") ?? "").split(",").filter(Boolean);
   const category = searchParams.get("category");
 
-  const where: Record<string, unknown> = {};
+  // 閉店確認バッチでACTIVE以外になった店(要確認・閉業)は検索結果に出さない
+  const where: Record<string, unknown> = { status: SpotStatus.ACTIVE };
   const tagFilters: string[] = [];
 
   if (category && CATEGORIES.has(category)) where.category = category;

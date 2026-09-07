@@ -44,9 +44,18 @@ model Spot {
   events           Event[]
   createdAt        DateTime   @default(now())
 
+  // 実店舗データ収集(AI検索での発掘)と閉店確認の月次バッチ用のメタ情報
+  nearestStation String? // 収集計画(駅ごとの件数ノルマ)の集計キー
+  googlePlaceId  String?     @unique // Places APIで営業状態(閉店)を確認するための紐付け
+  status         SpotStatus  @default(ACTIVE)
+  lastVerifiedAt DateTime? // 最後にPlaces APIで営業状態を確認した日時
+  sourceNote     String? // どうやって見つけたか(検索クエリ・出典URL等)。人力レビューの参考用
+
   @@index([category])
   @@index([latitude, longitude])
   @@index([subCategories], type: Gin) // 配列タグ検索用
+  @@index([nearestStation])
+  @@index([status])
 }
 
 // ============================================================
@@ -120,4 +129,10 @@ enum SoloRank {
   BEGINNER // 1〜3回
   REGULAR // 4〜9回
   MASTER // 10回以上
+}
+
+enum SpotStatus {
+  ACTIVE // 通常表示
+  NEEDS_REVIEW // Places APIで営業状態が怪しいと判定され、人力確認待ち
+  CLOSED // 閉業確認済み。検索結果から除外
 }
