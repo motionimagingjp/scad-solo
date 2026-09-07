@@ -100,7 +100,10 @@ export default function SoloActivityPage() {
 
       {/* 来店ログ一覧 */}
       <section className="mt-2 bg-white px-4 py-4">
-        <p className="mb-3 text-sm font-medium">来店ログ</p>
+        <p className="mb-3 text-sm font-medium">
+          来店ログ
+          <span className="ml-1 text-xs font-normal text-gray-400">(メモも書けるよ)</span>
+        </p>
         {me.visitLogs.length === 0 ? (
           <p className="text-xs text-gray-400">まだ来店ログがありません。お店を決めると記録されます。</p>
         ) : (
