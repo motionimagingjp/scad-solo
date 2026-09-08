@@ -1,11 +1,18 @@
 // チェックイン後に提示する「今夜のソロ活アクティビティ」と、「ゲーム」タブの一覧、
 // 両方で使う定義。場所の種類に応じて出し分ける(チェックイン後はノイズにならないよう最大3件)。
-// ゲーム本体はどれも未実装(すべて coming_soon)。
-export type Activity = { id: string; emoji: string; title: string; description: string; status: "available" | "coming_soon" };
+// ゲーム本体は基本的に未実装(coming_soon)。実装済みのものだけ available + href を持つ。
+export type Activity = {
+  id: string;
+  emoji: string;
+  title: string;
+  description: string;
+  status: "available" | "coming_soon";
+  href?: string;
+};
 
 const NOMI: Activity[] = [
   { id: "kanpai-timer", emoji: "⏱", title: "一人乾杯タイマー", description: "飲みペースを記録", status: "coming_soon" },
-  { id: "solo-chin", emoji: "🎲", title: "ソロチン", description: "人数を入れてチンチロ勝負", status: "coming_soon" },
+  { id: "solo-chin", emoji: "🎲", title: "ソロチン", description: "人数を入れてチンチロ勝負", status: "available", href: "/games/chinchiro" },
   { id: "solo-bingo", emoji: "🎯", title: "ソロビンゴ", description: "お題を達成してポイント", status: "coming_soon" },
   {
     id: "drink-roulette",
