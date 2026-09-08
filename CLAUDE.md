@@ -29,6 +29,11 @@
   アプリケーション制限「なし」、API制限はGeocoding/Placesのみに絞った専用キー
 - `CRON_SECRET`: 管理用APIルート(`/api/cron/check-closures`、
   `/api/admin/import-spots`)の認証に共用
+- `GEMINI_API_KEY`: ドリンクルーレット(`/api/roulette/extract`)がメニュー画像から
+  飲み物候補を抽出するのに使うGemini APIキー(Google AI Studioで発行、Maps/Geocoding
+  とは別物)。**未設定でもゲームは動く**(`lib/data/drinkRouletteFallback.ts`の定番
+  リストに自動フォールバックする設計)。使うモデルは`gemini-3.7-flash`
+  (`generativelanguage.googleapis.com`、`x-goog-api-key`ヘッダで認証)
 
 ## 主要な設計判断
 - ホーム画面はシャッフル性を持たない検索画面(「今夜の3軒」)。エンタメ性は
@@ -62,5 +67,5 @@ JSON形式、チェーン除外基準、ハルシネーション対策)をまと
 - 高円寺駅の実店舗データが未収集(対象15駅のうち14駅・194件のみ投入済み)
 - Places API (New) を使った月次閉店確認バッチ(`app/api/cron/check-closures`、
   `vercel.json`でCron設定済み)は未検証(Places APIキーの動作確認がまだ)
-- Gemini API(候補発掘の自動化)は未着手。現状は人間がGeminiに手動で
-  依頼し、JSONを貼り付けてもらう運用
+- 実店舗データ収集でのGemini API(候補発掘の自動化)は未着手。現状は人間がGeminiに
+  手動で依頼し、JSONを貼り付けてもらう運用(ドリンクルーレットのGemini連携とは別件)

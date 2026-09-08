@@ -18,8 +18,9 @@ const NOMI: Activity[] = [
     id: "drink-roulette",
     emoji: "🍹",
     title: "ドリンクルーレット",
-    description: "メニュー表や壁紙をスキャン→AIが5〜6択を選出→ルーレットで1つに決定",
-    status: "coming_soon",
+    description: "メニュー表や壁紙をスキャン→AIが4〜6択を選出→ルーレットで1つに決定",
+    status: "available",
+    href: "/games/drink-roulette",
   },
 ];
 const KARAOKE: Activity[] = [
