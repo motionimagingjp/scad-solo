@@ -23,7 +23,7 @@ const NOMI: Activity[] = [
   },
 ];
 const KARAOKE: Activity[] = [
-  { id: "forced-song", emoji: "🎤", title: "強制選曲モード", description: "3曲から1曲、1番は必ず歌う", status: "coming_soon" },
+  { id: "forced-song", emoji: "🎤", title: "強制選曲モード", description: "3曲から1曲、1番は必ず歌う", status: "available", href: "/games/forced-song" },
 ];
 
 /** チェックイン後の画面用。場所の種類でどれを出すか絞る */
