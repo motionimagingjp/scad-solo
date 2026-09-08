@@ -19,6 +19,6 @@ export const APP_ABOUT = {
   dataNote:
     "現在地は近くの店を探すためだけに使われ、位置情報そのものが保存されることはありません。来店ログやランクなどのソロ活の記録は、あなたの活動履歴としてこのアプリに保存されます。",
   sns: [
-    { label: "X (旧Twitter)", url: "https://x.com/scadchatapp" },
+    { label: "X (旧Twitter)", url: "https://x.com/jakeimages" },
   ] satisfies AboutSns[],
 };
