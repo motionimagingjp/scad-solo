@@ -1,8 +1,12 @@
 // 強制選曲モード用のカラオケ定番曲リスト。曲名・アーティスト名のみ(歌詞は含まない)。
 // ここに追加すればするほど、同じ3曲が続けて出にくくなる。
+//
+// 誰もが知る大ヒット曲だけだと「知ってて当然」になってしまうので、
+// 世代ごとに刺さる中〜小ヒット曲もあえて混ぜてある(「歌えるか分からない」のがこのゲームの醍醐味)。
 export type Song = { title: string; artist: string };
 
 export const SONGS: Song[] = [
+  // ---- 世代を問わない定番 ----
   { title: "残酷な天使のテーゼ", artist: "高橋洋子" },
   { title: "紅蓮華", artist: "LiSA" },
   { title: "怪物", artist: "YOASOBI" },
@@ -39,4 +43,70 @@ export const SONGS: Song[] = [
   { title: "世界に一つだけの花", artist: "SMAP" },
   { title: "涙そうそう", artist: "夏川りみ" },
   { title: "千本桜", artist: "黒うさP feat. 初音ミク" },
+
+  // ---- 20代に刺さる曲(2018〜2023年頃) ----
+  { title: "怪獣の花唄", artist: "Vaundy" },
+  { title: "白いワンピース", artist: "tuki." },
+  { title: "心予報", artist: "Eve" },
+  { title: "秒針を噛む", artist: "ずっと真夜中でいいのに。" },
+  { title: "だから僕は音楽をやめた", artist: "ヨルシカ" },
+  { title: "きらり", artist: "藤井風" },
+  { title: "のびしろ", artist: "Creepy Nuts" },
+  { title: "プラネタリウム", artist: "Awesome City Club" },
+  { title: "悲しくなる前に", artist: "indigo la End" },
+  { title: "春を告げる", artist: "yama" },
+  { title: "W/X/Y", artist: "Tani Yuuki" },
+  { title: "ラビットホール", artist: "Kanaria" },
+  { title: "やさぐれ", artist: "秋山黄色" },
+  { title: "恋人ごっこ", artist: "マカロニえんぴつ" },
+  { title: "お互い", artist: "never young beach" },
+  { title: "Overdose", artist: "なとり" },
+  { title: "NIGHT DANCER", artist: "imase" },
+  { title: "花になって", artist: "あたらよ" },
+  { title: "五月雨", artist: "崎山蒼志" },
+  { title: "春の歌", artist: "つゆ" },
+
+  // ---- 40代に刺さる曲(1996〜2008年頃) ----
+  { title: "CAN YOU CELEBRATE?", artist: "安室奈美恵" },
+  { title: "White Love", artist: "SPEED" },
+  { title: "DEPARTURES", artist: "globe" },
+  { title: "I'm proud", artist: "華原朋美" },
+  { title: "LOVE 2000", artist: "hitomi" },
+  { title: "HONEY", artist: "L'Arc〜en〜Ciel" },
+  { title: "HOWEVER", artist: "GLAY" },
+  { title: "Grateful Days", artist: "Dragon Ash" },
+  { title: "LOVEマシーン", artist: "モーニング娘。" },
+  { title: "硝子の少年", artist: "KinKi Kids" },
+  { title: "未来へ", artist: "Kiroro" },
+  { title: "Time goes by", artist: "Every Little Thing" },
+  { title: "SEASONS", artist: "浜崎あゆみ" },
+  { title: "ultra soul", artist: "B'z" },
+  { title: "幸せな結末", artist: "Do As Infinity" },
+  { title: "Love, Day After Tomorrow", artist: "倉木麻衣" },
+  { title: "桃色片想い", artist: "松浦亜弥" },
+  { title: "決意の朝に", artist: "Aqua Timez" },
+  { title: "花", artist: "ORANGE RANGE" },
+  { title: "ありがとう", artist: "いきものがかり" },
+
+  // ---- 50代に刺さる曲(1985〜1993年頃) ----
+  { title: "フレンズ", artist: "レベッカ" },
+  { title: "わがままジュリエット", artist: "BOØWY" },
+  { title: "M", artist: "プリンセス プリンセス" },
+  { title: "My Revolution", artist: "渡辺美里" },
+  { title: "夢をあきらめないで", artist: "岡村孝子" },
+  { title: "格好悪いふられ方", artist: "大江千里" },
+  { title: "15の夜", artist: "尾崎豊" },
+  { title: "Get Wild", artist: "TM NETWORK" },
+  { title: "浪漫飛行", artist: "米米CLUB" },
+  { title: "言葉にできない", artist: "小田和正" },
+  { title: "レイニーブルー", artist: "徳永英明" },
+  { title: "赤いスイートピー", artist: "松田聖子" },
+  { title: "けんかをやめて", artist: "河合奈保子" },
+  { title: "オリビアを聴きながら", artist: "杏里" },
+  { title: "雨のリグレット", artist: "稲垣潤一" },
+  { title: "ら・ら・ら", artist: "大黒摩季" },
+  { title: "世界が終るまでは...", artist: "WANDS" },
+  { title: "揺れる想い", artist: "ZARD" },
+  { title: "私がオバサンになっても", artist: "森高千里" },
+  { title: "パラダイス銀河", artist: "光GENJI" },
 ];
