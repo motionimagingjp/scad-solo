@@ -52,6 +52,9 @@ export default function ForcedSongPage() {
             <br />
             選んだら1番は最後まで歌いきること。
           </p>
+          <p className="rounded-xl bg-orange-50 px-4 py-2.5 text-xs font-medium text-orange-600">
+            知らなくても知ってるフリで歌うのがルール。恥ずかしさに耐えて1番を歌いきろう!
+          </p>
           <button onClick={draw} className="w-full rounded-full bg-orange-500 py-3 text-sm font-bold text-white">
             3曲を引く
           </button>
