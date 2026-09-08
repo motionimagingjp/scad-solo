@@ -4,6 +4,7 @@ import { useCallback, useEffect, useState } from "react";
 import Link from "next/link";
 import { ChevronLeft } from "lucide-react";
 import BottomNav, { NAV_HEIGHT } from "@/components/BottomNav";
+import InfoButton from "@/components/InfoButton";
 import SpotCard, { type SpotSummary } from "@/components/SpotCard";
 import SearchMap from "@/components/SearchMap";
 import LocationChip from "@/components/LocationChip";
@@ -52,7 +53,10 @@ export default function MapPage() {
         <Link href="/" className="flex items-center text-xs text-gray-400">
           <ChevronLeft size={16} /> 戻る
         </Link>
-        <LocationChip location={location} onSelectManual={setManualLocation} onRequestGps={requestGps} />
+        <div className="flex items-center gap-2">
+          <LocationChip location={location} onSelectManual={setManualLocation} onRequestGps={requestGps} />
+          <InfoButton />
+        </div>
       </header>
 
       {/* フィルター: 横スクロール1行。上部を抑えて地図を最大化。右端は横スクロールできる合図としてグラデーションを重ねる */}

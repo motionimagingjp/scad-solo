@@ -24,14 +24,14 @@ export const SCAD_APPS: ScadApp[] = [
     name: "SCAD-BEAUTY",
     tagline: "おひとり様歓迎サロン",
     benefit: "ソロ活の後に立ち寄れる美容室を探せます",
-    url: "https://scad-beauty.example.com",
+    url: "https://scad-beauty.vercel.app/",
   },
   {
     id: "scad-chat",
     name: "SCAD-CHAT",
     tagline: "AIチャットプラットフォーム",
     benefit: "今日の気分に合う店をAIに相談できます",
-    url: "https://scad-chat.example.com",
+    url: "https://scad-chat.vercel.app/",
   },
 ];
 

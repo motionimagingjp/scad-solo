@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { ChevronRight } from "lucide-react";
 import BottomNav from "@/components/BottomNav";
+import InfoButton from "@/components/InfoButton";
 import { ALL_GAMES } from "@/lib/data/activities";
 
 // 「ゲーム」タブ: ミニゲームを一覧にして見せる。
@@ -10,9 +11,12 @@ import { ALL_GAMES } from "@/lib/data/activities";
 export default function GamesPage() {
   return (
     <div className="mx-auto min-h-screen max-w-md bg-gray-50 pb-16">
-      <header className="border-b bg-white px-4 py-3">
-        <h1 className="text-lg font-bold">ゲーム</h1>
-        <p className="mt-1 text-xs text-gray-400">ソロ活アクティビティ</p>
+      <header className="flex items-center justify-between border-b bg-white px-4 py-3">
+        <div>
+          <h1 className="text-lg font-bold">ゲーム</h1>
+          <p className="mt-1 text-xs text-gray-400">ソロ活アクティビティ</p>
+        </div>
+        <InfoButton />
       </header>
 
       <section className="mt-2 space-y-2 px-4 py-4">

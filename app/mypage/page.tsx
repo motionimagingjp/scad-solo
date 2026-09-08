@@ -1,5 +1,6 @@
 import { QrCode } from "lucide-react";
 import BottomNav from "@/components/BottomNav";
+import InfoButton from "@/components/InfoButton";
 import ShareAppButton from "@/components/ShareAppButton";
 import { SCAD_APPS, ECOSYSTEM_REVEAL_THRESHOLD, RANK_THRESHOLDS } from "@/lib/data/scadApps";
 import { prisma } from "@/lib/prisma";
@@ -21,6 +22,11 @@ export default async function MyPage() {
 
   return (
     <div className="mx-auto min-h-screen max-w-md bg-gray-50 pb-16">
+      <header className="flex items-center justify-between border-b bg-white px-4 py-3">
+        <h1 className="text-lg font-bold">マイページ</h1>
+        <InfoButton />
+      </header>
+
       {/* ユーザーマイカード */}
       <section className="bg-white px-4 py-6">
         <div className="flex items-center gap-4">

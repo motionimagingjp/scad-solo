@@ -4,6 +4,7 @@ import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { Store, MapPin } from "lucide-react";
 import BottomNav, { NAV_HEIGHT } from "@/components/BottomNav";
+import InfoButton from "@/components/InfoButton";
 import LocationChip from "@/components/LocationChip";
 import { spotMetaLine, type SpotSummary } from "@/components/SpotCard";
 import { distanceLabel, googleMapsUrl, haversineMeters } from "@/lib/geo";
@@ -83,7 +84,10 @@ export default function HomePage() {
     <div className="mx-auto min-h-dvh max-w-md bg-gray-50" style={{ paddingBottom: NAV_HEIGHT + 16 }}>
       <header className="flex items-center justify-between border-b bg-white px-4 py-3">
         <h1 className="text-base font-bold text-orange-500">SCAD-SOLO</h1>
-        <LocationChip location={location} onSelectManual={setManualLocation} onRequestGps={requestGps} />
+        <div className="flex items-center gap-2">
+          <LocationChip location={location} onSelectManual={setManualLocation} onRequestGps={requestGps} />
+          <InfoButton />
+        </div>
       </header>
 
       <div className="px-4 pt-5">
