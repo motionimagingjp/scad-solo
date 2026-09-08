@@ -11,7 +11,7 @@ export type Activity = {
 };
 
 const NOMI: Activity[] = [
-  { id: "kanpai-timer", emoji: "⏱", title: "一人乾杯タイマー", description: "飲みペースを記録", status: "coming_soon" },
+  { id: "kanpai-timer", emoji: "⏱", title: "一人乾杯タイマー", description: "飲みペースを記録", status: "available", href: "/games/kanpai-timer" },
   { id: "solo-chin", emoji: "🎲", title: "ソロチン", description: "人数を入れてチンチロ勝負", status: "available", href: "/games/chinchiro" },
   { id: "solo-bingo", emoji: "🎯", title: "ソロビンゴ", description: "お題を達成してポイント", status: "coming_soon" },
   {
