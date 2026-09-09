@@ -15,7 +15,7 @@ Geminiに店舗候補を検索させる際は、この形式のJSON配列で出�
     "hasCounterSeat": true,
     "senberoAvailable": true,
     "soloFriendliness": 8,
-    "sourceNote": "実際に開いて確認した出典URL"
+    "sourceNote": "実際に開いて確認した出典URL(tabelogは避ける。確証がなければ空文字でよい)"
   }
 ]
 ```
@@ -32,7 +32,7 @@ Geminiに店舗候補を検索させる際は、この形式のJSON配列で出�
 | `hasCounterSeat` | 任意 | boolean | カウンター席の有無(デフォルト`true`)。出典で確認できた場合のみ明記、不明ならフィールド自体を省略可 |
 | `senberoAvailable` | 任意 | boolean | 「せんべろ」(1000円前後で飲める)対応かどうか |
 | `soloFriendliness` | 任意 | number | ひとり客への向き不向き、1〜10の整数(高いほど歓迎) |
-| `sourceNote` | ○ | string | 実際にそのページを開いて内容を確認した出典URL。URLを推測・作文しない(既知の失敗例: `1000bero.net`は`restaurant-646`のような数字IDのみのURLで、`restaurant-店名`のようなslug形式は存在しない) |
+| `sourceNote` | 任意 | string | 実際にそのページを開いて内容を確認した出典URL。**tabelog.comのURLは避けること**(数字IDを正確に再現できず、無関係な別店舗を指すケースが100%の頻度で発生した実績あり)。ぐるなび・Retty・公式サイト等の実際に開いたURLを優先し、確証がなければ空文字にする。URLを推測・作文しない(既知の失敗例: `1000bero.net`は`restaurant-646`のような数字IDのみのURLで、`restaurant-店名`のようなslug形式は存在しない) |
 
 ## 出力ルール
 
