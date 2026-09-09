@@ -36,7 +36,11 @@ export async function GET(req: NextRequest) {
   }
   if (tagFilters.length > 0) where.subCategories = { hasEvery: tagFilters };
 
-  const spots = await prisma.spot.findMany({ where, take: 50 });
+  // 「近い順」の絞り込みはクライアント側(座標がここには来ない)で行うため、
+  // ここで件数を絞ると「たまたまDBの先頭にある店」だけが対象になり、検索場所に
+  // 関係なく同じ一部の店ばかり出てしまう(take:50・orderBy無しで実際に発生した不具合)。
+  // 現状194件程度なので、当面は上限だけ余裕を持たせて全件返す。
+  const spots = await prisma.spot.findMany({ where, take: 500 });
 
   return NextResponse.json({
     spots: spots.map((s) => ({
