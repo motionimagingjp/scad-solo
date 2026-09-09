@@ -2,10 +2,12 @@ import { NextRequest, NextResponse } from "next/server";
 import { Category } from "@prisma/client";
 import { prisma } from "@/lib/prisma";
 
+import akabane from "@/data/spots-akabane.json";
 import akihabara from "@/data/spots-akihabara.json";
 import ebisu from "@/data/spots-ebisu.json";
 import gotanda from "@/data/spots-gotanda.json";
 import ikebukuro from "@/data/spots-ikebukuro.json";
+import kanda from "@/data/spots-kanda.json";
 import kawasaki from "@/data/spots-kawasaki.json";
 import kinshicho from "@/data/spots-kinshicho.json";
 import kitasenju from "@/data/spots-kitasenju.json";
@@ -45,10 +47,12 @@ type SpotCandidate = {
 };
 
 const ALL_CANDIDATES: SpotCandidate[] = [
+  ...akabane,
   ...akihabara,
   ...ebisu,
   ...gotanda,
   ...ikebukuro,
+  ...kanda,
   ...kawasaki,
   ...kinshicho,
   ...kitasenju,

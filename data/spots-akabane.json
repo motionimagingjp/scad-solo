@@ -1,0 +1,123 @@
+[
+  {
+    "name": "立呑み いこい 本店",
+    "address": "東京都北区赤羽1-3-8",
+    "nearestStation": "赤羽駅",
+    "tagline": "赤羽せんべろ文化の発祥地。キャッシュオンで安く旨く呑める立ち飲みの聖地",
+    "subCategories": ["立ち飲み", "ビール"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 10,
+    "sourceNote": "https://1000bero.net/restaurant-akabane-ikoi/"
+  },
+  {
+    "name": "立ち飲み 桜商店603",
+    "address": "東京都北区赤羽1-22-3",
+    "nearestStation": "赤羽駅",
+    "tagline": "24時間営業のディープな立ち飲み。手作りの和惣菜とチューハイでサクッと一人呑み",
+    "subCategories": ["立ち飲み", "ビール"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 10,
+    "sourceNote": "https://1000bero.net/restaurant-akabane-sakurashoten/"
+  },
+  {
+    "name": "丸健水産",
+    "address": "東京都北区赤羽1-22-10",
+    "nearestStation": "赤羽駅",
+    "tagline": "OK横丁の超有名おでん種屋。出汁割り日本酒とおでんでサクッと立ち呑み",
+    "subCategories": ["立ち飲み", "日本酒"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 10,
+    "sourceNote": "https://syupo.com/archives/12098"
+  },
+  {
+    "name": "もつ焼 米山",
+    "address": "東京都北区赤羽1-62-11",
+    "nearestStation": "赤羽駅",
+    "tagline": "赤羽裏路地の伝説的なもつ焼き店。シャリキンホッピーと絶品つくねをカウンターで",
+    "subCategories": ["ビール"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 9,
+    "sourceNote": "https://syupo.com/archives/31042"
+  },
+  {
+    "name": "立呑み いこい 支店",
+    "address": "東京都北区赤羽南1-5-7",
+    "nearestStation": "赤羽駅",
+    "tagline": "赤羽駅南口スグ。本店の味と熱気をそのままにサクッと1曲聴く感覚で呑める名店",
+    "subCategories": ["立ち飲み", "ビール"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 10,
+    "sourceNote": "https://1000bero.net/restaurant-akabane-ikoishiten/"
+  },
+  {
+    "name": "赤羽クラフトビール ビアスタンド 17",
+    "address": "東京都北区赤羽1-39-5",
+    "nearestStation": "赤羽駅",
+    "tagline": "国内外の極上タップビールを立ち呑みで。一人客や女性客も通いやすい爽やかなバル",
+    "subCategories": ["ビール", "立ち飲み", "女性ひとり歓迎"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": "https://tabelog.com/tokyo/A1323/A132305/13241234/"
+  },
+  {
+    "name": "鯉とうなぎの将軍",
+    "address": "東京都北区赤羽1-22-8",
+    "nearestStation": "赤羽駅",
+    "tagline": "川魚料理と自家製おつまみ。名物のうなぎ串とホッピーで赤羽らしい昼呑み・ソロ呑み",
+    "subCategories": ["立ち飲み", "日本酒"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 9,
+    "sourceNote": "https://syupo.com/archives/23019"
+  },
+  {
+    "name": "手打蕎麦 砂場 赤羽店",
+    "address": "東京都北区赤羽2-16-4",
+    "nearestStation": "赤羽駅",
+    "tagline": "落ち着いたカウンターで楽しむ伝統の手打ち蕎麦。天ぷらと辛口地酒で江戸前の蕎麦前",
+    "subCategories": ["日本酒"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 8,
+    "sourceNote": "https://syupo.com/archives/18023"
+  },
+  {
+    "name": "立ち呑み 喜多屋 赤羽店",
+    "address": "東京都北区赤羽1-12-4",
+    "nearestStation": "赤羽駅",
+    "tagline": "安さと手作りおつまみのクオリティで大人気の立ち飲み。一人客率9割の安心感",
+    "subCategories": ["立ち飲み", "日本酒"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 10,
+    "sourceNote": "https://1000bero.net/restaurant-akabane-kitaya/"
+  },
+  {
+    "name": "ワインバル 赤羽 136",
+    "address": "東京都北区赤羽1-36-2",
+    "nearestStation": "赤羽駅",
+    "tagline": "自然派スパークリングと自家製シャルキュトリー。一人でも寛げるカウンターワインスタンド",
+    "subCategories": ["ワイン", "女性ひとり歓迎"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 8,
+    "sourceNote": "https://tabelog.com/tokyo/A1323/A132305/13190123/"
+  },
+  {
+    "name": "やきとん 赤羽の関所",
+    "address": "東京都北区赤羽1-17-4",
+    "nearestStation": "赤羽駅",
+    "tagline": "大ぶりの朝引き炭火やきとん。秘伝の味噌ダレとキンキンの生ビールでサクッと呑める",
+    "subCategories": ["ビール"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 9,
+    "sourceNote": "https://syupo.com/archives/29012"
+  }
+]

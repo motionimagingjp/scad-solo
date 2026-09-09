@@ -1,0 +1,145 @@
+[
+  {
+    "name": "味坊",
+    "address": "東京都千代田区鍛冶町2-11-20 1F・2F",
+    "nearestStation": "神田駅",
+    "tagline": "神田ガード下の名物中国酒場。ラム串と自然派ワインをカウンターでサク飲み",
+    "subCategories": ["ワイン", "ビール"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": "https://syupo.com/archives/14209"
+  },
+  {
+    "name": "立ち飲み 魚祥",
+    "address": "東京都千代田区鍛冶町2-13-2",
+    "nearestStation": "神田駅",
+    "tagline": "鮮魚店直営の極上魚介立ち飲み。豊洲直送の刺身と辛口地酒でソロ呑み天国",
+    "subCategories": ["立ち飲み", "日本酒"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 10,
+    "sourceNote": "https://1000bero.net/restaurant-kanda-uosho/"
+  },
+  {
+    "name": "六花界",
+    "address": "東京都千代田区鍛冶町2-13-24",
+    "nearestStation": "神田駅",
+    "tagline": "わずか2.2坪の超密着型立ち焼き肉。極上肉を1枚から七輪で焼いて地酒と合わせる",
+    "subCategories": ["立ち飲み", "日本酒"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": "https://syupo.com/archives/38120"
+  },
+  {
+    "name": "立ち飲み 大越",
+    "address": "東京都千代田区鍛冶町2-14-3",
+    "nearestStation": "神田駅",
+    "tagline": "神田駅前で長年愛される老舗大衆立ち飲み。手作りお惣菜と赤星でサクッと一杯",
+    "subCategories": ["立ち飲み", "ビール"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 10,
+    "sourceNote": "https://1000bero.net/restaurant-kanda-okoshi/"
+  },
+  {
+    "name": "もつ焼 宇ち多",
+    "address": "東京都千代田区内神田3-19-8",
+    "nearestStation": "神田駅",
+    "tagline": "神田西口商店街裏の知る人ぞ知るもつ焼き店。朝引きモツと梅割りで粋な一人飲み",
+    "subCategories": ["ビール"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 9,
+    "sourceNote": "https://syupo.com/archives/19082"
+  },
+  {
+    "name": "神田 立ち飲み 居酒屋 鶴亀",
+    "address": "東京都千代田区鍛冶町1-7-9",
+    "nearestStation": "神田駅",
+    "tagline": "安くて旨い下町風立ち飲み。自家製モツ煮込みとチューハイで1,000円サク飲み",
+    "subCategories": ["立ち飲み", "ビール"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 9,
+    "sourceNote": "https://1000bero.net/restaurant-kanda-tsurukame/"
+  },
+  {
+    "name": "ヴィノシティ（VINOCITY）",
+    "address": "東京都千代田区鍛冶町2-4-1",
+    "nearestStation": "神田駅",
+    "tagline": "こぼれスパークリングワインが名物。気取らず本格ビストロ小皿を楽しめるワインバル",
+    "subCategories": ["ワイン", "女性ひとり歓迎"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 8,
+    "sourceNote": "https://tabelog.com/tokyo/A1310/A131002/13123891/"
+  },
+  {
+    "name": "手打蕎麦 浅野屋 本店",
+    "address": "東京都千代田区内神田2-7-9",
+    "nearestStation": "神田駅",
+    "tagline": "老舗手打ち蕎麦の佇まい。名物・焼き鳥や旬の天ぷらを肴に純米酒で大人の一人蕎麦前",
+    "subCategories": ["日本酒"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 8,
+    "sourceNote": "https://syupo.com/archives/31204"
+  },
+  {
+    "name": "神田ミートバル GB",
+    "address": "東京都千代田区鍛冶町1-3-1",
+    "nearestStation": "神田駅",
+    "tagline": "塊肉の炭火焼きと厳選グラスワイン。オープンカウンターで一人サクッと肉呑み",
+    "subCategories": ["ワイン", "女性ひとり歓迎"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 8,
+    "sourceNote": "https://tabelog.com/tokyo/A1310/A131002/13156890/"
+  },
+  {
+    "name": "角打ち 穴子や",
+    "address": "東京都千代田区鍛冶町2-12-11",
+    "nearestStation": "神田駅",
+    "tagline": "穴子料理専門の超穴場立ち飲み。穴子の天ぷらや白焼きをアテに日本酒飲み比べ",
+    "subCategories": ["立ち飲み", "日本酒"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 9,
+    "sourceNote": "https://1000bero.net/restaurant-kanda-anagoya/"
+  },
+  {
+    "name": "焼鳥 どすこい",
+    "address": "東京都千代田区内神田3-20-1",
+    "nearestStation": "神田駅",
+    "tagline": "元力士が営む大ぶり焼鳥とちゃんこ小鉢。カウンターで活気ある雰囲気を愉しむ",
+    "subCategories": ["ビール"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 8,
+    "sourceNote": "https://syupo.com/archives/28012"
+  },
+  {
+    "name": "自然派ワインと小皿料理 ヴァン・ド・カンダ",
+    "address": "東京都千代田区神田司町2-16",
+    "nearestStation": "神田駅",
+    "tagline": "店主厳選のナチュールワインと無農薬野菜の小菜。女性ひとりでも静かに寛げる隠れ家",
+    "subCategories": ["ワイン", "女性ひとり歓迎"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": "https://tabelog.com/tokyo/A1310/A131002/13210982/"
+  },
+  {
+    "name": "ドラム缶 神田店",
+    "address": "東京都千代田区内神田3-18-7 2F",
+    "nearestStation": "神田駅",
+    "tagline": "ドラム缶を囲む究極のせんべろ立ち飲み。チューハイ200円〜で気兼ねなく一人呑み",
+    "subCategories": ["立ち飲み"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 9,
+    "sourceNote": "https://1000bero.net/restaurant-kanda-drumkan/"
+  }
+]
