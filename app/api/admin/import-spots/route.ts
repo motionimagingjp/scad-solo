@@ -4,6 +4,7 @@ import { prisma } from "@/lib/prisma";
 
 import akabane from "@/data/spots-akabane.json";
 import akihabara from "@/data/spots-akihabara.json";
+import asakusa from "@/data/spots-asakusa.json";
 import ebisu from "@/data/spots-ebisu.json";
 import gotanda from "@/data/spots-gotanda.json";
 import ikebukuro from "@/data/spots-ikebukuro.json";
@@ -11,6 +12,8 @@ import kanda from "@/data/spots-kanda.json";
 import kawasaki from "@/data/spots-kawasaki.json";
 import kinshicho from "@/data/spots-kinshicho.json";
 import kitasenju from "@/data/spots-kitasenju.json";
+import koenji from "@/data/spots-koenji.json";
+import omiya from "@/data/spots-omiya.json";
 import shibuya from "@/data/spots-shibuya.json";
 import shimbashi from "@/data/spots-shimbashi.json";
 import shinagawa from "@/data/spots-shinagawa.json";
@@ -51,6 +54,7 @@ type SpotCandidate = {
 const ALL_CANDIDATES: SpotCandidate[] = [
   ...akabane,
   ...akihabara,
+  ...asakusa,
   ...ebisu,
   ...gotanda,
   ...ikebukuro,
@@ -58,6 +62,8 @@ const ALL_CANDIDATES: SpotCandidate[] = [
   ...kawasaki,
   ...kinshicho,
   ...kitasenju,
+  ...koenji,
+  ...omiya,
   ...shibuya,
   ...shimbashi,
   ...shinagawa,

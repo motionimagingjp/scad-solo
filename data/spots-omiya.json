@@ -1,0 +1,13 @@
+[
+  {
+    "name": "酒蔵力 大宮東口駅前店",
+    "address": "埼玉県さいたま市大宮区大門町1-17-1",
+    "nearestStation": "大宮駅",
+    "tagline": "大宮東口徒歩1分のアーケード街。大ぶりで柔らかいつくね・タン・レバーが人気の焼きとん酒場",
+    "subCategories": ["やきとん"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 7,
+    "sourceNote": "https://4travel.jp/dm_shisetsu/10984332 （WebSearchで実在確認済み）"
+  }
+]

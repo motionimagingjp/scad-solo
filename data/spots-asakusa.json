@@ -1,0 +1,24 @@
+[
+  {
+    "name": "神谷バー",
+    "address": "東京都台東区浅草1-1-1",
+    "nearestStation": "浅草駅",
+    "tagline": "1880年創業、日本最古のバー。名物「電気ブラン」を1階の立ち飲みエリアでサクッと嗜む",
+    "subCategories": ["立ち飲み"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 9,
+    "sourceNote": "http://www.kamiya-bar.com/ （公式サイト、WebSearchで実在確認済み）"
+  },
+  {
+    "name": "浅草酒場 岡本 ホッピー通り店",
+    "address": "東京都台東区浅草2-5-14",
+    "nearestStation": "浅草駅",
+    "tagline": "ホッピー通り最古参、6時間以上煮込む名物「元祖 牛すじもつ煮込み」を味わえる老舗",
+    "subCategories": ["大衆酒場"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 7,
+    "sourceNote": "https://asakusasakaba-okamoto.owst.jp/ （WebSearchで実在確認済み）"
+  }
+]

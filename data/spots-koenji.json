@@ -1,0 +1,13 @@
+[
+  {
+    "name": "きど藤",
+    "address": "東京都杉並区高円寺北3-3-9 1F",
+    "nearestStation": "高円寺駅",
+    "tagline": "高円寺を代表するキャッシュオン立ち飲み。ドリンク250円〜、つまみ100円台で1,000円サク飲み",
+    "subCategories": ["立ち飲み", "せんべろ"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 9,
+    "sourceNote": "https://1000bero.net/restaurant-709/ （せんべろnetでWebSearch確認済み）"
+  }
+]
