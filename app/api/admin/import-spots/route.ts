@@ -16,6 +16,7 @@ import shimbashi from "@/data/spots-shimbashi.json";
 import shinjuku from "@/data/spots-shinjuku.json";
 import suidobashi from "@/data/spots-suidobashi.json";
 import tachikawa from "@/data/spots-tachikawa.json";
+import tokyo from "@/data/spots-tokyo.json";
 import ueno from "@/data/spots-ueno.json";
 import yokohama from "@/data/spots-yokohama.json";
 
@@ -61,6 +62,7 @@ const ALL_CANDIDATES: SpotCandidate[] = [
   ...shinjuku,
   ...suidobashi,
   ...tachikawa,
+  ...tokyo,
   ...ueno,
   ...yokohama,
 ] as SpotCandidate[];

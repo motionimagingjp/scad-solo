@@ -1,0 +1,46 @@
+[
+  {
+    "name": "丸ノ内 おお島",
+    "address": "東京都千代田区丸の内2-7-3 東京ビルTOKIA B1F",
+    "nearestStation": "東京駅",
+    "tagline": "日本酒とこだわりの和食おつまみをサクッと立ち飲みで楽しめる大衆酒場",
+    "subCategories": ["立ち飲み", "日本酒"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 5,
+    "sourceNote": "https://1000bero.net/restaurant-2266/ （せんべろnet）"
+  },
+  {
+    "name": "玉乃光酒蔵 八重洲地下街店",
+    "address": "東京都中央区八重洲2-1 八重洲地下街 南1",
+    "nearestStation": "東京駅",
+    "tagline": "京都の老舗酒蔵直営。カウンター席で純米酒とおつまみを気軽に楽しめる",
+    "subCategories": ["日本酒"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 5,
+    "sourceNote": "https://www.hotpepper.jp/strJ000682235/"
+  },
+  {
+    "name": "秋田純米酒処 東京駅北町酒場店",
+    "address": "東京都千代田区丸の内1-9-1 北町ダイニング 2F",
+    "nearestStation": "東京駅",
+    "tagline": "店内全席カウンター。秋田の蔵元から届く地酒と郷土料理を静かに味わえる",
+    "subCategories": ["日本酒"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 6,
+    "sourceNote": "https://jp.sake-times.com/enjoy/shop/sake_g_akita_pure_-rice-_sake-_bar"
+  },
+  {
+    "name": "Depot",
+    "address": "東京都千代田区丸の内1-9-1 JR東京駅構内 B1F グランスタ東京",
+    "nearestStation": "東京駅",
+    "tagline": "昭和初期のサーバーで注ぐ生ビールとノスタルジックな雰囲気を楽しめるカウンター喫茶バー",
+    "subCategories": ["ビール"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 4,
+    "sourceNote": "https://www.gransta.jp/mall/gransta_tokyo/depot/"
+  }
+]
