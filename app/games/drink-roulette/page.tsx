@@ -138,6 +138,19 @@ export default function DrinkRoulettePage() {
             </div>
           )}
 
+          {/* 決定表示バー: ルーレットの真上に固定し、下より視線が行きやすい位置で結果を見せる */}
+          <div
+            className={`w-full rounded-2xl px-6 py-4 text-center transition-colors ${
+              phase === "result" ? "bg-orange-50" : "bg-gray-100"
+            }`}
+          >
+            {phase === "result" && result ? (
+              <p className="text-lg font-bold text-orange-600">🍹 {result} に決定!</p>
+            ) : (
+              <p className="text-base font-bold text-gray-500">🎯 運命の一投</p>
+            )}
+          </div>
+
           <div className="relative" style={{ width: WHEEL_SIZE, height: WHEEL_SIZE }}>
             <div
               className="absolute left-1/2 top-0 z-10 -translate-x-1/2 -translate-y-1"
@@ -177,18 +190,13 @@ export default function DrinkRoulettePage() {
           )}
 
           {phase === "result" && result && (
-            <div className="flex w-full flex-col items-center gap-4">
-              <p className="rounded-2xl bg-orange-50 px-6 py-4 text-center text-lg font-bold text-orange-600">
-                🍹 {result} に決定!
-              </p>
-              <div className="flex w-full gap-2">
-                <button onClick={backToWheel} className="flex-1 rounded-full border bg-white py-2.5 text-sm font-medium text-gray-700">
-                  もう一度回す
-                </button>
-                <button onClick={openCamera} className="flex-1 rounded-full border bg-white py-2.5 text-sm font-medium text-gray-700">
-                  別の写真で試す
-                </button>
-              </div>
+            <div className="flex w-full gap-2">
+              <button onClick={backToWheel} className="flex-1 rounded-full border bg-white py-2.5 text-sm font-medium text-gray-700">
+                もう一度回す
+              </button>
+              <button onClick={openCamera} className="flex-1 rounded-full border bg-white py-2.5 text-sm font-medium text-gray-700">
+                別の写真で試す
+              </button>
             </div>
           )}
         </div>
