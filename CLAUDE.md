@@ -53,6 +53,32 @@ JSON形式、チェーン除外基準、ハルシネーション対策)をまと
 `Authorization: Bearer`で認証、`offset`/`limit`でバッチ実行)を
 デプロイ後にユーザーが叩く形。194件を50件ずつ4バッチで投入した実績あり。
 
+### オンデマンドAI検索パイプライン(status: AI_SUGGESTED)
+
+データが薄い駅をその場で埋めるための仕組み。人力での事前収集を待たず、
+Geminiに検索させて即DBに入れるが、**人力確認前は`status: AI_SUGGESTED`のまま
+「AI提案・未確認」バッジ付きで検索結果に出す**設計(承認待ちにして隠すのではなく、
+出しつつ透明性を確保する方針)。
+
+- `GET /api/admin/ai-search-spots?station=<駅名>&secret=<CRON_SECRET>`
+  Gemini(`gemini-3.7-flash`、Google検索グラウンディング`tools:[{google_search:{}}]`
+  + `responseSchema`で構造化出力。Gemini 3系はgrounding+responseSchemaの併用が可能)
+  にその場で駅周辺の店を調べさせ、ジオコーディングしてstatus: AI_SUGGESTEDで作成。
+  重複(同名+同住所)は既存データを壊さないようスキップする
+- `GET /api/admin/spots/pending?secret=...`(任意で`&station=`で絞り込み)
+  レビュー待ち一覧。各行にapprove/rejectのURLを含めて返すので、それを開くだけで良い
+- `GET /api/admin/spots/[id]/approve?secret=...` → status: ACTIVEに確定
+- `GET /api/admin/spots/[id]/reject?secret=...` → 削除(AI_SUGGESTED以外は誤操作防止で拒否)
+
+**注意点:**
+- `/api/spots`はACTIVEとAI_SUGGESTEDの両方を返す(NEEDS_REVIEW・CLOSEDは除外)。
+  クライアント側は`status`フィールドを見て`AiSuggestedBadge`(`components/SpotCard.tsx`)
+  を出し分けている
+- ハルシネーション対策(実在確認・チェーン除外・店名誤変換の防止)は
+  `docs/gemini-data-collection-handoff.md`のルールをプロンプトに要約して埋め込んでいる
+  が、人力レビューほど厳密ではない。**必ず`/api/admin/spots/pending`で定期的に
+  レビューし、承認/削除を進めること**(バッジ付きで出しっぱなしにしない)
+
 ### 既知の落とし穴
 - 複数駅のデータで同じ店名パターンが駅名だけ差し替えて再利用される
   (ハルシネーションの一種)。3駅以上での出現パターンを機械的に検出し、
@@ -67,5 +93,6 @@ JSON形式、チェーン除外基準、ハルシネーション対策)をまと
 - 高円寺駅の実店舗データが未収集(対象15駅のうち14駅・194件のみ投入済み)
 - Places API (New) を使った月次閉店確認バッチ(`app/api/cron/check-closures`、
   `vercel.json`でCron設定済み)は未検証(Places APIキーの動作確認がまだ)
-- 実店舗データ収集でのGemini API(候補発掘の自動化)は未着手。現状は人間がGeminiに
-  手動で依頼し、JSONを貼り付けてもらう運用(ドリンクルーレットのGemini連携とは別件)
+- 実店舗データ収集のオンデマンドAI検索(`/api/admin/ai-search-spots`)は実装済みだが
+  未検証(このリポジトリのサンドボックスからGemini/Geocoding APIに接続できないため、
+  実際の検索結果の質は本番でユーザーが確認する必要がある)

@@ -12,7 +12,18 @@ export type SpotSummary = {
   hasCounterSeat: boolean; senberoAvailable: boolean; distanceLabel?: string;
   address: string; tagline: string | null;
   latitude: number; longitude: number;
+  status?: string; // "AI_SUGGESTED" の場合だけバッジを出す。それ以外(ACTIVE等)は無表示
 };
+
+/** AI提案・未確認の店にだけ出す小さいバッジ */
+export function AiSuggestedBadge({ status }: { status?: string }) {
+  if (status !== "AI_SUGGESTED") return null;
+  return (
+    <span className="ml-1.5 rounded-full bg-blue-50 px-2 py-0.5 text-[10px] font-medium text-blue-500">
+      AI提案・未確認
+    </span>
+  );
+}
 
 /** 距離・設備・タグを「徒歩3分 · カウンター席 · せんべろ」の形に整える */
 export function spotMetaLine(spot: SpotSummary): string {
@@ -28,7 +39,10 @@ export default function SpotCard({ spot, onClose }: { spot: SpotSummary; onClose
   return (
     <div className="fixed inset-x-0 z-30 mx-auto max-w-md rounded-t-2xl bg-white p-4 shadow-2xl" style={{ bottom: NAV_HEIGHT }}>
       <button onClick={onClose} className="absolute right-3 top-2 text-xs text-gray-400">閉じる</button>
-      <p className="font-bold">{spot.name}</p>
+      <p className="font-bold">
+        {spot.name}
+        <AiSuggestedBadge status={spot.status} />
+      </p>
       <p className="mt-1 text-xs text-gray-400">{spotMetaLine(spot)}</p>
       {spot.tagline && <p className="mt-1 text-xs text-gray-600">{spot.tagline}</p>}
       <p className="mt-1 text-[11px] text-gray-400">{spot.address}</p>

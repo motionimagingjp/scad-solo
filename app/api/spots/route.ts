@@ -23,8 +23,10 @@ export async function GET(req: NextRequest) {
   const filters = (searchParams.get("filters") ?? "").split(",").filter(Boolean);
   const category = searchParams.get("category");
 
-  // 閉店確認バッチでACTIVE以外になった店(要確認・閉業)は検索結果に出さない
-  const where: Record<string, unknown> = { status: SpotStatus.ACTIVE };
+  // ACTIVE(人力確認済み)に加え、AI_SUGGESTED(Geminiのオンデマンド検索で
+  // 見つけた未確認データ)も出す。ただしバッジで区別できるようstatusを返す。
+  // NEEDS_REVIEW(閉店確認バッチで怪しいと判定)・CLOSEDは引き続き除外
+  const where: Record<string, unknown> = { status: { in: [SpotStatus.ACTIVE, SpotStatus.AI_SUGGESTED] } };
   const tagFilters: string[] = [];
 
   if (category && CATEGORIES.has(category)) where.category = category;
@@ -54,6 +56,7 @@ export async function GET(req: NextRequest) {
       tagline: s.tagline,
       latitude: s.latitude,
       longitude: s.longitude,
+      status: s.status,
     })),
   });
 }

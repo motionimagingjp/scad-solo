@@ -6,7 +6,7 @@ import { Store, MapPin } from "lucide-react";
 import BottomNav, { NAV_HEIGHT } from "@/components/BottomNav";
 import InfoButton from "@/components/InfoButton";
 import LocationChip from "@/components/LocationChip";
-import { spotMetaLine, type SpotSummary } from "@/components/SpotCard";
+import { AiSuggestedBadge, spotMetaLine, type SpotSummary } from "@/components/SpotCard";
 import { distanceLabel, googleMapsUrl, haversineMeters } from "@/lib/geo";
 import { useBaseLocation } from "@/lib/useBaseLocation";
 
@@ -157,7 +157,10 @@ export default function HomePage() {
 
         {picks.map((spot) => (
           <div key={spot.id} className="rounded-2xl bg-white p-4 shadow-sm">
-            <p className="font-bold">{spot.name}</p>
+            <p className="font-bold">
+              {spot.name}
+              <AiSuggestedBadge status={spot.status} />
+            </p>
             <p className="mt-1 text-xs text-gray-400">{spotMetaLine(spot)}</p>
             {spot.tagline && <p className="mt-1 text-xs text-gray-600">{spot.tagline}</p>}
             <p className="mt-1 text-[11px] text-gray-400">{spot.address}</p>

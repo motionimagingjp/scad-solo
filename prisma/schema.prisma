@@ -132,7 +132,9 @@ enum SoloRank {
 }
 
 enum SpotStatus {
-  ACTIVE // 通常表示
+  ACTIVE // 通常表示(人力確認済み、またはAI提案から確定済み)
+  AI_SUGGESTED // Geminiのオンデマンド検索で見つけて即投入した未確認データ。
+  // ACTIVEと同様に検索結果に出すが、クライアント側で「AI提案・未確認」バッジを付ける
   NEEDS_REVIEW // Places APIで営業状態が怪しいと判定され、人力確認待ち
   CLOSED // 閉業確認済み。検索結果から除外
 }
