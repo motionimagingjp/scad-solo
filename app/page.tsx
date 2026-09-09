@@ -93,9 +93,9 @@ export default function HomePage() {
       <div className="px-4 pt-5">
         <p className="flex items-center gap-1.5 text-lg font-bold">
           <Store size={20} className="text-orange-500" />
-          今夜の3軒
+          今夜のおすすめ3軒
         </p>
-        <p className="mt-1 text-xs text-gray-400">一番近い3軒はこれ</p>
+        <p className="mt-1 text-xs text-gray-400">近くのおすすめはこれ</p>
       </div>
 
       {/* 気分のモード。何も選ばなければ「おまかせ」。右端は横スクロールできる合図としてグラデーションを重ねる */}

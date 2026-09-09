@@ -12,7 +12,7 @@ export const APP_ABOUT = {
   appIntro:
     "SCAD-SOLOは、一人飲みに向いている店だけを絞り込んで提案する、ソロ活・ソロ飲み専用のナビアプリです。",
   appFeatures: [
-    { emoji: "🍶", label: "今夜の3軒", desc: "現在地から一番近いソロ向けの3軒をすぐ提案" },
+    { emoji: "🍶", label: "今夜のおすすめ3軒", desc: "現在地から近いソロ向けの3軒をすぐ提案" },
     { emoji: "🗺️", label: "地図", desc: "せんべろ・ワインなど気分に合わせて周辺の店を一覧" },
     { emoji: "🎲", label: "ゲーム", desc: "一人でも、複数人でも楽しめるソロ活アクティビティ" },
   ] satisfies AboutFeature[],
