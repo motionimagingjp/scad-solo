@@ -107,6 +107,9 @@ export default function DrinkRoulettePage() {
             <Camera size={16} />
             メニューを撮る
           </button>
+          <p className="rounded-xl bg-orange-50 px-4 py-2.5 text-[11px] leading-relaxed text-orange-600">
+            📷 コツ: 全体より、3〜6品くらいに近づいて・明るい方を向いて撮ると読み取り精度UP
+          </p>
         </div>
       )}
 
@@ -120,9 +123,15 @@ export default function DrinkRoulettePage() {
       {(phase === "wheel" || phase === "result") && drinks.length > 0 && (
         <div className="flex flex-1 flex-col items-center gap-5 px-6 py-6">
           {source !== "gemini" && (
-            <p className="rounded-full bg-gray-100 px-3 py-1 text-[11px] text-gray-500">
-              AIが読み取れなかったので定番リストを表示しています
-            </p>
+            <div className="w-full rounded-xl bg-gray-100 px-3.5 py-2.5 text-center text-[11px] text-gray-500">
+              <p>メニューをうまく読み取れなかったので定番リストです</p>
+              <p className="mt-1">
+                3〜6品くらいに近づいて、明るい方を向いてもう一度撮ると通りやすいです
+              </p>
+              <button onClick={openCamera} className="mt-2 rounded-full border border-gray-300 bg-white px-3 py-1 text-[11px] font-medium text-gray-600">
+                撮り直す
+              </button>
+            </div>
           )}
 
           <div className="relative" style={{ width: 260, height: 260 }}>
