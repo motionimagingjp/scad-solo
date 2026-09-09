@@ -1,0 +1,35 @@
+[
+  {
+    "name": "もつ焼 マーちゃん",
+    "address": "東京都港区港南2-2-2",
+    "nearestStation": "品川駅",
+    "tagline": "昭和40年創業、食肉市場に近く新鮮なもつが自慢。港南口の路地裏でカウンターもつ焼き",
+    "subCategories": ["ビール"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 8,
+    "sourceNote": "https://diamond.jp/articles/-/7235"
+  },
+  {
+    "name": "路地裏 品川本店",
+    "address": "東京都港区港南2-2-4",
+    "nearestStation": "品川駅",
+    "tagline": "昭和60年創業、30年以上愛される名物「激辛牛すじ煮込み」の老舗居酒屋",
+    "subCategories": ["ビール", "日本酒"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 8,
+    "sourceNote": "https://san-tatsu.jp/articles/200342/"
+  },
+  {
+    "name": "立喰そば・うどん ふじ",
+    "address": "東京都港区港南2-2-13",
+    "nearestStation": "品川駅",
+    "tagline": "朝5時から営業する立ち食いそば店、夜は立ち飲み屋に変身。ハムカツが名物の隠れた一人飲みスポット",
+    "subCategories": ["立ち飲み"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 7,
+    "sourceNote": "https://1000bero.net/restaurant-747/"
+  }
+]

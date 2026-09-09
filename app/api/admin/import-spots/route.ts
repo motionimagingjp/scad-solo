@@ -13,6 +13,7 @@ import kinshicho from "@/data/spots-kinshicho.json";
 import kitasenju from "@/data/spots-kitasenju.json";
 import shibuya from "@/data/spots-shibuya.json";
 import shimbashi from "@/data/spots-shimbashi.json";
+import shinagawa from "@/data/spots-shinagawa.json";
 import shinjuku from "@/data/spots-shinjuku.json";
 import suidobashi from "@/data/spots-suidobashi.json";
 import tachikawa from "@/data/spots-tachikawa.json";
@@ -59,6 +60,7 @@ const ALL_CANDIDATES: SpotCandidate[] = [
   ...kitasenju,
   ...shibuya,
   ...shimbashi,
+  ...shinagawa,
   ...shinjuku,
   ...suidobashi,
   ...tachikawa,
