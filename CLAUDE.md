@@ -90,7 +90,10 @@ Geminiに検索させて即DBに入れるが、**人力確認前は`status: AI_S
   「ベルゴロド(BERG)」)。ユーザーの現地知識での二重チェックが最終防波堤
 
 ## 進行中・未着手
-- 高円寺駅の実店舗データが未収集(対象15駅のうち14駅・194件のみ投入済み)
+- 高円寺駅の実店舗データが未収集(Phase 0の対象15駅のうち14駅・194件のみ投入済み)
+- Phase 1として東京・神田・有楽町・赤羽・品川・中野・吉祥寺・高田馬場・大宮・蒲田の
+  10駅(各15軒目安)を追加予定。人力Gemini手順は
+  `docs/gemini-data-collection-handoff-phase1.md`参照
 - Places API (New) を使った月次閉店確認バッチ(`app/api/cron/check-closures`、
   `vercel.json`でCron設定済み)は未検証(Places APIキーの動作確認がまだ)
 - 実店舗データ収集のオンデマンドAI検索(`/api/admin/ai-search-spots`)は実装済みだが
