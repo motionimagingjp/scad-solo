@@ -14,8 +14,11 @@ import { FALLBACK_DRINKS } from "@/lib/data/drinkRouletteFallback";
 type Phase = "intro" | "loading" | "wheel" | "result";
 type Source = "gemini" | "fallback" | "offline";
 
-const WHEEL_COLORS = ["#F97316", "#FDBA74", "#EA580C", "#FB923C", "#C2410C", "#FED7AA"];
+// 隣り合っても見分けやすいよう、色相をはっきり離した6色にしてある
+// (以前はオレンジの濃淡だけで揃えていて、区別しづらいという指摘を受けて変更)
+const WHEEL_COLORS = ["#F97316", "#2563EB", "#16A34A", "#DB2777", "#7C3AED", "#0891B2"];
 const SPIN_DURATION_MS = 3400;
+const WHEEL_SIZE = 208; // 元の260pxから20%縮小
 
 function wheelBackground(n: number): string {
   const seg = 360 / n;
@@ -134,7 +137,7 @@ export default function DrinkRoulettePage() {
             </div>
           )}
 
-          <div className="relative" style={{ width: 260, height: 260 }}>
+          <div className="relative" style={{ width: WHEEL_SIZE, height: WHEEL_SIZE }}>
             <div
               className="absolute left-1/2 top-0 z-10 -translate-x-1/2 -translate-y-1"
               style={{ width: 0, height: 0, borderLeft: "10px solid transparent", borderRight: "10px solid transparent", borderTop: "16px solid #9A3412" }}
@@ -150,10 +153,13 @@ export default function DrinkRoulettePage() {
             <div className="absolute left-1/2 top-1/2 h-4 w-4 -translate-x-1/2 -translate-y-1/2 rounded-full bg-white shadow" />
           </div>
 
-          <div className="grid w-full grid-cols-1 gap-1.5">
+          <div className="grid w-full grid-cols-1 gap-2.5">
             {drinks.map((d, i) => (
-              <div key={d} className="flex items-center gap-2 text-xs text-gray-600">
-                <span className="h-2.5 w-2.5 shrink-0 rounded-full" style={{ backgroundColor: WHEEL_COLORS[i % WHEEL_COLORS.length] }} />
+              <div key={d} className="flex items-center gap-3 text-sm font-medium text-gray-700">
+                <span
+                  className="h-[30px] w-[30px] shrink-0 rounded-lg shadow-sm"
+                  style={{ backgroundColor: WHEEL_COLORS[i % WHEEL_COLORS.length] }}
+                />
                 {d}
               </div>
             ))}
