@@ -167,11 +167,11 @@ export default function DrinkRoulettePage() {
             <div className="absolute left-1/2 top-1/2 h-4 w-4 -translate-x-1/2 -translate-y-1/2 rounded-full bg-white shadow" />
           </div>
 
-          <div className="grid w-full grid-cols-1 gap-2.5">
+          <div className="grid w-full grid-cols-1 gap-2">
             {drinks.map((d, i) => (
-              <div key={d} className="flex items-center gap-3 text-sm font-medium text-gray-700">
+              <div key={d} className="flex items-center gap-2.5 text-sm font-medium text-gray-700">
                 <span
-                  className="h-[30px] w-[30px] shrink-0 rounded-lg shadow-sm"
+                  className="h-[15px] w-[15px] shrink-0 rounded-md shadow-sm"
                   style={{ backgroundColor: WHEEL_COLORS[i % WHEEL_COLORS.length] }}
                 />
                 {d}
