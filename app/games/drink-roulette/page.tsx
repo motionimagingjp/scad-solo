@@ -15,8 +15,9 @@ type Phase = "intro" | "loading" | "wheel" | "result";
 type Source = "gemini" | "fallback" | "offline";
 
 // 隣り合っても見分けやすいよう、色相をはっきり離した6色にしてある
-// (以前はオレンジの濃淡だけで揃えていて、区別しづらいという指摘を受けて変更)
-const WHEEL_COLORS = ["#F97316", "#2563EB", "#16A34A", "#DB2777", "#7C3AED", "#0891B2"];
+// (以前はオレンジの濃淡だけで揃えていて、区別しづらいという指摘を受けて変更。
+// さらに紫が青と紛らわしいとの指摘で薄い黄色に、緑はルーレット定番の緑に変更)
+const WHEEL_COLORS = ["#F97316", "#2563EB", "#00A551", "#DB2777", "#FDE047", "#0891B2"];
 const SPIN_DURATION_MS = 3400;
 const WHEEL_SIZE = 208; // 元の260pxから20%縮小
 
@@ -169,7 +170,7 @@ export default function DrinkRoulettePage() {
             <button
               onClick={spin}
               disabled={spinning}
-              className="w-full rounded-full bg-orange-500 py-3 text-sm font-bold text-white disabled:opacity-50"
+              className="w-full rounded-full bg-[#E4002B] py-3 text-sm font-bold text-white shadow-md shadow-red-500/30 disabled:opacity-50"
             >
               {spinning ? "回転中..." : "ルーレットを回す"}
             </button>
