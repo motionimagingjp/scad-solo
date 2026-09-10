@@ -8,6 +8,7 @@ import InfoButton from "@/components/InfoButton";
 import SpotCard, { type SpotSummary } from "@/components/SpotCard";
 import SearchMap from "@/components/SearchMap";
 import LocationChip from "@/components/LocationChip";
+import ShareButton from "@/components/ShareButton";
 import { distanceLabel, haversineMeters } from "@/lib/geo";
 import { useBaseLocation } from "@/lib/useBaseLocation";
 
@@ -55,6 +56,7 @@ export default function MapPage() {
         </Link>
         <div className="flex items-center gap-2">
           <LocationChip location={location} onSelectManual={setManualLocation} onRequestGps={requestGps} />
+          <ShareButton />
           <InfoButton />
         </div>
       </header>
