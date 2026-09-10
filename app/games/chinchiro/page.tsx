@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { ChevronLeft } from "lucide-react";
 import BottomNav from "@/components/BottomNav";
@@ -9,6 +9,10 @@ import BottomNav from "@/components/BottomNav";
 // 「人数を入れて対戦」という元の企画通り、対戦相手はランダムな胴元ではなく実在の人。
 // ペナルティはギャンブル性を出さないよう「最下位がトップに1杯奢る」の1種類だけに絞ってある
 // (一気飲み等は入れない)。DBには保存しない、その場限りの遊び。
+//
+// 1人を選んだ場合だけは例外で、実質2人プレイ(1投目=AI、2投目=ユーザー)として動かす。
+// 誰も隣にいなくても遊べるようにするための追加モードで、役の判定・進行は通常の
+// 2人対戦と完全に同じ。結果表示だけ「プレイヤー1/2」を「AI/あなた」に読み替える。
 
 type DieValue = 1 | 2 | 3 | 4 | 5 | 6;
 type RollResult = { player: number; dice: [DieValue, DieValue, DieValue]; label: string; rankValue: number };
@@ -65,12 +69,20 @@ function rollDice(): [DieValue, DieValue, DieValue] {
   return [roll(), roll(), roll()];
 }
 
+// 1人モード用のプレイヤー表示名(それ以外は「プレイヤーN」のまま)
+function soloPlayerLabel(player: number): string {
+  return player === 1 ? "AI" : "あなた";
+}
+
 export default function ChinchiroPage() {
   const [phase, setPhase] = useState<Phase>("setup");
   const [playerCount, setPlayerCount] = useState(3);
   const [currentPlayer, setCurrentPlayer] = useState(1);
   const [results, setResults] = useState<RollResult[]>([]);
   const [currentDice, setCurrentDice] = useState<[DieValue, DieValue, DieValue] | null>(null);
+
+  const soloMode = playerCount === 1;
+  const effectivePlayerCount = soloMode ? 2 : playerCount;
 
   const startGame = () => {
     setResults([]);
@@ -85,6 +97,15 @@ export default function ChinchiroPage() {
     setPhase("revealed");
   };
 
+  // 1人モードの1投目(AI)は自動で振る。「渡す」相手がいないので待たせない
+  useEffect(() => {
+    if (phase === "turn" && soloMode && currentPlayer === 1) {
+      const t = setTimeout(roll, 900);
+      return () => clearTimeout(t);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [phase, currentPlayer, soloMode]);
+
   const nextPlayer = () => {
     if (!currentDice) return;
     const { label, rankValue } = evaluateRoll(currentDice);
@@ -92,7 +113,7 @@ export default function ChinchiroPage() {
     setResults(updated);
     setCurrentDice(null);
 
-    if (currentPlayer >= playerCount) {
+    if (currentPlayer >= effectivePlayerCount) {
       setPhase("result");
     } else {
       setCurrentPlayer((p) => p + 1);
@@ -126,7 +147,7 @@ export default function ChinchiroPage() {
           <p className="text-sm text-gray-500">今日は何人で遊ぶ?</p>
           <div className="flex items-center gap-6">
             <button
-              onClick={() => setPlayerCount((n) => Math.max(2, n - 1))}
+              onClick={() => setPlayerCount((n) => Math.max(1, n - 1))}
               className="flex h-12 w-12 items-center justify-center rounded-full border text-xl text-gray-600"
               aria-label="人数を減らす"
             >
@@ -144,32 +165,56 @@ export default function ChinchiroPage() {
           <button onClick={startGame} className="w-full rounded-full bg-orange-500 py-3 text-center text-sm font-bold text-white">
             はじめる
           </button>
-          <p className="text-center text-[11px] text-gray-400">
-            1台のスマホを順番に回してください。役が一番強かった人の勝ち。
-            <br />
-            最下位が1位に1杯奢る、くらいの軽いノリでどうぞ。
-          </p>
+          {playerCount === 1 ? (
+            <p className="text-center text-[11px] text-gray-400">
+              1人を選ぶと、AIと1対1で勝負します。
+              <br />
+              先にAIが振り、続けてあなたが振って役を競います。
+            </p>
+          ) : (
+            <p className="text-center text-[11px] text-gray-400">
+              1台のスマホを順番に回してください。役が一番強かった人の勝ち。
+              <br />
+              最下位が1位に1杯奢る、くらいの軽いノリでどうぞ。
+            </p>
+          )}
         </div>
       )}
 
       {phase === "turn" && (
         <div className="flex flex-1 flex-col items-center justify-center gap-8 px-6 text-center">
-          <div>
-            <p className="text-xs text-gray-400">
-              {currentPlayer} / {playerCount} 人目
-            </p>
-            <p className="mt-2 text-2xl font-bold">プレイヤー{currentPlayer}の番です</p>
-            <p className="mt-1 text-xs text-gray-400">📱をこの人に渡してください</p>
-          </div>
-          <button onClick={roll} className="rounded-full bg-orange-500 px-10 py-4 text-base font-bold text-white">
-            🎲 振る
-          </button>
+          {soloMode && currentPlayer === 1 ? (
+            <div>
+              <p className="text-2xl font-bold">🤖 AIの番です</p>
+              <p className="mt-2 flex items-center justify-center gap-2 text-xs text-gray-400">
+                <span className="h-2 w-2 animate-ping rounded-full bg-orange-400" />
+                考え中...
+              </p>
+            </div>
+          ) : (
+            <div>
+              <p className="text-xs text-gray-400">
+                {currentPlayer} / {effectivePlayerCount} 人目
+              </p>
+              <p className="mt-2 text-2xl font-bold">
+                {soloMode ? "あなたの番です" : `プレイヤー${currentPlayer}の番です`}
+              </p>
+              {!soloMode && <p className="mt-1 text-xs text-gray-400">📱をこの人に渡してください</p>}
+            </div>
+          )}
+          {!(soloMode && currentPlayer === 1) && (
+            <button onClick={roll} className="rounded-full bg-orange-500 px-10 py-4 text-base font-bold text-white">
+              🎲 振る
+            </button>
+          )}
         </div>
       )}
 
       {phase === "revealed" && currentDice && (
         <div className="flex flex-1 flex-col items-center justify-center gap-6 px-6 text-center">
-          <p className="text-sm text-gray-500">プレイヤー{currentPlayer}</p>
+          <p className="text-sm text-gray-500">
+            {soloMode ? soloPlayerLabel(currentPlayer) : `プレイヤー${currentPlayer}`}
+          </p>
           <div className="flex gap-3">
             {currentDice.map((v, i) => (
               <Die key={i} value={v} />
@@ -179,7 +224,7 @@ export default function ChinchiroPage() {
             {evaluateRoll(currentDice).label}
           </p>
           <button onClick={nextPlayer} className="w-full rounded-full bg-orange-500 py-3 text-sm font-bold text-white">
-            {currentPlayer >= playerCount ? "結果を見る" : "次のプレイヤーへ"}
+            {currentPlayer >= effectivePlayerCount ? "結果を見る" : soloMode ? "あなたの番へ" : "次のプレイヤーへ"}
           </button>
         </div>
       )}
@@ -187,6 +232,12 @@ export default function ChinchiroPage() {
       {phase === "result" && ranked.length > 0 && (
         <div className="flex-1 px-4 py-6">
           <p className="text-center text-lg font-bold">結果発表</p>
+
+          {soloMode && (
+            <p className={`mt-2 text-center text-xl font-bold ${ranked[0].player === 2 ? "text-orange-500" : "text-gray-500"}`}>
+              {ranked[0].player === 2 ? "🎉 あなたの勝ち!" : "🤖 AIの勝ち..."}
+            </p>
+          )}
 
           <div className="mt-4 space-y-2">
             {ranked.map((r, i) => (
@@ -201,13 +252,15 @@ export default function ChinchiroPage() {
                     </span>
                   ))}
                 </div>
-                <span className="flex-1 text-sm font-medium">プレイヤー{r.player}</span>
+                <span className="flex-1 text-sm font-medium">
+                  {soloMode ? soloPlayerLabel(r.player) : `プレイヤー${r.player}`}
+                </span>
                 <span className="text-xs text-gray-400">{r.label}</span>
               </div>
             ))}
           </div>
 
-          {ranked.length >= 2 && (
+          {!soloMode && ranked.length >= 2 && (
             <div className="mt-5 rounded-2xl bg-orange-50 p-4 text-center">
               <p className="text-sm font-bold text-orange-600">
                 🍺 プレイヤー{ranked[ranked.length - 1].player}(最下位)→ プレイヤー{ranked[0].player}(1位)に1杯
