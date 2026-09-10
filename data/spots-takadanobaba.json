@@ -1,0 +1,167 @@
+[
+  {
+    "name": "SAKE PUB 酒夫 SAKEO",
+    "address": "東京都新宿区高田馬場2-19-8 2F",
+    "nearestStation": "高田馬場駅",
+    "tagline": "日本酒・ワイン・焼酎を6席のカウンターでじっくり楽しむ酒好き向けバー",
+    "subCategories": ["日本酒", "ワイン"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 10,
+    "sourceNote": ""
+  },
+  {
+    "name": "酒ト肴 オンザコーナー",
+    "address": "東京都新宿区高田馬場2-8-5 中島ビル2F",
+    "nearestStation": "高田馬場駅",
+    "tagline": "酒と肴を中心にワインを一人で気軽に楽しめるビストロ酒場",
+    "subCategories": ["ワイン"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "立ち飲み居酒屋 炎天下",
+    "address": "東京都新宿区高田馬場3-4-18",
+    "nearestStation": "高田馬場駅",
+    "tagline": "高田馬場らしい気軽な立ち飲みで仕事帰りにサクッと一杯",
+    "subCategories": ["立ち飲み"],
+    "hasCounterSeat": false,
+    "senberoAvailable": true,
+    "soloFriendliness": 10,
+    "sourceNote": ""
+  },
+  {
+    "name": "まるの",
+    "address": "東京都新宿区高田馬場3-13-9",
+    "nearestStation": "高田馬場駅",
+    "tagline": "低価格で気軽に一杯飲める小さな立ち飲み酒場",
+    "subCategories": ["立ち飲み"],
+    "hasCounterSeat": false,
+    "senberoAvailable": true,
+    "soloFriendliness": 10,
+    "sourceNote": ""
+  },
+  {
+    "name": "vivo daily stand 高田馬場店",
+    "address": "東京都豊島区高田3-10-18",
+    "nearestStation": "高田馬場駅",
+    "tagline": "小皿料理とワインを気軽に楽しむスタンド型の一人飲み店",
+    "subCategories": ["ワイン", "立ち飲み"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 10,
+    "sourceNote": ""
+  },
+  {
+    "name": "静岡おでん ガッツ",
+    "address": "東京都新宿区高田馬場2-19-8 阿部ビル1F",
+    "nearestStation": "高田馬場駅",
+    "tagline": "静岡おでんをつまみに気軽に飲める立ち飲みスペース付き酒場",
+    "subCategories": ["立ち飲み"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "福茶庵",
+    "address": "東京都新宿区高田馬場3-12-6 高田馬場西商店街ビルB1F",
+    "nearestStation": "高田馬場駅",
+    "tagline": "50年近く愛される地下の和食居酒屋で日本酒・焼酎と名物料理を楽しむ",
+    "subCategories": ["日本酒"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 10,
+    "sourceNote": ""
+  },
+  {
+    "name": "大衆酒場 酒呑んで飯食って蛙之介 高田馬場店",
+    "address": "東京都新宿区高田馬場3-1-4 吾妻ビルB1F",
+    "nearestStation": "高田馬場駅",
+    "tagline": "大衆料理と酒を深夜まで楽しめる駅近の気軽な酒場",
+    "subCategories": [],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "やきとん木々家 高田馬場店",
+    "address": "東京都新宿区高田馬場4-8-8 白鳥会館ビル2F",
+    "nearestStation": "高田馬場駅",
+    "tagline": "やきとんを中心に酒を気軽に楽しむ人気の大衆酒場",
+    "subCategories": [],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 8,
+    "sourceNote": ""
+  },
+  {
+    "name": "鶴亀八番 東京本店",
+    "address": "東京都新宿区高田馬場4-5-10 オアシスプラザビル1F",
+    "nearestStation": "高田馬場駅",
+    "tagline": "昼から夜まで使いやすい大衆酒場で日本酒と料理を気軽に楽しむ",
+    "subCategories": ["日本酒"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 8,
+    "sourceNote": ""
+  },
+  {
+    "name": "高田馬場ビール食堂",
+    "address": "東京都新宿区高田馬場3-4-13 日鉄ビル1F",
+    "nearestStation": "高田馬場駅",
+    "tagline": "ビールを主役に料理を合わせて楽しむクラフト系酒場",
+    "subCategories": ["ビール"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 8,
+    "sourceNote": ""
+  },
+  {
+    "name": "Bar Spot Light 高田馬場",
+    "address": "東京都新宿区高田馬場2-15-9 鈴や第5ビルB1F",
+    "nearestStation": "高田馬場駅",
+    "tagline": "深夜まで営業する落ち着いたバーで一人で酒を楽しむ",
+    "subCategories": [],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "Japanese Gin Bar THE HISAKA",
+    "address": "東京都豊島区高田3-8-5 1F102",
+    "nearestStation": "高田馬場駅",
+    "tagline": "国産ジンを中心に静かに一杯を楽しめる専門性の高いバー",
+    "subCategories": [],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "大衆酒場55 高田馬場店",
+    "address": "東京都新宿区高田馬場3-5-4",
+    "nearestStation": "高田馬場駅",
+    "tagline": "安価な料理と酒を気軽に楽しめる駅近の大衆酒場",
+    "subCategories": [],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "おとんば 高田馬場店",
+    "address": "東京都新宿区高田馬場4-9-18",
+    "nearestStation": "高田馬場駅",
+    "tagline": "もつ焼きと大衆酒を昼から楽しめる一人飲み向きの酒場",
+    "subCategories": [],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  }
+]

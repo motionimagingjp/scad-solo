@@ -8,8 +8,10 @@ import asakusa from "@/data/spots-asakusa.json";
 import ebisu from "@/data/spots-ebisu.json";
 import gotanda from "@/data/spots-gotanda.json";
 import ikebukuro from "@/data/spots-ikebukuro.json";
+import kamata from "@/data/spots-kamata.json";
 import kanda from "@/data/spots-kanda.json";
 import kawasaki from "@/data/spots-kawasaki.json";
+import kichijoji from "@/data/spots-kichijoji.json";
 import kinshicho from "@/data/spots-kinshicho.json";
 import kitasenju from "@/data/spots-kitasenju.json";
 import koenji from "@/data/spots-koenji.json";
@@ -22,6 +24,7 @@ import shinagawa from "@/data/spots-shinagawa.json";
 import shinjuku from "@/data/spots-shinjuku.json";
 import suidobashi from "@/data/spots-suidobashi.json";
 import tachikawa from "@/data/spots-tachikawa.json";
+import takadanobaba from "@/data/spots-takadanobaba.json";
 import tokyo from "@/data/spots-tokyo.json";
 import ueno from "@/data/spots-ueno.json";
 import yokohama from "@/data/spots-yokohama.json";
@@ -60,8 +63,10 @@ const ALL_CANDIDATES: SpotCandidate[] = [
   ...ebisu,
   ...gotanda,
   ...ikebukuro,
+  ...kamata,
   ...kanda,
   ...kawasaki,
+  ...kichijoji,
   ...kinshicho,
   ...kitasenju,
   ...koenji,
@@ -74,6 +79,7 @@ const ALL_CANDIDATES: SpotCandidate[] = [
   ...shinjuku,
   ...suidobashi,
   ...tachikawa,
+  ...takadanobaba,
   ...tokyo,
   ...ueno,
   ...yokohama,

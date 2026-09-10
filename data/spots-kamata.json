@@ -1,0 +1,134 @@
+[
+  {
+    "name": "魚寅食堂 蒲田店",
+    "address": "東京都大田区西蒲田7-6-1 升本ビル1F",
+    "nearestStation": "蒲田駅",
+    "tagline": "新鮮な魚を立ち飲みで楽しむ、一人客の多い海鮮酒場",
+    "subCategories": ["立ち飲み"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 10,
+    "sourceNote": ""
+  },
+  {
+    "name": "さしみや五坪",
+    "address": "東京都大田区蒲田5-23-5",
+    "nearestStation": "蒲田駅",
+    "tagline": "1階立ち飲みとカウンターで魚・日本酒・焼酎を楽しむ蒲田の定番",
+    "subCategories": ["立ち飲み", "日本酒"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "やきとん豚番長 蒲田西口店",
+    "address": "東京都大田区西蒲田7-63-6",
+    "nearestStation": "蒲田駅",
+    "tagline": "バーボンロードの路地でやきとんと酒を立ち飲みで楽しむ",
+    "subCategories": ["立ち飲み"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 10,
+    "sourceNote": ""
+  },
+  {
+    "name": "豚番長 京急蒲田店",
+    "address": "東京都大田区蒲田4-6-7 Kビル1F",
+    "nearestStation": "京急蒲田駅",
+    "tagline": "やきとんを中心に安く気軽に飲める駅近大衆酒場",
+    "subCategories": [],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "Pizza Land",
+    "address": "東京都大田区西蒲田7-63-1 1F",
+    "nearestStation": "蒲田駅",
+    "tagline": "ピザをつまみに立ち飲みで酒を楽しむ蒲田らしい変化球酒場",
+    "subCategories": ["立ち飲み", "ワイン"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "立ち飲み とっちゃん",
+    "address": "東京都大田区蒲田4-3-4 ヴィラローザオクヤマ",
+    "nearestStation": "京急蒲田駅",
+    "tagline": "京急蒲田の再開発エリアで昔ながらの立ち飲みを楽しむ",
+    "subCategories": ["立ち飲み"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "lober",
+    "address": "東京都大田区蒲田3-17-26 伏田ビル1F",
+    "nearestStation": "京急蒲田駅",
+    "tagline": "バスクの立ち飲み文化を蒲田で楽しむピンチョスとシードルの店",
+    "subCategories": ["立ち飲み", "ワイン"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "JUURI",
+    "address": "東京都大田区蒲田4-19-1 蒲田マロニエビル1F",
+    "nearestStation": "京急蒲田駅",
+    "tagline": "花屋の中で自然派ワインを楽しむユニークな立ち飲みスタンド",
+    "subCategories": ["ワイン", "立ち飲み"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "GAIA",
+    "address": "東京都大田区蒲田5-7-6 CCMビル3F",
+    "nearestStation": "蒲田駅",
+    "tagline": "猟師直送のジビエと自然派ワインをカウンターで楽しむ大人の隠れ家",
+    "subCategories": ["ワイン"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "創作居酒屋 自遊",
+    "address": "東京都大田区蒲田5-21-13 ペガサスステーションプラザ102",
+    "nearestStation": "蒲田駅",
+    "tagline": "鮮魚と季節のレア日本酒を楽しむ店主こだわりの創作和食店",
+    "subCategories": ["日本酒"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "大衆飯店かね子 蒲田店",
+    "address": "東京都大田区蒲田5-19-5",
+    "nearestStation": "蒲田駅",
+    "tagline": "焼きとん・餃子・アジアン料理を酒のアテに楽しむ新型大衆酒場",
+    "subCategories": [],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 8,
+    "sourceNote": ""
+  },
+  {
+    "name": "酒場BEETLE 蒲田東",
+    "address": "東京都大田区蒲田5-20-10 第二美須ビル1F",
+    "nearestStation": "蒲田駅",
+    "tagline": "豊富な酒と大衆つまみを深夜まで楽しめる蒲田東口の酒場",
+    "subCategories": [],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 8,
+    "sourceNote": ""
+  }
+]

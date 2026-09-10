@@ -1,0 +1,134 @@
+[
+  {
+    "name": "プラットスタンド酛",
+    "address": "東京都武蔵野市吉祥寺本町1-9-10 シュープラザビルB1F",
+    "nearestStation": "吉祥寺駅",
+    "tagline": "約60種の日本酒と自家製つまみをコの字カウンターの立ち飲みで楽しむ",
+    "subCategories": ["立ち飲み", "日本酒"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 10,
+    "sourceNote": ""
+  },
+  {
+    "name": "立ち呑みばっかす",
+    "address": "東京都武蔵野市吉祥寺本町1-1-8",
+    "nearestStation": "吉祥寺駅",
+    "tagline": "ハモニカ横丁でワインや日本酒を気軽に楽しめる立ち飲み酒場",
+    "subCategories": ["立ち飲み", "ワイン", "日本酒"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "スタンドローキー 吉祥寺",
+    "address": "東京都武蔵野市吉祥寺本町1-26-1 JK吉祥寺ビル201",
+    "nearestStation": "吉祥寺駅",
+    "tagline": "広島料理と日本酒・ワインを立ち飲みで楽しむ駅近スタンド",
+    "subCategories": ["立ち飲み", "日本酒", "ワイン"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "にほん酒や",
+    "address": "東京都武蔵野市吉祥寺本町2-7-13",
+    "nearestStation": "吉祥寺駅",
+    "tagline": "日本酒と料理の組み合わせをじっくり楽しむ吉祥寺の酒好き向け名店",
+    "subCategories": ["日本酒"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "日本酒庵 吟の杜",
+    "address": "東京都武蔵野市吉祥寺本町1-8-14 六鳴館ビルB1F",
+    "nearestStation": "吉祥寺駅",
+    "tagline": "全国の日本酒と料理を落ち着いた空間で楽しむ日本酒専門系居酒屋",
+    "subCategories": ["日本酒"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 8,
+    "sourceNote": ""
+  },
+  {
+    "name": "Hidamari",
+    "address": "東京都武蔵野市吉祥寺本町1-10-9 富澤ビル3F",
+    "nearestStation": "吉祥寺駅",
+    "tagline": "落ち着いたカウンターでワインをじっくり味わえる小さなワインバー",
+    "subCategories": ["ワイン"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "Wine Room",
+    "address": "東京都武蔵野市吉祥寺本町1-30-16 加藤ビル1F",
+    "nearestStation": "吉祥寺駅",
+    "tagline": "駅近でワインを落ち着いて楽しめる小規模ワインバー",
+    "subCategories": ["ワイン"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 8,
+    "sourceNote": ""
+  },
+  {
+    "name": "鮮魚・日本酒 和-kazu-",
+    "address": "東京都武蔵野市吉祥寺本町2-16-18 リベストフォーラムI 2F",
+    "nearestStation": "吉祥寺駅",
+    "tagline": "鮮魚と日本酒を合わせて楽しむ落ち着いた酒好き向け居酒屋",
+    "subCategories": ["日本酒"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 8,
+    "sourceNote": ""
+  },
+  {
+    "name": "大衆酒場 もつ焼 総裁 吉祥寺",
+    "address": "東京都武蔵野市吉祥寺本町1-26-5 みゆきビル",
+    "nearestStation": "吉祥寺駅",
+    "tagline": "もつ焼きをアテに気軽に飲める吉祥寺の大衆酒場",
+    "subCategories": [],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "もつ焼き専門店 カッパ 吉祥寺店",
+    "address": "東京都武蔵野市吉祥寺南町1-5-9",
+    "nearestStation": "吉祥寺駅",
+    "tagline": "カウンター中心の老舗系空間でもつ焼きと酒を一人で楽しむ",
+    "subCategories": [],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "立ち呑みおでん屋 つかだ",
+    "address": "東京都武蔵野市吉祥寺本町1-1-8",
+    "nearestStation": "吉祥寺駅",
+    "tagline": "ハモニカ横丁でおでんと酒を立ち飲みで楽しむ夜の一軒",
+    "subCategories": ["立ち飲み"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "大衆酒場 酒呑んで飯食って蛙之介 吉祥寺店",
+    "address": "東京都武蔵野市吉祥寺南町1-3-2 MRビルB1F",
+    "nearestStation": "吉祥寺駅",
+    "tagline": "大衆的な料理と酒を深夜まで楽しめる気軽な一人飲み候補",
+    "subCategories": [],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 8,
+    "sourceNote": ""
+  }
+]
