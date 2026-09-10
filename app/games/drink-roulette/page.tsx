@@ -197,14 +197,9 @@ export default function DrinkRoulettePage() {
           )}
 
           {phase === "result" && result && (
-            <div className="flex w-full gap-2">
-              <button onClick={backToWheel} className="flex-1 rounded-full border bg-white py-2.5 text-sm font-medium text-gray-700">
-                もう一度回す
-              </button>
-              <button onClick={openGallery} className="flex-1 rounded-full border bg-white py-2.5 text-sm font-medium text-gray-700">
-                別の写真で試す
-              </button>
-            </div>
+            <button onClick={backToWheel} className="w-full rounded-full border bg-white py-2.5 text-sm font-medium text-gray-700">
+              もう一度回す
+            </button>
           )}
         </div>
       )}
