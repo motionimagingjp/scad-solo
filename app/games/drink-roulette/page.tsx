@@ -2,7 +2,7 @@
 
 import { useRef, useState } from "react";
 import Link from "next/link";
-import { ChevronLeft, Camera } from "lucide-react";
+import { ChevronLeft, Camera, Image as ImageIcon } from "lucide-react";
 import BottomNav from "@/components/BottomNav";
 import { FALLBACK_DRINKS } from "@/lib/data/drinkRouletteFallback";
 
@@ -34,9 +34,11 @@ export default function DrinkRoulettePage() {
   const [rotation, setRotation] = useState(0);
   const [spinning, setSpinning] = useState(false);
   const [result, setResult] = useState<string | null>(null);
-  const fileInputRef = useRef<HTMLInputElement>(null);
+  const cameraInputRef = useRef<HTMLInputElement>(null);
+  const galleryInputRef = useRef<HTMLInputElement>(null);
 
-  const openCamera = () => fileInputRef.current?.click();
+  const openCamera = () => cameraInputRef.current?.click();
+  const openGallery = () => galleryInputRef.current?.click();
 
   const handleFile = async (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
@@ -97,7 +99,8 @@ export default function DrinkRoulettePage() {
         <h1 className="text-base font-bold">🍹 ドリンクルーレット</h1>
       </header>
 
-      <input ref={fileInputRef} type="file" accept="image/*" capture="environment" className="hidden" onChange={handleFile} />
+      <input ref={cameraInputRef} type="file" accept="image/*" capture="environment" className="hidden" onChange={handleFile} />
+      <input ref={galleryInputRef} type="file" accept="image/*" className="hidden" onChange={handleFile} />
 
       {phase === "intro" && (
         <div className="flex flex-1 flex-col items-center justify-center gap-6 px-6 text-center">
@@ -107,10 +110,16 @@ export default function DrinkRoulettePage() {
             <br />
             あとはルーレットで1つに決めるだけ。
           </p>
-          <button onClick={openCamera} className="flex w-full items-center justify-center gap-2 rounded-full bg-orange-500 py-3 text-sm font-bold text-white">
-            <Camera size={16} />
-            メニューを撮る
-          </button>
+          <div className="flex w-full gap-2">
+            <button onClick={openCamera} className="flex flex-1 items-center justify-center gap-2 rounded-full bg-orange-500 py-3 text-sm font-bold text-white">
+              <Camera size={16} />
+              撮る
+            </button>
+            <button onClick={openGallery} className="flex flex-1 items-center justify-center gap-2 rounded-full border border-orange-300 bg-white py-3 text-sm font-bold text-orange-600">
+              <ImageIcon size={16} />
+              アルバムから選ぶ
+            </button>
+          </div>
           <p className="rounded-xl bg-orange-50 px-4 py-2.5 text-[11px] leading-relaxed text-orange-600">
             📷 コツ: 全体より、3〜6品くらいに近づいて・明るい方を向いて撮ると読み取り精度UP
           </p>
@@ -132,9 +141,14 @@ export default function DrinkRoulettePage() {
               <p className="mt-1">
                 3〜6品くらいに近づいて、明るい方を向いてもう一度撮ると通りやすいです
               </p>
-              <button onClick={openCamera} className="mt-2 rounded-full border border-gray-300 bg-white px-3 py-1 text-[11px] font-medium text-gray-600">
-                撮り直す
-              </button>
+              <div className="mt-2 flex justify-center gap-2">
+                <button onClick={openCamera} className="rounded-full border border-gray-300 bg-white px-3 py-1 text-[11px] font-medium text-gray-600">
+                  撮り直す
+                </button>
+                <button onClick={openGallery} className="rounded-full border border-gray-300 bg-white px-3 py-1 text-[11px] font-medium text-gray-600">
+                  アルバムから選ぶ
+                </button>
+              </div>
             </div>
           )}
 
@@ -194,7 +208,7 @@ export default function DrinkRoulettePage() {
               <button onClick={backToWheel} className="flex-1 rounded-full border bg-white py-2.5 text-sm font-medium text-gray-700">
                 もう一度回す
               </button>
-              <button onClick={openCamera} className="flex-1 rounded-full border bg-white py-2.5 text-sm font-medium text-gray-700">
+              <button onClick={openGallery} className="flex-1 rounded-full border bg-white py-2.5 text-sm font-medium text-gray-700">
                 別の写真で試す
               </button>
             </div>
