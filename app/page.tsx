@@ -28,7 +28,7 @@ const MODES = ["カウンター席", "立ち飲み", "せんべろ", "日本酒"
 const TOKYO_STATION = { lat: 35.681236, lng: 139.767125, label: "東京駅" };
 
 export default function HomePage() {
-  const { location, setManualLocation, requestGps } = useBaseLocation();
+  const { location, setManualLocation, requestGps, gpsDenied } = useBaseLocation();
   const [modes, setModes] = useState<Set<string>>(new Set());
   const [spots, setSpots] = useState<SpotSummary[] | null>(null);
   const [page, setPage] = useState(0);
@@ -97,8 +97,15 @@ export default function HomePage() {
           <Store size={20} className="text-orange-500" />
           今夜のおすすめ3軒
         </p>
-        <p className="mt-1 text-xs text-gray-400">近くのおすすめはこれ</p>
+        <p className="mt-1 text-xs text-gray-400">現在地は不明の場合は東京駅が出ます</p>
       </div>
+
+      {gpsDenied && location?.source !== "manual" && location?.source !== "gps" && (
+        <div className="mx-4 mt-3 rounded-xl bg-orange-50 px-3.5 py-2.5 text-[11px] leading-relaxed text-orange-600">
+          位置情報の利用が許可されていないため、東京駅を仮の基準地にしています。
+          端末のブラウザ設定で位置情報を許可すると、近くのお店を表示できます。
+        </div>
+      )}
 
       {/* 気分のモード。何も選ばなければ「おまかせ」。右端は横スクロールできる合図としてグラデーションを重ねる */}
       <div className="relative mt-3">
