@@ -13,6 +13,7 @@ import kawasaki from "@/data/spots-kawasaki.json";
 import kinshicho from "@/data/spots-kinshicho.json";
 import kitasenju from "@/data/spots-kitasenju.json";
 import koenji from "@/data/spots-koenji.json";
+import mishima from "@/data/spots-mishima.json";
 import nakano from "@/data/spots-nakano.json";
 import omiya from "@/data/spots-omiya.json";
 import shibuya from "@/data/spots-shibuya.json";
@@ -64,6 +65,7 @@ const ALL_CANDIDATES: SpotCandidate[] = [
   ...kinshicho,
   ...kitasenju,
   ...koenji,
+  ...mishima,
   ...nakano,
   ...omiya,
   ...shibuya,

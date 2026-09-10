@@ -1,0 +1,13 @@
+[
+  {
+    "name": "うなぎ 桜家",
+    "address": "静岡県三島市広小路町13-2",
+    "nearestStation": "三島広小路駅",
+    "tagline": "老舗の蒲焼や白焼を酒の肴にカウンターで贅沢な一人飲み",
+    "subCategories": ["日本酒", "女性ひとり歓迎"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 8,
+    "sourceNote": ""
+  }
+]
