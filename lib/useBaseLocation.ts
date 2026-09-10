@@ -40,6 +40,9 @@ function readStoredLocation(): BaseLocation | null {
 
 export function useBaseLocation() {
   const [location, setLocation] = useState<BaseLocation | null>(null);
+  // GPSが「そもそも許可されていない」ケースだけ他の失敗(タイムアウト等)と分けて
+  // 案内を出す。ユーザーが「取得できていないのはバグか」と迷わないようにするため。
+  const [gpsDenied, setGpsDenied] = useState(false);
 
   const resolveFromIp = useCallback(() => {
     return fetch("/api/location")
@@ -64,9 +67,14 @@ export function useBaseLocation() {
         try {
           localStorage.removeItem(STORAGE_KEY);
         } catch {}
+        setGpsDenied(false);
         setLocation({ lat: pos.coords.latitude, lng: pos.coords.longitude, label: "現在地", source: "gps" });
       },
-      () => resolveFromIp(),
+      (err) => {
+        // code 1 = PERMISSION_DENIED。タイムアウトや圏外(2, 3)は「たまたま失敗」なので区別する
+        setGpsDenied(err.code === err.PERMISSION_DENIED);
+        resolveFromIp();
+      },
       { timeout: 8000 },
     );
   }, [resolveFromIp]);
@@ -87,5 +95,5 @@ export function useBaseLocation() {
     setLocation({ ...next, source: "manual" });
   }, []);
 
-  return { location, setManualLocation, requestGps };
+  return { location, setManualLocation, requestGps, gpsDenied };
 }
