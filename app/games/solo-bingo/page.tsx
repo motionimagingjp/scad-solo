@@ -34,7 +34,7 @@ const BINGO_TASKS: BingoTask[] = [
   { id: "no-repeat-genre", text: "一度飲んだジャンルのお酒は二度頼まない", category: "order", difficulty: 2 },
   { id: "impression", text: "誰にもバレずに10分以内にモノマネをする", category: "self", difficulty: 3, special: "spy" },
   { id: "mystery-dish", text: "普段は絶対頼まない「謎の小鉢・一品」に挑む", category: "order", difficulty: 2 },
-  { id: "self-praise", text: "自分自身を心の中で思いっきり褒める", category: "self", difficulty: 1 },
+  { id: "self-praise", text: "伝説の昭和ギャグ(ポーズ)をやる", category: "self", difficulty: 1 },
   { id: "inspired-message", text: "気になった漢字・名前から思い浮かんだ人にメッセージする", category: "communication", difficulty: 2 },
   { id: "search-next", text: "次行く店を本アプリで再検索する", category: "app", difficulty: 1, special: "deeplink" },
 ];
