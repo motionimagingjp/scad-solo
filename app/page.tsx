@@ -6,6 +6,7 @@ import { Store, MapPin } from "lucide-react";
 import BottomNav, { NAV_HEIGHT } from "@/components/BottomNav";
 import InfoButton from "@/components/InfoButton";
 import LocationChip from "@/components/LocationChip";
+import ShareButton from "@/components/ShareButton";
 import { AiSuggestedBadge, spotMetaLine, type SpotSummary } from "@/components/SpotCard";
 import { distanceLabel, googleMapsUrl, haversineMeters } from "@/lib/geo";
 import { useBaseLocation } from "@/lib/useBaseLocation";
@@ -86,6 +87,7 @@ export default function HomePage() {
         <h1 className="text-base font-bold text-orange-500">SCAD-SOLO</h1>
         <div className="flex items-center gap-2">
           <LocationChip location={location} onSelectManual={setManualLocation} onRequestGps={requestGps} />
+          <ShareButton />
           <InfoButton />
         </div>
       </header>
