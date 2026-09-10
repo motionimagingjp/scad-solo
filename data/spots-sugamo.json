@@ -108,5 +108,16 @@
     "senberoAvailable": true,
     "soloFriendliness": 9,
     "sourceNote": ""
+  },
+  {
+    "name": "Yururi Bar",
+    "address": "東京都豊島区巣鴨2-9-27",
+    "nearestStation": "巣鴨駅",
+    "tagline": "日本酒をじっくり味わいながら静かに一人飲みできるバー",
+    "subCategories": ["日本酒"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 10,
+    "sourceNote": ""
   }
 ]

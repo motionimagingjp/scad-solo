@@ -1,0 +1,35 @@
+[
+  {
+    "name": "いぶし銀",
+    "address": "東京都大田区山王2-2-15",
+    "nearestStation": "大森駅",
+    "tagline": "大森の飲み屋街で気軽に一杯を楽しめる大衆酒場",
+    "subCategories": ["立ち飲み", "ビール"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "いたりあんばー へちま",
+    "address": "東京都大田区山王2-2-15",
+    "nearestStation": "大森駅",
+    "tagline": "地獄谷に登場した生ビールやピザをリーズナブルに楽しめる立ち飲みバー",
+    "subCategories": ["立ち飲み", "ワイン"],
+    "hasCounterSeat": false,
+    "senberoAvailable": true,
+    "soloFriendliness": 10,
+    "sourceNote": ""
+  },
+  {
+    "name": "大森山王ブルワリー",
+    "address": "東京都大田区山王3-2-2",
+    "nearestStation": "大森駅",
+    "tagline": "地元感のあるクラフトビールを一人でじっくり楽しめる大森のビアスポット",
+    "subCategories": [],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  }
+]

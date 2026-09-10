@@ -119,16 +119,5 @@
     "senberoAvailable": true,
     "soloFriendliness": 8,
     "sourceNote": ""
-  },
-  {
-    "name": "酒場BEETLE 蒲田東",
-    "address": "東京都大田区蒲田5-20-10 第二美須ビル1F",
-    "nearestStation": "蒲田駅",
-    "tagline": "豊富な酒と大衆つまみを深夜まで楽しめる蒲田東口の酒場",
-    "subCategories": [],
-    "hasCounterSeat": true,
-    "senberoAvailable": true,
-    "soloFriendliness": 8,
-    "sourceNote": ""
   }
 ]

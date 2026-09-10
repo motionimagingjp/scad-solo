@@ -1,0 +1,79 @@
+[
+  {
+    "name": "大衆あさひ 船橋店",
+    "address": "千葉県船橋市本町1-13-1",
+    "nearestStation": "船橋駅",
+    "tagline": "船橋を代表する昭和系大衆酒場で昼から一人飲みできる人気店",
+    "subCategories": ["立ち飲み"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 10,
+    "sourceNote": ""
+  },
+  {
+    "name": "大衆日本酒バル ふとっぱらや 船橋店",
+    "address": "千葉県船橋市本町1-11-26",
+    "nearestStation": "船橋駅",
+    "tagline": "日本酒390円から、昼飲みもできる一人飲み向きの日本酒立ち飲み",
+    "subCategories": ["立ち飲み", "日本酒"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 10,
+    "sourceNote": ""
+  },
+  {
+    "name": "立ち飲み日本酒 2。2坪",
+    "address": "千葉県船橋市本町4-42-14 1F",
+    "nearestStation": "船橋駅",
+    "tagline": "わずかなスペースで日本酒を前金制で楽しむディープな立ち飲み",
+    "subCategories": ["立ち飲み", "日本酒"],
+    "hasCounterSeat": false,
+    "senberoAvailable": true,
+    "soloFriendliness": 10,
+    "sourceNote": ""
+  },
+  {
+    "name": "船橋加賀屋",
+    "address": "千葉県船橋市本町4-42-7",
+    "nearestStation": "船橋駅",
+    "tagline": "焼きとんや煮込みを中心に安く飲める船橋の大衆酒場",
+    "subCategories": [],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 10,
+    "sourceNote": ""
+  },
+  {
+    "name": "大衆酒場 増やま 本店",
+    "address": "千葉県船橋市本町5-6-20 北口斎藤ビル",
+    "nearestStation": "船橋駅",
+    "tagline": "船橋らしい濃い大衆酒場文化を味わえる一人飲み向きの店",
+    "subCategories": [],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 10,
+    "sourceNote": ""
+  },
+  {
+    "name": "一平 船橋店",
+    "address": "千葉県船橋市本町4-42-4",
+    "nearestStation": "船橋駅",
+    "tagline": "昭和感のある店内で煮込みや焼き物を肴に飲める老舗大衆酒場",
+    "subCategories": [],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 10,
+    "sourceNote": ""
+  },
+  {
+    "name": "鳥元 船橋フェイス店",
+    "address": "千葉県船橋市本町1-3-1 船橋フェイスビルB1",
+    "nearestStation": "船橋駅",
+    "tagline": "焼き鳥と日本酒をカウンターで楽しみやすい駅近酒場",
+    "subCategories": ["日本酒"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  }
+]

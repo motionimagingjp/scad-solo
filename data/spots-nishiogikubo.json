@@ -141,5 +141,16 @@
     "senberoAvailable": true,
     "soloFriendliness": 10,
     "sourceNote": ""
+  },
+  {
+    "name": "日本酒・おばんざい 梵",
+    "address": "東京都杉並区西荻南2-24-7 YT西荻窪1F",
+    "nearestStation": "西荻窪駅",
+    "tagline": "日本酒とおばんざいを一人でじっくり楽しめる西荻窪の酒場",
+    "subCategories": ["日本酒"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 10,
+    "sourceNote": ""
   }
 ]
