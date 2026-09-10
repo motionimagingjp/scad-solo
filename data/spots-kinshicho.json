@@ -1,180 +1,145 @@
 [
   {
-    "name": "粋な立ち飲み 粋",
-    "address": "東京都墨田区江東橋3-12-3",
+    "name": "立ち呑み 粋",
+    "address": "東京都墨田区錦糸4-1-8",
     "nearestStation": "錦糸町駅",
-    "tagline": "錦糸町南口すぐ。鮮度抜群の刺身と手作りおつまみがALL300円均一の立ち飲み",
-    "subCategories": [
-      "立ち飲み",
-      "日本酒"
-    ],
+    "tagline": "コの字カウンターと立ち飲みスペースで、魚料理と日本酒・焼酎を気軽に楽しむ",
+    "subCategories": ["立ち飲み", "日本酒"],
     "hasCounterSeat": true,
     "senberoAvailable": true,
     "soloFriendliness": 10,
-    "sourceNote": "https://tabelog.com/tokyo/A1312/A131201/13156789/"
+    "sourceNote": ""
   },
   {
-    "name": "もつ焼 湧",
-    "address": "東京都墨田区江東橋4-21-6",
+    "name": "立ち呑み みつぼし村",
+    "address": "東京都墨田区錦糸4-7-2",
     "nearestStation": "錦糸町駅",
-    "tagline": "朝引きの鮮モツを使用した絶品串焼き。カウンターで香ばしいやきとんとホッピー",
-    "subCategories": [
-      "ビール"
-    ],
-    "hasCounterSeat": true,
+    "tagline": "一人客も多い錦糸町駅近の立ち飲みで、安く気軽に一杯",
+    "subCategories": ["立ち飲み"],
+    "hasCounterSeat": false,
     "senberoAvailable": true,
-    "soloFriendliness": 9,
-    "sourceNote": "https://tabelog.com/tokyo/A1312/A131201/13189012/"
+    "soloFriendliness": 10,
+    "sourceNote": ""
   },
   {
-    "name": "クラフトビール&ビアバル Vector Beer 錦糸町",
-    "address": "東京都墨田区江東橋3-5-4",
+    "name": "立ち呑み ぐいっと",
+    "address": "東京都墨田区江東橋2-10-6",
     "nearestStation": "錦糸町駅",
-    "tagline": "自社醸造のフレッシュなクラフトビール。ローストチキンと楽しむ立ち呑みタップルーム",
-    "subCategories": [
-      "ビール",
-      "立ち飲み",
-      "女性ひとり歓迎"
-    ],
-    "hasCounterSeat": true,
-    "senberoAvailable": false,
-    "soloFriendliness": 9,
-    "sourceNote": "https://tabelog.com/tokyo/A1312/A131201/13210987/"
-  },
-  {
-    "name": "手打蕎麦 錦糸庵",
-    "address": "東京都墨田区太平2-4-10",
-    "nearestStation": "錦糸町駅",
-    "tagline": "端正な手打ち蕎麦と季節の天ぷら。こだわりの地酒でじっくり一人蕎麦前を",
-    "subCategories": [
-      "日本酒"
-    ],
-    "hasCounterSeat": true,
-    "senberoAvailable": false,
-    "soloFriendliness": 8,
-    "sourceNote": "https://tabelog.com/tokyo/A1312/A131201/13045678/"
-  },
-  {
-    "name": "比内地鶏専門店 鶏びあ 錦糸町店",
-    "address": "東京都墨田区江東橋4-19-2",
-    "nearestStation": "錦糸町駅",
-    "tagline": "秋田直送の比内地鶏備長炭焼き。香ばしい串焼きと秋田の銘酒をカウンターで",
-    "subCategories": [
-      "日本酒",
-      "ビール"
-    ],
-    "hasCounterSeat": true,
-    "senberoAvailable": false,
-    "soloFriendliness": 8,
-    "sourceNote": "https://tabelog.com/tokyo/A1312/A131201/13190123/"
-  },
-  {
-    "name": "立ち呑み もつ焼き つみき 錦糸町",
-    "address": "東京都墨田区江東橋3-10-8",
-    "nearestStation": "錦糸町駅",
-    "tagline": "新鮮な朝引きモツと特製煮込み。サクッと呑んでサクッと帰れる人気の立ち飲み処",
-    "subCategories": [
-      "立ち飲み",
-      "ビール"
-    ],
-    "hasCounterSeat": true,
+    "tagline": "マスターと常連が集う小さな空間で、錦糸町らしいディープな一人飲み",
+    "subCategories": ["立ち飲み"],
+    "hasCounterSeat": false,
     "senberoAvailable": true,
+    "soloFriendliness": 10,
+    "sourceNote": ""
+  },
+  {
+    "name": "酒処 蔵",
+    "address": "東京都墨田区錦糸2-10-7",
+    "nearestStation": "錦糸町駅",
+    "tagline": "わずか6席のカウンターで日本酒と酒肴に集中できる小さな酒場",
+    "subCategories": ["日本酒"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 10,
+    "sourceNote": ""
+  },
+  {
+    "name": "井のなか",
+    "address": "東京都墨田区錦糸2-5-2",
+    "nearestStation": "錦糸町駅",
+    "tagline": "この字カウンターで、日本酒と酒を呑ませる料理をじっくり楽しむ隠れ家酒場",
+    "subCategories": ["日本酒"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
     "soloFriendliness": 9,
-    "sourceNote": "https://tabelog.com/tokyo/A1312/A131201/13230123/"
+    "sourceNote": ""
   },
   {
-    "name": "錦糸町 魚菜 割烹 魚市",
-    "address": "東京都墨田区錦糸2-4-6",
+    "name": "醸造科 oryzae",
+    "address": "東京都墨田区錦糸4-12-3",
     "nearestStation": "錦糸町駅",
-    "tagline": "豊洲市場直送の鮮魚と和食。一人前刺身盛り合わせと辛口地酒をゆったりカウンターで",
-    "subCategories": [
-      "日本酒"
-    ],
+    "tagline": "発酵を軸にした料理と日本酒をカウンターで楽しむ酒好き向けの一軒",
+    "subCategories": ["日本酒"],
     "hasCounterSeat": true,
     "senberoAvailable": false,
-    "soloFriendliness": 8,
-    "sourceNote": "https://tabelog.com/tokyo/A1312/A131201/13145678/"
-  },
-  {
-    "name": "ウイスキーバー The Barrel 錦糸町",
-    "address": "東京都墨田区江東橋4-25-7 2F",
-    "nearestStation": "錦糸町駅",
-    "tagline": "希少なシングルモルトウイスキー多数。一人静かに夜の一杯を楽しめる隠れ家バー",
-    "subCategories": [
-      "女性ひとり歓迎"
-    ],
-    "hasCounterSeat": true,
-    "senberoAvailable": false,
-    "soloFriendliness": 8,
-    "sourceNote": "https://tabelog.com/tokyo/A1312/A131201/13220123/"
-  },
-  {
-    "name": "立ち呑み 煮込み じんざえもん 錦糸町",
-    "address": "東京都墨田区江東橋3-9-1",
-    "nearestStation": "錦糸町駅",
-    "tagline": "特製黒もつ煮込みと手作りお惣菜。1,000円でしっかり酔える下町風立ち飲み",
-    "subCategories": [
-      "立ち飲み",
-      "ビール"
-    ],
-    "hasCounterSeat": true,
-    "senberoAvailable": true,
     "soloFriendliness": 9,
-    "sourceNote": "https://tabelog.com/tokyo/A1312/A131201/13167890/"
+    "sourceNote": ""
   },
   {
-    "name": "イタリアンバール イル・ソーレ 錦糸町",
-    "address": "東京都墨田区錦糸3-3-9",
+    "name": "海鮮居酒屋MARU",
+    "address": "東京都墨田区江東橋4-29-15",
     "nearestStation": "錦糸町駅",
-    "tagline": "本格窯焼きピッツァとグラスワイン。一人客でも入りやすい明るいオープンバル",
-    "subCategories": [
-      "ワイン",
-      "女性ひとり歓迎"
-    ],
+    "tagline": "目利きした魚と利き酒師厳選の日本酒を合わせて楽しむ海鮮酒場",
+    "subCategories": ["日本酒"],
     "hasCounterSeat": true,
     "senberoAvailable": false,
     "soloFriendliness": 8,
-    "sourceNote": "https://tabelog.com/tokyo/A1312/A131201/13190456/"
+    "sourceNote": ""
   },
   {
-    "name": "日本酒スタンド 蔵元屋 錦糸町",
-    "address": "東京都墨田区江東橋4-20-4",
+    "name": "vivo daily stand 錦糸町店",
+    "address": "東京都墨田区江東橋4-21-6 錦糸町ハイタウン121",
     "nearestStation": "錦糸町駅",
-    "tagline": "全国の蔵元直送地酒を立ち呑み価格で飲み比べ。一人客が8割を占める日本酒天国",
-    "subCategories": [
-      "立ち飲み",
-      "日本酒"
-    ],
+    "tagline": "小皿料理とグラスワインを気軽に楽しめる、一人飲み向きのスタンドバル",
+    "subCategories": ["ワイン", "立ち飲み", "女性ひとり歓迎"],
     "hasCounterSeat": true,
     "senberoAvailable": true,
     "soloFriendliness": 10,
-    "sourceNote": "https://tabelog.com/tokyo/A1312/A131201/13251234/"
+    "sourceNote": ""
   },
   {
-    "name": "立呑み 魚金 錦糸町店",
-    "address": "東京都墨田区江東橋3-12-8",
+    "name": "MaruNaka Winebar",
+    "address": "東京都墨田区江東橋4-9-1 2F",
     "nearestStation": "錦糸町駅",
-    "tagline": "豊洲直送の極上刺身盛り合わせを驚きの立ち飲み価格と1人前ポーションで",
-    "subCategories": [
-      "立ち飲み",
-      "日本酒"
-    ],
+    "tagline": "5席のカウンターを中心に、ソムリエとワインをじっくり楽しむ隠れ家バー",
+    "subCategories": ["ワイン"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 10,
+    "sourceNote": ""
+  },
+  {
+    "name": "ワイン処 葡楽",
+    "address": "東京都墨田区太平1-31-6",
+    "nearestStation": "錦糸町駅",
+    "tagline": "気取らずワインを楽しめる、カウンターで一人でも過ごしやすいワインバル",
+    "subCategories": ["ワイン"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "ienomi スタンド日和",
+    "address": "東京都墨田区錦糸4-12-6 岡田ビル1F",
+    "nearestStation": "錦糸町駅",
+    "tagline": "自家製の酒飲み向け小皿料理とワインを路地裏で気軽に楽しむ",
+    "subCategories": ["ワイン", "立ち飲み", "女性ひとり歓迎"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 10,
+    "sourceNote": ""
+  },
+  {
+    "name": "ヤマネ肉店 錦糸町店",
+    "address": "東京都墨田区錦糸3-6-2",
+    "nearestStation": "錦糸町駅",
+    "tagline": "1階の立ち飲みカウンターで、やきとんと酒をサクッと楽しむ駅近酒場",
+    "subCategories": ["立ち飲み"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 10,
+    "sourceNote": ""
+  },
+  {
+    "name": "もつ焼き煮込み 楓 南口店",
+    "address": "東京都墨田区江東橋2-6-5 まるビル錦糸町1F",
+    "nearestStation": "錦糸町駅",
+    "tagline": "朝締めのもつ焼きと煮込みを気軽に味わえる、一人飲み向きの大衆酒場",
+    "subCategories": ["ビール"],
     "hasCounterSeat": true,
     "senberoAvailable": true,
     "soloFriendliness": 9,
-    "sourceNote": "https://tabelog.com/tokyo/A1312/A131201/13210987/"
-  },
-  {
-    "name": "錦糸町 昭和大衆酒場",
-    "address": "東京都墨田区江東橋4-16-1",
-    "nearestStation": "錦糸町駅",
-    "tagline": "下町情緒あふれる昭和レトロ酒場。安くて旨い手作りつまみとホッピーでサク飲み",
-    "subCategories": [
-      "ビール"
-    ],
-    "hasCounterSeat": true,
-    "senberoAvailable": true,
-    "soloFriendliness": 9,
-    "sourceNote": "https://tabelog.com/tokyo/A1312/A131201/13154321/"
+    "sourceNote": ""
   }
 ]
