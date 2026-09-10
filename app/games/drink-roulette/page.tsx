@@ -63,7 +63,7 @@ export default function DrinkRoulettePage() {
     setPhase("wheel");
   };
 
-  const pickFallback = () => [...FALLBACK_DRINKS].sort(() => Math.random() - 0.5).slice(0, 5);
+  const pickFallback = () => [...FALLBACK_DRINKS];
 
   const spin = () => {
     if (spinning || drinks.length === 0) return;
