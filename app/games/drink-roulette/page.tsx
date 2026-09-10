@@ -12,7 +12,7 @@ import { FALLBACK_DRINKS } from "@/lib/data/drinkRouletteFallback";
 // APIルート側(/api/roulette/extract)が定番リストへ自動フォールバックする)。
 // fetch自体が失敗した場合(オフライン等)のみ、ここでもフォールバックする。
 
-type Phase = "loading" | "wheel" | "result";
+type Phase = "loading" | "wheel";
 type Source = "default" | "gemini" | "fallback" | "offline";
 
 // 隣り合っても見分けやすいよう、色相をはっきり離した6色にしてある
@@ -82,13 +82,7 @@ export default function DrinkRoulettePage() {
     setTimeout(() => {
       setResult(drinks[idx]);
       setSpinning(false);
-      setPhase("result");
     }, SPIN_DURATION_MS);
-  };
-
-  const backToWheel = () => {
-    setResult(null);
-    setPhase("wheel");
   };
 
   return (
@@ -110,7 +104,7 @@ export default function DrinkRoulettePage() {
         </div>
       )}
 
-      {(phase === "wheel" || phase === "result") && drinks.length > 0 && (
+      {phase === "wheel" && drinks.length > 0 && (
         <div className="flex flex-1 flex-col items-center gap-5 px-6 py-6">
           {source === "default" && (
             <div className="w-full rounded-xl bg-orange-50 px-3.5 py-2.5 text-center text-[11px] leading-relaxed text-orange-600">
@@ -148,10 +142,10 @@ export default function DrinkRoulettePage() {
           {/* 決定表示バー: ルーレットの真上に固定し、下より視線が行きやすい位置で結果を見せる */}
           <div
             className={`w-full rounded-2xl px-6 py-4 text-center transition-colors ${
-              phase === "result" ? "bg-orange-50" : "bg-gray-100"
+              result ? "bg-orange-50" : "bg-gray-100"
             }`}
           >
-            {phase === "result" && result ? (
+            {result ? (
               <p className="text-lg font-bold text-orange-600">🍹 {result} に決定!</p>
             ) : (
               <p className="text-base font-bold text-gray-500">🎯 運命の一投</p>
@@ -186,21 +180,13 @@ export default function DrinkRoulettePage() {
             ))}
           </div>
 
-          {phase === "wheel" && (
-            <button
-              onClick={spin}
-              disabled={spinning}
-              className="w-full rounded-full bg-[#E4002B] py-3 text-sm font-bold text-white shadow-md shadow-red-500/30 disabled:opacity-50"
-            >
-              {spinning ? "回転中..." : "ルーレットを回す"}
-            </button>
-          )}
-
-          {phase === "result" && result && (
-            <button onClick={backToWheel} className="w-full rounded-full border bg-white py-2.5 text-sm font-medium text-gray-700">
-              もう一度回す
-            </button>
-          )}
+          <button
+            onClick={spin}
+            disabled={spinning}
+            className="w-full rounded-full bg-[#E4002B] py-3 text-sm font-bold text-white shadow-md shadow-red-500/30 disabled:opacity-50"
+          >
+            {spinning ? "回転中..." : "ルーレットを回す"}
+          </button>
         </div>
       )}
 
