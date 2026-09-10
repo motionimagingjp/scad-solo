@@ -20,7 +20,7 @@ const NOMI: Activity[] = [
     href: "/games/drink-roulette",
   },
   { id: "solo-chin", emoji: "🎲", title: "ソロチン", description: "人数を入れてチンチロ勝負", status: "available", href: "/games/chinchiro" },
-  { id: "solo-bingo", emoji: "🎯", title: "ソロビンゴ", description: "お題を達成してポイント", status: "coming_soon" },
+  { id: "solo-bingo", emoji: "🎯", title: "ソロビンゴ", description: "お題を達成してポイント", status: "available", href: "/games/solo-bingo" },
   { id: "kanpai-timer", emoji: "⏱", title: "ソロ乾杯", description: "飲みペースを記録", status: "available", href: "/games/kanpai-timer" },
 ];
 const KARAOKE: Activity[] = [
