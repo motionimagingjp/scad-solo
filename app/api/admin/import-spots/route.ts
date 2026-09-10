@@ -27,6 +27,7 @@ import tachikawa from "@/data/spots-tachikawa.json";
 import takadanobaba from "@/data/spots-takadanobaba.json";
 import tokyo from "@/data/spots-tokyo.json";
 import ueno from "@/data/spots-ueno.json";
+import umeda from "@/data/spots-umeda.json";
 import yokohama from "@/data/spots-yokohama.json";
 
 // Gemini収集分(data/spots-*.json)をDBへ一括投入する管理用エンドポイント。
@@ -82,6 +83,7 @@ const ALL_CANDIDATES: SpotCandidate[] = [
   ...takadanobaba,
   ...tokyo,
   ...ueno,
+  ...umeda,
   ...yokohama,
 ] as SpotCandidate[];
 

@@ -1,0 +1,57 @@
+[
+  {
+    "name": "銀座屋",
+    "address": "大阪府大阪市北区梅田1-3-1 大阪駅前第1ビルB2F",
+    "nearestStation": "梅田駅",
+    "tagline": "大阪駅前ビルを代表する低価格立ち飲みで酒と肴を一人で楽しむ",
+    "subCategories": ["立ち飲み"],
+    "hasCounterSeat": false,
+    "senberoAvailable": true,
+    "soloFriendliness": 10,
+    "sourceNote": ""
+  },
+  {
+    "name": "大人立飲 プラスグラフ",
+    "address": "大阪府大阪市北区兎我野町12-15 丸一ビル203",
+    "nearestStation": "梅田駅",
+    "tagline": "こだわりのビールと日本酒、牡蠣を洗練された立ち飲み空間で楽しむ",
+    "subCategories": ["立ち飲み", "日本酒", "ビール"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "TENT",
+    "address": "大阪府大阪市北区曾根崎2-10-15 曽根崎センタービルB1",
+    "nearestStation": "梅田駅",
+    "tagline": "家庭料理と酒を楽しむ小さな隠れ家酒場で一人飲み",
+    "subCategories": ["日本酒", "立ち飲み"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "串かつ松葉 総本店",
+    "address": "大阪府大阪市北区角田町9-20",
+    "nearestStation": "梅田駅",
+    "tagline": "大阪名物の串かつをカウンター感覚で一人サク飲みする老舗",
+    "subCategories": [],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "串かつ松葉 ルクア大阪店",
+    "address": "大阪府大阪市北区梅田3-1-3 ルクア大阪バルチカB2",
+    "nearestStation": "梅田駅",
+    "tagline": "駅直結エリアで大阪名物串かつと酒を気軽に一人で楽しむ",
+    "subCategories": [],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  }
+]

@@ -64,5 +64,115 @@
     "senberoAvailable": true,
     "soloFriendliness": 9,
     "sourceNote": "https://1000bero.net/restaurant-602/ （せんべろnetでWebSearch確認)"
+  },
+  {
+    "name": "スタンド5 赤羽店",
+    "address": "東京都北区赤羽1-19-1",
+    "nearestStation": "赤羽駅",
+    "tagline": "全品500円級の分かりやすい価格帯で気軽に立ち飲みできる駅近スタンド",
+    "subCategories": ["立ち飲み"],
+    "hasCounterSeat": false,
+    "senberoAvailable": true,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "ミケトラ STAND WINE BAR",
+    "address": "東京都北区赤羽1-19-3 内藤ビル1F",
+    "nearestStation": "赤羽駅",
+    "tagline": "小さなスタンドでワインを一人でじっくり楽しめる赤羽のワインバー",
+    "subCategories": ["ワイン"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 10,
+    "sourceNote": ""
+  },
+  {
+    "name": "立呑みソルト",
+    "address": "東京都北区赤羽1-53-5",
+    "nearestStation": "赤羽駅",
+    "tagline": "赤羽岩淵寄りの小さな立ち飲みで、仕事帰りに一人でサクッと飲む",
+    "subCategories": ["立ち飲み"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "赤羽日本酒BARリビリビ",
+    "address": "東京都北区赤羽南1-5-7 クレアシオン赤羽ビル3F",
+    "nearestStation": "赤羽駅",
+    "tagline": "日本酒を主役にした小規模バーで酒好きが一人でじっくり飲める",
+    "subCategories": ["日本酒"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 10,
+    "sourceNote": ""
+  },
+  {
+    "name": "立ち呑み処 順貴",
+    "address": "東京都北区赤羽1-17-4",
+    "nearestStation": "赤羽駅",
+    "tagline": "駅近の小さな立ち飲みで、安く一人で一杯楽しめる",
+    "subCategories": ["立ち飲み"],
+    "hasCounterSeat": false,
+    "senberoAvailable": true,
+    "soloFriendliness": 10,
+    "sourceNote": ""
+  },
+  {
+    "name": "おでんと日本酒 ハチトラ赤羽",
+    "address": "東京都北区赤羽西1-6-1 パルロードII(ビビオ) 105",
+    "nearestStation": "赤羽駅",
+    "tagline": "おでんを肴に日本酒を楽しむ、落ち着いた一人飲み向け酒場",
+    "subCategories": ["日本酒"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "和酒bar つちのこ",
+    "address": "東京都北区赤羽1-35-8",
+    "nearestStation": "赤羽駅",
+    "tagline": "和酒を中心に深夜まで静かに飲める小さなバー",
+    "subCategories": ["日本酒"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 10,
+    "sourceNote": ""
+  },
+  {
+    "name": "貝酒場かきべえ赤羽本店",
+    "address": "東京都北区赤羽1-42-2 グリーンキャピタル赤羽103",
+    "nearestStation": "赤羽駅",
+    "tagline": "牡蠣や貝料理を酒のアテに楽しむ専門性の高い海鮮酒場",
+    "subCategories": ["日本酒"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 8,
+    "sourceNote": ""
+  },
+  {
+    "name": "濃厚ワインとチーズのお店 カルネ&ヴィーノStand",
+    "address": "東京都北区赤羽1-21-4",
+    "nearestStation": "赤羽駅",
+    "tagline": "ワインとチーズを立ち飲みで楽しむ一人利用歓迎のワインスタンド",
+    "subCategories": ["ワイン", "立ち飲み"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 10,
+    "sourceNote": ""
+  },
+  {
+    "name": "スタンドミハラシマート",
+    "address": "東京都北区赤羽1-66-4 豊田ビル1F",
+    "nearestStation": "赤羽駅",
+    "tagline": "ネオン系の立ち飲み空間で煮込みや串を気軽に楽しむ",
+    "subCategories": ["立ち飲み"],
+    "hasCounterSeat": false,
+    "senberoAvailable": true,
+    "soloFriendliness": 9,
+    "sourceNote": ""
   }
 ]

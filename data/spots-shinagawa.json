@@ -31,5 +31,82 @@
     "senberoAvailable": true,
     "soloFriendliness": 7,
     "sourceNote": "https://1000bero.net/restaurant-747/"
+  },
+  {
+    "name": "升亀 品川店",
+    "address": "東京都港区港南2-2-9 岩谷ビル2F",
+    "nearestStation": "品川駅",
+    "tagline": "日本酒と和食をカウンターで楽しみ、仕事帰りに一人でちょい飲みできる酒場",
+    "subCategories": ["日本酒"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "あわよくばあー 品川",
+    "address": "東京都港区港南2-5-5 滝沢ビル1F",
+    "nearestStation": "品川駅",
+    "tagline": "串焼きと酒をカウンターで楽しめる品川港南口の一人飲み向け酒場",
+    "subCategories": [],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "吟醸マグロ 品川店",
+    "address": "東京都港区港南2-2-1 みなとビル7F",
+    "nearestStation": "品川駅",
+    "tagline": "マグロ料理と日本酒を合わせて楽しむ日本酒好き向けの専門酒場",
+    "subCategories": ["日本酒"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 8,
+    "sourceNote": ""
+  },
+  {
+    "name": "夢や 品川店",
+    "address": "東京都港区港南2-2-9",
+    "nearestStation": "品川駅",
+    "tagline": "全国の地酒と和食を楽しめる品川駅近の日本酒居酒屋",
+    "subCategories": ["日本酒"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 8,
+    "sourceNote": ""
+  },
+  {
+    "name": "六献 品川店",
+    "address": "東京都港区港南1-8-27 日新ビルB1F",
+    "nearestStation": "品川駅",
+    "tagline": "和食と日本酒を落ち着いた空間で楽しむ品川の酒好き向け店舗",
+    "subCategories": ["日本酒"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 8,
+    "sourceNote": ""
+  },
+  {
+    "name": "GLASS DANCE 品川",
+    "address": "東京都港区港南2-3-26 モンテーヌ品川ビル1F",
+    "nearestStation": "品川駅",
+    "tagline": "スペイン料理とワインを一人でも楽しみやすい品川駅近バル",
+    "subCategories": ["ワイン"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 8,
+    "sourceNote": ""
+  },
+  {
+    "name": "Italian BAR KIMURAYA 品川",
+    "address": "東京都港区港南2-5-15 KIDS-002ビルB2F〜2F",
+    "nearestStation": "品川駅",
+    "tagline": "イタリア料理とワインを夜遅くまで楽しめる品川港南口バル",
+    "subCategories": ["ワイン"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 7,
+    "sourceNote": ""
   }
 ]
