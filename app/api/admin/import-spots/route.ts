@@ -15,11 +15,16 @@ import kichijoji from "@/data/spots-kichijoji.json";
 import kinshicho from "@/data/spots-kinshicho.json";
 import kitasenju from "@/data/spots-kitasenju.json";
 import koenji from "@/data/spots-koenji.json";
+import meguro from "@/data/spots-meguro.json";
 import mishima from "@/data/spots-mishima.json";
+import nakameguro from "@/data/spots-nakameguro.json";
 import nakano from "@/data/spots-nakano.json";
+import oimachi from "@/data/spots-oimachi.json";
 import omiya from "@/data/spots-omiya.json";
+import sangenjaya from "@/data/spots-sangenjaya.json";
 import shibuya from "@/data/spots-shibuya.json";
 import shimbashi from "@/data/spots-shimbashi.json";
+import shimokitazawa from "@/data/spots-shimokitazawa.json";
 import shinagawa from "@/data/spots-shinagawa.json";
 import shinjuku from "@/data/spots-shinjuku.json";
 import suidobashi from "@/data/spots-suidobashi.json";
@@ -71,11 +76,16 @@ const ALL_CANDIDATES: SpotCandidate[] = [
   ...kinshicho,
   ...kitasenju,
   ...koenji,
+  ...meguro,
   ...mishima,
+  ...nakameguro,
   ...nakano,
+  ...oimachi,
   ...omiya,
+  ...sangenjaya,
   ...shibuya,
   ...shimbashi,
+  ...shimokitazawa,
   ...shinagawa,
   ...shinjuku,
   ...suidobashi,

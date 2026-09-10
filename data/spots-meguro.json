@@ -1,0 +1,112 @@
+[
+  {
+    "name": "和酒こわた",
+    "address": "東京都目黒区目黒1-4-9",
+    "nearestStation": "目黒駅",
+    "tagline": "和酒を主役にした小規模バー。酒そのものを楽しみたい一人飲みに強い",
+    "subCategories": ["日本酒"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 10,
+    "sourceNote": ""
+  },
+  {
+    "name": "目黒日本酒居酒屋ほろよい党",
+    "address": "東京都品川区上大崎2-13-45",
+    "nearestStation": "目黒駅",
+    "tagline": "日本酒を中心に気軽に飲める居酒屋。一人で日本酒を試したい人向け",
+    "subCategories": ["日本酒"],
+    "hasCounterSeat": false,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "立ち飲みビストロシンサンテ",
+    "address": "東京都品川区上大崎3-1-1 目黒セントラルスクエア1F",
+    "nearestStation": "目黒駅",
+    "tagline": "立ち飲みスタイルでビストロ料理と酒を短時間で楽しめる",
+    "subCategories": ["立ち飲み", "ワイン"],
+    "hasCounterSeat": false,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "目黒いと。",
+    "address": "東京都品川区上大崎2-25-12 みすずビル3F",
+    "nearestStation": "目黒駅",
+    "tagline": "魚介と酒を中心に落ち着いて飲める。深夜帯の一人飲みにも使いやすい",
+    "subCategories": ["日本酒"],
+    "hasCounterSeat": false,
+    "senberoAvailable": false,
+    "soloFriendliness": 8,
+    "sourceNote": ""
+  },
+  {
+    "name": "パンとワイン 目黒FLAT",
+    "address": "東京都品川区上大崎2-15-5 長者丸ビル1F",
+    "nearestStation": "目黒駅",
+    "tagline": "パンとワインを組み合わせて楽しむ専門性のある酒場。ワイン好きの一人飲みに向く",
+    "subCategories": ["ワイン"],
+    "hasCounterSeat": false,
+    "senberoAvailable": false,
+    "soloFriendliness": 8,
+    "sourceNote": ""
+  },
+  {
+    "name": "Bar E.A.T 目黒本店",
+    "address": "東京都目黒区下目黒1-5-16 目黒サンライズマンション2F",
+    "nearestStation": "目黒駅",
+    "tagline": "小規模バーで酒と会話を楽しむタイプの一人飲み向け店舗",
+    "subCategories": [],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "おさかなや魚魚権 目黒店",
+    "address": "東京都目黒区下目黒1-2-21 泰山堂ビルB1",
+    "nearestStation": "目黒駅",
+    "tagline": "魚介を肴に日本酒系の酒を楽しみたい人向けの大人の酒場",
+    "subCategories": ["日本酒"],
+    "hasCounterSeat": false,
+    "senberoAvailable": false,
+    "soloFriendliness": 8,
+    "sourceNote": ""
+  },
+  {
+    "name": "いと。スタンド",
+    "address": "東京都目黒区目黒1-4-12",
+    "nearestStation": "目黒駅",
+    "tagline": "駅近のスタンド型酒場。短時間で一杯飲みたい一人客に向く",
+    "subCategories": [],
+    "hasCounterSeat": false,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "大衆ビストロ ジル 目黒店",
+    "address": "東京都目黒区目黒1-3-15 リードシー目黒ウェストビル1F",
+    "nearestStation": "目黒駅",
+    "tagline": "酒とつまみを気軽に組み合わせられる大衆ビストロ。一人利用にも使いやすい",
+    "subCategories": ["ワイン"],
+    "hasCounterSeat": false,
+    "senberoAvailable": false,
+    "soloFriendliness": 8,
+    "sourceNote": ""
+  },
+  {
+    "name": "いと。をかし",
+    "address": "東京都目黒区目黒1-5-19 目黒第一ビル1F",
+    "nearestStation": "目黒駅",
+    "tagline": "魚と日本酒に特化した酒場。SAKE DIPLOMA選定の日本酒を狙う日本酒好き向け",
+    "subCategories": ["日本酒"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  }
+]

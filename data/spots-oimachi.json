@@ -1,0 +1,145 @@
+[
+  {
+    "name": "日本酒BAR 粋。",
+    "address": "東京都品川区東大井6-2-3 東幸ハイツ1F",
+    "nearestStation": "大井町駅",
+    "tagline": "日本酒に特化した小さな立ち飲み系バーで、日本酒好きの一人飲みに向く",
+    "subCategories": ["日本酒"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 10,
+    "sourceNote": ""
+  },
+  {
+    "name": "立呑み8 本店",
+    "address": "東京都品川区東大井5-12-4",
+    "nearestStation": "大井町駅",
+    "tagline": "大井町を代表する立ち飲み系酒場で、鮮魚と酒を短時間で楽しみやすい",
+    "subCategories": ["立ち飲み"],
+    "hasCounterSeat": false,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "立呑み8 OIMACHI TRACKS店",
+    "address": "東京都品川区広町2-1-17 OIMACHI TRACKS 4F",
+    "nearestStation": "大井町駅",
+    "tagline": "新しい大井町の立ち飲み拠点。鮮魚と創作料理、多彩な酒を一人でも使いやすい",
+    "subCategories": ["立ち飲み"],
+    "hasCounterSeat": false,
+    "senberoAvailable": false,
+    "soloFriendliness": 8,
+    "sourceNote": ""
+  },
+  {
+    "name": "肉のまえかわ",
+    "address": "東京都品川区東大井5-2-9",
+    "nearestStation": "大井町駅",
+    "tagline": "大井町の老舗系立ち飲み。安価な肉料理と酒をキャッシュオンで楽しむディープ酒場",
+    "subCategories": ["立ち飲み"],
+    "hasCounterSeat": false,
+    "senberoAvailable": true,
+    "soloFriendliness": 10,
+    "sourceNote": ""
+  },
+  {
+    "name": "立ち飲み屋 ビー玉",
+    "address": "東京都品川区大井1-21-4",
+    "nearestStation": "大井町駅",
+    "tagline": "日本酒にこだわる狭小系立ち飲みで、酒目的の一人飲みに向く",
+    "subCategories": ["立ち飲み", "日本酒"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 10,
+    "sourceNote": ""
+  },
+  {
+    "name": "立ち飲み家 KENZO",
+    "address": "東京都品川区東大井5-6-10",
+    "nearestStation": "大井町駅",
+    "tagline": "路地裏の立ち飲みで、イタリアン系料理と酒を一人で気軽に楽しめる",
+    "subCategories": ["立ち飲み"],
+    "hasCounterSeat": false,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "あげあげ",
+    "address": "東京都品川区東大井6-2-24 MMビル102",
+    "nearestStation": "大井町駅",
+    "tagline": "串揚げを中心に低価格で飲める大井町の立ち飲み系酒場",
+    "subCategories": ["立ち飲み"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "ワイルドミーちゃん",
+    "address": "東京都品川区東大井5-3-5 B1F",
+    "nearestStation": "大井町駅",
+    "tagline": "駅近の気軽な立ち飲みで、低価格のサク飲みに向く",
+    "subCategories": ["立ち飲み"],
+    "hasCounterSeat": false,
+    "senberoAvailable": true,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "野焼",
+    "address": "東京都品川区大井1-8-4",
+    "nearestStation": "大井町駅",
+    "tagline": "駅近の大衆酒場。焼き物と酒を気軽に楽しめる一人飲み向きの店",
+    "subCategories": [],
+    "hasCounterSeat": false,
+    "senberoAvailable": false,
+    "soloFriendliness": 8,
+    "sourceNote": ""
+  },
+  {
+    "name": "大井町 日本酒バル 萬亮",
+    "address": "東京都品川区南品川6-18-19 パルケ大井町1F",
+    "nearestStation": "大井町駅",
+    "tagline": "日本酒を軸にしたバルで、立ち飲みより落ち着いて酒を楽しみたい一人飲みに向く",
+    "subCategories": ["日本酒"],
+    "hasCounterSeat": false,
+    "senberoAvailable": false,
+    "soloFriendliness": 8,
+    "sourceNote": ""
+  },
+  {
+    "name": "居酒屋 SAKANASAKABAゆいと 大井町店",
+    "address": "東京都品川区大井1-21-6",
+    "nearestStation": "大井町駅",
+    "tagline": "魚を肴に酒を楽しみたい人向け。大井町で魚介系を狙う一人飲みに適する",
+    "subCategories": ["日本酒"],
+    "hasCounterSeat": false,
+    "senberoAvailable": false,
+    "soloFriendliness": 8,
+    "sourceNote": ""
+  },
+  {
+    "name": "大井町ハイボール",
+    "address": "東京都品川区東大井5-3-1 東小路2階",
+    "nearestStation": "大井町駅",
+    "tagline": "ハイボールを目的に立ち寄れる酒特化型バー。二軒目の一人飲みに向く",
+    "subCategories": [],
+    "hasCounterSeat": false,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "一寸Bar JACK",
+    "address": "東京都品川区大井4-1-4 ロックフィールド2F",
+    "nearestStation": "大井町駅",
+    "tagline": "小規模バーで、静かに酒を飲みたい一人客向き",
+    "subCategories": [],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  }
+]

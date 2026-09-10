@@ -1,0 +1,101 @@
+[
+  {
+    "name": "梅干しサワー専門店 シモキタ",
+    "address": "東京都世田谷区北沢2-12-10",
+    "nearestStation": "下北沢駅",
+    "tagline": "梅干しサワーに特化した酒専門店。酒そのものに特徴を求める一人飲みに向く",
+    "subCategories": ["立ち飲み"],
+    "hasCounterSeat": false,
+    "senberoAvailable": true,
+    "soloFriendliness": 10,
+    "sourceNote": ""
+  },
+  {
+    "name": "下北沢 燗味処",
+    "address": "東京都世田谷区北沢2-32-8 SSビル2階-C",
+    "nearestStation": "下北沢駅",
+    "tagline": "燗酒を目的に行ける専門性の高い酒処。日本酒好きの一人飲みに特に向く",
+    "subCategories": ["日本酒"],
+    "hasCounterSeat": false,
+    "senberoAvailable": false,
+    "soloFriendliness": 10,
+    "sourceNote": ""
+  },
+  {
+    "name": "Shimokita Komorebi",
+    "address": "東京都世田谷区北沢2-10-8 ユナイテッドビルB1F",
+    "nearestStation": "下北沢駅",
+    "tagline": "小規模ワインバー。ワイン目的で落ち着いて一人飲みしたい人向け",
+    "subCategories": ["ワイン"],
+    "hasCounterSeat": false,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "下北沢ワインショップ",
+    "address": "東京都世田谷区北沢2-10-20 ミカン下北D201",
+    "nearestStation": "下北沢駅",
+    "tagline": "ワインショップ併設型のワインバー。ワインを選びながら飲みたいマニア向け",
+    "subCategories": ["ワイン"],
+    "hasCounterSeat": false,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "大衆居酒屋こがみ下北沢",
+    "address": "東京都世田谷区北沢2-9-2 辻ビル2F",
+    "nearestStation": "下北沢駅",
+    "tagline": "低価格帯で使いやすい大衆居酒屋。一人で気軽に飲む用途に向く",
+    "subCategories": [],
+    "hasCounterSeat": false,
+    "senberoAvailable": true,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "喜楽",
+    "address": "東京都世田谷区北沢2-8-5 ANビル1F",
+    "nearestStation": "下北沢駅",
+    "tagline": "全国の地酒と熊本直送馬肉を楽しめる昭和レトロ系酒場。一人で地酒を飲む用途に強い",
+    "subCategories": ["日本酒"],
+    "hasCounterSeat": false,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "ごち2",
+    "address": "東京都世田谷区北沢2-17-11 パディーアンB1F",
+    "nearestStation": "下北沢駅",
+    "tagline": "駅近の小規模酒場。夜遅くまで一人で飲める用途に向く",
+    "subCategories": [],
+    "hasCounterSeat": false,
+    "senberoAvailable": false,
+    "soloFriendliness": 8,
+    "sourceNote": ""
+  },
+  {
+    "name": "& Bar Shimokitazawa",
+    "address": "東京都世田谷区北沢2-22-13 XAビル1F",
+    "nearestStation": "下北沢駅",
+    "tagline": "小規模バーで、静かに酒を飲む一人客向け。深夜帯にも使いやすい",
+    "subCategories": [],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "MAGI/one.1",
+    "address": "東京都世田谷区北沢2-33-12 2F",
+    "nearestStation": "下北沢駅",
+    "tagline": "小規模な酒場系店舗。落ち着いた一人飲みと酒・料理を楽しみたい人向け",
+    "subCategories": [],
+    "hasCounterSeat": false,
+    "senberoAvailable": false,
+    "soloFriendliness": 8,
+    "sourceNote": ""
+  }
+]

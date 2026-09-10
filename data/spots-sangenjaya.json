@@ -1,0 +1,145 @@
+[
+  {
+    "name": "采",
+    "address": "東京都世田谷区三軒茶屋2-13-19",
+    "nearestStation": "三軒茶屋駅",
+    "tagline": "駅近の立ち飲み日本酒バー。フラッと一杯、一人での日本酒利用に強い",
+    "subCategories": ["立ち飲み", "日本酒"],
+    "hasCounterSeat": false,
+    "senberoAvailable": true,
+    "soloFriendliness": 10,
+    "sourceNote": ""
+  },
+  {
+    "name": "たちのみや",
+    "address": "東京都世田谷区三軒茶屋1-36-12",
+    "nearestStation": "三軒茶屋駅",
+    "tagline": "駅徒歩1分級の立ち飲み。焼酎・焼き鳥を気軽に楽しめる",
+    "subCategories": ["立ち飲み"],
+    "hasCounterSeat": false,
+    "senberoAvailable": true,
+    "soloFriendliness": 10,
+    "sourceNote": ""
+  },
+  {
+    "name": "ニューマルコ 1階",
+    "address": "東京都世田谷区太子堂2-28-2 ライファービル2 2F",
+    "nearestStation": "三軒茶屋駅",
+    "tagline": "オールスタンディング創作小皿酒場。日本酒・ワイン・クラフトビールなど酒の幅が広い",
+    "subCategories": ["立ち飲み", "日本酒", "ワイン"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "オオモリヤ",
+    "address": "東京都世田谷区三軒茶屋2-13-4",
+    "nearestStation": "三軒茶屋駅",
+    "tagline": "小さな酒場で、一人でぷらっと飲む用途に向く三茶らしい店",
+    "subCategories": ["立ち飲み"],
+    "hasCounterSeat": false,
+    "senberoAvailable": false,
+    "soloFriendliness": 10,
+    "sourceNote": ""
+  },
+  {
+    "name": "大阪串カツ 大益",
+    "address": "東京都世田谷区三軒茶屋2-13-19",
+    "nearestStation": "三軒茶屋駅",
+    "tagline": "大阪スタイルの串カツと立ち飲み。低価格でサク飲みしやすい",
+    "subCategories": ["立ち飲み"],
+    "hasCounterSeat": false,
+    "senberoAvailable": true,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "コマル",
+    "address": "東京都世田谷区太子堂5-15-12 大山ビル1F",
+    "nearestStation": "三軒茶屋駅",
+    "tagline": "小さな立ち飲み屋で、こだわりの酒と創作料理を楽しむ三茶の定番",
+    "subCategories": ["立ち飲み", "日本酒"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 10,
+    "sourceNote": ""
+  },
+  {
+    "name": "オモウツボ",
+    "address": "東京都世田谷区三軒茶屋2-13-19",
+    "nearestStation": "三軒茶屋駅",
+    "tagline": "駅近の立ち飲みバル。短時間でサクッと飲みたい一人客に向く",
+    "subCategories": ["立ち飲み"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "立ち飲みホルモン ひだまり",
+    "address": "東京都世田谷区三軒茶屋2-13-19 宮下店舗2号1F",
+    "nearestStation": "三軒茶屋駅",
+    "tagline": "朝締めホルモンを主役にした立ち飲み。肉を肴に飲むタイプの酒好き向け",
+    "subCategories": ["立ち飲み"],
+    "hasCounterSeat": false,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "三茶スタンドS",
+    "address": "東京都世田谷区三軒茶屋1-32-6 michi-coビル1F",
+    "nearestStation": "三軒茶屋駅",
+    "tagline": "大人のスタンド系酒場。気軽に一人で立ち寄れるサク飲み向き店舗",
+    "subCategories": ["立ち飲み"],
+    "hasCounterSeat": false,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "日本酒バル じゃのめん",
+    "address": "東京都世田谷区三軒茶屋2-9-15 I-Area三軒茶屋B1F",
+    "nearestStation": "三軒茶屋駅",
+    "tagline": "日本酒を明確な軸にした深夜営業酒場。日本酒好きの一人飲みに向く",
+    "subCategories": ["日本酒"],
+    "hasCounterSeat": false,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "ワインバーふたみ",
+    "address": "東京都世田谷区三軒茶屋2-8-11 カーサ太子堂ML102",
+    "nearestStation": "三軒茶屋駅",
+    "tagline": "小規模ワインバーで、ワインを目的に静かに飲みたい人向け",
+    "subCategories": ["ワイン"],
+    "hasCounterSeat": false,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "栄鶏庵",
+    "address": "東京都世田谷区太子堂4-27-6",
+    "nearestStation": "三軒茶屋駅",
+    "tagline": "銘柄鶏・大山鶏の焼鳥と酒を気軽に楽しめる立ち飲み系酒場",
+    "subCategories": [],
+    "hasCounterSeat": false,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "BAR 三茶 Throne cha",
+    "address": "東京都世田谷区三軒茶屋2-13-13 2F",
+    "nearestStation": "三軒茶屋駅",
+    "tagline": "駅近の小規模バー。深夜に一人で酒を楽しむ用途に向く",
+    "subCategories": [],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  }
+]

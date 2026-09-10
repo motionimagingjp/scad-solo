@@ -1,0 +1,79 @@
+[
+  {
+    "name": "酒仙",
+    "address": "東京都目黒区上目黒2-12-2 W.NAKAMEGURO 3F",
+    "nearestStation": "中目黒駅",
+    "tagline": "小規模な酒場で、酒そのものを楽しみたい一人飲みに向く",
+    "subCategories": [],
+    "hasCounterSeat": false,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "ワインバーコロッセオ",
+    "address": "東京都目黒区上目黒2-6-9 1F",
+    "nearestStation": "中目黒駅",
+    "tagline": "6席規模の極小ワインバー。カウンター中心でワイン好きの一人飲みに非常に強い",
+    "subCategories": ["ワイン", "立ち飲み"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 10,
+    "sourceNote": ""
+  },
+  {
+    "name": "にもの 中目黒店",
+    "address": "東京都目黒区東山1-6-16",
+    "nearestStation": "中目黒駅",
+    "tagline": "煮物系の料理と酒を落ち着いて楽しめる中目黒の酒場",
+    "subCategories": ["日本酒"],
+    "hasCounterSeat": false,
+    "senberoAvailable": false,
+    "soloFriendliness": 8,
+    "sourceNote": ""
+  },
+  {
+    "name": "併呑 中目黒店",
+    "address": "東京都目黒区上目黒3-32-5 カーサ・デラソル2-A",
+    "nearestStation": "中目黒駅",
+    "tagline": "酒と料理をしっかり楽しむタイプの酒場。中目黒で落ち着いた一人飲みに向く",
+    "subCategories": ["日本酒"],
+    "hasCounterSeat": false,
+    "senberoAvailable": false,
+    "soloFriendliness": 8,
+    "sourceNote": ""
+  },
+  {
+    "name": "ワインバーAMANe",
+    "address": "東京都目黒区上目黒3-6-5 西銀座ハイツ101",
+    "nearestStation": "中目黒駅",
+    "tagline": "小規模なワインバーで、ナチュラル・こだわり系ワインを狙う一人飲みに向く",
+    "subCategories": ["ワイン"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 10,
+    "sourceNote": ""
+  },
+  {
+    "name": "中目黒 bar perro",
+    "address": "東京都目黒区上目黒1-3-20",
+    "nearestStation": "中目黒駅",
+    "tagline": "小規模バーで、深夜に一人で酒を楽しむ用途に向く",
+    "subCategories": [],
+    "hasCounterSeat": false,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "季節酒と鯛めし kamosi",
+    "address": "東京都目黒区上目黒2-44-3 ファミリア中目黒B1F",
+    "nearestStation": "中目黒駅",
+    "tagline": "自家熟成の真鯛料理と厳選日本酒をカウンターで楽しむ酒好き向けの隠れ家",
+    "subCategories": ["日本酒"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  }
+]
