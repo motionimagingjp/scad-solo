@@ -6,13 +6,14 @@ import { ChevronLeft, Camera, Image as ImageIcon } from "lucide-react";
 import BottomNav from "@/components/BottomNav";
 import { FALLBACK_DRINKS } from "@/lib/data/drinkRouletteFallback";
 
-// ドリンクルーレット: メニューを撮影→Gemini(序盤の「考える」担当)が飲み物を4〜6個抽出
-// →その場でルーレットを回して1つに決める。AIが読み取れない場合や未設定の場合は
-// APIルート側(/api/roulette/extract)が定番リストへ自動フォールバックする。
-// このページはfetch自体が失敗した場合(オフライン等)のみ、ここでもフォールバックする。
+// ドリンクルーレット: 開いた瞬間から定番5候補でルーレットを回せる。
+// メニューや壁のドリンクリストを撮影すると、Gemini(序盤の「考える」担当)が
+// 実際の候補に差し替えてくれる(未設定・API失敗・抽出結果が少なすぎる場合は
+// APIルート側(/api/roulette/extract)が定番リストへ自動フォールバックする)。
+// fetch自体が失敗した場合(オフライン等)のみ、ここでもフォールバックする。
 
-type Phase = "intro" | "loading" | "wheel" | "result";
-type Source = "gemini" | "fallback" | "offline";
+type Phase = "loading" | "wheel" | "result";
+type Source = "default" | "gemini" | "fallback" | "offline";
 
 // 隣り合っても見分けやすいよう、色相をはっきり離した6色にしてある
 // (以前はオレンジの濃淡だけで揃えていて、区別しづらいという指摘を受けて変更。
@@ -28,9 +29,9 @@ function wheelBackground(n: number): string {
 }
 
 export default function DrinkRoulettePage() {
-  const [phase, setPhase] = useState<Phase>("intro");
-  const [drinks, setDrinks] = useState<string[]>([]);
-  const [source, setSource] = useState<Source>("gemini");
+  const [phase, setPhase] = useState<Phase>("wheel");
+  const [drinks, setDrinks] = useState<string[]>(() => [...FALLBACK_DRINKS]);
+  const [source, setSource] = useState<Source>("default");
   const [rotation, setRotation] = useState(0);
   const [spinning, setSpinning] = useState(false);
   const [result, setResult] = useState<string | null>(null);
@@ -102,30 +103,6 @@ export default function DrinkRoulettePage() {
       <input ref={cameraInputRef} type="file" accept="image/*" capture="environment" className="hidden" onChange={handleFile} />
       <input ref={galleryInputRef} type="file" accept="image/*" className="hidden" onChange={handleFile} />
 
-      {phase === "intro" && (
-        <div className="flex flex-1 flex-col items-center justify-center gap-6 px-6 text-center">
-          <span className="text-5xl">🍹</span>
-          <p className="text-sm text-gray-500">
-            メニューや壁のドリンクリストを撮影すると、AIが4〜6個の候補を選び出します。
-            <br />
-            あとはルーレットで1つに決めるだけ。
-          </p>
-          <div className="flex w-full gap-2">
-            <button onClick={openCamera} className="flex flex-1 items-center justify-center gap-2 rounded-full bg-orange-500 py-3 text-sm font-bold text-white">
-              <Camera size={16} />
-              撮る
-            </button>
-            <button onClick={openGallery} className="flex flex-1 items-center justify-center gap-2 rounded-full border border-orange-300 bg-white py-3 text-sm font-bold text-orange-600">
-              <ImageIcon size={16} />
-              アルバムから選ぶ
-            </button>
-          </div>
-          <p className="rounded-xl bg-orange-50 px-4 py-2.5 text-[11px] leading-relaxed text-orange-600">
-            📷 コツ: 全体より、3〜6品くらいに近づいて・明るい方を向いて撮ると読み取り精度UP
-          </p>
-        </div>
-      )}
-
       {phase === "loading" && (
         <div className="flex flex-1 flex-col items-center justify-center gap-4 px-6 text-center">
           <div className="h-10 w-10 animate-spin rounded-full border-4 border-orange-200 border-t-orange-500" />
@@ -135,7 +112,23 @@ export default function DrinkRoulettePage() {
 
       {(phase === "wheel" || phase === "result") && drinks.length > 0 && (
         <div className="flex flex-1 flex-col items-center gap-5 px-6 py-6">
-          {source !== "gemini" && (
+          {source === "default" && (
+            <div className="w-full rounded-xl bg-orange-50 px-3.5 py-2.5 text-center text-[11px] leading-relaxed text-orange-600">
+              <p>まずは定番5候補で回せます。メニューを撮ると候補を差し替えられます。</p>
+              <div className="mt-2 flex justify-center gap-2">
+                <button onClick={openCamera} className="flex items-center gap-1 rounded-full border border-orange-300 bg-white px-3 py-1 text-[11px] font-medium text-orange-600">
+                  <Camera size={12} />
+                  撮る
+                </button>
+                <button onClick={openGallery} className="flex items-center gap-1 rounded-full border border-orange-300 bg-white px-3 py-1 text-[11px] font-medium text-orange-600">
+                  <ImageIcon size={12} />
+                  アルバムから選ぶ
+                </button>
+              </div>
+            </div>
+          )}
+
+          {(source === "fallback" || source === "offline") && (
             <div className="w-full rounded-xl bg-gray-100 px-3.5 py-2.5 text-center text-[11px] text-gray-500">
               <p>メニューをうまく読み取れなかったので定番リストです</p>
               <p className="mt-1">
