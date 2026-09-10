@@ -10,11 +10,9 @@ export const maxDuration = 30;
 const MODEL = "gemini-3.7-flash";
 const MIN_DRINKS = 4;
 const MAX_DRINKS = 6;
-const FALLBACK_PICK_SIZE = 5;
 
 function pickFallback(): string[] {
-  const shuffled = [...FALLBACK_DRINKS].sort(() => Math.random() - 0.5);
-  return shuffled.slice(0, FALLBACK_PICK_SIZE);
+  return [...FALLBACK_DRINKS];
 }
 
 function fallbackResponse(reason: string) {
