@@ -5,7 +5,7 @@ import Link from "next/link";
 import { ChevronLeft } from "lucide-react";
 import BottomNav from "@/components/BottomNav";
 
-// 一人乾杯タイマー: 乾杯するたびにボタンを押すだけで、次の一杯までの間隔を記録する。
+// ソロ乾杯: 乾杯するたびにボタンを押すだけで、次の一杯までの間隔を記録する。
 // 記録の目的は「今日は自分のペースを知る」程度のゆるいもので、飲酒を煽る要素は入れない
 // (ペース表示はあくまで参考。「もっと飲め」的な演出は一切なし)。DBには保存しない、その場限りの記録。
 
@@ -122,7 +122,7 @@ export default function KanpaiTimerPage() {
         <Link href="/games" className="flex items-center text-xs text-gray-400">
           <ChevronLeft size={16} /> 戻る
         </Link>
-        <h1 className="text-base font-bold">⏱ 一人乾杯タイマー</h1>
+        <h1 className="text-base font-bold">⏱ ソロ乾杯</h1>
       </header>
 
       {phase === "idle" && (
