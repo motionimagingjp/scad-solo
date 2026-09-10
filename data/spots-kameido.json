@@ -1,0 +1,112 @@
+[
+  {
+    "name": "立ち酔い 超人",
+    "address": "東京都江東区亀戸5-10-1 亀戸ロイヤルビル201",
+    "nearestStation": "亀戸駅",
+    "tagline": "1000円前後から気軽に飲める亀戸を代表する立ち飲み酒場",
+    "subCategories": ["ビール"],
+    "hasCounterSeat": false,
+    "senberoAvailable": true,
+    "soloFriendliness": 10,
+    "sourceNote": ""
+  },
+  {
+    "name": "立呑み処 くら 亀戸店",
+    "address": "東京都江東区亀戸5-5-8 国井ビル1F",
+    "nearestStation": "亀戸駅",
+    "tagline": "チケット制で安く飲める、肉豆腐などのアテが強い大衆立ち飲み",
+    "subCategories": ["立ち飲み"],
+    "hasCounterSeat": false,
+    "senberoAvailable": true,
+    "soloFriendliness": 10,
+    "sourceNote": ""
+  },
+  {
+    "name": "立ち呑み梅ちゃん",
+    "address": "東京都江東区亀戸6-60-4",
+    "nearestStation": "亀戸駅",
+    "tagline": "駅徒歩1分で刺身から鉄板料理まで幅広く楽しめる気さくな立ち飲み",
+    "subCategories": ["立ち飲み"],
+    "hasCounterSeat": false,
+    "senberoAvailable": true,
+    "soloFriendliness": 10,
+    "sourceNote": ""
+  },
+  {
+    "name": "立ち飲み居酒屋ドラム缶 亀戸ヤッホー店",
+    "address": "東京都江東区亀戸5-4-6 亀戸ダイヤモンドマンション1F",
+    "nearestStation": "亀戸駅",
+    "tagline": "低価格で酒とつまみを楽しめるドラム缶スタイルの気軽な立ち飲み",
+    "subCategories": ["立ち飲み", "ビール"],
+    "hasCounterSeat": false,
+    "senberoAvailable": true,
+    "soloFriendliness": 10,
+    "sourceNote": ""
+  },
+  {
+    "name": "いぐち式",
+    "address": "東京都江東区亀戸6-24-8 ニューハウス亀戸102",
+    "nearestStation": "亀戸駅",
+    "tagline": "昼過ぎから飲めて、立ち飲み感覚でサクッと使える亀戸酒場",
+    "subCategories": ["立ち飲み"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "したぢ屋",
+    "address": "東京都江東区亀戸5-16-5",
+    "nearestStation": "亀戸駅",
+    "tagline": "短時間でも使いやすく、地元感のある料理と酒を楽しめる酒場",
+    "subCategories": ["日本酒"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "ちょいのみ ぴっち",
+    "address": "東京都江東区亀戸1-33-7",
+    "nearestStation": "亀戸駅",
+    "tagline": "昼飲みから夜の一杯まで使える気軽なちょい飲み酒場",
+    "subCategories": ["ビール"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "名代もつ焼き 寅一 亀戸",
+    "address": "東京都江東区亀戸5-5-12",
+    "nearestStation": "亀戸駅",
+    "tagline": "もつ焼きを中心に酒が進むアテを安く楽しめる駅近大衆酒場",
+    "subCategories": ["ビール"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "亀戸横丁",
+    "address": "東京都江東区亀戸5-13-2 スクエア三報ビル1F",
+    "nearestStation": "亀戸駅",
+    "tagline": "複数の酒場が集まる横丁型空間で一人はしご酒を楽しめる",
+    "subCategories": [],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "梅田屋はなれ",
+    "address": "東京都江東区亀戸5-16-3",
+    "nearestStation": "亀戸駅",
+    "tagline": "立ち食い寿司や天ぷらを酒のアテにできる亀戸の人気立ち飲み",
+    "subCategories": ["立ち飲み"],
+    "hasCounterSeat": false,
+    "senberoAvailable": true,
+    "soloFriendliness": 10,
+    "sourceNote": ""
+  }
+]

@@ -1,0 +1,156 @@
+[
+  {
+    "name": "たちのみあつまり",
+    "address": "東京都目黒区自由が丘2-14-19 2F",
+    "nearestStation": "自由が丘駅",
+    "tagline": "自由が丘の路地で気軽に立ち寄れる、酒好きが集まる小さな立ち飲み酒場",
+    "subCategories": ["立ち飲み", "日本酒", "ビール"],
+    "hasCounterSeat": false,
+    "senberoAvailable": true,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "立呑み中華 起率礼",
+    "address": "東京都目黒区自由が丘2-14-2",
+    "nearestStation": "自由が丘駅",
+    "tagline": "本格中華を茶割りなどのお酒とカジュアルに楽しめる立ち飲み中華",
+    "subCategories": ["立ち飲み"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "ピッチャーサワー",
+    "address": "東京都目黒区自由が丘1-31-9 WiLLOWビル1F",
+    "nearestStation": "自由が丘駅",
+    "tagline": "餃子とサワーをハッピーアワーで気軽に楽しめる駅前酒場",
+    "subCategories": ["立ち飲み"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "やきとり 阿波乃里",
+    "address": "東京都目黒区自由が丘1-12-9 センタービル1F",
+    "nearestStation": "自由が丘駅",
+    "tagline": "自由が丘で長く愛される焼き鳥をカウンターでじっくり味わえる酒場",
+    "subCategories": ["ビール"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "酒泥坊",
+    "address": "東京都目黒区自由が丘1-28-8 2F",
+    "nearestStation": "自由が丘駅",
+    "tagline": "自由が丘デパート内で酒を主役に気軽な一杯を楽しめる小さなバー",
+    "subCategories": ["日本酒"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 10,
+    "sourceNote": ""
+  },
+  {
+    "name": "曖昧時空 URBAN LEMONERY",
+    "address": "東京都世田谷区奥沢6-33-14 もみの木ビル107",
+    "nearestStation": "自由が丘駅",
+    "tagline": "レモンサワー系の酒を楽しみながら一人で軽く飲めるスタンディングバー",
+    "subCategories": ["立ち飲み"],
+    "hasCounterSeat": false,
+    "senberoAvailable": true,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "こかげ酒場",
+    "address": "東京都目黒区自由が丘2-15-6 2F",
+    "nearestStation": "自由が丘駅",
+    "tagline": "路地裏感のある空間で料理と酒をゆっくり楽しめる自由が丘の大衆酒場",
+    "subCategories": ["ビール"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "手羽先酒場 幸の羽",
+    "address": "東京都目黒区自由が丘2-11-9 松田ビル2F",
+    "nearestStation": "自由が丘駅",
+    "tagline": "手羽先をつまみにビールを気軽に流し込めるカジュアル酒場",
+    "subCategories": ["ビール"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 8,
+    "sourceNote": ""
+  },
+  {
+    "name": "SAKABA SOU -Dining・Bar-",
+    "address": "東京都目黒区自由が丘1-28-8 3F",
+    "nearestStation": "自由が丘駅",
+    "tagline": "駅前で落ち着いて酒を飲める隠れ家的なダイニングバー",
+    "subCategories": [],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "TRAFFIC 52",
+    "address": "東京都目黒区自由が丘1-2-15 くちビル2F",
+    "nearestStation": "自由が丘駅",
+    "tagline": "深夜まで営業する自由が丘の気軽な居酒屋で一人飲みにも使いやすい",
+    "subCategories": ["ビール"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 8,
+    "sourceNote": ""
+  },
+  {
+    "name": "BAR LAYLA",
+    "address": "東京都目黒区自由が丘1-26-3 自由が丘升本ビルB1F",
+    "nearestStation": "自由が丘駅",
+    "tagline": "地下で静かに酒と会話を楽しめる自由が丘の老舗系バー",
+    "subCategories": [],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 10,
+    "sourceNote": ""
+  },
+  {
+    "name": "みんちや by Salir",
+    "address": "東京都目黒区自由が丘2-14-19 1F",
+    "nearestStation": "自由が丘駅",
+    "tagline": "肉系の料理と酒を気軽に楽しめる路地裏感のある居酒屋",
+    "subCategories": ["ビール"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 8,
+    "sourceNote": ""
+  },
+  {
+    "name": "ナンリ亭",
+    "address": "東京都目黒区自由が丘2-14-20 不二ビル2Fβ",
+    "nearestStation": "自由が丘駅",
+    "tagline": "自由が丘の路地で料理と酒をじっくり楽しむ落ち着いた居酒屋",
+    "subCategories": ["日本酒"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 8,
+    "sourceNote": ""
+  },
+  {
+    "name": "Winebar AtoY",
+    "address": "東京都目黒区自由が丘1-2-14 K2ビル3F",
+    "nearestStation": "自由が丘駅",
+    "tagline": "ワインを主役に一人でじっくり飲める自由が丘の隠れ家ワインバー",
+    "subCategories": ["ワイン", "女性ひとり歓迎"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  }
+]

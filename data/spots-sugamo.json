@@ -1,0 +1,112 @@
+[
+  {
+    "name": "東京大酒場",
+    "address": "東京都豊島区巣鴨2-2-5 クリオネコートB1F",
+    "nearestStation": "巣鴨駅",
+    "tagline": "昼から深夜まで使えて一人でも入りやすい大型大衆酒場",
+    "subCategories": [],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 8,
+    "sourceNote": ""
+  },
+  {
+    "name": "やきとん 多吉",
+    "address": "東京都豊島区巣鴨2-4-4 大豊ビル1F",
+    "nearestStation": "巣鴨駅",
+    "tagline": "駅近でやきとんをつまみながら気軽に飲める大衆酒場",
+    "subCategories": ["ビール"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "日本酒の魚枡",
+    "address": "東京都豊島区巣鴨2-5-2 神野ビルB1",
+    "nearestStation": "巣鴨駅",
+    "tagline": "魚料理と日本酒を落ち着いて楽しめる日本酒好き向けの一人飲み酒場",
+    "subCategories": ["日本酒"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "寿や 巣鴨店",
+    "address": "東京都豊島区巣鴨2-9-3 田中ビル",
+    "nearestStation": "巣鴨駅",
+    "tagline": "駅前で焼き物と酒を気軽に楽しめる大衆居酒屋",
+    "subCategories": ["ビール"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "千成 本店",
+    "address": "東京都豊島区巣鴨2-3-8 第二ゆたかビル",
+    "nearestStation": "巣鴨駅",
+    "tagline": "巣鴨らしい昭和感を残す老舗系酒場で煮込みと酒を楽しめる",
+    "subCategories": ["日本酒"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "平世志",
+    "address": "東京都豊島区巣鴨3-31-2 アルカディア篠ビル2F",
+    "nearestStation": "巣鴨駅",
+    "tagline": "落ち着いた雰囲気で酒と料理をじっくり楽しめる隠れ家的居酒屋",
+    "subCategories": ["日本酒"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "串やき もん家",
+    "address": "東京都豊島区巣鴨4-24-4 ハイツ野中",
+    "nearestStation": "巣鴨駅",
+    "tagline": "串焼きを中心に酒を気軽に楽しめる小さな酒場",
+    "subCategories": ["ビール"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "居酒屋はちまる",
+    "address": "東京都豊島区巣鴨4-24-13",
+    "nearestStation": "巣鴨駅",
+    "tagline": "昼から定食と酒を楽しめる一人飲み向きの気軽な居酒屋",
+    "subCategories": [],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "飯場・酒場 みょうが屋",
+    "address": "東京都豊島区巣鴨4-29-1 ノーブルハウス",
+    "nearestStation": "巣鴨駅",
+    "tagline": "巣鴨の住宅街側で昼から酒を楽しめる気取らない酒場",
+    "subCategories": ["日本酒"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "ニュー加賀屋 巣鴨店",
+    "address": "東京都豊島区巣鴨2-9-3 田中ビル",
+    "nearestStation": "巣鴨駅",
+    "tagline": "焼きとんや煮込みを肴に昭和大衆酒場らしく飲める定番店",
+    "subCategories": [],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  }
+]

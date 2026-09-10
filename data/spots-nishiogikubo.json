@@ -1,0 +1,145 @@
+[
+  {
+    "name": "富士山",
+    "address": "東京都杉並区西荻南3-25-6",
+    "nearestStation": "西荻窪駅",
+    "tagline": "駅前で煮込みと酒を気軽に楽しめる西荻窪の人気立ち飲み",
+    "subCategories": ["立ち飲み", "ビール"],
+    "hasCounterSeat": false,
+    "senberoAvailable": true,
+    "soloFriendliness": 10,
+    "sourceNote": ""
+  },
+  {
+    "name": "西荻サレカマネ",
+    "address": "東京都杉並区西荻北3-20-9 三保荘",
+    "nearestStation": "西荻窪駅",
+    "tagline": "おしゃれな雰囲気ながら一人でも入りやすい西荻窪の立ち飲みバル",
+    "subCategories": ["立ち飲み", "ワイン"],
+    "hasCounterSeat": false,
+    "senberoAvailable": false,
+    "soloFriendliness": 10,
+    "sourceNote": ""
+  },
+  {
+    "name": "小鳥遊",
+    "address": "東京都杉並区西荻南3-25-5 とみやビル",
+    "nearestStation": "西荻窪駅",
+    "tagline": "駅近で唐揚げなどのつまみと酒を軽く楽しめる立ち飲み",
+    "subCategories": ["立ち飲み", "日本酒"],
+    "hasCounterSeat": false,
+    "senberoAvailable": true,
+    "soloFriendliness": 10,
+    "sourceNote": ""
+  },
+  {
+    "name": "おかえり酒場 さんだるきっちん",
+    "address": "東京都杉並区西荻南2-20-8 山田ビル1F",
+    "nearestStation": "西荻窪駅",
+    "tagline": "立ち飲みスタイルで仕事帰りに一杯やるのにちょうどいい酒場",
+    "subCategories": ["立ち飲み"],
+    "hasCounterSeat": false,
+    "senberoAvailable": true,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "すっぴん BAKAWARAI",
+    "address": "東京都杉並区西荻南3-11-11",
+    "nearestStation": "西荻窪駅",
+    "tagline": "昼から飲める西荻窪らしい気軽な酒場で一人飲みにも向く",
+    "subCategories": ["ビール"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "酒屋 フワフワ",
+    "address": "東京都杉並区西荻南3-12-1",
+    "nearestStation": "西荻窪駅",
+    "tagline": "落ち着いた照明と音楽で一人でも居心地よく飲める酒場",
+    "subCategories": ["日本酒"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "お酒とごはん しんこぺ",
+    "address": "東京都杉並区西荻南3-10-3",
+    "nearestStation": "西荻窪駅",
+    "tagline": "酒と家庭的な料理をじっくり楽しめる一人飲み向きの居酒屋",
+    "subCategories": ["日本酒"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "寅圭",
+    "address": "東京都杉並区西荻南3-15-12",
+    "nearestStation": "西荻窪駅",
+    "tagline": "焼き物と酒を気軽に楽しめる西荻窪の大衆居酒屋",
+    "subCategories": ["ビール"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "テンセイ",
+    "address": "東京都杉並区西荻北3-2-11 ハイツそれいゆ",
+    "nearestStation": "西荻窪駅",
+    "tagline": "駅北口で静かに酒を飲める隠れ家的な居酒屋",
+    "subCategories": ["日本酒"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "やきとん 豪 西荻店",
+    "address": "東京都杉並区西荻北3-3-9 ウエストポイント西荻1F",
+    "nearestStation": "西荻窪駅",
+    "tagline": "やきとんを肴にビールや酎ハイをサクッと飲める大衆酒場",
+    "subCategories": ["ビール"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "PERFECT BEER KITCHEN 西荻窪",
+    "address": "東京都杉並区西荻南3-8-3 リバティプラザビル3F",
+    "nearestStation": "西荻窪駅",
+    "tagline": "ビールを主役に一人でじっくり飲める西荻窪のビアバー",
+    "subCategories": [],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 10,
+    "sourceNote": ""
+  },
+  {
+    "name": "西荻窪 酒場のんき",
+    "address": "東京都杉並区西荻南3-8-9 畠中ビル1F-B1F",
+    "nearestStation": "西荻窪駅",
+    "tagline": "昼から夜まで使いやすく、大衆酒場らしい料理で飲める店",
+    "subCategories": ["ビール"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "やきとり戎 南口店",
+    "address": "東京都杉並区西荻南3-11-5",
+    "nearestStation": "西荻窪駅",
+    "tagline": "西荻窪を代表する大衆焼き鳥酒場で昼から一杯楽しめる",
+    "subCategories": [],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 10,
+    "sourceNote": ""
+  }
+]

@@ -1,0 +1,145 @@
+[
+  {
+    "name": "大衆居酒屋せんべろ 町田駅前店",
+    "address": "東京都町田市原町田6-11-17 町田駅前ビル1F",
+    "nearestStation": "町田駅",
+    "tagline": "ドリンク3杯とつまみ1品が1000円の強烈なコスパを誇る町田の新定番",
+    "subCategories": ["立ち飲み"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 10,
+    "sourceNote": ""
+  },
+  {
+    "name": "町呑屋",
+    "address": "東京都町田市原町田4-5-10",
+    "nearestStation": "町田駅",
+    "tagline": "日本酒と干物を手頃に楽しめる、町田の一人飲み向け立ち飲み酒場",
+    "subCategories": ["立ち飲み", "日本酒"],
+    "hasCounterSeat": false,
+    "senberoAvailable": true,
+    "soloFriendliness": 10,
+    "sourceNote": ""
+  },
+  {
+    "name": "立ち呑み屋",
+    "address": "東京都町田市原町田6-14-7",
+    "nearestStation": "町田駅",
+    "tagline": "昭和レトロな雰囲気で串焼きとおでんを安く楽しめる王道立ち飲み",
+    "subCategories": ["立ち飲み"],
+    "hasCounterSeat": false,
+    "senberoAvailable": true,
+    "soloFriendliness": 10,
+    "sourceNote": ""
+  },
+  {
+    "name": "大衆酒場 スペシャルズ",
+    "address": "東京都町田市中町1-16-14 1F",
+    "nearestStation": "町田駅",
+    "tagline": "串焼きと刺身をリーズナブルに楽しめる、町田の大衆立ち飲み系酒場",
+    "subCategories": ["立ち飲み"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "大衆酒場 金星",
+    "address": "東京都町田市原町田6-14-7 重南ビル1F",
+    "nearestStation": "町田駅",
+    "tagline": "刺身やおでんなど300円台のアテが充実したコスパ型大衆酒場",
+    "subCategories": [],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "炭焼 てんがらもん 町田本店",
+    "address": "東京都町田市森野1-19-12",
+    "nearestStation": "町田駅",
+    "tagline": "100円台の串も充実し焼き鳥を中心に気軽に飲める活気ある酒場",
+    "subCategories": ["ビール"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 8,
+    "sourceNote": ""
+  },
+  {
+    "name": "大衆イタリアン かね子 町田店",
+    "address": "東京都町田市森野1-13-22 リバーウエスト町田1F",
+    "nearestStation": "町田駅",
+    "tagline": "レバカツやもつ煮をイタリアン風に楽しめる変わり種せんべろ酒場",
+    "subCategories": ["ワイン"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "大衆割烹 うたり",
+    "address": "東京都町田市森野1-35-4",
+    "nearestStation": "町田駅",
+    "tagline": "長いカウンターで焼き鳥や魚を落ち着いて楽しめる昭和系酒場",
+    "subCategories": [],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 10,
+    "sourceNote": ""
+  },
+  {
+    "name": "三軒目",
+    "address": "東京都町田市森野1-13-22 リバーウエスト町田ビル1F",
+    "nearestStation": "町田駅",
+    "tagline": "10人ほどで満員になる小さなカウンター酒場で串焼きを安く楽しめる",
+    "subCategories": ["立ち飲み"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 10,
+    "sourceNote": ""
+  },
+  {
+    "name": "いまがわ食堂 町田店",
+    "address": "東京都町田市森野1-39-5 第二モリビル2F",
+    "nearestStation": "町田駅",
+    "tagline": "魚料理と定食を昼から酒と合わせられる、町田の昼飲み名店",
+    "subCategories": [],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "やまと屋",
+    "address": "東京都町田市中町1-18-2 ウッドベル1F",
+    "nearestStation": "町田駅",
+    "tagline": "100円台のやきとんが魅力で女性一人でも入りやすい町田の大衆酒場",
+    "subCategories": ["ビール"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 10,
+    "sourceNote": ""
+  },
+  {
+    "name": "小料理Bar 白圭",
+    "address": "東京都町田市中町1-18-14 きよかわビル3F",
+    "nearestStation": "町田駅",
+    "tagline": "家庭料理と季節の酒を女将とゆっくり楽しめる一人飲み歓迎の小料理バー",
+    "subCategories": ["日本酒"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 10,
+    "sourceNote": ""
+  },
+  {
+    "name": "大衆的抑揚酒場 ダビンチ",
+    "address": "東京都町田市原町田4-6-8 ステラE区",
+    "nearestStation": "町田駅",
+    "tagline": "ヴェネチアのバーカロと日本の大衆酒場を融合した町田の新しい立ち飲み",
+    "subCategories": ["立ち飲み", "ワイン"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 10,
+    "sourceNote": ""
+  }
+]

@@ -8,17 +8,21 @@ import asakusa from "@/data/spots-asakusa.json";
 import ebisu from "@/data/spots-ebisu.json";
 import gotanda from "@/data/spots-gotanda.json";
 import ikebukuro from "@/data/spots-ikebukuro.json";
+import jiyugaoka from "@/data/spots-jiyugaoka.json";
 import kamata from "@/data/spots-kamata.json";
+import kameido from "@/data/spots-kameido.json";
 import kanda from "@/data/spots-kanda.json";
 import kawasaki from "@/data/spots-kawasaki.json";
 import kichijoji from "@/data/spots-kichijoji.json";
 import kinshicho from "@/data/spots-kinshicho.json";
 import kitasenju from "@/data/spots-kitasenju.json";
 import koenji from "@/data/spots-koenji.json";
+import machida from "@/data/spots-machida.json";
 import meguro from "@/data/spots-meguro.json";
 import mishima from "@/data/spots-mishima.json";
 import nakameguro from "@/data/spots-nakameguro.json";
 import nakano from "@/data/spots-nakano.json";
+import nishiogikubo from "@/data/spots-nishiogikubo.json";
 import oimachi from "@/data/spots-oimachi.json";
 import omiya from "@/data/spots-omiya.json";
 import sangenjaya from "@/data/spots-sangenjaya.json";
@@ -27,6 +31,7 @@ import shimbashi from "@/data/spots-shimbashi.json";
 import shimokitazawa from "@/data/spots-shimokitazawa.json";
 import shinagawa from "@/data/spots-shinagawa.json";
 import shinjuku from "@/data/spots-shinjuku.json";
+import sugamo from "@/data/spots-sugamo.json";
 import suidobashi from "@/data/spots-suidobashi.json";
 import tachikawa from "@/data/spots-tachikawa.json";
 import takadanobaba from "@/data/spots-takadanobaba.json";
@@ -69,17 +74,21 @@ const ALL_CANDIDATES: SpotCandidate[] = [
   ...ebisu,
   ...gotanda,
   ...ikebukuro,
+  ...jiyugaoka,
   ...kamata,
+  ...kameido,
   ...kanda,
   ...kawasaki,
   ...kichijoji,
   ...kinshicho,
   ...kitasenju,
   ...koenji,
+  ...machida,
   ...meguro,
   ...mishima,
   ...nakameguro,
   ...nakano,
+  ...nishiogikubo,
   ...oimachi,
   ...omiya,
   ...sangenjaya,
@@ -88,6 +97,7 @@ const ALL_CANDIDATES: SpotCandidate[] = [
   ...shimokitazawa,
   ...shinagawa,
   ...shinjuku,
+  ...sugamo,
   ...suidobashi,
   ...tachikawa,
   ...takadanobaba,
