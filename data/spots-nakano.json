@@ -1,0 +1,156 @@
+[
+  {
+    "name": "やきや 中野店",
+    "address": "東京都中野区中野2-27-14",
+    "nearestStation": "中野駅",
+    "tagline": "イカ刺しとホッピーで安く酔える大人気の立呑み酒場",
+    "subCategories": ["立ち飲み", "ビール"],
+    "hasCounterSeat": false,
+    "senberoAvailable": true,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "鎌倉酒店",
+    "address": "東京都中野区中野2-30-14",
+    "nearestStation": "中野駅",
+    "tagline": "自家製前割り焼酎と手頃な串焼きをアテに楽しむ角打ち空間",
+    "subCategories": ["立ち飲み", "日本酒"],
+    "hasCounterSeat": false,
+    "senberoAvailable": true,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "立ち呑み パニパニ",
+    "address": "東京都中野区中野5-49-3",
+    "nearestStation": "中野駅",
+    "tagline": "創作つまみとお酒がリーズナブルに揃う人気の立ち飲み処",
+    "subCategories": ["立ち飲み", "女性ひとり歓迎"],
+    "hasCounterSeat": false,
+    "senberoAvailable": true,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "ゆむゆむ",
+    "address": "東京都中野区中野2-29-2",
+    "nearestStation": "中野駅",
+    "tagline": "手頃なアテと温かい接客で一人でも落ち着いて飲めるお店",
+    "subCategories": ["立ち飲み", "ビール"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 8,
+    "sourceNote": ""
+  },
+  {
+    "name": "Standing Wine Bar AWA.",
+    "address": "東京都中野区中野5-55-3",
+    "nearestStation": "中野駅",
+    "tagline": "気楽にグラスワインと小皿料理が味わえるおしゃれな立ち飲み",
+    "subCategories": ["ワイン", "立ち飲み", "女性ひとり歓迎"],
+    "hasCounterSeat": false,
+    "senberoAvailable": true,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "どてえもん",
+    "address": "東京都中野区中野5-57-2",
+    "nearestStation": "中野駅",
+    "tagline": "名古屋名物のどて煮串と串カツで気軽にせんべろできる立ち飲み",
+    "subCategories": ["立ち飲み", "ビール"],
+    "hasCounterSeat": false,
+    "senberoAvailable": true,
+    "soloFriendliness": 8,
+    "sourceNote": ""
+  },
+  {
+    "name": "立ち呑み 4109",
+    "address": "東京都中野区中野5-50-9",
+    "nearestStation": "中野駅",
+    "tagline": "こだわりの地酒とお通しをサクッと楽しめる立ち飲み居酒屋",
+    "subCategories": ["立ち飲み", "日本酒"],
+    "hasCounterSeat": false,
+    "senberoAvailable": true,
+    "soloFriendliness": 8,
+    "sourceNote": ""
+  },
+  {
+    "name": "立ち寿司横丁 中野サンモール",
+    "address": "東京都中野区中野5-58-6",
+    "nearestStation": "中野駅",
+    "tagline": "握り寿司をつまみに1杯サクッと飲める立ち食いスタイルの名店",
+    "subCategories": ["立ち飲み", "ビール", "女性ひとり歓迎"],
+    "hasCounterSeat": false,
+    "senberoAvailable": true,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "やきとり 倉川",
+    "address": "東京都中野区中野5-55-7",
+    "nearestStation": "中野駅",
+    "tagline": "こぢんまりとしたカウンターで丁寧に焼かれた串焼きを味わう",
+    "subCategories": ["ビール"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 8,
+    "sourceNote": ""
+  },
+  {
+    "name": "ももや",
+    "address": "東京都中野区中野5-56-15",
+    "nearestStation": "中野駅",
+    "tagline": "大衆的な雰囲気の中で手頃な焼鳥とお酒を気兼ねなく楽しめる",
+    "subCategories": ["ビール"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 8,
+    "sourceNote": ""
+  },
+  {
+    "name": "四代目鎌倉酒店 中野北口店",
+    "address": "東京都中野区中野5-35-8",
+    "nearestStation": "中野駅",
+    "tagline": "酒屋直営ならではの豊富な日本酒と藁焼きを立ち飲みで楽しむ",
+    "subCategories": ["立ち飲み", "日本酒"],
+    "hasCounterSeat": false,
+    "senberoAvailable": true,
+    "soloFriendliness": 8,
+    "sourceNote": ""
+  },
+  {
+    "name": "八九屋",
+    "address": "東京都中野区中野5-32-17",
+    "nearestStation": "中野駅",
+    "tagline": "赤提灯が灯る空間でやきとんとホッピーを静かに嗜む",
+    "subCategories": ["立ち飲み", "ビール"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 8,
+    "sourceNote": ""
+  },
+  {
+    "name": "中野屋",
+    "address": "東京都中野区中野2-25-6",
+    "nearestStation": "中野駅",
+    "tagline": "夜は立ち呑みとしておでんや串焼きを気軽に味わえるお店",
+    "subCategories": ["立ち飲み", "ビール"],
+    "hasCounterSeat": false,
+    "senberoAvailable": true,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "Pizza Bar OHISAMA",
+    "address": "東京都中野区中野5-49-4",
+    "nearestStation": "中野駅",
+    "tagline": "1階の立ち飲みスペースで洋風おでんとハイボールをサクッと楽しむ",
+    "subCategories": ["立ち飲み", "ワイン", "女性ひとり歓迎"],
+    "hasCounterSeat": false,
+    "senberoAvailable": true,
+    "soloFriendliness": 8,
+    "sourceNote": ""
+  }
+]
