@@ -9,18 +9,20 @@ const SITE_URL = process.env.VERCEL_PROJECT_PRODUCTION_URL
     ? `https://${process.env.VERCEL_URL}`
     : "http://localhost:3000";
 
+// 開発コード名は SCAD-SOLO のまま維持。ユーザーに見せるブランド名のみ
+// Tokyo Solo Club を使用する(対象エリアを東京23区中心に絞った命名)。
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
-  title: "SCAD-SOLO",
+  title: "Tokyo Solo Club",
   description: "今夜のソロ飲みを1秒で決める",
   openGraph: {
-    title: "SCAD-SOLO",
+    title: "Tokyo Solo Club",
     description: "今夜のソロ飲みを1秒で決める",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "SCAD-SOLO",
+    title: "Tokyo Solo Club",
     description: "今夜のソロ飲みを1秒で決める",
   },
 };

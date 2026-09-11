@@ -13,7 +13,7 @@ export type ScadApp = {
 export const SCAD_APPS: ScadApp[] = [
   {
     id: "scad-solo",
-    name: "SCAD-SOLO",
+    name: "Tokyo Solo Club",
     tagline: "ソロ活・ソロ飲みナビ",
     benefit: "今使っているアプリです",
     url: "/",

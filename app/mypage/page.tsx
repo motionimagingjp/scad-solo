@@ -54,7 +54,7 @@ export default async function MyPage() {
       <section className="mt-2 bg-white px-4 py-4">
         <details>
           <summary className="cursor-pointer text-sm font-medium">
-            SCAD-SOLOについて
+            Tokyo Solo Clubについて
           </summary>
           <div className="mt-2 space-y-1 text-xs text-gray-500">
             <p>コンセプト: 1人でも気兼ねなく行ける店を、すぐに見つける。</p>
