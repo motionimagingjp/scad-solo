@@ -66,17 +66,6 @@
     "sourceNote": ""
   },
   {
-    "name": "大衆イタリアン かね子 町田店",
-    "address": "東京都町田市森野1-13-22 リバーウエスト町田1F",
-    "nearestStation": "町田駅",
-    "tagline": "レバカツやもつ煮をイタリアン風に楽しめる変わり種せんべろ酒場",
-    "subCategories": ["ワイン"],
-    "hasCounterSeat": true,
-    "senberoAvailable": true,
-    "soloFriendliness": 9,
-    "sourceNote": ""
-  },
-  {
     "name": "大衆割烹 うたり",
     "address": "東京都町田市森野1-35-4",
     "nearestStation": "町田駅",

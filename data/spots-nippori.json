@@ -1,0 +1,57 @@
+[
+  {
+    "name": "立ち飲みワイン 荒川STAND",
+    "address": "東京都荒川区東日暮里6-60-1 日暮里駅前中央ビル1F",
+    "nearestStation": "日暮里駅",
+    "tagline": "ワインと小皿料理を楽しむ人気スタンド",
+    "subCategories": ["立ち飲み", "ワイン"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 10,
+    "sourceNote": ""
+  },
+  {
+    "name": "SAKE CRAFTERS 谷中銀座店",
+    "address": "東京都荒川区西日暮里3-15-3",
+    "nearestStation": "日暮里駅",
+    "tagline": "日本酒を気軽に飲める谷中銀座の立ち飲み",
+    "subCategories": ["立ち飲み", "日本酒"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 10,
+    "sourceNote": ""
+  },
+  {
+    "name": "越後屋酒店",
+    "address": "東京都台東区谷中3-13-2",
+    "nearestStation": "日暮里駅",
+    "tagline": "酒屋で気軽に一杯できる角打ち",
+    "subCategories": ["立ち飲み", "日本酒"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 10,
+    "sourceNote": ""
+  },
+  {
+    "name": "E-YANAKA",
+    "address": "東京都台東区谷中3-8-10",
+    "nearestStation": "日暮里駅",
+    "tagline": "谷中エリアで一人飲みしやすいスタンド",
+    "subCategories": ["立ち飲み"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "中村屋丸康酒店",
+    "address": "東京都荒川区西日暮里2-22-1 ステーションプラザタワー102",
+    "nearestStation": "日暮里駅",
+    "tagline": "酒屋で楽しむ昔ながらの角打ち",
+    "subCategories": ["日本酒"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 10,
+    "sourceNote": ""
+  }
+]

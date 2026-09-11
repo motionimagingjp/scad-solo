@@ -1,0 +1,46 @@
+[
+  {
+    "name": "awabar 六本木",
+    "address": "東京都港区六本木4-10-11 小田切ビル1F",
+    "nearestStation": "六本木駅",
+    "tagline": "スパークリング系を気軽に楽しむ立ち飲みバー",
+    "subCategories": ["立ち飲み", "ワイン"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "SACTTO,",
+    "address": "東京都港区六本木4-12-4 清水ビル1F",
+    "nearestStation": "六本木駅",
+    "tagline": "スペイン料理とワインを立ち飲みで楽しむ",
+    "subCategories": ["立ち飲み", "ワイン"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "とり多津 六本木店",
+    "address": "東京都港区六本木7-15-17 ユニ六本木ビル1F",
+    "nearestStation": "六本木駅",
+    "tagline": "唐揚げを肴にサクッと立ち飲み",
+    "subCategories": ["立ち飲み"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "WINE CONNECTION",
+    "address": "東京都港区六本木7-10-27 国分第2ビル2F",
+    "nearestStation": "六本木駅",
+    "tagline": "ソムリエ厳選ワインを一杯から楽しめる立ち飲み",
+    "subCategories": ["立ち飲み", "ワイン"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  }
+]

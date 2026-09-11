@@ -1,0 +1,68 @@
+[
+  {
+    "name": "立ち呑み みるくばー(MILK BAR)",
+    "address": "東京都中央区日本橋室町1-12-13",
+    "nearestStation": "日本橋駅",
+    "tagline": "日本酒を中心に昼から立ち飲みできる酒場",
+    "subCategories": ["立ち飲み", "日本酒"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 10,
+    "sourceNote": ""
+  },
+  {
+    "name": "川口酒店",
+    "address": "東京都中央区日本橋2-9-7",
+    "nearestStation": "日本橋駅",
+    "tagline": "酒屋系の雰囲気で日本酒を楽しめる立ち飲み",
+    "subCategories": ["立ち飲み", "日本酒"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 10,
+    "sourceNote": ""
+  },
+  {
+    "name": "立喰酒場 金獅子 東京ミッドタウン八重洲店",
+    "address": "東京都中央区八重洲2-2-1 東京ミッドタウン八重洲2F",
+    "nearestStation": "日本橋駅",
+    "tagline": "海鮮と日本酒をリーズナブルに立ち食い飲み",
+    "subCategories": ["立ち飲み", "日本酒"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 10,
+    "sourceNote": ""
+  },
+  {
+    "name": "快海",
+    "address": "東京都中央区日本橋2-16-3 山京ビル1F",
+    "nearestStation": "日本橋駅",
+    "tagline": "刺身と酒を腰を据えて楽しめる海鮮酒場",
+    "subCategories": ["日本酒"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "大金星",
+    "address": "東京都中央区日本橋室町3-2-1 コレド室町テラスB1F",
+    "nearestStation": "日本橋駅",
+    "tagline": "焼きとん・大衆料理でサク飲みできる酒場",
+    "subCategories": [],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "Bar ルヰ",
+    "address": "東京都中央区日本橋室町1-11-16 イーストビル室町B1F",
+    "nearestStation": "日本橋駅",
+    "tagline": "日本橋の夜に一人で静かに飲める隠れ家バー",
+    "subCategories": [],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 10,
+    "sourceNote": ""
+  }
+]

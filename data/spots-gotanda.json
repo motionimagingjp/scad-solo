@@ -1,181 +1,57 @@
 [
   {
-    "name": "とん金",
-    "address": "東京都品川区東五反田1-12-9 タチバナビル 2F",
+    "name": "やきとん豚番長 五反田店",
+    "address": "東京都品川区西五反田1-32-4 モリスビル1F",
     "nearestStation": "五反田駅",
-    "tagline": "五反田が誇る大衆酒場。極太の焼きとんと特大ポリュームのおつまみで満足呑み",
-    "subCategories": [
-      "ビール"
-    ],
-    "hasCounterSeat": true,
-    "senberoAvailable": true,
-    "soloFriendliness": 9,
-    "sourceNote": "https://tabelog.com/tokyo/A1316/A131603/13013233/"
-  },
-  {
-    "name": "Craft Beer & Wine UMEboshi",
-    "address": "東京都品川区西五反田1-28-4 シティサクセスビル 1F",
-    "nearestStation": "五反田駅",
-    "tagline": "国内外の極上クラフトビールと自然派ワイン。一人でもふらっと立ち寄れるバル",
-    "subCategories": [
-      "ビール",
-      "ワイン",
-      "立ち飲み",
-      "女性ひとり歓迎"
-    ],
-    "hasCounterSeat": true,
-    "senberoAvailable": false,
-    "soloFriendliness": 9,
-    "sourceNote": "https://tabelog.com/tokyo/A1316/A131603/13245612/"
-  },
-  {
-    "name": "やきとん ほまれ",
-    "address": "東京都品川区西五反田1-4-8 秀和五反田駅前レジデンス 1F",
-    "nearestStation": "五反田駅",
-    "tagline": "朝引きの新鮮なモツを1本ずつ丁寧に備長炭焼き。一人呑みに最適な極上串焼き",
-    "subCategories": [
-      "ビール"
-    ],
-    "hasCounterSeat": true,
-    "senberoAvailable": true,
-    "soloFriendliness": 9,
-    "sourceNote": "https://tabelog.com/tokyo/A1316/A131603/13210987/"
-  },
-  {
-    "name": "博多劇場 五反田店",
-    "address": "東京都品川区東五反田1-13-3",
-    "nearestStation": "五反田駅",
-    "tagline": "アツアツの鉄鍋一口餃子と名物もつ鍋。カウンターで手軽に楽しむ博多屋台めし",
-    "subCategories": [
-      "ビール"
-    ],
-    "hasCounterSeat": true,
-    "senberoAvailable": true,
-    "soloFriendliness": 8,
-    "sourceNote": "https://tabelog.com/tokyo/A1316/A131603/13190123/"
-  },
-  {
-    "name": "酒場 つみき 五反田店",
-    "address": "東京都品川区西五反田1-17-6",
-    "nearestStation": "五反田駅",
-    "tagline": "活気あふれる本格もつ焼き立ち飲み。一人客率が高くサクッと1杯にぴったり",
-    "subCategories": [
-      "立ち飲み",
-      "ビール"
-    ],
-    "hasCounterSeat": true,
-    "senberoAvailable": true,
-    "soloFriendliness": 9,
-    "sourceNote": "https://tabelog.com/tokyo/A1316/A131603/13230123/"
-  },
-  {
-    "name": "酒菜と手打ち蕎麦 ゆたか",
-    "address": "東京都品川区東五反田1-12-5",
-    "nearestStation": "五反田駅",
-    "tagline": "端正な手打ち蕎麦と季節の小鉢。厳選した日本酒で大人の一人蕎麦前を",
-    "subCategories": [
-      "日本酒"
-    ],
-    "hasCounterSeat": true,
-    "senberoAvailable": false,
-    "soloFriendliness": 8,
-    "sourceNote": "https://tabelog.com/tokyo/A1316/A131603/13123456/"
-  },
-  {
-    "name": "比内地鶏専門店 鶏びあ",
-    "address": "東京都品川区東五反田2-2-15",
-    "nearestStation": "五反田駅",
-    "tagline": "秋田直送の比内地鶏炭火焼きと秋田の銘酒。カウンターで味わう究極の鶏料理",
-    "subCategories": [
-      "日本酒",
-      "ビール"
-    ],
-    "hasCounterSeat": true,
-    "senberoAvailable": false,
-    "soloFriendliness": 8,
-    "sourceNote": "https://tabelog.com/tokyo/A1316/A131603/13180123/"
-  },
-  {
-    "name": "立呑み 魚金 五反田店",
-    "address": "東京都品川区東五反田1-21-10",
-    "nearestStation": "五反田駅",
-    "tagline": "築地・豊洲直送の極上刺身盛り合わせを一人サイズと驚きの立ち飲み価格で",
-    "subCategories": [
-      "立ち飲み",
-      "日本酒"
-    ],
-    "hasCounterSeat": true,
-    "senberoAvailable": true,
-    "soloFriendliness": 9,
-    "sourceNote": "https://tabelog.com/tokyo/A1316/A131603/13112345/"
-  },
-  {
-    "name": "ウイスキー&カクテル Bar Amber",
-    "address": "東京都品川区西五反田2-6-3 2F",
-    "nearestStation": "五反田駅",
-    "tagline": "世界各地のウイスキーとオリジナルカクテル。静かに自分時間を愉しめる大人の隠れ家",
-    "subCategories": [
-      "女性ひとり歓迎"
-    ],
-    "hasCounterSeat": true,
-    "senberoAvailable": false,
-    "soloFriendliness": 8,
-    "sourceNote": "https://tabelog.com/tokyo/A1316/A131603/13214567/"
-  },
-  {
-    "name": "博多やさい串巻き なると 五反田店",
-    "address": "東京都品川区西五反田1-26-2",
-    "nearestStation": "五反田駅",
-    "tagline": "見た目も華やかなヘルシー博多野菜巻き串。1本から頼めて一人呑みに最適",
-    "subCategories": [
-      "ビール",
-      "女性ひとり歓迎"
-    ],
-    "hasCounterSeat": true,
-    "senberoAvailable": false,
-    "soloFriendliness": 8,
-    "sourceNote": "https://tabelog.com/tokyo/A1316/A131603/13241234/"
-  },
-  {
-    "name": "ビストロ ガブリ 五反田店",
-    "address": "東京都品川区東五反田1-14-10",
-    "nearestStation": "五反田駅",
-    "tagline": "炭火焼き肉料理と本格グラスワイン。一人前ポーションで楽しめるオープンキッチン",
-    "subCategories": [
-      "ワイン",
-      "女性ひとり歓迎"
-    ],
-    "hasCounterSeat": true,
-    "senberoAvailable": false,
-    "soloFriendliness": 8,
-    "sourceNote": "https://tabelog.com/tokyo/A1316/A131603/13156789/"
-  },
-  {
-    "name": "立ち飲み 昭和酒場",
-    "address": "東京都品川区西五反田1-29-3",
-    "nearestStation": "五反田駅",
-    "tagline": "昭和レトロな雰囲気が落ち着く立ち飲み。名物のモツ煮とキンキンチューハイ",
-    "subCategories": [
-      "立ち飲み",
-      "ビール"
-    ],
-    "hasCounterSeat": true,
-    "senberoAvailable": true,
-    "soloFriendliness": 9,
-    "sourceNote": "https://tabelog.com/tokyo/A1316/A131603/13145678/"
-  },
-  {
-    "name": "日本酒スタンド 蔵",
-    "address": "東京都品川区東五反田1-18-3",
-    "nearestStation": "五反田駅",
-    "tagline": "全国から厳選した地酒を少しずつ飲み比べ。一人客が8割の快適な角打ちスタイル",
-    "subCategories": [
-      "立ち飲み",
-      "日本酒"
-    ],
+    "tagline": "もつ焼きと肉刺しで一人飲みできる人気立ち飲み",
+    "subCategories": ["立ち飲み"],
     "hasCounterSeat": true,
     "senberoAvailable": true,
     "soloFriendliness": 10,
-    "sourceNote": "https://tabelog.com/tokyo/A1316/A131603/13251234/"
+    "sourceNote": ""
+  },
+  {
+    "name": "立呑処 へそ 五反田店",
+    "address": "東京都品川区西五反田1-4-8",
+    "nearestStation": "五反田駅",
+    "tagline": "駅徒歩1〜2分の王道大衆立ち飲み",
+    "subCategories": ["立ち飲み"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 10,
+    "sourceNote": ""
+  },
+  {
+    "name": "蕎麦五反",
+    "address": "東京都品川区西五反田1-2-8 FPGリンクス五反田1F",
+    "nearestStation": "五反田駅",
+    "tagline": "蕎麦前と酒を楽しめる立ち飲み系酒場",
+    "subCategories": ["日本酒"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 10,
+    "sourceNote": ""
+  },
+  {
+    "name": "肉のウヱキ 五反田店",
+    "address": "東京都品川区西五反田2-26-3",
+    "nearestStation": "五反田駅",
+    "tagline": "肉料理をつまみに一人で飲める大衆系酒場",
+    "subCategories": [],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "立呑み処 一",
+    "address": "東京都品川区東五反田1-19-10 コアビル1F",
+    "nearestStation": "五反田駅",
+    "tagline": "厚切りベーコンなどを肴に飲める立ち飲み",
+    "subCategories": ["立ち飲み"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 9,
+    "sourceNote": ""
   }
 ]

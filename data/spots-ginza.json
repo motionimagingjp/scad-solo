@@ -1,0 +1,68 @@
+[
+  {
+    "name": "立ち飲み屋 大久",
+    "address": "東京都中央区銀座6-3-5 第一高橋ビル2F",
+    "nearestStation": "銀座駅",
+    "tagline": "銀座でワンコイン級のせんべろを狙える立ち飲み",
+    "subCategories": ["立ち飲み", "日本酒"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 10,
+    "sourceNote": ""
+  },
+  {
+    "name": "銀座300BAR 5丁目店",
+    "address": "東京都中央区銀座5-9-11 ファゼンダビルB1F",
+    "nearestStation": "銀座駅",
+    "tagline": "300円台から飲める銀座の格安スタンドバー",
+    "subCategories": ["立ち飲み"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 10,
+    "sourceNote": ""
+  },
+  {
+    "name": "銀座 君嶋屋",
+    "address": "東京都中央区銀座1-2-1 紺屋ビル1F",
+    "nearestStation": "銀座駅",
+    "tagline": "日本酒・ワイン・ビールを立ち飲みで試せる酒販店",
+    "subCategories": ["立ち飲み", "日本酒", "ワイン"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 10,
+    "sourceNote": ""
+  },
+  {
+    "name": "立呑みマルギン",
+    "address": "東京都中央区銀座7-1 銀座コリドー通り105",
+    "nearestStation": "銀座駅",
+    "tagline": "焼鳥と酒を気軽に楽しむ銀座の老舗系立ち飲み",
+    "subCategories": ["立ち飲み"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 10,
+    "sourceNote": ""
+  },
+  {
+    "name": "まるごと高知 とさ蔵",
+    "address": "東京都中央区銀座1-3-13 オーブ プレミアB1",
+    "nearestStation": "銀座駅",
+    "tagline": "高知の地酒と料理を立ち飲みで楽しむ",
+    "subCategories": ["立ち飲み", "日本酒"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "銀座300BAR NEXT店",
+    "address": "東京都千代田区有楽町1-2-14 紫ビルB1F",
+    "nearestStation": "銀座駅",
+    "tagline": "300円台から楽しめるチケット制スタンドバー",
+    "subCategories": ["立ち飲み"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 10,
+    "sourceNote": ""
+  }
+]

@@ -108,16 +108,5 @@
     "senberoAvailable": false,
     "soloFriendliness": 9,
     "sourceNote": ""
-  },
-  {
-    "name": "大衆飯店かね子 蒲田店",
-    "address": "東京都大田区蒲田5-19-5",
-    "nearestStation": "蒲田駅",
-    "tagline": "焼きとん・餃子・アジアン料理を酒のアテに楽しむ新型大衆酒場",
-    "subCategories": [],
-    "hasCounterSeat": true,
-    "senberoAvailable": true,
-    "soloFriendliness": 8,
-    "sourceNote": ""
   }
 ]

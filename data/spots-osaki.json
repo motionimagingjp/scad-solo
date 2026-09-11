@@ -1,0 +1,79 @@
+[
+  {
+    "name": "イオンリカー 大崎ブライトコア店",
+    "address": "東京都品川区北品川5-5-15 大崎ブライトコア1F",
+    "nearestStation": "大崎駅",
+    "tagline": "酒屋で選んでその場で飲める進化系角打ち",
+    "subCategories": ["立ち飲み", "ワイン"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 10,
+    "sourceNote": ""
+  },
+  {
+    "name": "大衆食堂あまつ 大崎シンクパーク店",
+    "address": "東京都品川区大崎2-1-1 ThinkPark 2F",
+    "nearestStation": "大崎駅",
+    "tagline": "セルフハイボールで餃子をつまむ駅近大衆酒場",
+    "subCategories": [],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "串かつ でんがな 大崎ニューシティ店",
+    "address": "東京都品川区大崎1-6-5 大崎ニューシティ5号館2F",
+    "nearestStation": "大崎駅",
+    "tagline": "駅直結で串カツをサクッと一人飲み",
+    "subCategories": [],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "日本栄光酒場 ロッキーササヤ 大崎",
+    "address": "東京都品川区大崎1-6-5 大崎ニューシティ5号館2F",
+    "nearestStation": "大崎駅",
+    "tagline": "大崎駅30秒で気取らず飲める大衆酒場",
+    "subCategories": [],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "焼鳥IPPON 大崎店",
+    "address": "東京都品川区大崎1-6-5 大崎ニューシティ5号館2F",
+    "nearestStation": "大崎駅",
+    "tagline": "駅直結で焼鳥と酒を気軽に楽しむ",
+    "subCategories": [],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 8,
+    "sourceNote": ""
+  },
+  {
+    "name": "LASA:KUSA",
+    "address": "東京都品川区大崎1-6-4 大崎ニューシティ2F",
+    "nearestStation": "大崎駅",
+    "tagline": "駅直結で酒と料理を楽しめるレストランバー",
+    "subCategories": [],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 8,
+    "sourceNote": ""
+  },
+  {
+    "name": "レストラン舟茶屋",
+    "address": "東京都品川区大崎1-6-2 大崎ニューシティ2号館3F",
+    "nearestStation": "大崎駅",
+    "tagline": "ホテル系ながら一人で酒を楽しみやすいバー・レストラン",
+    "subCategories": ["ワイン"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 8,
+    "sourceNote": ""
+  }
+]

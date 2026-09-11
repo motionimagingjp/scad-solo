@@ -4,11 +4,15 @@ import { prisma } from "@/lib/prisma";
 
 import akabane from "@/data/spots-akabane.json";
 import akihabara from "@/data/spots-akihabara.json";
+import akasaka from "@/data/spots-akasaka.json";
 import asakusa from "@/data/spots-asakusa.json";
 import ebisu from "@/data/spots-ebisu.json";
 import funabashi from "@/data/spots-funabashi.json";
+import ginza from "@/data/spots-ginza.json";
 import gotanda from "@/data/spots-gotanda.json";
+import harajuku from "@/data/spots-harajuku.json";
 import ikebukuro from "@/data/spots-ikebukuro.json";
+import jimbocho from "@/data/spots-jimbocho.json";
 import jiyugaoka from "@/data/spots-jiyugaoka.json";
 import kamata from "@/data/spots-kamata.json";
 import kameido from "@/data/spots-kameido.json";
@@ -23,10 +27,14 @@ import meguro from "@/data/spots-meguro.json";
 import mishima from "@/data/spots-mishima.json";
 import nakameguro from "@/data/spots-nakameguro.json";
 import nakano from "@/data/spots-nakano.json";
+import nihombashi from "@/data/spots-nihombashi.json";
+import nippori from "@/data/spots-nippori.json";
 import nishiogikubo from "@/data/spots-nishiogikubo.json";
 import oimachi from "@/data/spots-oimachi.json";
 import omiya from "@/data/spots-omiya.json";
 import omori from "@/data/spots-omori.json";
+import osaki from "@/data/spots-osaki.json";
+import roppongi from "@/data/spots-roppongi.json";
 import sangenjaya from "@/data/spots-sangenjaya.json";
 import shibuya from "@/data/spots-shibuya.json";
 import shimbashi from "@/data/spots-shimbashi.json";
@@ -42,6 +50,8 @@ import tokyo from "@/data/spots-tokyo.json";
 import ueno from "@/data/spots-ueno.json";
 import umeda from "@/data/spots-umeda.json";
 import yokohama from "@/data/spots-yokohama.json";
+import yotsuya from "@/data/spots-yotsuya.json";
+import yurakucho from "@/data/spots-yurakucho.json";
 
 // Gemini収集分(data/spots-*.json)をDBへ一括投入する管理用エンドポイント。
 // scripts/import-spots.ts と同じロジックだが、ローカルNode環境からDB/Google APIに
@@ -72,12 +82,16 @@ type SpotCandidate = {
 
 const ALL_CANDIDATES: SpotCandidate[] = [
   ...akabane,
+  ...akasaka,
   ...akihabara,
   ...asakusa,
   ...ebisu,
   ...funabashi,
+  ...ginza,
   ...gotanda,
+  ...harajuku,
   ...ikebukuro,
+  ...jimbocho,
   ...jiyugaoka,
   ...kamata,
   ...kameido,
@@ -92,10 +106,14 @@ const ALL_CANDIDATES: SpotCandidate[] = [
   ...mishima,
   ...nakameguro,
   ...nakano,
+  ...nihombashi,
+  ...nippori,
   ...nishiogikubo,
   ...oimachi,
   ...omiya,
   ...omori,
+  ...osaki,
+  ...roppongi,
   ...sangenjaya,
   ...shibuya,
   ...shimbashi,
@@ -111,6 +129,8 @@ const ALL_CANDIDATES: SpotCandidate[] = [
   ...ueno,
   ...umeda,
   ...yokohama,
+  ...yotsuya,
+  ...yurakucho,
 ] as SpotCandidate[];
 
 type GeocodeResult = { ok: true; lat: number; lng: number } | { ok: false; status: string; message?: string };

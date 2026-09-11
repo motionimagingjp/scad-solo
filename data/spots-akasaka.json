@@ -1,0 +1,68 @@
+[
+  {
+    "name": "タチノミ・磨",
+    "address": "東京都港区赤坂3-10-6 TMビル1F",
+    "nearestStation": "赤坂駅",
+    "tagline": "赤坂見附寄りで使いやすい本格立ち飲み",
+    "subCategories": ["立ち飲み"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 10,
+    "sourceNote": ""
+  },
+  {
+    "name": "立飲み つうこん",
+    "address": "東京都港区赤坂1-3-18 DG22ビルB1F",
+    "nearestStation": "赤坂駅",
+    "tagline": "リーズナブルな料理で一人飲みしやすい立ち飲み",
+    "subCategories": ["立ち飲み"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "vivo daily stand 赤坂店",
+    "address": "東京都港区赤坂5-5-15 アカシヤビル102",
+    "nearestStation": "赤坂駅",
+    "tagline": "ワインと小皿料理を一人で楽しめるスタンド",
+    "subCategories": ["立ち飲み", "ワイン"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 10,
+    "sourceNote": ""
+  },
+  {
+    "name": "Sake bar Chill Labo Akasaka",
+    "address": "東京都港区赤坂4-3-27 2F",
+    "nearestStation": "赤坂駅",
+    "tagline": "日本酒好き向けの落ち着いた一人飲みバー",
+    "subCategories": ["日本酒"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 10,
+    "sourceNote": ""
+  },
+  {
+    "name": "大衆酒場 わいけい",
+    "address": "東京都港区赤坂3-6-18 赤坂ニューロイヤルビル本館B1F",
+    "nearestStation": "赤坂駅",
+    "tagline": "リーズナブルな料理で気軽に飲める大衆酒場",
+    "subCategories": ["立ち飲み"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "てるぼーず酒場 赤坂",
+    "address": "東京都港区赤坂3-15-1 Sionビル1F",
+    "nearestStation": "赤坂駅",
+    "tagline": "ホルモン料理を中心に使える大衆酒場",
+    "subCategories": ["立ち飲み"],
+    "hasCounterSeat": false,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  }
+]

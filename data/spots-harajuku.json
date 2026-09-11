@@ -1,0 +1,46 @@
+[
+  {
+    "name": "まさや食堂",
+    "address": "東京都渋谷区神宮前1-9-12 ロイスダールビル1F",
+    "nearestStation": "原宿駅",
+    "tagline": "昼から定食と酒を楽しめる使い勝手の良い食堂酒場",
+    "subCategories": [],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "熊だ",
+    "address": "東京都渋谷区神宮前3-20-10 すきがらビルB1",
+    "nearestStation": "原宿駅",
+    "tagline": "海鮮を肴に軽く飲める原宿の海鮮店",
+    "subCategories": [],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 8,
+    "sourceNote": ""
+  },
+  {
+    "name": "原宿餃子樓",
+    "address": "東京都渋谷区神宮前6-2-4 岡島ビル1F",
+    "nearestStation": "原宿駅",
+    "tagline": "餃子とビールで気軽に一人飲み",
+    "subCategories": [],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "原宿タップルーム",
+    "address": "東京都渋谷区神宮前1-20-13 ノーサレンダービル2F",
+    "nearestStation": "原宿駅",
+    "tagline": "クラフトビールを一人で楽しむビアバー",
+    "subCategories": [],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  }
+]

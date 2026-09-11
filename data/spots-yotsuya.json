@@ -1,0 +1,35 @@
+[
+  {
+    "name": "地酒専門店 鈴傳",
+    "address": "東京都新宿区四谷1-10",
+    "nearestStation": "四ツ谷駅",
+    "tagline": "老舗酒屋で日本酒を気軽に立ち飲み",
+    "subCategories": ["立ち飲み", "日本酒"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 10,
+    "sourceNote": ""
+  },
+  {
+    "name": "日本酒と肴 とつぼ 四ツ谷店",
+    "address": "東京都新宿区四谷1-8-14 四谷一丁目ビル1F",
+    "nearestStation": "四ツ谷駅",
+    "tagline": "日本酒40種以上と海鮮を楽しむ駅近酒場",
+    "subCategories": ["日本酒"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "スタンドバーSAKAGUCHI",
+    "address": "東京都千代田区麹町6-6-7",
+    "nearestStation": "四ツ谷駅",
+    "tagline": "酒屋系の雰囲気で気軽に飲めるスタンドバー",
+    "subCategories": ["日本酒"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 10,
+    "sourceNote": ""
+  }
+]

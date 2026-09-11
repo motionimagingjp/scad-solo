@@ -1,0 +1,46 @@
+[
+  {
+    "name": "立呑み よもだ",
+    "address": "東京都千代田区有楽町2-4-5",
+    "nearestStation": "有楽町駅",
+    "tagline": "駅徒歩1分の王道立ち飲みでサク飲み",
+    "subCategories": ["立ち飲み", "日本酒"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 10,
+    "sourceNote": ""
+  },
+  {
+    "name": "ノムノエクスプレス エキュートエディション有楽町店",
+    "address": "東京都千代田区有楽町2-9-1",
+    "nearestStation": "有楽町駅",
+    "tagline": "30種類のワインをセルフで楽しめる駅近スタンド",
+    "subCategories": ["立ち飲み", "ワイン"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 10,
+    "sourceNote": ""
+  },
+  {
+    "name": "立ち呑み 三ぶん",
+    "address": "東京都千代田区有楽町1-1-2 東京ミッドタウン日比谷3F",
+    "nearestStation": "有楽町駅",
+    "tagline": "日本酒と和食を立ち飲みで楽しむ上質系",
+    "subCategories": ["立ち飲み", "日本酒"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "DRAスタンド",
+    "address": "東京都千代田区内幸町1-7-22 日比谷グルメゾン",
+    "nearestStation": "有楽町駅",
+    "tagline": "クラフトビールと釜焼きピザのスタンド",
+    "subCategories": ["立ち飲み"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  }
+]
