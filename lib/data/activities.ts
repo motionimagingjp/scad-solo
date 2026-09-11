@@ -1,6 +1,8 @@
 // チェックイン後に提示する「今夜のソロ活アクティビティ」と、「ゲーム」タブの一覧、
 // 両方で使う定義。場所の種類に応じて出し分ける(チェックイン後はノイズにならないよう最大3件)。
-// ゲーム本体は基本的に未実装(coming_soon)。実装済みのものだけ available + href を持つ。
+// ゲーム本体は5種(ドリンクルーレット・ソロチン・ソロビンゴ・ソロ乾杯・強制選曲モード)
+// とも実装済み・仕様確定(status: "available")。coming_soonは今後ゲームを追加する際に
+// 使う拡張用ステータスとして型に残しているだけで、現時点で該当するものは無い。
 export type Activity = {
   id: string;
   emoji: string;
@@ -34,5 +36,5 @@ export function pickActivities(category: string, subCategories: string[]): Activ
   return [];
 }
 
-/** 「ゲーム」タブ用。企画中のものを全部並べる */
+/** 「ゲーム」タブ用。実装済みのゲームを全部並べる */
 export const ALL_GAMES: Activity[] = [...NOMI, ...KARAOKE];
