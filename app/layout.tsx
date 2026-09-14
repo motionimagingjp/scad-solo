@@ -21,11 +21,13 @@ export const metadata: Metadata = {
     title: BRAND.appName,
     description: BRAND.description,
     type: "website",
+    images: [BRAND.ogImage],
   },
   twitter: {
     card: "summary_large_image",
     title: BRAND.appName,
     description: BRAND.description,
+    images: [BRAND.ogImage.url],
   },
   // デモ版は本番サイトと検索結果で競合させないためインデックスさせない
   ...(IS_DEMO ? { robots: { index: false, follow: false } } : {}),

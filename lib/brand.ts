@@ -27,6 +27,8 @@ type Brand = {
   story: string;
   /** マイページのエコシステムセクション見出し。本番は開発者個人のInstagramハンドルを含む */
   ecosystemContact: string;
+  /** リンク共有時のプレビュー画像(og:image / twitter:image)。public/直下の絶対パス */
+  ogImage: { url: string; width: number; height: number };
 };
 
 const PRODUCTION: Brand = {
@@ -43,6 +45,9 @@ const PRODUCTION: Brand = {
   story:
     "一人で飲みに行きたい日はあるのに、「入りにくそう」「浮きそう」で結局いつもの店に戻ってしまう。そんな経験から、カウンター席があって一人客に慣れた店だけを集めたら、もっと気軽に新しい店に挑戦できるはずだと思い、個人でこのアプリを開発しています。",
   ecosystemContact: "✉️ @motion.imaging がおすすめする関連サービス",
+  // 元は app/opengraph-image.jpg (Next.jsのファイル規約) だったが、
+  // デモ版で画像を出し分けるため public/ 側の静的ファイル+明示メタデータに変更した
+  ogImage: { url: "/ogp-solo.jpg", width: 768, height: 1376 },
 };
 
 const DEMO: Brand = {
@@ -61,6 +66,7 @@ const DEMO: Brand = {
     "一人で飲みに行きたい日はあるのに、「入りにくそう」「浮きそう」で結局いつもの店に戻ってしまう。そんな状況を解消するため、カウンター席があって一人客に慣れた店だけを集め、気軽に新しい店へ挑戦できるようにしたアプリです。",
   // 開発者個人のSNSハンドルを含めないよう、一般的な表現にする
   ecosystemContact: "✉️ 関連サービスのご紹介",
+  ogImage: { url: "/ogp-solo-demo.png", width: 1200, height: 630 },
 };
 
 export const BRAND: Brand = IS_DEMO ? DEMO : PRODUCTION;
