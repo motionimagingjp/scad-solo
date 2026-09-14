@@ -47,44 +47,110 @@
     "name": "魚河岸 立食い鮨 きいつ",
     "address": "東京都中央区八重洲1-6-1 TOFROM YAESU TOWER 2F",
     "nearestStation": "東京駅",
-    "tagline": "豊洲市場の厳選ネタと赤酢シャリを一貫から楽しめる、本格江戸前の立ち食い鮨",
+    "tagline": "豊洲市場の厳選ネタを一貫から楽しめる本格立ち食い鮨。東京駅でサク飲みもできる新店",
     "subCategories": ["日本酒"],
-    "hasCounterSeat": false,
+    "hasCounterSeat": true,
     "senberoAvailable": false,
     "soloFriendliness": 10,
-    "sourceNote": "https://tabelog.com/tokyo/A1302/A130201/13326650/"
+    "sourceNote": "https://tofrom-yaesu.com/floormap/"
   },
   {
-    "name": "牡蠣や粋 八重洲店",
+    "name": "牡蠣や粋",
     "address": "東京都中央区八重洲1-6-1 TOFROM YAESU TOWER 2F",
     "nearestStation": "東京駅",
-    "tagline": "豊洲市場の老舗仲卸・築地三代直営。全国の旬の牡蠣を気軽に食べ比べできる立ち食いオイスターバー",
+    "tagline": "全国の旬の牡蠣を楽しめる牡蠣専門店。牡蠣を肴に一人で軽く飲める注目の新店",
     "subCategories": ["立ち飲み", "日本酒"],
     "hasCounterSeat": true,
     "senberoAvailable": false,
     "soloFriendliness": 10,
-    "sourceNote": "https://tabelog.com/tokyo/A1302/A130201/13326573/"
+    "sourceNote": "https://tofrom-yaesu.com/floormap/"
   },
   {
     "name": "Mixology Salon Tokyo",
     "address": "東京都中央区八重洲1-6-1 TOFROM YAESU TOWER 2F",
     "nearestStation": "東京駅",
-    "tagline": "日本茶と日本の素材・文化をカクテルに昇華する、ミクソロジー専門の大人のバー",
+    "tagline": "日本茶や日本の素材を取り入れた独創的なカクテルを楽しむミクソロジーバー",
     "subCategories": [],
     "hasCounterSeat": true,
     "senberoAvailable": false,
     "soloFriendliness": 9,
-    "sourceNote": "https://tabelog.com/tokyo/A1302/A130201/13325471/"
+    "sourceNote": "https://tofrom-yaesu.com/floormap/"
   },
   {
     "name": "いわし料理 神田大松",
     "address": "東京都中央区八重洲1-6-1 TOFROM YAESU TOWER 2F",
     "nearestStation": "東京駅",
-    "tagline": "神田で長年続くいわし料理専門店が八重洲に進出。全国の漁港から届く旬のいわしをカウンターで味わえる",
+    "tagline": "神田で長年続くいわし料理専門店が八重洲に進出。いわしを酒の肴に楽しむ魚料理専門店",
     "subCategories": ["日本酒"],
     "hasCounterSeat": true,
     "senberoAvailable": false,
     "soloFriendliness": 10,
-    "sourceNote": "https://tabelog.com/tokyo/A1302/A130201/13326786/"
+    "sourceNote": "https://tofrom-yaesu.com/floormap/"
+  },
+  {
+    "name": "IMADEYA KAKU-UCHI TOKYO",
+    "address": "東京都中央区八重洲1-6-1 TOFROM YAESU TOWER 1F T113",
+    "nearestStation": "東京駅",
+    "tagline": "全国の銘酒をグラス1杯から楽しめる酒屋直営の角打ち。酒好きの一人飲みに最適",
+    "subCategories": ["立ち飲み", "日本酒", "ワイン"],
+    "hasCounterSeat": false,
+    "senberoAvailable": true,
+    "soloFriendliness": 10,
+    "sourceNote": "https://tofrom-yaesu.com/floormap/"
+  },
+  {
+    "name": "八重洲ハイボールバー",
+    "address": "東京都中央区八重洲1-6-1 TOFROM YAESU TOWER 1F",
+    "nearestStation": "東京駅",
+    "tagline": "スプラッシュハイボールとプレミアムウイスキーが楽しめる、深夜まで営業する八重洲の新ハイボールバー",
+    "subCategories": [],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 9,
+    "sourceNote": "https://highballbar-yaesu.com/"
+  },
+  {
+    "name": "獅天鶏飯ロクノイチ",
+    "address": "東京都中央区八重洲1-6-1 TOFROM YAESU TOWER 1F",
+    "nearestStation": "東京駅",
+    "tagline": "海南鶏飯を中心としたシンガポール料理と酒を楽しむ新業態。カウンター・立ち飲み利用にも注目",
+    "subCategories": ["立ち飲み", "ワイン"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": "https://tofrom-yaesu.com/floormap/"
+  },
+  {
+    "name": "炭羊",
+    "address": "東京都中央区八重洲1-6-1 TOFROM YAESU TOWER 2F",
+    "nearestStation": "東京駅",
+    "tagline": "羊肉と炭火料理を酒と合わせて楽しむ新業態。羊好き・酒好きに刺さる専門性の高い店",
+    "subCategories": ["日本酒", "ワイン"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": "https://tofrom-yaesu.com/floormap/"
+  },
+  {
+    "name": "焼き鳥 鳥の匠 東京八重洲",
+    "address": "東京都中央区八重洲1-6-1 TOFROM YAESU TOWER 2F",
+    "nearestStation": "東京駅",
+    "tagline": "職人焼きの焼き鳥と酒を楽しむ大人向けの新店。カウンターで一人飲みにも使いやすい",
+    "subCategories": ["日本酒", "ワイン"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": "https://tofrom-yaesu.com/floormap/"
+  },
+  {
+    "name": "居酒屋 六幹",
+    "address": "東京都中央区八重洲1-6-1 TOFROM YAESU TOWER 2F",
+    "nearestStation": "東京駅",
+    "tagline": "八重洲の新施設で酒と料理を楽しめる居酒屋。仕事帰りの一人飲みにも使いやすい新店",
+    "subCategories": ["日本酒"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 8,
+    "sourceNote": "https://tofrom-yaesu.com/floormap/"
   }
 ]
