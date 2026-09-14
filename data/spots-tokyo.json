@@ -42,5 +42,49 @@
     "senberoAvailable": false,
     "soloFriendliness": 4,
     "sourceNote": "https://www.gransta.jp/mall/gransta_tokyo/depot/"
+  },
+  {
+    "name": "魚河岸 立食い鮨 きいつ",
+    "address": "東京都中央区八重洲1-6-1 TOFROM YAESU TOWER 2F",
+    "nearestStation": "東京駅",
+    "tagline": "豊洲市場の厳選ネタと赤酢シャリを一貫から楽しめる、本格江戸前の立ち食い鮨",
+    "subCategories": ["日本酒"],
+    "hasCounterSeat": false,
+    "senberoAvailable": false,
+    "soloFriendliness": 10,
+    "sourceNote": "https://tabelog.com/tokyo/A1302/A130201/13326650/"
+  },
+  {
+    "name": "牡蠣や粋 八重洲店",
+    "address": "東京都中央区八重洲1-6-1 TOFROM YAESU TOWER 2F",
+    "nearestStation": "東京駅",
+    "tagline": "豊洲市場の老舗仲卸・築地三代直営。全国の旬の牡蠣を気軽に食べ比べできる立ち食いオイスターバー",
+    "subCategories": ["立ち飲み", "日本酒"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 10,
+    "sourceNote": "https://tabelog.com/tokyo/A1302/A130201/13326573/"
+  },
+  {
+    "name": "Mixology Salon Tokyo",
+    "address": "東京都中央区八重洲1-6-1 TOFROM YAESU TOWER 2F",
+    "nearestStation": "東京駅",
+    "tagline": "日本茶と日本の素材・文化をカクテルに昇華する、ミクソロジー専門の大人のバー",
+    "subCategories": [],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": "https://tabelog.com/tokyo/A1302/A130201/13325471/"
+  },
+  {
+    "name": "いわし料理 神田大松",
+    "address": "東京都中央区八重洲1-6-1 TOFROM YAESU TOWER 2F",
+    "nearestStation": "東京駅",
+    "tagline": "神田で長年続くいわし料理専門店が八重洲に進出。全国の漁港から届く旬のいわしをカウンターで味わえる",
+    "subCategories": ["日本酒"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 10,
+    "sourceNote": "https://tabelog.com/tokyo/A1302/A130201/13326786/"
   }
 ]
