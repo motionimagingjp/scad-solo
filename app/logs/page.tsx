@@ -5,12 +5,14 @@ import { Pencil, Trash2 } from "lucide-react";
 import BottomNav from "@/components/BottomNav";
 import AnniversaryBanner from "@/components/AnniversaryBanner";
 import { RANK_THRESHOLDS } from "@/lib/data/scadApps";
+import { USER_HEADERS } from "@/lib/brand";
 
 // 「ソロ活」タブ: ランクと来店ログの管理。
 // 来店ログには自分用のメモ(使った金額・誰と会ったか等)を後から書き足せる。
 // GET /api/me から実データを取得する(未チェックインなら来店0件の初期値が返る)。
 
-const USER_HEADERS = { "x-user-id": "demo-user" }; // TODO: 認証導入後は共通fetchに移す
+// 本番とデモ版でDBを共有しているため、記録先のユーザーIDは lib/brand.ts で分ける
+// TODO: 認証導入後は共通fetchに移す
 
 type VisitLog = { id: string; spotName: string; comment: string | null; visitedAt: string };
 

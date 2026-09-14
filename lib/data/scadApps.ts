@@ -10,10 +10,12 @@ export type ScadApp = {
   isCurrent?: boolean;
 };
 
+import { BRAND } from "@/lib/brand";
+
 export const SCAD_APPS: ScadApp[] = [
   {
     id: "scad-solo",
-    name: "Tokyo Solo Club",
+    name: BRAND.appName,
     tagline: "ソロ活・ソロ飲みナビ",
     benefit: "今使っているアプリです",
     url: "/",
@@ -21,17 +23,17 @@ export const SCAD_APPS: ScadApp[] = [
   },
   {
     id: "scad-beauty",
-    name: "SCAD-BEAUTY",
+    name: BRAND.beautyName,
     tagline: "おひとり様歓迎サロン",
     benefit: "ソロ活の後に立ち寄れる美容室を探せます",
-    url: "https://scad-beauty.vercel.app/",
+    url: BRAND.beautyUrl,
   },
   {
     id: "scad-chat",
-    name: "SCAD-CHAT",
+    name: BRAND.chatName,
     tagline: "AIチャットプラットフォーム",
     benefit: "今日の気分に合う店をAIに相談できます",
-    url: "https://scad-chat.vercel.app/",
+    url: BRAND.chatUrl,
   },
 ];
 

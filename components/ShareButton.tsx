@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { Check, Share2 } from "lucide-react";
+import { BRAND } from "@/lib/brand";
 import { APP_ABOUT } from "@/lib/data/about";
 
 // ヘッダーに置くアプリ共有ボタン。対応端末(主にスマホのブラウザ)はOS標準の
@@ -12,7 +13,7 @@ export default function ShareButton() {
 
   const handleShare = async () => {
     const url = window.location.origin;
-    const shareData = { title: "SCAD-SOLO", text: APP_ABOUT.tagline, url };
+    const shareData = { title: BRAND.appName, text: APP_ABOUT.tagline, url };
 
     if (navigator.share) {
       try {

@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import { useParams, useRouter } from "next/navigation";
 import BottomNav, { NAV_HEIGHT } from "@/components/BottomNav";
 import AnniversaryBanner from "@/components/AnniversaryBanner";
+import { USER_HEADERS } from "@/lib/brand";
 
 // 結果画面: 検索→決定→記録→シェアを結ぶ要。
 //   記録するのは「来店した証明」ではなく「今夜ここに決めた」という意思決定。
@@ -44,7 +45,7 @@ export default function CheckinPage() {
 
     fetch("/api/logs", {
       method: "POST",
-      headers: { "Content-Type": "application/json", "x-user-id": "demo-user" }, // TODO: 認証導入後はヘッダ付与を共通fetchに移す
+      headers: { "Content-Type": "application/json", ...USER_HEADERS }, // TODO: 認証導入後はヘッダ付与を共通fetchに移す
       body: JSON.stringify({ spotId }),
     })
       .then((res) => (res.ok ? res.json() : null))

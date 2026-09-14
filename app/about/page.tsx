@@ -104,19 +104,32 @@ export default function AboutPage() {
         <section>
           <p className="text-[11px] font-bold uppercase tracking-wide text-gray-400">お問い合わせ・SNS</p>
           <div className="mt-2 flex gap-2.5">
-            {APP_ABOUT.sns.map((s) => (
-              <a
-                key={s.label}
-                href={s.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label={s.label}
-                className="flex h-9.5 w-9.5 items-center justify-center rounded-full border bg-white text-xs font-bold text-gray-600"
-                style={{ width: 38, height: 38 }}
-              >
-                {s.label.slice(0, 1)}
-              </a>
-            ))}
+            {APP_ABOUT.sns.map((s) => {
+              const className =
+                "flex h-9.5 w-9.5 items-center justify-center rounded-full border bg-white text-xs font-bold text-gray-600";
+              const style = { width: 38, height: 38 };
+              // url が無い場合はリンクを張らず、アイコンの見た目だけを残す
+              if (!s.url) {
+                return (
+                  <span key={s.label} aria-label={s.label} className={className} style={style}>
+                    {s.label.slice(0, 1)}
+                  </span>
+                );
+              }
+              return (
+                <a
+                  key={s.label}
+                  href={s.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={s.label}
+                  className={className}
+                  style={style}
+                >
+                  {s.label.slice(0, 1)}
+                </a>
+              );
+            })}
           </div>
         </section>
       </div>

@@ -10,6 +10,7 @@ import ShareButton from "@/components/ShareButton";
 import { AiSuggestedBadge, spotMetaLine, type SpotSummary } from "@/components/SpotCard";
 import { distanceLabel, googleMapsUrl, haversineMeters } from "@/lib/geo";
 import { useBaseLocation } from "@/lib/useBaseLocation";
+import { BRAND } from "@/lib/brand";
 
 // 「今夜の3軒」: 近い順に絞った3軒をそのまま提示する検索画面。
 // シャッフル性は持たせない(エンターテイメント性はゲームタブ側で担うため)。
@@ -84,7 +85,7 @@ export default function HomePage() {
   return (
     <div className="mx-auto min-h-dvh max-w-md bg-gray-50" style={{ paddingBottom: NAV_HEIGHT + 16 }}>
       <header className="flex items-center justify-between border-b bg-white px-4 py-3">
-        <h1 className="text-base font-bold text-orange-500">Tokyo Solo Club</h1>
+        <h1 className="text-base font-bold text-orange-500">{BRAND.appName}</h1>
         <div className="flex items-center gap-2">
           <LocationChip location={location} onSelectManual={setManualLocation} onRequestGps={requestGps} />
           <ShareButton />
