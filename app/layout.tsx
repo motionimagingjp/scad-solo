@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { BRAND, IS_DEMO } from "@/lib/brand";
+import PwaInstallPrompt from "@/components/PwaInstallPrompt";
 
 // og:image等の絶対URL解決に必要。VercelのProduction URLを優先し、
 // プレビュー環境ではVERCEL_URL、ローカルではlocalhostにフォールバックする
@@ -29,6 +30,12 @@ export const metadata: Metadata = {
     description: BRAND.description,
     images: [BRAND.ogImage.url],
   },
+  // ホーム画面に追加したとき、Safariのアドレスバーなしで単独アプリとして起動させる
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "default",
+    title: BRAND.appName,
+  },
   // デモ版は本番サイトと検索結果で競合させないためインデックスさせない
   ...(IS_DEMO ? { robots: { index: false, follow: false } } : {}),
 };
@@ -40,7 +47,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ja">
-      <body>{children}</body>
+      <body>
+        {children}
+        <PwaInstallPrompt />
+      </body>
     </html>
   );
 }
