@@ -74,19 +74,38 @@ function soloPlayerLabel(player: number): string {
   return player === 1 ? "AI" : "あなた";
 }
 
+// 既存の結果を同じプレイヤーの新しい結果で上書きする(再勝負での振り直し用)。
+// 通常時(初出のプレイヤー)は末尾に追加する。
+function upsertResult(list: RollResult[], entry: RollResult): RollResult[] {
+  const idx = list.findIndex((r) => r.player === entry.player);
+  if (idx === -1) return [...list, entry];
+  const copy = [...list];
+  copy[idx] = entry;
+  return copy;
+}
+
 export default function ChinchiroPage() {
   const [phase, setPhase] = useState<Phase>("setup");
   const [playerCount, setPlayerCount] = useState(3);
-  const [currentPlayer, setCurrentPlayer] = useState(1);
+  // queue: このラウンドで振る人の並び。通常は全員だが、同点が出た場合は
+  // その同点者だけの並びに差し替えて再勝負させる(目無し同士を振った順で
+  // 勝敗をつけるのはチンチロのルールとして正しくないため、役の強さが同点なら
+  // 振り直しで決着をつける)。
+  const [queue, setQueue] = useState<number[]>([]);
+  const [queueIndex, setQueueIndex] = useState(0);
+  const [isTiebreak, setIsTiebreak] = useState(false);
   const [results, setResults] = useState<RollResult[]>([]);
   const [currentDice, setCurrentDice] = useState<[DieValue, DieValue, DieValue] | null>(null);
 
   const soloMode = playerCount === 1;
   const effectivePlayerCount = soloMode ? 2 : playerCount;
+  const currentPlayer = queue[queueIndex] ?? 1;
 
   const startGame = () => {
     setResults([]);
-    setCurrentPlayer(1);
+    setQueue(Array.from({ length: effectivePlayerCount }, (_, i) => i + 1));
+    setQueueIndex(0);
+    setIsTiebreak(false);
     setCurrentDice(null);
     setPhase("turn");
   };
@@ -109,21 +128,43 @@ export default function ChinchiroPage() {
   const nextPlayer = () => {
     if (!currentDice) return;
     const { label, rankValue } = evaluateRoll(currentDice);
-    const updated = [...results, { player: currentPlayer, dice: currentDice, label, rankValue }];
+    const updated = upsertResult(results, { player: currentPlayer, dice: currentDice, label, rankValue });
     setResults(updated);
     setCurrentDice(null);
 
-    if (currentPlayer >= effectivePlayerCount) {
-      setPhase("result");
-    } else {
-      setCurrentPlayer((p) => p + 1);
+    if (queueIndex + 1 < queue.length) {
+      setQueueIndex((i) => i + 1);
       setPhase("turn");
+      return;
+    }
+
+    // このラウンドの全員が振り終わった。最強・最弱が同点(目無し同士も含む)なら、
+    // その人たちだけで振り直す。真ん中の順位の同点は結果表示上の順位にしか
+    // 影響しないため、あえて振り直しの対象にしない。
+    const byValue = new Map<number, number[]>();
+    for (const r of updated) {
+      byValue.set(r.rankValue, [...(byValue.get(r.rankValue) ?? []), r.player]);
+    }
+    const values = [...byValue.keys()].sort((a, b) => b - a);
+    const topGroup = byValue.get(values[0])!;
+    const bottomGroup = byValue.get(values[values.length - 1])!;
+
+    const tiedGroup = topGroup.length > 1 ? topGroup : bottomGroup.length > 1 ? bottomGroup : null;
+    if (tiedGroup) {
+      setQueue(tiedGroup);
+      setQueueIndex(0);
+      setIsTiebreak(true);
+      setPhase("turn");
+    } else {
+      setPhase("result");
     }
   };
 
   const playAgain = () => {
     setResults([]);
-    setCurrentPlayer(1);
+    setQueue([]);
+    setQueueIndex(0);
+    setIsTiebreak(false);
     setCurrentDice(null);
     setPhase("setup");
   };
@@ -183,6 +224,11 @@ export default function ChinchiroPage() {
 
       {phase === "turn" && (
         <div className="flex flex-1 flex-col items-center justify-center gap-8 px-6 text-center">
+          {isTiebreak && (
+            <p className="rounded-full bg-orange-100 px-4 py-1 text-xs font-bold text-orange-600">
+              同点!このメンバーだけ振り直しです
+            </p>
+          )}
           {soloMode && currentPlayer === 1 ? (
             <div>
               <p className="text-2xl font-bold">🤖 AIの番です</p>
@@ -194,7 +240,7 @@ export default function ChinchiroPage() {
           ) : (
             <div>
               <p className="text-xs text-gray-400">
-                {currentPlayer} / {effectivePlayerCount} 人目
+                {queueIndex + 1} / {queue.length} 人目
               </p>
               <p className="mt-2 text-2xl font-bold">
                 {soloMode ? "あなたの番です" : `プレイヤー${currentPlayer}の番です`}
@@ -224,7 +270,7 @@ export default function ChinchiroPage() {
             {evaluateRoll(currentDice).label}
           </p>
           <button onClick={nextPlayer} className="w-full rounded-full bg-orange-500 py-3 text-sm font-bold text-white">
-            {currentPlayer >= effectivePlayerCount ? "結果を見る" : soloMode ? "あなたの番へ" : "次のプレイヤーへ"}
+            {queueIndex + 1 >= queue.length ? "結果を見る" : soloMode ? "あなたの番へ" : "次のプレイヤーへ"}
           </button>
         </div>
       )}
