@@ -5,8 +5,11 @@ import ShareAppButton from "@/components/ShareAppButton";
 import ShareButton from "@/components/ShareButton";
 import { SCAD_APPS, ECOSYSTEM_REVEAL_THRESHOLD, RANK_THRESHOLDS } from "@/lib/data/scadApps";
 import { prisma } from "@/lib/prisma";
+import { BRAND } from "@/lib/brand";
 
-const DEMO_USER_ID = "demo-user"; // TODO: 認証導入後は getUserIdFromRequest 相当の実ユーザーIDに置き換え
+// 本番とデモ版でDBを共有しているため、参照先のユーザーIDは lib/brand.ts で分ける
+// TODO: 認証導入後は getUserIdFromRequest 相当の実ユーザーIDに置き換え
+const DEMO_USER_ID = BRAND.userId;
 
 // 来店回数などライブのDB値を出すページなので、ビルド時の静的生成(キャッシュ)を禁止する
 export const dynamic = "force-dynamic";
@@ -58,7 +61,7 @@ export default async function MyPage() {
       <section className="mt-2 bg-white px-4 py-4">
         <details>
           <summary className="cursor-pointer text-sm font-medium">
-            Tokyo Solo Clubについて
+            {BRAND.appName}について
           </summary>
           <div className="mt-2 space-y-1 text-xs text-gray-500">
             <p>コンセプト: 1人でも気兼ねなく行ける店を、すぐに見つける。</p>
