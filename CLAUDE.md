@@ -187,3 +187,68 @@ Geminiに検索させて即DBに入れるが、**人力確認前は`status: AI_S
 - 実店舗データ収集のオンデマンドAI検索(`/api/admin/ai-search-spots`)は実装済みだが
   未検証(このリポジトリのサンドボックスからGemini/Geocoding APIに接続できないため、
   実際の検索結果の質は本番でユーザーが確認する必要がある)
+
+---
+
+# 会社共有用デモ環境（MIRAI-Dev-Apps）
+
+## 目的と方針
+
+開発活動を会社に共有するため、本番と同じアプリを別名・別URLで公開する
+デモ環境。共有するのはURLのみで、GitHubリポジトリは非公開のまま。
+**個人が特定できる情報（本人のSNSアカウント、本番サイトへの導線）を
+一切表示しないこと**が最優先の要件。
+
+| | 表示名 | URL |
+|---|---|---|
+| ハブ | MIRAI-Dev-Apps | `mirai-dev-apps.vercel.app` |
+| チャット | MIRAI-Dev-Chat | `mirai-dev-chat.vercel.app` |
+| ビューティー | MIRAI-Dev-Beauty | `mirai-dev-beauty.vercel.app` |
+| ソロ | MIRAI-Dev-Solo | `mirai-dev-solo.vercel.app` |
+
+## 切り替え方式（デモ用ブランチは作らない）
+
+本番とデモで**同じブランチ（main）を共有**し、差分は1ファイルに集約した
+ブランド設定だけで切り替える。デモ用ブランチを作ると本番の改修を都度
+マージする運用が発生するため、意図的に避けている。
+
+| リポジトリ | 設定ファイル | 判定方法 |
+|---|---|---|
+| SCAD | `src/app/brand.js` | 環境変数 `NEXT_PUBLIC_APP_VARIANT=demo` |
+| SCAD-Beauty | `public/index.html` 内の `BRAND` | ホスト名が `mirai-dev` で始まるか |
+| scad-solo | `lib/brand.ts` | 環境変数 `NEXT_PUBLIC_APP_VARIANT=demo` |
+
+SCAD-Beautyだけビルド工程を持たない静的HTMLのため、環境変数が使えず
+ホスト名判定にしている。
+
+## 実装上の約束事
+
+- **SNSアイコンはリンクを張らずに表示する。** `url` が `null` のときは
+  `<a>` ではなく `<span>` で描画する分岐が各アプリに入っている。
+  SNSを増やすときもこの形を崩さないこと
+- **姉妹アプリへのリンクはデモ版同士で閉じる。** 本番URLのままにすると、
+  デモを見ている人がリンク1つで本番サイト（＝個人SNSリンクあり）に
+  着地してしまう。過去にSCAD CHAT・SCAD Beauty・scad-soloの3本が
+  相互に本番URLを直書きしていた
+- **アバター画像を他アプリの本番ドメインから参照しない。** SCAD CHATは
+  `scad-beauty.vercel.app/profile-avatar.jpg` を参照していたため、
+  デモ版では自リポジトリの `public/profile-avatar.jpg` に切り替えている
+- **デモ版には `noindex` を付ける。** 本番と検索結果で競合させないため。
+  Next.js側は `metadata.robots`、SCAD-Beautyは `vercel.json` の
+  `X-Robots-Tag` ヘッダ（ホスト条件付き）で付与している
+
+## scad-solo のDB共有について
+
+デモ版は本番と同じNeonのDBを参照する（店舗データを作り直さないため）。
+ただし来店ログ・実績が本番の記録に混ざらないよう、暫定ユーザーIDを
+`lib/brand.ts` で分けている（本番 `demo-user` ／ デモ `mirai-demo-user`）。
+ビルド時の `prisma db seed` は固定IDの `upsert` なので、両プロジェクトが
+同じDBに対して走っても既存データは壊れない。
+
+## ハブサイト
+
+`SCAD-Beauty/hub/` に静的HTML1枚で置いてある（専用リポジトリを作れる
+権限がなかったため、既存リポジトリのサブフォルダに配置）。Vercelでは
+**Root Directory に `hub` を指定**した別プロジェクトとして公開する。
+将来 `mirai-dev-apps` リポジトリを作る場合は、`hub/` の中身をそのまま
+新リポジトリのルートに移せばよい（相対リンク・外部アセットを持たない）。
