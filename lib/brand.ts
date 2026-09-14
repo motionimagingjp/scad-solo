@@ -16,6 +16,7 @@ type Brand = {
   shareText: string;
   /** 来店ログ・実績の保存先を分けるための暫定ユーザーID(lib/auth.ts の x-user-id に対応) */
   userId: string;
+  seriesLabel: string;
   beautyName: string;
   beautyUrl: string;
   chatName: string;
@@ -24,6 +25,8 @@ type Brand = {
   sns: { label: string; url: string | null }[];
   /** 「私について」の文面。デモ版では個人の背景に踏み込まない表現にする */
   story: string;
+  /** マイページのエコシステムセクション見出し。本番は開発者個人のInstagramハンドルを含む */
+  ecosystemContact: string;
 };
 
 const PRODUCTION: Brand = {
@@ -31,6 +34,7 @@ const PRODUCTION: Brand = {
   description: "今夜のソロ飲みを1秒で決める",
   shareText: "一人でも気兼ねなく行ける店が、すぐ見つかる。SCAD-SOLO",
   userId: "demo-user",
+  seriesLabel: "SCADシリーズ",
   beautyName: "SCAD-BEAUTY",
   beautyUrl: "https://scad-beauty.vercel.app/",
   chatName: "SCAD-CHAT",
@@ -38,6 +42,7 @@ const PRODUCTION: Brand = {
   sns: [{ label: "X (旧Twitter)", url: "https://x.com/jakeimages" }],
   story:
     "一人で飲みに行きたい日はあるのに、「入りにくそう」「浮きそう」で結局いつもの店に戻ってしまう。そんな経験から、カウンター席があって一人客に慣れた店だけを集めたら、もっと気軽に新しい店に挑戦できるはずだと思い、個人でこのアプリを開発しています。",
+  ecosystemContact: "✉️ @motion.imaging がおすすめする関連サービス",
 };
 
 const DEMO: Brand = {
@@ -46,6 +51,7 @@ const DEMO: Brand = {
   shareText: "一人でも気兼ねなく行ける店が、すぐ見つかる。MIRAI-Dev-Solo",
   // 本番の来店ログと混ざらないよう、デモ版は別のユーザーIDで記録する
   userId: "mirai-demo-user",
+  seriesLabel: "MIRAI-Dev-Appsシリーズ",
   beautyName: "MIRAI-Dev-Beauty",
   beautyUrl: "https://mirai-dev-beauty.vercel.app/",
   chatName: "MIRAI-Dev-Chat",
@@ -53,6 +59,8 @@ const DEMO: Brand = {
   sns: [{ label: "X (旧Twitter)", url: null }],
   story:
     "一人で飲みに行きたい日はあるのに、「入りにくそう」「浮きそう」で結局いつもの店に戻ってしまう。そんな状況を解消するため、カウンター席があって一人客に慣れた店だけを集め、気軽に新しい店へ挑戦できるようにしたアプリです。",
+  // 開発者個人のSNSハンドルを含めないよう、一般的な表現にする
+  ecosystemContact: "✉️ 関連サービスのご紹介",
 };
 
 export const BRAND: Brand = IS_DEMO ? DEMO : PRODUCTION;

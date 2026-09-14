@@ -77,9 +77,7 @@ export default async function MyPage() {
       {/* エコシステムセクション: 来店実績が一定数貯まってから表示(離脱防止) */}
       {showEcosystem && (
         <section id="ecosystem" className="mt-2 bg-white px-4 py-4">
-          <p className="mb-3 text-xs text-gray-400">
-            ✉️ @motion.imaging がおすすめする関連サービス
-          </p>
+          <p className="mb-3 text-xs text-gray-400">{BRAND.ecosystemContact}</p>
           <div className="space-y-3">
             {SCAD_APPS.filter((app) => !app.isCurrent).map((app) => (
               <a

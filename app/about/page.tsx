@@ -2,6 +2,7 @@ import Link from "next/link";
 import { ChevronLeft } from "lucide-react";
 import { APP_ABOUT } from "@/lib/data/about";
 import { SCAD_APPS } from "@/lib/data/scadApps";
+import { BRAND } from "@/lib/brand";
 
 // 「このアプリについて」画面。SCAD-BEAUTYの共通フォーマット(APP_ABOUT)に合わせた構成。
 export default function AboutPage() {
@@ -63,7 +64,7 @@ export default function AboutPage() {
         </section>
 
         <section>
-          <p className="text-[11px] font-bold uppercase tracking-wide text-gray-400">SCADシリーズ</p>
+          <p className="text-[11px] font-bold uppercase tracking-wide text-gray-400">{BRAND.seriesLabel}</p>
           <div className="mt-2 flex flex-col">
             {SCAD_APPS.map((app) => {
               const isCurrent = app.isCurrent;
