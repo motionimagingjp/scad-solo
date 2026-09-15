@@ -262,5 +262,71 @@
     "senberoAvailable": false,
     "soloFriendliness": 8,
     "sourceNote": "現在営業情報・所在地を確認。ワイン専門性と東京駅からの徒歩圏を評価。"
+  },
+  {
+    "name": "TASU+（タスプラス）",
+    "address": "東京都中央区八重洲2-2-1 東京ミッドタウン八重洲 B1階",
+    "nearestStation": "東京駅",
+    "tagline": "日本酒卸問屋が営む、利き酒感覚で選べる一杯バー",
+    "subCategories": ["日本酒", "カウンター"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 8,
+    "sourceNote": "https://www.yaesu.tokyo-midtown.com/shop-restaurant/detail/91300"
+  },
+  {
+    "name": "アンテナアメリカ 東京店",
+    "address": "東京都中央区八重洲2-1 八重洲地下街 地下1階 中1号",
+    "nearestStation": "東京駅",
+    "tagline": "全米から集めた常時約300種のクラフトビール専門店",
+    "subCategories": ["クラフトビール", "カウンター"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 8,
+    "sourceNote": "https://prtimes.jp/main/html/rd/p/000000031.000055319.html"
+  },
+  {
+    "name": "Japanese Malt Whisky SAKURA グランスタ東京店",
+    "address": "東京都千代田区丸の内1-9-1 グランスタ東京 B1F（改札内）",
+    "nearestStation": "東京駅",
+    "tagline": "60種超のジャパニーズウイスキーを立ち飲みで愉しめる",
+    "subCategories": ["ウイスキー", "カウンター"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 9,
+    "sourceNote": "https://www.gransta.jp/mall/gransta_tokyo/japanese_malt_whisky_sakura/"
+  },
+  {
+    "name": "ハイボールバー 東京駅 1923",
+    "address": "東京都千代田区丸の内1-9-1 東京駅一番街2F 東京グルメゾン内",
+    "nearestStation": "東京駅",
+    "tagline": "純氷と薄張りグラスにこだわるハイボール専門バー",
+    "subCategories": ["ウイスキー", "カウンター"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 8,
+    "sourceNote": "https://www.dynac-japan.com/shop/highballbar/tokyo_station/about/"
+  },
+  {
+    "name": "手打ちそば みや川 グランスタ八重北店",
+    "address": "東京都千代田区丸の内1-9-1 グランスタ八重北 黒塀横丁 B1F",
+    "nearestStation": "東京駅",
+    "tagline": "二八手打ち蕎麦と地酒で愉しむ江戸前『そば前』文化",
+    "subCategories": ["日本酒", "カウンター"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 7,
+    "sourceNote": "https://www.gransta.jp/mall/gransta_yaekita/miyagawa/"
+  },
+  {
+    "name": "CATARATAS YAESU",
+    "address": "東京都中央区八重洲2-2-1 東京ミッドタウン八重洲 2F ヤエスパブリック内",
+    "nearestStation": "東京駅",
+    "tagline": "世界各国から集めた常時120種の樽生クラフトビール",
+    "subCategories": ["クラフトビール", "カウンター"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 8,
+    "sourceNote": "https://beerbarsjapan.com/venues/5701.html"
   }
 ]

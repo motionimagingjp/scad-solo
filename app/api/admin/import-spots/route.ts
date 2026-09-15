@@ -18,6 +18,7 @@ import jiyugaoka from "@/data/spots-jiyugaoka.json";
 import kamata from "@/data/spots-kamata.json";
 import kameido from "@/data/spots-kameido.json";
 import kanda from "@/data/spots-kanda.json";
+import kawagoe from "@/data/spots-kawagoe.json";
 import kawasaki from "@/data/spots-kawasaki.json";
 import kichijoji from "@/data/spots-kichijoji.json";
 import kinshicho from "@/data/spots-kinshicho.json";
@@ -99,6 +100,7 @@ const ALL_CANDIDATES: SpotCandidate[] = [
   ...kamata,
   ...kameido,
   ...kanda,
+  ...kawagoe,
   ...kawasaki,
   ...kichijoji,
   ...kinshicho,

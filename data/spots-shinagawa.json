@@ -251,5 +251,71 @@
     "senberoAvailable": false,
     "soloFriendliness": 8,
     "sourceNote": "現在営業情報・所在地を確認。アメリカンクラフトビール専門性を評価。"
+  },
+  {
+    "name": "常陸野ブルーイング品川 Beer&Cafe",
+    "address": "東京都港区高輪3-26-27 エキュート品川2F",
+    "nearestStation": "品川駅",
+    "tagline": "木内酒造直営、常陸野ネストビール樽生8〜9種を改札内で",
+    "subCategories": ["クラフトビール", "カウンター"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 8,
+    "sourceNote": "https://www.ecute.jp/shinagawa/shop/1419"
+  },
+  {
+    "name": "TAMEALS 品川店(タミルズ)",
+    "address": "東京都港区高輪3-26-27 JR品川駅構内 エキュート品川1F",
+    "nearestStation": "品川駅",
+    "tagline": "改札内で樽生クラフトビール6タップ飲み比べできる",
+    "subCategories": ["クラフトビール", "カウンター"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 8,
+    "sourceNote": "https://www.ecute.jp/shinagawa/shop/3166"
+  },
+  {
+    "name": "アロマクラシコ",
+    "address": "東京都港区港南2-16-3 品川グランドセントラルタワー グランパサージュ1 1F",
+    "nearestStation": "品川駅",
+    "tagline": "銀座の名店直系、イタリアワイン200種を味わえる",
+    "subCategories": ["ワイン"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 6,
+    "sourceNote": "https://aromaclassico.jp/"
+  },
+  {
+    "name": "美食米門 品川港南 WINE&GRILL",
+    "address": "東京都港区港南2-16-3 品川グランドセントラルタワー1F グランパサージュ1",
+    "nearestStation": "品川駅",
+    "tagline": "厳選食材とソムリエ選定ワイン約80種が楽しめる",
+    "subCategories": ["ワイン", "カウンター"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 7,
+    "sourceNote": "https://www.dd-holdings.jp/shops/maimon/shinagawa_konan"
+  },
+  {
+    "name": "Leuven(ルーヴェン) 品川店",
+    "address": "東京都港区港南2-18-1 アトレ品川4F",
+    "nearestStation": "品川駅",
+    "tagline": "本場アンティーク空間でベルギービール50種以上",
+    "subCategories": ["クラフトビール", "カウンター"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 6,
+    "sourceNote": "https://belgianbrasseriecourt.jp/shop/leuven/"
+  },
+  {
+    "name": "cham(チャム) 品川店",
+    "address": "東京都港区港南2-6-7 品川ビル1F",
+    "nearestStation": "品川駅",
+    "tagline": "創業1980年、老舗ワインバルのカウンターで一人飲み",
+    "subCategories": ["ワイン", "カウンター"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 8,
+    "sourceNote": "https://cham.owst.jp/"
   }
 ]

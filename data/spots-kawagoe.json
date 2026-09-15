@@ -1,0 +1,112 @@
+[
+  {
+    "name": "BEER SAURUS JURA",
+    "address": "埼玉県川越市菅原町22-2 第2MSビル2F",
+    "nearestStation": "川越駅",
+    "tagline": "駅徒歩2分、カウンターで飲めるクラフトビール専門バー",
+    "subCategories": ["クラフトビール", "ビール"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 8,
+    "sourceNote": "https://beersaurus.net/jura/"
+  },
+  {
+    "name": "BEER SAURUS 本川越店",
+    "address": "埼玉県川越市新富町2-7-5 花田ビル2F",
+    "nearestStation": "本川越駅",
+    "tagline": "本川越駅徒歩2分、世界のビールとカウンター席",
+    "subCategories": ["クラフトビール", "ビール"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 8,
+    "sourceNote": "https://beersaurus.net/honkawa"
+  },
+  {
+    "name": "チョッと立ち呑み",
+    "address": "埼玉県川越市脇田町5-11 清水ビル1F",
+    "nearestStation": "川越駅",
+    "tagline": "串煮とせんべろセットが楽しめる駅近立ち飲み",
+    "subCategories": ["立ち飲み", "せんべろ"],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 9,
+    "sourceNote": "https://1000bero.net/restaurant-1285/"
+  },
+  {
+    "name": "COEDO BREWERY THE RESTAURANT",
+    "address": "埼玉県川越市脇田本町8-1 U_PLACE 1F",
+    "nearestStation": "川越駅",
+    "tagline": "醸造所併設、できたてコエドビールを味わえる",
+    "subCategories": ["クラフトビール", "ビール"],
+    "hasCounterSeat": false,
+    "senberoAvailable": false,
+    "soloFriendliness": 6,
+    "sourceNote": "https://coedobrewery.com/en/pages/the-restaurant"
+  },
+  {
+    "name": "Entrance to Beer NOVICE",
+    "address": "埼玉県川越市脇田町27-3 PONOビル2階-B",
+    "nearestStation": "川越駅",
+    "tagline": "一人飲み歓迎、埼玉産クラフトビール専門店",
+    "subCategories": ["クラフトビール", "ビール"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": "https://novice-kawagoe.com/"
+  },
+  {
+    "name": "GROUSE",
+    "address": "埼玉県川越市新富町2-28-11 ジョージビル1F",
+    "nearestStation": "本川越駅",
+    "tagline": "一枚板カウンターが落ち着く隠れ家バー",
+    "subCategories": ["ワイン"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 8,
+    "sourceNote": "https://r.gnavi.co.jp/ga84100/"
+  },
+  {
+    "name": "やきとり こまちゃん 川越西口本店",
+    "address": "埼玉県川越市脇田本町14-36 川越西口ビル1F",
+    "nearestStation": "川越駅",
+    "tagline": "地酒と埼玉地鶏の焼鳥が楽しめる駅近店",
+    "subCategories": ["日本酒"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 7,
+    "sourceNote": "https://www.hotpepper.jp/strJ000182914/"
+  },
+  {
+    "name": "とらや",
+    "address": "埼玉県川越市菅原町20-24",
+    "nearestStation": "川越駅",
+    "tagline": "コの字カウンターのみの焼きとん専門店",
+    "subCategories": [],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": "https://r.gnavi.co.jp/dpjvf6j60000/"
+  },
+  {
+    "name": "eatoyo",
+    "address": "埼玉県川越市脇田町17-25 畑仲ビル1F",
+    "nearestStation": "川越駅",
+    "tagline": "駅近の隠れ家、ナチュラルワインとイタリアン",
+    "subCategories": ["ワイン"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 8,
+    "sourceNote": "https://kawagoe.fun/magazine/gourmet/eatoyo/"
+  },
+  {
+    "name": "standing bar matsuzaki",
+    "address": "埼玉県川越市脇田本町8-1 U-PLACE川越1F",
+    "nearestStation": "川越駅",
+    "tagline": "駅ほぼ直結、全国の銘酒を気軽に楽しめる立ち飲み",
+    "subCategories": ["立ち飲み", "日本酒"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": "https://www.1887.co.jp/shop/standing-bar-matsuzaki/"
+  }
+]
