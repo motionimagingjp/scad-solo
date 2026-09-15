@@ -134,5 +134,44 @@
     "senberoAvailable": false,
     "soloFriendliness": 10,
     "sourceNote": "https://www.kanda-matsuya.jp/"
+  },
+  {
+    "name": "クレイジークラフトビア",
+    "address": "東京都千代田区神田司町2-9-1 第一高田ビル1F",
+    "nearestStation": "淡路町駅",
+    "tagline": "国内外の樽生クラフトビールを揃える神田エリアのビアギーク店",
+    "subCategories": [
+      "ビール"
+    ],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 10,
+    "sourceNote": ""
+  },
+  {
+    "name": "WIZ CRAFT BEER and FOOD",
+    "address": "東京都千代田区神田淡路町2-105 ワテラスアネックス108",
+    "nearestStation": "淡路町駅",
+    "tagline": "神田・御茶ノ水エリアでクラフトビールと料理を楽しめるビアバー",
+    "subCategories": [
+      "ビール"
+    ],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "キールズ・バー 御茶ノ水",
+    "address": "東京都千代田区神田駿河台2-1-20 お茶の水ユニオンビル1F",
+    "nearestStation": "御茶ノ水駅",
+    "tagline": "御茶ノ水でクラフトビールを落ち着いて楽しめる酒好き向けバー",
+    "subCategories": [
+      "ビール"
+    ],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": ""
   }
 ]

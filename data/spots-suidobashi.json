@@ -192,5 +192,18 @@
     "senberoAvailable": true,
     "soloFriendliness": 9,
     "sourceNote": "https://tabelog.com/tokyo/A1310/A131003/13154321/"
+  },
+  {
+    "name": "ワインバー テラ 水道橋店",
+    "address": "東京都千代田区神田三崎町2-19-9 大曽根ビル1F",
+    "nearestStation": "水道橋駅",
+    "tagline": "一人で使いやすいカジュアルなワインバー",
+    "subCategories": [
+      "ワイン"
+    ],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": ""
   }
 ]

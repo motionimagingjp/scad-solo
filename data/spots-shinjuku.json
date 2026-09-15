@@ -262,5 +262,57 @@
     "senberoAvailable": false,
     "soloFriendliness": 10,
     "sourceNote": ""
+  },
+  {
+    "name": "TORON",
+    "address": "東京都新宿区新宿5-11-28 スターハイム103",
+    "nearestStation": "新宿三丁目駅",
+    "tagline": "新宿三丁目でワインを中心に楽しめる小規模ワインバー",
+    "subCategories": [
+      "ワイン"
+    ],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "ウォータリングホール",
+    "address": "東京都渋谷区千駄ケ谷5-26-5 代々木シティホームズ103",
+    "nearestStation": "代々木駅",
+    "tagline": "国内外のクラフトビールを深く楽しめる東京を代表するビアギーク向け専門店",
+    "subCategories": [
+      "ビール"
+    ],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 10,
+    "sourceNote": ""
+  },
+  {
+    "name": "新宿クラフトビール BEER BOMB",
+    "address": "東京都新宿区西新宿7-13-5 第12山京ビル1F",
+    "nearestStation": "西新宿駅",
+    "tagline": "クラフトビール好きが一人で通いやすい西新宿の専門ビアバー",
+    "subCategories": [
+      "ビール"
+    ],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 10,
+    "sourceNote": ""
+  },
+  {
+    "name": "Barrel & Tap Craft Beer Dining Bar",
+    "address": "東京都新宿区西新宿7-11-16 新宿プラスワンビル2F",
+    "nearestStation": "新宿西口駅",
+    "tagline": "小規模ながらクラフトビールに力を入れる西新宿のビアダイニング",
+    "subCategories": [
+      "ビール"
+    ],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": ""
   }
 ]

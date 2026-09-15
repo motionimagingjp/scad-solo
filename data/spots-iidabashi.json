@@ -1,0 +1,54 @@
+[
+  {
+    "name": "Hop-Scotch Tokyo Craftbeer & Whiskey",
+    "address": "東京都千代田区富士見2-2-11 井上ビル1F",
+    "nearestStation": "飯田橋駅",
+    "tagline": "クラフトビールとウイスキーを同時に追求できる酒好き向けバー",
+    "subCategories": [
+      "ビール"
+    ],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 10,
+    "sourceNote": ""
+  },
+  {
+    "name": "BEERNOTE 神楽坂",
+    "address": "東京都新宿区津久戸町1-14 ARTS神楽坂2F",
+    "nearestStation": "飯田橋駅",
+    "tagline": "神楽坂でクラフトビールと料理をじっくり楽しめる専門店",
+    "subCategories": [
+      "ビール"
+    ],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "サーバーランド",
+    "address": "東京都新宿区神楽坂2-9 大川ビルB1F",
+    "nearestStation": "飯田橋駅",
+    "tagline": "クラフトビールを中心に豊富なラインナップを楽しめる神楽坂の定番",
+    "subCategories": [
+      "ビール"
+    ],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 10,
+    "sourceNote": ""
+  },
+  {
+    "name": "Taihu Tokyo",
+    "address": "東京都新宿区神楽坂4-4 河庄ビル1F",
+    "nearestStation": "飯田橋駅",
+    "tagline": "台湾クラフトビール文化を東京で楽しめる個性派ビアバー",
+    "subCategories": [
+      "ビール"
+    ],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  }
+]

@@ -64,5 +64,18 @@
     "senberoAvailable": false,
     "soloFriendliness": 9,
     "sourceNote": ""
+  },
+  {
+    "name": "地ビールバー まる麦",
+    "address": "東京都新宿区荒木町1-15 一番館ビル2F",
+    "nearestStation": "四谷三丁目駅",
+    "tagline": "四谷荒木町で地ビールを専門的に楽しめる小規模ビアバー",
+    "subCategories": [
+      "ビール"
+    ],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 10,
+    "sourceNote": ""
   }
 ]

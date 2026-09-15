@@ -190,5 +190,83 @@
     "senberoAvailable": false,
     "soloFriendliness": 10,
     "sourceNote": ""
+  },
+  {
+    "name": "グランポレール ワインバートーキョー 銀座コリドー街店",
+    "address": "東京都中央区銀座8-2先 コリドー街1F",
+    "nearestStation": "新橋駅",
+    "tagline": "日本ワインを気軽にグラスで飲み比べられるワインバー",
+    "subCategories": [
+      "ワイン"
+    ],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "シノワ 銀座店",
+    "address": "東京都中央区銀座6-4-5 オリエントビルB1F",
+    "nearestStation": "銀座駅",
+    "tagline": "料理とワインの組み合わせを本格的に楽しめる老舗系ワインバー",
+    "subCategories": [
+      "ワイン"
+    ],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 8,
+    "sourceNote": ""
+  },
+  {
+    "name": "MIDAIR French Cuisine / Wine Bar",
+    "address": "東京都中央区銀座7-8-13 BrownPlaceビル10F",
+    "nearestStation": "銀座駅",
+    "tagline": "フレンチとワインを落ち着いて楽しめる大人のワインバー",
+    "subCategories": [
+      "ワイン"
+    ],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 8,
+    "sourceNote": ""
+  },
+  {
+    "name": "Wine Bar Bâtonnage",
+    "address": "東京都中央区銀座8-7-10 Forged Ginza B1F",
+    "nearestStation": "新橋駅",
+    "tagline": "深夜までじっくりワインを楽しめる銀座の専門バー",
+    "subCategories": [
+      "ワイン"
+    ],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "CRAFT BEER BAR IBREW GINZA",
+    "address": "東京都中央区八重洲2-11-7 東栄八重洲ビル1F",
+    "nearestStation": "銀座一丁目駅",
+    "tagline": "東京駅・銀座エリアで多彩なクラフトビールを飲み比べできる専門店",
+    "subCategories": [
+      "ビール"
+    ],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 10,
+    "sourceNote": ""
+  },
+  {
+    "name": "orca GINZA BREWERY",
+    "address": "東京都中央区銀座8-11-12 正金ビルB1F",
+    "nearestStation": "銀座駅",
+    "tagline": "銀座の地下で自家醸造ビールを楽しめるブルワリー系専門店",
+    "subCategories": [
+      "ビール"
+    ],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": ""
   }
 ]

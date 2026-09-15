@@ -253,5 +253,31 @@
     "senberoAvailable": false,
     "soloFriendliness": 8,
     "sourceNote": ""
+  },
+  {
+    "name": "ワイン蔵TOKYO",
+    "address": "東京都港区新橋2-4-5 不二ビルディング新橋5F",
+    "nearestStation": "内幸町駅",
+    "tagline": "ワイン好きが深夜まで使える隠れ家的ワインバー",
+    "subCategories": [
+      "ワイン"
+    ],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "Shimbashi DRY-DOCK",
+    "address": "東京都港区新橋3-25-10",
+    "nearestStation": "新橋駅",
+    "tagline": "ビール好きが集まる新橋のスタンディング感覚のビアバー",
+    "subCategories": [
+      "ビール"
+    ],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 10,
+    "sourceNote": ""
   }
 ]

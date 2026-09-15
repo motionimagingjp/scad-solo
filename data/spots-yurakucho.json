@@ -77,5 +77,18 @@
     "senberoAvailable": false,
     "soloFriendliness": 10,
     "sourceNote": "https://www.imperialhotel.co.jp/"
+  },
+  {
+    "name": "東京エールワークス ステーションタップルーム有楽町",
+    "address": "東京都千代田区有楽町2-9-7",
+    "nearestStation": "有楽町駅",
+    "tagline": "東京エールワークスのクラフトビールを駅近で楽しめるタップルーム",
+    "subCategories": [
+      "ビール"
+    ],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": ""
   }
 ]

@@ -4,7 +4,10 @@
     "address": "東京都千代田区丸の内2-7-3 東京ビルTOKIA B1F",
     "nearestStation": "東京駅",
     "tagline": "日本酒とこだわりの和食おつまみをサクッと立ち飲みで楽しめる大衆酒場",
-    "subCategories": ["立ち飲み", "日本酒"],
+    "subCategories": [
+      "立ち飲み",
+      "日本酒"
+    ],
     "hasCounterSeat": true,
     "senberoAvailable": true,
     "soloFriendliness": 5,
@@ -15,7 +18,9 @@
     "address": "東京都中央区八重洲2-1 八重洲地下街 南1",
     "nearestStation": "東京駅",
     "tagline": "京都の老舗酒蔵直営。カウンター席で純米酒とおつまみを気軽に楽しめる",
-    "subCategories": ["日本酒"],
+    "subCategories": [
+      "日本酒"
+    ],
     "hasCounterSeat": true,
     "senberoAvailable": false,
     "soloFriendliness": 5,
@@ -26,7 +31,9 @@
     "address": "東京都千代田区丸の内1-9-1 北町ダイニング 2F",
     "nearestStation": "東京駅",
     "tagline": "店内全席カウンター。秋田の蔵元から届く地酒と郷土料理を静かに味わえる",
-    "subCategories": ["日本酒"],
+    "subCategories": [
+      "日本酒"
+    ],
     "hasCounterSeat": true,
     "senberoAvailable": false,
     "soloFriendliness": 6,
@@ -37,7 +44,9 @@
     "address": "東京都千代田区丸の内1-9-1 JR東京駅構内 B1F グランスタ東京",
     "nearestStation": "東京駅",
     "tagline": "昭和初期のサーバーで注ぐ生ビールとノスタルジックな雰囲気を楽しめるカウンター喫茶バー",
-    "subCategories": ["ビール"],
+    "subCategories": [
+      "ビール"
+    ],
     "hasCounterSeat": true,
     "senberoAvailable": false,
     "soloFriendliness": 4,
@@ -48,7 +57,9 @@
     "address": "東京都中央区八重洲1-6-1 TOFROM YAESU TOWER 2F",
     "nearestStation": "東京駅",
     "tagline": "豊洲市場の厳選ネタを一貫から楽しめる本格立ち食い鮨。東京駅でサク飲みもできる新店",
-    "subCategories": ["日本酒"],
+    "subCategories": [
+      "日本酒"
+    ],
     "hasCounterSeat": true,
     "senberoAvailable": false,
     "soloFriendliness": 10,
@@ -59,7 +70,10 @@
     "address": "東京都中央区八重洲1-6-1 TOFROM YAESU TOWER 2F",
     "nearestStation": "東京駅",
     "tagline": "全国の旬の牡蠣を楽しめる牡蠣専門店。牡蠣を肴に一人で軽く飲める注目の新店",
-    "subCategories": ["立ち飲み", "日本酒"],
+    "subCategories": [
+      "立ち飲み",
+      "日本酒"
+    ],
     "hasCounterSeat": true,
     "senberoAvailable": false,
     "soloFriendliness": 10,
@@ -81,7 +95,9 @@
     "address": "東京都中央区八重洲1-6-1 TOFROM YAESU TOWER 2F",
     "nearestStation": "東京駅",
     "tagline": "神田で長年続くいわし料理専門店が八重洲に進出。いわしを酒の肴に楽しむ魚料理専門店",
-    "subCategories": ["日本酒"],
+    "subCategories": [
+      "日本酒"
+    ],
     "hasCounterSeat": true,
     "senberoAvailable": false,
     "soloFriendliness": 10,
@@ -92,7 +108,11 @@
     "address": "東京都中央区八重洲1-6-1 TOFROM YAESU TOWER 1F T113",
     "nearestStation": "東京駅",
     "tagline": "全国の銘酒をグラス1杯から楽しめる酒屋直営の角打ち。酒好きの一人飲みに最適",
-    "subCategories": ["立ち飲み", "日本酒", "ワイン"],
+    "subCategories": [
+      "立ち飲み",
+      "日本酒",
+      "ワイン"
+    ],
     "hasCounterSeat": false,
     "senberoAvailable": true,
     "soloFriendliness": 10,
@@ -114,7 +134,10 @@
     "address": "東京都中央区八重洲1-6-1 TOFROM YAESU TOWER 1F",
     "nearestStation": "東京駅",
     "tagline": "海南鶏飯を中心としたシンガポール料理と酒を楽しむ新業態。カウンター・立ち飲み利用にも注目",
-    "subCategories": ["立ち飲み", "ワイン"],
+    "subCategories": [
+      "立ち飲み",
+      "ワイン"
+    ],
     "hasCounterSeat": true,
     "senberoAvailable": false,
     "soloFriendliness": 9,
@@ -125,7 +148,10 @@
     "address": "東京都中央区八重洲1-6-1 TOFROM YAESU TOWER 2F",
     "nearestStation": "東京駅",
     "tagline": "羊肉と炭火料理を酒と合わせて楽しむ新業態。羊好き・酒好きに刺さる専門性の高い店",
-    "subCategories": ["日本酒", "ワイン"],
+    "subCategories": [
+      "日本酒",
+      "ワイン"
+    ],
     "hasCounterSeat": true,
     "senberoAvailable": false,
     "soloFriendliness": 9,
@@ -136,7 +162,10 @@
     "address": "東京都中央区八重洲1-6-1 TOFROM YAESU TOWER 2F",
     "nearestStation": "東京駅",
     "tagline": "職人焼きの焼き鳥と酒を楽しむ大人向けの新店。カウンターで一人飲みにも使いやすい",
-    "subCategories": ["日本酒", "ワイン"],
+    "subCategories": [
+      "日本酒",
+      "ワイン"
+    ],
     "hasCounterSeat": true,
     "senberoAvailable": false,
     "soloFriendliness": 9,
@@ -147,10 +176,25 @@
     "address": "東京都中央区八重洲1-6-1 TOFROM YAESU TOWER 2F",
     "nearestStation": "東京駅",
     "tagline": "八重洲の新施設で酒と料理を楽しめる居酒屋。仕事帰りの一人飲みにも使いやすい新店",
-    "subCategories": ["日本酒"],
+    "subCategories": [
+      "日本酒"
+    ],
     "hasCounterSeat": true,
     "senberoAvailable": false,
     "soloFriendliness": 8,
     "sourceNote": "https://tofrom-yaesu.com/floormap/"
+  },
+  {
+    "name": "Noodle House Laundry",
+    "address": "東京都千代田区丸の内1-9-1 グランスタ八重洲北エリアB1 黒塀横丁08区画",
+    "nearestStation": "東京駅",
+    "tagline": "約15種類の樽生クラフトビールとアジアン料理を楽しめる東京駅の酒場",
+    "subCategories": [
+      "ビール"
+    ],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": ""
   }
 ]

@@ -11,6 +11,7 @@ import funabashi from "@/data/spots-funabashi.json";
 import ginza from "@/data/spots-ginza.json";
 import gotanda from "@/data/spots-gotanda.json";
 import harajuku from "@/data/spots-harajuku.json";
+import iidabashi from "@/data/spots-iidabashi.json";
 import ikebukuro from "@/data/spots-ikebukuro.json";
 import jimbocho from "@/data/spots-jimbocho.json";
 import jiyugaoka from "@/data/spots-jiyugaoka.json";
@@ -91,6 +92,7 @@ const ALL_CANDIDATES: SpotCandidate[] = [
   ...ginza,
   ...gotanda,
   ...harajuku,
+  ...iidabashi,
   ...ikebukuro,
   ...jimbocho,
   ...jiyugaoka,

@@ -143,5 +143,44 @@
     "senberoAvailable": false,
     "soloFriendliness": 8,
     "sourceNote": ""
+  },
+  {
+    "name": "鉄鍋ビストロ&ワイン デリカージュ 赤坂",
+    "address": "東京都港区赤坂3-17-7 赤坂門田ビルB1F",
+    "nearestStation": "赤坂見附駅",
+    "tagline": "鉄鍋料理とワインを楽しむ赤坂の隠れ家ビストロ",
+    "subCategories": [
+      "ワイン"
+    ],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 8,
+    "sourceNote": ""
+  },
+  {
+    "name": "Craft Beer Server Land 赤坂見附店",
+    "address": "東京都港区赤坂3-10-4 赤坂月世界ビルB1F",
+    "nearestStation": "赤坂見附駅",
+    "tagline": "多彩なクラフトビールを一人で飲み比べしやすいビアバー",
+    "subCategories": [
+      "ビール"
+    ],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 10,
+    "sourceNote": ""
+  },
+  {
+    "name": "sansa赤坂",
+    "address": "東京都港区赤坂2-20-19 菅井ビル1F",
+    "nearestStation": "溜池山王駅",
+    "tagline": "ビール好きが集まる赤坂の隠れ家的ビアバー",
+    "subCategories": [
+      "ビール"
+    ],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": ""
   }
 ]

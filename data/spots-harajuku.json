@@ -42,5 +42,84 @@
     "senberoAvailable": false,
     "soloFriendliness": 9,
     "sourceNote": ""
+  },
+  {
+    "name": "no.501",
+    "address": "東京都渋谷区神宮前2-5-4 SEIZAN外苑1F",
+    "nearestStation": "外苑前駅",
+    "tagline": "自然派ワインを気軽に楽しめる神宮前のワインバー",
+    "subCategories": [
+      "ワイン",
+      "立ち飲み"
+    ],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "日本ワインソワレ",
+    "address": "東京都渋谷区千駄ケ谷3-24-8 北参道R1F",
+    "nearestStation": "北参道駅",
+    "tagline": "日本ワインに特化した希少性の高い専門店",
+    "subCategories": [
+      "ワイン"
+    ],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "ベアードビール タップルーム原宿",
+    "address": "東京都渋谷区神宮前1-20-13 ノーサレンダービル2F",
+    "nearestStation": "明治神宮前駅",
+    "tagline": "ベアードビールの個性的なIPAや季節ビールをじっくり飲める専門タップルーム",
+    "subCategories": [
+      "ビール"
+    ],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 10,
+    "sourceNote": ""
+  },
+  {
+    "name": "Tokyo Beer Lab",
+    "address": "東京都渋谷区神宮前3-26-5 URAHARA CENTRAL APARTMENT 101",
+    "nearestStation": "明治神宮前駅",
+    "tagline": "裏原宿で自家醸造ビールとビアカルチャーを楽しむ小規模ブルワリー",
+    "subCategories": [
+      "ビール"
+    ],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 10,
+    "sourceNote": ""
+  },
+  {
+    "name": "threefeet Tokyo",
+    "address": "東京都渋谷区神宮前4-25-3 メゾン原宿101",
+    "nearestStation": "明治神宮前駅",
+    "tagline": "ビール専門店として尖ったセレクトを楽しめる原宿のマニア向けスポット",
+    "subCategories": [
+      "ビール"
+    ],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 7,
+    "sourceNote": ""
+  },
+  {
+    "name": "Craft Beer Tap FAM333",
+    "address": "東京都渋谷区千駄ヶ谷3-3-3 エグゼクティブ原宿B1F",
+    "nearestStation": "北参道駅",
+    "tagline": "原宿・千駄ヶ谷エリアでクラフトビールをじっくり飲める隠れ家的タップバー",
+    "subCategories": [
+      "ビール"
+    ],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": ""
   }
 ]
