@@ -4,7 +4,11 @@
     "address": "東京都港区新橋2-9-13",
     "nearestStation": "新橋駅",
     "tagline": "有名フレンチ出身シェフによる絶品フレンチ小皿をサクッと楽しむ立ち飲み",
-    "subCategories": ["立ち飲み", "ワイン", "女性ひとり歓迎"],
+    "subCategories": [
+      "立ち飲み",
+      "ワイン",
+      "女性ひとり歓迎"
+    ],
     "hasCounterSeat": true,
     "senberoAvailable": false,
     "soloFriendliness": 10,
@@ -15,7 +19,9 @@
     "address": "東京都港区新橋2-20-15 新橋駅前ビル1号館 2F",
     "nearestStation": "新橋駅",
     "tagline": "新橋駅前ビルの隠れ家立ち飲み。アットホームな雰囲気と手作りおつまみ",
-    "subCategories": ["立ち飲み"],
+    "subCategories": [
+      "立ち飲み"
+    ],
     "hasCounterSeat": true,
     "senberoAvailable": true,
     "soloFriendliness": 10,
@@ -26,7 +32,11 @@
     "address": "東京都港区新橋2-20-15 新橋駅前ビル1号館 1F",
     "nearestStation": "新橋駅",
     "tagline": "長野県の蔵元直送地酒と地ビールが常時数十種。酒好きが集う立ち飲み角打ち",
-    "subCategories": ["立ち飲み", "日本酒", "ビール"],
+    "subCategories": [
+      "立ち飲み",
+      "日本酒",
+      "ビール"
+    ],
     "hasCounterSeat": true,
     "senberoAvailable": true,
     "soloFriendliness": 10,
@@ -37,7 +47,9 @@
     "address": "東京都港区新橋3-18-7",
     "nearestStation": "新橋駅",
     "tagline": "新橋で50年以上続く老舗もつ焼き。秘伝のタレで焼き上げる大ぶり串が絶品",
-    "subCategories": ["ビール"],
+    "subCategories": [
+      "ビール"
+    ],
     "hasCounterSeat": true,
     "senberoAvailable": true,
     "soloFriendliness": 9,
@@ -48,7 +60,11 @@
     "address": "東京都港区新橋2-12-2",
     "nearestStation": "新橋駅",
     "tagline": "創業200年の老舗酒屋が営む角打ち。希少な日本酒やワインを一杯から",
-    "subCategories": ["立ち飲み", "日本酒", "ワイン"],
+    "subCategories": [
+      "立ち飲み",
+      "日本酒",
+      "ワイン"
+    ],
     "hasCounterSeat": true,
     "senberoAvailable": true,
     "soloFriendliness": 9,
@@ -59,7 +75,10 @@
     "address": "東京都港区新橋3-2-3 千代川ビル 1F",
     "nearestStation": "新橋駅",
     "tagline": "京紅地鶏を丁寧に串打ち。落ち着いた本格カウンターでワインと味わう極上焼鳥",
-    "subCategories": ["日本酒", "ワイン"],
+    "subCategories": [
+      "日本酒",
+      "ワイン"
+    ],
     "hasCounterSeat": true,
     "senberoAvailable": false,
     "soloFriendliness": 8,
@@ -70,7 +89,10 @@
     "address": "東京都港区東新橋2-16-4",
     "nearestStation": "新橋駅",
     "tagline": "汐留イタリア街のナチュールワインバル。一人でゆったり楽しむカウンターイタリアン",
-    "subCategories": ["ワイン", "女性ひとり歓迎"],
+    "subCategories": [
+      "ワイン",
+      "女性ひとり歓迎"
+    ],
     "hasCounterSeat": true,
     "senberoAvailable": false,
     "soloFriendliness": 9,
@@ -81,7 +103,9 @@
     "address": "東京都港区新橋3-9-2",
     "nearestStation": "新橋駅",
     "tagline": "豊洲直送の旬鮮魚と創作海鮮料理。唎酒師と会話が弾む居心地抜群のカウンター",
-    "subCategories": ["日本酒"],
+    "subCategories": [
+      "日本酒"
+    ],
     "hasCounterSeat": true,
     "senberoAvailable": false,
     "soloFriendliness": 9,
@@ -92,7 +116,9 @@
     "address": "東京都港区新橋2-20-15 新橋駅前ビル1号館 B1F",
     "nearestStation": "新橋駅",
     "tagline": "新橋駅前ビル地下の名店。大将が厳選した極上の旬魚を静かに嗜む粋な一人飲み",
-    "subCategories": ["日本酒"],
+    "subCategories": [
+      "日本酒"
+    ],
     "hasCounterSeat": true,
     "senberoAvailable": false,
     "soloFriendliness": 8,
@@ -103,7 +129,10 @@
     "address": "東京都港区新橋2-16-1 ニュー新橋ビル B1F",
     "nearestStation": "新橋駅",
     "tagline": "兵庫・明石直送の魚介と本場明石焼き。国産ワインやウイスキーも楽しめるアンテナショップ酒場",
-    "subCategories": ["ワイン", "ビール"],
+    "subCategories": [
+      "ワイン",
+      "ビール"
+    ],
     "hasCounterSeat": true,
     "senberoAvailable": false,
     "soloFriendliness": 8,
@@ -114,7 +143,9 @@
     "address": "東京都港区新橋2-9-12",
     "nearestStation": "新橋駅",
     "tagline": "烏森神社参道で50年以上続く老舗焼鳥。名物・合鴨串と鳥スープで大人な一杯",
-    "subCategories": ["日本酒"],
+    "subCategories": [
+      "日本酒"
+    ],
     "hasCounterSeat": true,
     "senberoAvailable": false,
     "soloFriendliness": 9,
@@ -125,7 +156,9 @@
     "address": "東京都港区新橋3-10-6",
     "nearestStation": "新橋駅",
     "tagline": "昭和の趣を残す焼鳥の名店。備長炭で焼き上げる鮮度抜群の鶏料理と銘酒",
-    "subCategories": ["日本酒"],
+    "subCategories": [
+      "日本酒"
+    ],
     "hasCounterSeat": true,
     "senberoAvailable": false,
     "soloFriendliness": 8,
@@ -136,7 +169,9 @@
     "address": "東京都港区新橋2-16-1 ニュー新橋ビル B1F",
     "nearestStation": "新橋駅",
     "tagline": "昭和レトロな世界観が広がる復刻トリスバー。サクッとハイボールが楽しめる駅前バー",
-    "subCategories": ["女性ひとり歓迎"],
+    "subCategories": [
+      "女性ひとり歓迎"
+    ],
     "hasCounterSeat": true,
     "senberoAvailable": true,
     "soloFriendliness": 9,
@@ -147,7 +182,10 @@
     "address": "東京都港区新橋2-20-15 新橋駅前ビル1号館 1F",
     "nearestStation": "新橋駅",
     "tagline": "利き酒できる日本酒が豊富。手作りおつまみとともにサクッと立ち呑む日本酒パブ",
-    "subCategories": ["立ち飲み", "日本酒"],
+    "subCategories": [
+      "立ち飲み",
+      "日本酒"
+    ],
     "hasCounterSeat": true,
     "senberoAvailable": true,
     "soloFriendliness": 10,
@@ -158,10 +196,62 @@
     "address": "東京都港区新橋2-20-15 新橋駅前ビル1号館 2F",
     "nearestStation": "新橋駅",
     "tagline": "手作りのおつまみがリーズナブル。一人客で賑わう新橋駅前ビルのせんべろ立ち飲み",
-    "subCategories": ["立ち飲み"],
+    "subCategories": [
+      "立ち飲み"
+    ],
     "hasCounterSeat": true,
     "senberoAvailable": true,
     "soloFriendliness": 9,
     "sourceNote": "https://1000bero.net/restaurant-1594/"
+  },
+  {
+    "name": "Standing 焼酎 Bar 立",
+    "address": "東京都港区新橋3-13-2 新共ビル1F",
+    "nearestStation": "新橋駅",
+    "tagline": "焼酎を主役にしたスタンディングバー。焼酎好きなら一度は訪れたい専門店",
+    "subCategories": [
+      "立ち飲み"
+    ],
+    "hasCounterSeat": false,
+    "senberoAvailable": true,
+    "soloFriendliness": 10,
+    "sourceNote": ""
+  },
+  {
+    "name": "立呑処へそ 新橋総本店",
+    "address": "東京都港区新橋2-8-2 伊達ビル2 1F",
+    "nearestStation": "新橋駅",
+    "tagline": "串揚げなどを低価格で楽しめる新橋の代表的な立ち飲み",
+    "subCategories": [
+      "立ち飲み"
+    ],
+    "hasCounterSeat": false,
+    "senberoAvailable": true,
+    "soloFriendliness": 10,
+    "sourceNote": ""
+  },
+  {
+    "name": "串揚げ じゅらく 新橋店",
+    "address": "東京都港区新橋2-10-3 ブラザービルB1F",
+    "nearestStation": "内幸町駅",
+    "tagline": "串揚げと酒を気軽に楽しめる新橋の大衆系酒場",
+    "subCategories": [],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "THE CORE KITCHEN SPACE",
+    "address": "東京都港区新橋4-1-1",
+    "nearestStation": "内幸町駅",
+    "tagline": "ワインやクラフト系の酒を料理と合わせて楽しむ新橋のダイニングバー",
+    "subCategories": [
+      "ワイン"
+    ],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 8,
+    "sourceNote": ""
   }
 ]

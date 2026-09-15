@@ -192,5 +192,43 @@
     "senberoAvailable": false,
     "soloFriendliness": 9,
     "sourceNote": "https://tabelog.com/tokyo/A1311/A131101/13145612/"
+  },
+  {
+    "name": "上野 れんこん",
+    "address": "東京都台東区上野4-9-1",
+    "nearestStation": "上野広小路駅",
+    "tagline": "れんこん料理を名物に酒を楽しむ上野の個性派居酒屋",
+    "subCategories": [
+      "日本酒"
+    ],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 8,
+    "sourceNote": ""
+  },
+  {
+    "name": "味の笛",
+    "address": "東京都台東区上野5-27-5",
+    "nearestStation": "上野広小路駅",
+    "tagline": "御徒町の立ち飲み文化を代表する老舗。安く気軽に一杯飲める",
+    "subCategories": [
+      "立ち飲み",
+      "日本酒"
+    ],
+    "hasCounterSeat": false,
+    "senberoAvailable": true,
+    "soloFriendliness": 10,
+    "sourceNote": ""
+  },
+  {
+    "name": "大統領 本店",
+    "address": "東京都台東区上野6-10-14",
+    "nearestStation": "上野広小路駅",
+    "tagline": "上野の大衆酒場を代表する老舗本店。もつ焼きと酒で一人飲み",
+    "subCategories": [],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 10,
+    "sourceNote": ""
   }
 ]

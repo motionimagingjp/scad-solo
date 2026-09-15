@@ -4,7 +4,10 @@
     "address": "東京都中央区日本橋室町1-12-13",
     "nearestStation": "日本橋駅",
     "tagline": "日本酒を中心に昼から立ち飲みできる酒場",
-    "subCategories": ["立ち飲み", "日本酒"],
+    "subCategories": [
+      "立ち飲み",
+      "日本酒"
+    ],
     "hasCounterSeat": true,
     "senberoAvailable": true,
     "soloFriendliness": 10,
@@ -15,7 +18,10 @@
     "address": "東京都中央区日本橋2-9-7",
     "nearestStation": "日本橋駅",
     "tagline": "酒屋系の雰囲気で日本酒を楽しめる立ち飲み",
-    "subCategories": ["立ち飲み", "日本酒"],
+    "subCategories": [
+      "立ち飲み",
+      "日本酒"
+    ],
     "hasCounterSeat": true,
     "senberoAvailable": true,
     "soloFriendliness": 10,
@@ -26,7 +32,10 @@
     "address": "東京都中央区八重洲2-2-1 東京ミッドタウン八重洲2F",
     "nearestStation": "日本橋駅",
     "tagline": "海鮮と日本酒をリーズナブルに立ち食い飲み",
-    "subCategories": ["立ち飲み", "日本酒"],
+    "subCategories": [
+      "立ち飲み",
+      "日本酒"
+    ],
     "hasCounterSeat": true,
     "senberoAvailable": true,
     "soloFriendliness": 10,
@@ -37,7 +46,9 @@
     "address": "東京都中央区日本橋2-16-3 山京ビル1F",
     "nearestStation": "日本橋駅",
     "tagline": "刺身と酒を腰を据えて楽しめる海鮮酒場",
-    "subCategories": ["日本酒"],
+    "subCategories": [
+      "日本酒"
+    ],
     "hasCounterSeat": true,
     "senberoAvailable": false,
     "soloFriendliness": 9,
@@ -64,5 +75,44 @@
     "senberoAvailable": false,
     "soloFriendliness": 10,
     "sourceNote": ""
+  },
+  {
+    "name": "麦酒庵 日本橋本町店",
+    "address": "東京都中央区日本橋本町1-4-3 室穂ビル1F",
+    "nearestStation": "三越前駅",
+    "tagline": "クラフトビールと魚介を合わせて楽しむビール好き向け酒場",
+    "subCategories": [
+      "ビール"
+    ],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "室町 美はま",
+    "address": "東京都中央区日本橋室町1-12-13 ムロホンビル2F",
+    "nearestStation": "三越前駅",
+    "tagline": "和食と日本酒を落ち着いて楽しむ日本橋の酒処",
+    "subCategories": [
+      "日本酒"
+    ],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "日本橋 ふくしま館 MIDETTE",
+    "address": "東京都中央区日本橋室町4-3-16 柳屋太洋ビル1F",
+    "nearestStation": "三越前駅",
+    "tagline": "福島の地酒と郷土料理を気軽に楽しめるアンテナショップ系スポット",
+    "subCategories": [
+      "日本酒"
+    ],
+    "hasCounterSeat": false,
+    "senberoAvailable": false,
+    "soloFriendliness": 8,
+    "sourceNote": "https://midette.com/"
   }
 ]

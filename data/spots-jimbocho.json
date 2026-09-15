@@ -4,7 +4,9 @@
     "address": "東京都千代田区神田神保町3-2-1 サンライトビル1F",
     "nearestStation": "神保町駅",
     "tagline": "駅前で店主や客との距離が近い立ち飲み",
-    "subCategories": ["立ち飲み"],
+    "subCategories": [
+      "立ち飲み"
+    ],
     "hasCounterSeat": true,
     "senberoAvailable": true,
     "soloFriendliness": 10,
@@ -15,7 +17,9 @@
     "address": "東京都千代田区神田神保町周辺",
     "nearestStation": "神保町駅",
     "tagline": "創作中華と中国茶割を楽しむ立ち飲み",
-    "subCategories": ["立ち飲み"],
+    "subCategories": [
+      "立ち飲み"
+    ],
     "hasCounterSeat": true,
     "senberoAvailable": false,
     "soloFriendliness": 10,
@@ -26,7 +30,10 @@
     "address": "東京都千代田区神田神保町2-4 九段富士ビルB1F",
     "nearestStation": "神保町駅",
     "tagline": "魚を肴に酒を楽しむ立ち飲み系酒場",
-    "subCategories": ["立ち飲み", "日本酒"],
+    "subCategories": [
+      "立ち飲み",
+      "日本酒"
+    ],
     "hasCounterSeat": true,
     "senberoAvailable": true,
     "soloFriendliness": 9,
@@ -37,6 +44,39 @@
     "address": "東京都千代田区神田神保町2-3-1 岩波書店アネックス",
     "nearestStation": "神保町駅",
     "tagline": "本と酒を一緒に楽しめる神保町らしい一軒(カフェ営業中心、夜は酒類提供)",
+    "subCategories": [],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "神保町 兵六",
+    "address": "東京都千代田区神田神保町1-3-20",
+    "nearestStation": "神保町駅",
+    "tagline": "神保町を代表する老舗酒場。焼酎と肴でじっくり一人飲み",
+    "subCategories": [],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 10,
+    "sourceNote": ""
+  },
+  {
+    "name": "神保町 ラドリオ",
+    "address": "東京都千代田区神田神保町1-3",
+    "nearestStation": "神保町駅",
+    "tagline": "神保町の歴史ある喫茶・バー文化を感じられる老舗",
+    "subCategories": [],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "神保町 ミロンガ・ヌオーバ",
+    "address": "東京都千代田区神田神保町1-3",
+    "nearestStation": "神保町駅",
+    "tagline": "音楽と酒を楽しむ神保町の老舗喫茶バー",
     "subCategories": [],
     "hasCounterSeat": true,
     "senberoAvailable": false,

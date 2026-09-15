@@ -1,0 +1,54 @@
+[
+  {
+    "name": "酒の店 笹新",
+    "address": "東京都中央区日本橋人形町2-20-3",
+    "nearestStation": "人形町駅",
+    "tagline": "老舗らしい料理と酒を楽しめる人形町の酒場",
+    "subCategories": [
+      "日本酒"
+    ],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "人形町田酔",
+    "address": "東京都中央区日本橋人形町1-7-6 HSビル2F",
+    "nearestStation": "人形町駅",
+    "tagline": "日本酒と和食をじっくり楽しめる人形町の酒好き向け店",
+    "subCategories": [
+      "日本酒"
+    ],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "山葵 人形町店",
+    "address": "東京都中央区日本橋人形町2-11-4",
+    "nearestStation": "人形町駅",
+    "tagline": "魚介と日本酒を楽しめる人形町の和食酒場",
+    "subCategories": [
+      "日本酒"
+    ],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 8,
+    "sourceNote": ""
+  },
+  {
+    "name": "日本橋ブルワリー",
+    "address": "東京都中央区日本橋富沢町10-13 WORK EDITION NIHONBASHI 1F",
+    "nearestStation": "人形町駅",
+    "tagline": "自家製クラフトビールを楽しめる日本橋のブルワリー",
+    "subCategories": [
+      "ビール"
+    ],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  }
+]

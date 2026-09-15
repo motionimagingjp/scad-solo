@@ -4,7 +4,10 @@
     "address": "東京都中央区銀座6-3-5 第一高橋ビル2F",
     "nearestStation": "銀座駅",
     "tagline": "銀座でワンコイン級のせんべろを狙える立ち飲み",
-    "subCategories": ["立ち飲み", "日本酒"],
+    "subCategories": [
+      "立ち飲み",
+      "日本酒"
+    ],
     "hasCounterSeat": true,
     "senberoAvailable": true,
     "soloFriendliness": 10,
@@ -15,7 +18,9 @@
     "address": "東京都中央区銀座5-9-11 ファゼンダビルB1F",
     "nearestStation": "銀座駅",
     "tagline": "300円台から飲める銀座の格安スタンドバー",
-    "subCategories": ["立ち飲み"],
+    "subCategories": [
+      "立ち飲み"
+    ],
     "hasCounterSeat": true,
     "senberoAvailable": true,
     "soloFriendliness": 10,
@@ -26,7 +31,11 @@
     "address": "東京都中央区銀座1-2-1 紺屋ビル1F",
     "nearestStation": "銀座駅",
     "tagline": "日本酒・ワイン・ビールを立ち飲みで試せる酒販店",
-    "subCategories": ["立ち飲み", "日本酒", "ワイン"],
+    "subCategories": [
+      "立ち飲み",
+      "日本酒",
+      "ワイン"
+    ],
     "hasCounterSeat": true,
     "senberoAvailable": true,
     "soloFriendliness": 10,
@@ -37,7 +46,9 @@
     "address": "東京都中央区銀座7-1 銀座コリドー通り105",
     "nearestStation": "銀座駅",
     "tagline": "焼鳥と酒を気軽に楽しむ銀座の老舗系立ち飲み",
-    "subCategories": ["立ち飲み"],
+    "subCategories": [
+      "立ち飲み"
+    ],
     "hasCounterSeat": true,
     "senberoAvailable": true,
     "soloFriendliness": 10,
@@ -48,7 +59,10 @@
     "address": "東京都中央区銀座1-3-13 オーブ プレミアB1",
     "nearestStation": "銀座駅",
     "tagline": "高知の地酒と料理を立ち飲みで楽しむ",
-    "subCategories": ["立ち飲み", "日本酒"],
+    "subCategories": [
+      "立ち飲み",
+      "日本酒"
+    ],
     "hasCounterSeat": true,
     "senberoAvailable": true,
     "soloFriendliness": 9,
@@ -59,9 +73,121 @@
     "address": "東京都千代田区有楽町1-2-14 紫ビルB1F",
     "nearestStation": "銀座駅",
     "tagline": "300円台から楽しめるチケット制スタンドバー",
-    "subCategories": ["立ち飲み"],
+    "subCategories": [
+      "立ち飲み"
+    ],
     "hasCounterSeat": true,
     "senberoAvailable": true,
+    "soloFriendliness": 10,
+    "sourceNote": ""
+  },
+  {
+    "name": "銀座しまだ",
+    "address": "東京都中央区銀座8-2-8 高坂ビル1F",
+    "nearestStation": "銀座駅",
+    "tagline": "旬の魚介と日本酒を立ち飲みで楽しめる人気店",
+    "subCategories": [
+      "立ち飲み",
+      "日本酒"
+    ],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 10,
+    "sourceNote": ""
+  },
+  {
+    "name": "TOKYO SAKE DEPARTMENT",
+    "address": "東京都中央区銀座4-14-2 XCD銀座ビル5F",
+    "nearestStation": "東銀座駅",
+    "tagline": "日本酒を主役に楽しめる銀座の専門バー",
+    "subCategories": [
+      "日本酒"
+    ],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 10,
+    "sourceNote": ""
+  },
+  {
+    "name": "ワインバー 階段の上バル",
+    "address": "東京都中央区銀座6-3-15 昭和イーティングビル4F",
+    "nearestStation": "銀座駅",
+    "tagline": "銀座コリドー裏の小さなワインバー。グラスワインを一人で楽しみやすい",
+    "subCategories": [
+      "ワイン"
+    ],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 10,
+    "sourceNote": ""
+  },
+  {
+    "name": "GINZA KOSO",
+    "address": "東京都中央区銀座8-8-8 銀座888ビル8F",
+    "nearestStation": "新橋駅",
+    "tagline": "肉料理とワインを楽しむ銀座の大人向け専門店",
+    "subCategories": [
+      "ワイン"
+    ],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 8,
+    "sourceNote": ""
+  },
+  {
+    "name": "Bar 耳塚",
+    "address": "東京都中央区銀座6-6-19 若松ビルB2F",
+    "nearestStation": "銀座駅",
+    "tagline": "ウイスキーとカクテルをじっくり楽しめる銀座の小さなバー",
+    "subCategories": [],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 10,
+    "sourceNote": ""
+  },
+  {
+    "name": "Bar High Five",
+    "address": "東京都中央区銀座5-4-15 エフローレギンザ5ビルB1F",
+    "nearestStation": "銀座駅",
+    "tagline": "世界的に知られる銀座のオーセンティックバー。カクテル好きの一人飲みに",
+    "subCategories": [],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 10,
+    "sourceNote": ""
+  },
+  {
+    "name": "Bar Orchard Ginza",
+    "address": "東京都中央区銀座6-5-16 三楽ビル7F",
+    "nearestStation": "銀座駅",
+    "tagline": "フルーツカクテルを得意とする銀座のバー。カウンターで一人酒を楽しめる",
+    "subCategories": [],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 10,
+    "sourceNote": ""
+  },
+  {
+    "name": "STAR BAR GINZA",
+    "address": "東京都中央区銀座1-5-13 MODERNS GINZA B1F",
+    "nearestStation": "銀座一丁目駅",
+    "tagline": "世界的に知られる銀座の名門バー。カクテルを目的に一人で訪れたい名店",
+    "subCategories": [],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 10,
+    "sourceNote": ""
+  },
+  {
+    "name": "銀座ワインバー G5",
+    "address": "東京都中央区銀座5-6-10 銀座都ビル7F",
+    "nearestStation": "銀座駅",
+    "tagline": "グラスワインを中心に楽しめる小規模な銀座ワインバー",
+    "subCategories": [
+      "ワイン"
+    ],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
     "soloFriendliness": 10,
     "sourceNote": ""
   }

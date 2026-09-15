@@ -4,7 +4,10 @@
     "address": "東京都新宿区四谷1-10",
     "nearestStation": "四ツ谷駅",
     "tagline": "老舗酒屋で日本酒を気軽に立ち飲み",
-    "subCategories": ["立ち飲み", "日本酒"],
+    "subCategories": [
+      "立ち飲み",
+      "日本酒"
+    ],
     "hasCounterSeat": true,
     "senberoAvailable": true,
     "soloFriendliness": 10,
@@ -15,7 +18,9 @@
     "address": "東京都新宿区四谷1-8-14 四谷一丁目ビル1F",
     "nearestStation": "四ツ谷駅",
     "tagline": "日本酒40種以上と海鮮を楽しむ駅近酒場",
-    "subCategories": ["日本酒"],
+    "subCategories": [
+      "日本酒"
+    ],
     "hasCounterSeat": true,
     "senberoAvailable": false,
     "soloFriendliness": 9,
@@ -26,10 +31,38 @@
     "address": "東京都千代田区麹町6-6-7",
     "nearestStation": "四ツ谷駅",
     "tagline": "酒屋系の雰囲気で気軽に飲めるスタンドバー",
-    "subCategories": ["日本酒"],
+    "subCategories": [
+      "日本酒"
+    ],
     "hasCounterSeat": true,
     "senberoAvailable": true,
     "soloFriendliness": 10,
+    "sourceNote": ""
+  },
+  {
+    "name": "小山の酒場 -Social-SAKABA-",
+    "address": "東京都新宿区荒木町7 安藤ビル1F",
+    "nearestStation": "四谷三丁目駅",
+    "tagline": "荒木町の小さなワイン系酒場。カウンターで一人じっくり飲める隠れ家",
+    "subCategories": [
+      "ワイン"
+    ],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 10,
+    "sourceNote": ""
+  },
+  {
+    "name": "酒肴 タキギヤ",
+    "address": "東京都新宿区荒木町7 安藤ビル1F",
+    "nearestStation": "四谷三丁目駅",
+    "tagline": "荒木町らしい小規模酒場。料理と日本酒を落ち着いて楽しめる",
+    "subCategories": [
+      "日本酒"
+    ],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
     "sourceNote": ""
   }
 ]

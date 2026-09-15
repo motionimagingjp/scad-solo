@@ -4,7 +4,9 @@
     "address": "東京都港区赤坂3-10-6 TMビル1F",
     "nearestStation": "赤坂駅",
     "tagline": "赤坂見附寄りで使いやすい本格立ち飲み",
-    "subCategories": ["立ち飲み"],
+    "subCategories": [
+      "立ち飲み"
+    ],
     "hasCounterSeat": true,
     "senberoAvailable": true,
     "soloFriendliness": 10,
@@ -15,7 +17,9 @@
     "address": "東京都港区赤坂1-3-18 DG22ビルB1F",
     "nearestStation": "赤坂駅",
     "tagline": "リーズナブルな料理で一人飲みしやすい立ち飲み",
-    "subCategories": ["立ち飲み"],
+    "subCategories": [
+      "立ち飲み"
+    ],
     "hasCounterSeat": true,
     "senberoAvailable": true,
     "soloFriendliness": 9,
@@ -26,7 +30,10 @@
     "address": "東京都港区赤坂5-5-15 アカシヤビル102",
     "nearestStation": "赤坂駅",
     "tagline": "ワインと小皿料理を一人で楽しめるスタンド",
-    "subCategories": ["立ち飲み", "ワイン"],
+    "subCategories": [
+      "立ち飲み",
+      "ワイン"
+    ],
     "hasCounterSeat": true,
     "senberoAvailable": false,
     "soloFriendliness": 10,
@@ -37,7 +44,9 @@
     "address": "東京都港区赤坂4-3-27 2F",
     "nearestStation": "赤坂駅",
     "tagline": "日本酒好き向けの落ち着いた一人飲みバー",
-    "subCategories": ["日本酒"],
+    "subCategories": [
+      "日本酒"
+    ],
     "hasCounterSeat": true,
     "senberoAvailable": false,
     "soloFriendliness": 10,
@@ -48,7 +57,9 @@
     "address": "東京都港区赤坂3-6-18 赤坂ニューロイヤルビル本館B1F",
     "nearestStation": "赤坂駅",
     "tagline": "リーズナブルな料理で気軽に飲める大衆酒場",
-    "subCategories": ["立ち飲み"],
+    "subCategories": [
+      "立ち飲み"
+    ],
     "hasCounterSeat": true,
     "senberoAvailable": false,
     "soloFriendliness": 9,
@@ -59,10 +70,78 @@
     "address": "東京都港区赤坂3-15-1 Sionビル1F",
     "nearestStation": "赤坂駅",
     "tagline": "ホルモン料理を中心に使える大衆酒場",
-    "subCategories": ["立ち飲み"],
+    "subCategories": [
+      "立ち飲み"
+    ],
     "hasCounterSeat": false,
     "senberoAvailable": false,
     "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "nomuno 赤坂店",
+    "address": "東京都港区赤坂3-19-1 東京農村ビル3F",
+    "nearestStation": "赤坂見附駅",
+    "tagline": "多彩なワインをセルフスタイルで飲み比べできるワインバー",
+    "subCategories": [
+      "ワイン"
+    ],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 10,
+    "sourceNote": ""
+  },
+  {
+    "name": "赤坂あじさい",
+    "address": "東京都港区赤坂3-15-4 ネピロード赤坂B1F",
+    "nearestStation": "赤坂駅",
+    "tagline": "和食と日本酒を落ち着いて楽しめる赤坂の酒処",
+    "subCategories": [
+      "日本酒"
+    ],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "赤坂 まるしげ",
+    "address": "東京都港区赤坂2-14-8 山口建設ビル2F",
+    "nearestStation": "赤坂駅",
+    "tagline": "大衆感のある雰囲気で日本酒や焼酎を楽しめる赤坂酒場",
+    "subCategories": [
+      "日本酒"
+    ],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "赤坂 鳥よし",
+    "address": "東京都港区赤坂3-20-3",
+    "nearestStation": "赤坂見附駅",
+    "tagline": "焼き鳥と酒をカウンターで楽しめる赤坂の焼き鳥酒場",
+    "subCategories": [
+      "日本酒"
+    ],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "赤坂 金舌",
+    "address": "東京都港区赤坂3-11-7 ソシアル赤坂ビル1F",
+    "nearestStation": "赤坂見附駅",
+    "tagline": "肉料理と酒を合わせる赤坂の専門性の高い酒場",
+    "subCategories": [
+      "日本酒",
+      "ワイン"
+    ],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 8,
     "sourceNote": ""
   }
 ]

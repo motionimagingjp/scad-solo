@@ -4,7 +4,10 @@
     "address": "東京都千代田区鍛冶町2-11-20 1F・2F",
     "nearestStation": "神田駅",
     "tagline": "神田ガード下の名物中国酒場。ラム串と自然派ワインをカウンターでサク飲み",
-    "subCategories": ["ワイン", "ビール"],
+    "subCategories": [
+      "ワイン",
+      "ビール"
+    ],
     "hasCounterSeat": true,
     "senberoAvailable": false,
     "soloFriendliness": 9,
@@ -15,7 +18,10 @@
     "address": "東京都千代田区鍛冶町2-13-2",
     "nearestStation": "神田駅",
     "tagline": "鮮魚店直営の極上魚介立ち飲み。豊洲直送の刺身と辛口地酒でソロ呑み天国",
-    "subCategories": ["立ち飲み", "日本酒"],
+    "subCategories": [
+      "立ち飲み",
+      "日本酒"
+    ],
     "hasCounterSeat": true,
     "senberoAvailable": true,
     "soloFriendliness": 10,
@@ -26,7 +32,10 @@
     "address": "東京都千代田区鍛冶町2-13-24",
     "nearestStation": "神田駅",
     "tagline": "わずか2.2坪の超密着型立ち焼き肉。極上肉を1枚から七輪で焼いて地酒と合わせる",
-    "subCategories": ["立ち飲み", "日本酒"],
+    "subCategories": [
+      "立ち飲み",
+      "日本酒"
+    ],
     "hasCounterSeat": true,
     "senberoAvailable": false,
     "soloFriendliness": 9,
@@ -37,7 +46,10 @@
     "address": "東京都千代田区鍛冶町2-14-3",
     "nearestStation": "神田駅",
     "tagline": "神田駅前で長年愛される老舗大衆立ち飲み。手作りお惣菜と赤星でサクッと一杯",
-    "subCategories": ["立ち飲み", "ビール"],
+    "subCategories": [
+      "立ち飲み",
+      "ビール"
+    ],
     "hasCounterSeat": true,
     "senberoAvailable": true,
     "soloFriendliness": 10,
@@ -48,7 +60,9 @@
     "address": "東京都千代田区内神田3-19-8",
     "nearestStation": "神田駅",
     "tagline": "神田西口商店街裏の知る人ぞ知るもつ焼き店。朝引きモツと梅割りで粋な一人飲み",
-    "subCategories": ["ビール"],
+    "subCategories": [
+      "ビール"
+    ],
     "hasCounterSeat": true,
     "senberoAvailable": true,
     "soloFriendliness": 9,
@@ -59,7 +73,10 @@
     "address": "東京都千代田区鍛冶町1-7-9",
     "nearestStation": "神田駅",
     "tagline": "昭和レトロな雰囲気の立ち飲み。手書きメニューで餃子や焼きベーコンなどを気軽に",
-    "subCategories": ["立ち飲み", "ビール"],
+    "subCategories": [
+      "立ち飲み",
+      "ビール"
+    ],
     "hasCounterSeat": true,
     "senberoAvailable": true,
     "soloFriendliness": 9,
@@ -70,7 +87,10 @@
     "address": "東京都千代田区鍛冶町1-2-12 鍛冶町一丁目ビル 1F",
     "nearestStation": "神田駅",
     "tagline": "神田の金物街沿いにあるワインバル。ソムリエ厳選の約200種のワインを立ち飲みでも",
-    "subCategories": ["ワイン", "女性ひとり歓迎"],
+    "subCategories": [
+      "ワイン",
+      "女性ひとり歓迎"
+    ],
     "hasCounterSeat": true,
     "senberoAvailable": false,
     "soloFriendliness": 8,
@@ -81,10 +101,38 @@
     "address": "東京都千代田区内神田2-7-9 浅野屋ビル 1F",
     "nearestStation": "神田駅",
     "tagline": "1872年創業、神田西口徒歩3分の老舗手打ち蕎麦。名物おかめ蕎麦を純米酒とともに",
-    "subCategories": ["日本酒"],
+    "subCategories": [
+      "日本酒"
+    ],
     "hasCounterSeat": true,
     "senberoAvailable": false,
     "soloFriendliness": 8,
     "sourceNote": "https://shinise.tv/kanda-asanoya-honten/ （老舗紹介サイトでWebSearch確認）"
+  },
+  {
+    "name": "神田 新八",
+    "address": "東京都千代田区鍛冶町2-9-1",
+    "nearestStation": "神田駅",
+    "tagline": "魚料理と日本酒を楽しむ神田の老舗系酒場",
+    "subCategories": [
+      "日本酒"
+    ],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "神田 まつや",
+    "address": "東京都千代田区神田須田町1-13",
+    "nearestStation": "小川町駅",
+    "tagline": "老舗そばと日本酒で粋に飲める神田の名店",
+    "subCategories": [
+      "日本酒"
+    ],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 10,
+    "sourceNote": "https://www.kanda-matsuya.jp/"
   }
 ]

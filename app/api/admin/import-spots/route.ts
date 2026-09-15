@@ -28,6 +28,7 @@ import mishima from "@/data/spots-mishima.json";
 import nakameguro from "@/data/spots-nakameguro.json";
 import nakano from "@/data/spots-nakano.json";
 import nihombashi from "@/data/spots-nihombashi.json";
+import ningyocho from "@/data/spots-ningyocho.json";
 import nippori from "@/data/spots-nippori.json";
 import nishiogikubo from "@/data/spots-nishiogikubo.json";
 import oimachi from "@/data/spots-oimachi.json";
@@ -107,6 +108,7 @@ const ALL_CANDIDATES: SpotCandidate[] = [
   ...nakameguro,
   ...nakano,
   ...nihombashi,
+  ...ningyocho,
   ...nippori,
   ...nishiogikubo,
   ...oimachi,

@@ -190,5 +190,77 @@
     "senberoAvailable": true,
     "soloFriendliness": 9,
     "sourceNote": "https://tabelog.com/tokyo/A1304/A130401/13129801/"
+  },
+  {
+    "name": "どん底",
+    "address": "東京都新宿区新宿3-10-2",
+    "nearestStation": "新宿三丁目駅",
+    "tagline": "新宿の歴史を感じる老舗酒場。カクテルや洋酒と独特の空間を楽しむ",
+    "subCategories": [],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "新宿三丁目 立吉",
+    "address": "東京都新宿区新宿3-5-3 高山ランド会館9F",
+    "nearestStation": "新宿三丁目駅",
+    "tagline": "串揚げを中心に酒を楽しめるカウンター酒場",
+    "subCategories": [],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "純米酒専門YATA 新宿三丁目店",
+    "address": "東京都新宿区新宿3-14-22 小川ビル10F",
+    "nearestStation": "新宿三丁目駅",
+    "tagline": "純米酒を専門に楽しめる日本酒バー。酒ツウの一人飲みに強い",
+    "subCategories": [
+      "日本酒"
+    ],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 10,
+    "sourceNote": ""
+  },
+  {
+    "name": "Sake stanD 凛",
+    "address": "東京都新宿区西新宿1-4-11 宝ビル1F",
+    "nearestStation": "新宿西口駅",
+    "tagline": "日本酒をスタンド感覚で楽しめる人気酒場",
+    "subCategories": [
+      "日本酒"
+    ],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 10,
+    "sourceNote": ""
+  },
+  {
+    "name": "新宿 ばーる",
+    "address": "東京都新宿区西新宿1-16-9 盛栄ビルB1F",
+    "nearestStation": "新宿西口駅",
+    "tagline": "新宿西口で気軽に立ち飲みできる大衆酒場",
+    "subCategories": [],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 10,
+    "sourceNote": ""
+  },
+  {
+    "name": "銘酒 日本酒Bar酔ってこ",
+    "address": "東京都新宿区歌舞伎町1-1-10",
+    "nearestStation": "新宿三丁目駅",
+    "tagline": "深夜まで日本酒を楽しめる専門バー。夜遅い一人飲みにも強い",
+    "subCategories": [
+      "日本酒"
+    ],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 10,
+    "sourceNote": ""
   }
 ]
