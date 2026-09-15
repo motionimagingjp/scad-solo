@@ -218,5 +218,38 @@
     "senberoAvailable": false,
     "soloFriendliness": 8,
     "sourceNote": "https://www.shinatatsu.com/"
+  },
+  {
+    "name": "ぬる燗佐藤 御殿山茶寮",
+    "address": "東京都港区高輪3-26-27 エキュート品川2F",
+    "nearestStation": "品川駅",
+    "tagline": "日本酒の品揃えと燗酒を楽しめる駅ナカ日本酒専門系酒場",
+    "subCategories": ["日本酒", "燗酒", "地酒", "駅ナカ"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": "現在営業情報・所在地を確認。駅構内で一人利用しやすく、日本酒専門性が高い。"
+  },
+  {
+    "name": "Bar Rudi",
+    "address": "東京都港区港南2-2-2 富士ビル4F",
+    "nearestStation": "品川駅",
+    "tagline": "品川港南口の小規模バーで一人飲みに向く隠れ家的な一軒",
+    "subCategories": ["BAR", "カウンター", "ウイスキー", "隠れ家"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 10,
+    "sourceNote": "現在営業情報・所在地を確認。小規模バーとしてソロ適性を高く評価。"
+  },
+  {
+    "name": "アンテナアメリカ 品川店",
+    "address": "東京都港区港南2-18-1 アトレ品川3F",
+    "nearestStation": "品川駅",
+    "tagline": "アメリカンクラフトビールを中心に楽しめるビール専門系店舗",
+    "subCategories": ["クラフトビール", "アメリカンビール", "ビアバー"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 8,
+    "sourceNote": "現在営業情報・所在地を確認。アメリカンクラフトビール専門性を評価。"
   }
 ]

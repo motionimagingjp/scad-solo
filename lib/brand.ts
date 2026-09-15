@@ -32,7 +32,7 @@ type Brand = {
 };
 
 const PRODUCTION: Brand = {
-  appName: "Tokyo Solo Club",
+  appName: "Tokyo Solo Club（ソロ飲みDB)",
   description: "今夜のソロ飲みを1秒で決める",
   shareText: "一人でも気兼ねなく行ける店が、すぐ見つかる。SCAD-SOLO",
   userId: "demo-user",

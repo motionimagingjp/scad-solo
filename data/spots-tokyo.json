@@ -196,5 +196,71 @@
     "senberoAvailable": false,
     "soloFriendliness": 9,
     "sourceNote": ""
+  },
+  {
+    "name": "はせがわ酒店 グランスタ東京店",
+    "address": "東京都千代田区丸の内1-9-1 東京駅構内B1",
+    "nearestStation": "東京駅",
+    "tagline": "日本酒専門酒販店＋立ち飲みで希少酒と東京駅酒造場のどぶろくを楽しめる",
+    "subCategories": ["日本酒専門", "角打ち", "希少酒", "どぶろく", "立ち飲み"],
+    "hasCounterSeat": false,
+    "senberoAvailable": true,
+    "soloFriendliness": 10,
+    "sourceNote": "現在営業情報を確認。日本酒・どぶろく・和の酒を扱い、立席のみ。東京駅酒造場のどぶろくも提供。"
+  },
+  {
+    "name": "酛TOKYO",
+    "address": "東京都中央区八重洲2-2-1 東京ミッドタウン八重洲 セントラルタワー3F",
+    "nearestStation": "東京駅",
+    "tagline": "日本酒を主役にしたハイエンドな酒好き向け店舗",
+    "subCategories": ["日本酒", "日本酒ペアリング", "専門店", "酒肴"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 8,
+    "sourceNote": "現在営業情報・所在地を確認。日本酒専門性が高く、酒目的の利用に向く。"
+  },
+  {
+    "name": "呑うてんき",
+    "address": "東京都中央区八重洲1-5-17",
+    "nearestStation": "東京駅",
+    "tagline": "八重洲の小規模立ち飲みで一人酒に向く大衆酒場",
+    "subCategories": ["立ち飲み", "大衆酒場", "一人飲み", "酒肴"],
+    "hasCounterSeat": false,
+    "senberoAvailable": true,
+    "soloFriendliness": 10,
+    "sourceNote": "現在営業情報・所在地を確認。立食形式で低価格帯の一人飲みに適する。"
+  },
+  {
+    "name": "NIHONBASHI BREWERY. T.S",
+    "address": "東京都千代田区丸の内1-11-1",
+    "nearestStation": "東京駅",
+    "tagline": "クラフトビール専門性が高くオリジナルIPAなどを楽しめる東京駅近ビアバー",
+    "subCategories": ["クラフトビール", "ブルワリー", "IPA", "ビアバー"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 8,
+    "sourceNote": "現在営業情報・所在地を確認。クラフトビール専門性が高く、オリジナルビールを展開。"
+  },
+  {
+    "name": "Tokyo Station Beer Stand グランスタ東京",
+    "address": "東京都千代田区丸の内1-9-1 東京駅構内グランスタ東京B1F",
+    "nearestStation": "東京駅",
+    "tagline": "駅構内でクラフトビールを気軽に一杯飲める立ち飲み系スタンド",
+    "subCategories": ["クラフトビール", "ビールスタンド", "立ち飲み"],
+    "hasCounterSeat": false,
+    "senberoAvailable": true,
+    "soloFriendliness": 10,
+    "sourceNote": "現在営業情報・所在地を確認。立食形式で東京駅構内という高い利便性を評価。"
+  },
+  {
+    "name": "八重洲ワイン倶楽部",
+    "address": "東京都中央区日本橋2-3-18 江間忠さくらビルB1F",
+    "nearestStation": "東京駅",
+    "tagline": "八重洲エリアでワインを専門的に楽しめるワイン酒場",
+    "subCategories": ["ワイン", "ワインバー", "ワイン酒場", "カウンター"],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 8,
+    "sourceNote": "現在営業情報・所在地を確認。ワイン専門性と東京駅からの徒歩圏を評価。"
   }
 ]
