@@ -50,5 +50,18 @@
     "senberoAvailable": false,
     "soloFriendliness": 9,
     "sourceNote": ""
+  },
+  {
+    "name": "日本酒専門店 人形町 ぽんしゅ家",
+    "address": "東京都中央区日本橋蛎殻町1-11-9 マガザン人形町2F",
+    "nearestStation": "人形町駅",
+    "tagline": "日本酒ソムリエ厳選の酒を楽しむ専門店。1人用カウンターがあり酒ツウ向き",
+    "subCategories": [
+      "日本酒"
+    ],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 10,
+    "sourceNote": ""
   }
 ]

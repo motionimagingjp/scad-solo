@@ -314,5 +314,27 @@
     "senberoAvailable": false,
     "soloFriendliness": 9,
     "sourceNote": ""
+  },
+  {
+    "name": "BAR Shinjuku Whisky Salon",
+    "address": "東京都新宿区新宿3-12-1 佐藤ビル3F",
+    "nearestStation": "新宿三丁目駅",
+    "tagline": "ウイスキーを主役にした新宿三丁目の専門性の高いバー",
+    "subCategories": [],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 10,
+    "sourceNote": ""
+  },
+  {
+    "name": "BAR LIVET Whisky & Cocktail",
+    "address": "東京都新宿区新宿3-6-3 ISビル4F",
+    "nearestStation": "新宿三丁目駅",
+    "tagline": "ウイスキーを中心にカクテルも追求する新宿の人気専門バー",
+    "subCategories": [],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 10,
+    "sourceNote": ""
   }
 ]

@@ -114,5 +114,29 @@
     "senberoAvailable": false,
     "soloFriendliness": 8,
     "sourceNote": "https://midette.com/"
+  },
+  {
+    "name": "BAR PROLOGUE",
+    "address": "東京都中央区日本橋本石町4-4-17 青木ビル1F",
+    "nearestStation": "三越前駅",
+    "tagline": "ウイスキーとシガーを組み合わせて楽しむ酒ツウ向けバー",
+    "subCategories": [],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "神七",
+    "address": "東京都中央区日本橋本石町4-5-8 須田ビルB1F",
+    "nearestStation": "三越前駅",
+    "tagline": "日本橋エリアの地下酒場。日本酒と肴をじっくり楽しむ酒好き向け",
+    "subCategories": [
+      "日本酒"
+    ],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": ""
   }
 ]

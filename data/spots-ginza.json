@@ -268,5 +268,160 @@
     "senberoAvailable": false,
     "soloFriendliness": 9,
     "sourceNote": ""
+  },
+  {
+    "name": "洋酒博物館",
+    "address": "東京都中央区銀座6-9-13 中嶋ビル3F",
+    "nearestStation": "銀座駅",
+    "tagline": "洋酒全般を深く楽しめる銀座の老舗系マニアックバー",
+    "subCategories": [],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "ウイスキーバー日々輝",
+    "address": "東京都中央区銀座8-2-8 高坂ビル1F",
+    "nearestStation": "銀座駅",
+    "tagline": "ジャパニーズウイスキーを中心に落ち着いて飲める専門バー",
+    "subCategories": [],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "BAR CASIAN",
+    "address": "東京都中央区銀座6-7-9 丸喜ビル4F",
+    "nearestStation": "銀座駅",
+    "tagline": "銀座でウイスキーをじっくり楽しめる隠れ家的バー",
+    "subCategories": [],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "JWC LIBRARY 銀座シックス店",
+    "address": "東京都中央区銀座6-10-1 GINZA SIX B2F",
+    "nearestStation": "銀座駅",
+    "tagline": "希少ウイスキーの販売とカウンター試飲を楽しめるウイスキー専門店",
+    "subCategories": [],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "Jule's Whisky Collection",
+    "address": "東京都中央区銀座6-10-1 GINZA SIX B2F",
+    "nearestStation": "銀座駅",
+    "tagline": "希少ウイスキーを探す酒ツウ向けの専門コレクションショップ",
+    "subCategories": [],
+    "hasCounterSeat": false,
+    "senberoAvailable": false,
+    "soloFriendliness": 7,
+    "sourceNote": ""
+  },
+  {
+    "name": "Bar417",
+    "address": "東京都中央区銀座7-5-10 第2一越ビル5F",
+    "nearestStation": "銀座駅",
+    "tagline": "銀座並木通りでウイスキーを静かに楽しめる隠れ家型ボトルバー",
+    "subCategories": [],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 8,
+    "sourceNote": ""
+  },
+  {
+    "name": "WALK IN BAR MOD",
+    "address": "東京都中央区銀座3-4-12 文祥堂ビル1F",
+    "nearestStation": "銀座駅",
+    "tagline": "昼からウイスキーを楽しめる銀座の隠れ家的バー",
+    "subCategories": [],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "日本酒mekkemon",
+    "address": "東京都中央区銀座6-12-2 東京銀座ビルディングB1F",
+    "nearestStation": "東銀座駅",
+    "tagline": "銀座の地下に潜む日本酒専門系酒場。落ち着いて銘酒を追えるタイプ",
+    "subCategories": [
+      "日本酒"
+    ],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "庫裏 銀座店",
+    "address": "東京都中央区銀座6-4-15 トニービル2F",
+    "nearestStation": "銀座駅",
+    "tagline": "日本酒を少量ずつ試しながら銘柄を掘れる銀座の日本酒BAR",
+    "subCategories": [
+      "日本酒"
+    ],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "唎き酒処 酒の穴",
+    "address": "東京都中央区銀座3-3-1 ZOE銀座ビル5F",
+    "nearestStation": "銀座駅",
+    "tagline": "銀座で日本酒の利き酒・飲み比べを楽しむ老舗系酒処",
+    "subCategories": [
+      "日本酒"
+    ],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 8,
+    "sourceNote": ""
+  },
+  {
+    "name": "東銀座 日本酒 わのわ",
+    "address": "東京都中央区銀座4-13-19 銀鱗ビル2F",
+    "nearestStation": "東銀座駅",
+    "tagline": "歌舞伎座近くで日本酒と料理をじっくり楽しめる日本酒居酒屋",
+    "subCategories": [
+      "日本酒"
+    ],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 8,
+    "sourceNote": ""
+  },
+  {
+    "name": "日本酒専門店 銀座いさみ",
+    "address": "東京都中央区銀座8-6-4 銀座扇やビル2F",
+    "nearestStation": "銀座駅",
+    "tagline": "銀座の日本酒専門店。全国の日本酒を中心に酒好きが集う専門型店舗",
+    "subCategories": [
+      "日本酒"
+    ],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 8,
+    "sourceNote": ""
+  },
+  {
+    "name": "鮮魚・日本酒 えどわん",
+    "address": "東京都中央区銀座5-1-7 数寄屋橋ビルB1F",
+    "nearestStation": "銀座駅",
+    "tagline": "鮮魚と日本酒の組み合わせを攻める酒好き向け。魚系の酒の肴を重視",
+    "subCategories": [
+      "日本酒"
+    ],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 8,
+    "sourceNote": ""
   }
 ]

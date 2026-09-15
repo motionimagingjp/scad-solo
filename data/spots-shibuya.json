@@ -245,5 +245,51 @@
     "senberoAvailable": false,
     "soloFriendliness": 10,
     "sourceNote": ""
+  },
+  {
+    "name": "Bar Baron 渋谷 whisky&cocktail",
+    "address": "東京都渋谷区道玄坂2-6-15 鈴井ビルB1F",
+    "nearestStation": "渋谷駅",
+    "tagline": "ウイスキーとカクテルを深夜まで楽しめる渋谷のバー",
+    "subCategories": [],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "カリラ",
+    "address": "東京都渋谷区道玄坂1-13-3 MST道玄坂3F",
+    "nearestStation": "渋谷駅",
+    "tagline": "店名そのものがアイラモルトの銘柄というシングルモルト志向の専門バー",
+    "subCategories": [],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 10,
+    "sourceNote": ""
+  },
+  {
+    "name": "OLIM Bar 渋谷",
+    "address": "東京都渋谷区宇田川町33-10 J+Rビル サイドJ 3F",
+    "nearestStation": "渋谷駅",
+    "tagline": "ウイスキーとカクテルを静かに楽しめる渋谷の隠れ家バー",
+    "subCategories": [],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "日本酒 居酒屋 醸音屋 渋谷店",
+    "address": "東京都渋谷区渋谷2-11-1 ナガタビルB1F",
+    "nearestStation": "表参道駅",
+    "tagline": "渋谷と表参道の間で日本酒と和食を掘り下げる酒場。酒好き向け",
+    "subCategories": [
+      "日本酒"
+    ],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 8,
+    "sourceNote": ""
   }
 ]

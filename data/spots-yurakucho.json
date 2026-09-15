@@ -90,5 +90,27 @@
     "senberoAvailable": false,
     "soloFriendliness": 9,
     "sourceNote": ""
+  },
+  {
+    "name": "Whisky Bottle Bar DEN HIBIYA",
+    "address": "東京都千代田区有楽町1-2-15 マーカスオービットビルB1F",
+    "nearestStation": "日比谷駅",
+    "tagline": "ボトルキープ型でウイスキーを深く楽しむ日比谷の専門バー",
+    "subCategories": [],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "MIXOLOGY HERITAGE",
+    "address": "東京都千代田区内幸町1-7-1 日比谷OKUROJI G31",
+    "nearestStation": "日比谷駅",
+    "tagline": "ウイスキーを含む希少な酒とミクソロジーを融合した酒ツウ向けバー",
+    "subCategories": [],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": ""
   }
 ]

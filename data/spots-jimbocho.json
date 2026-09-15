@@ -82,5 +82,54 @@
     "senberoAvailable": false,
     "soloFriendliness": 9,
     "sourceNote": ""
+  },
+  {
+    "name": "Bar247",
+    "address": "東京都千代田区神田神保町2-24-7",
+    "nearestStation": "神保町駅",
+    "tagline": "厚岸や山崎シェリーカスクなどマニアックなボトルを揃える神保町の秘密基地",
+    "subCategories": [],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 10,
+    "sourceNote": ""
+  },
+  {
+    "name": "Bar Plat",
+    "address": "東京都千代田区神田神保町1-14-4 ミツワ神保町ビルB1F",
+    "nearestStation": "神保町駅",
+    "tagline": "神保町の路地でウイスキーを静かに追求できる小規模バー",
+    "subCategories": [],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 10,
+    "sourceNote": ""
+  },
+  {
+    "name": "Japanese Sake STAND 85",
+    "address": "東京都千代田区神田神保町2-28 神田製本会館ビル101",
+    "nearestStation": "神保町駅",
+    "tagline": "神保町の日本酒スタンド。少量で気になる銘柄を攻めたい酒ツウ向け",
+    "subCategories": [
+      "日本酒",
+      "立ち飲み"
+    ],
+    "hasCounterSeat": true,
+    "senberoAvailable": true,
+    "soloFriendliness": 10,
+    "sourceNote": ""
+  },
+  {
+    "name": "日本酒ペアリング 醸巣",
+    "address": "東京都千代田区西神田2-4-12 西神田イノセビル1F",
+    "nearestStation": "神保町駅",
+    "tagline": "日本酒と料理のペアリングを深掘りする専門店。食中酒好きのマニア向け",
+    "subCategories": [
+      "日本酒"
+    ],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 8,
+    "sourceNote": ""
   }
 ]

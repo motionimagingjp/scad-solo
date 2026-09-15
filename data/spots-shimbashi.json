@@ -279,5 +279,64 @@
     "senberoAvailable": false,
     "soloFriendliness": 10,
     "sourceNote": ""
+  },
+  {
+    "name": "Japanese Whisky Bar 七曲署",
+    "address": "東京都中央区銀座8-6-7 belle銀座IIビル2F",
+    "nearestStation": "新橋駅",
+    "tagline": "ジャパニーズウイスキーを深夜まで追求できるバー",
+    "subCategories": [],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 10,
+    "sourceNote": ""
+  },
+  {
+    "name": "新橋 バーデルタ",
+    "address": "東京都港区新橋2-15-11 橘ビル3階",
+    "nearestStation": "新橋駅",
+    "tagline": "ウイスキーを主軸にした新橋の小規模マニア向けバー",
+    "subCategories": [],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 10,
+    "sourceNote": ""
+  },
+  {
+    "name": "シングルモルトバー ムーンシャイン",
+    "address": "東京都港区新橋2-15-17 滑川ビル2F",
+    "nearestStation": "新橋駅",
+    "tagline": "シングルモルトを店名通り専門的に楽しめる新橋の老舗系バー",
+    "subCategories": [],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 10,
+    "sourceNote": ""
+  },
+  {
+    "name": "日本酒・本格焼酎bar うさぎ",
+    "address": "東京都港区新橋4-6-6 コメヤマビル2F",
+    "nearestStation": "新橋駅",
+    "tagline": "日本酒と本格焼酎を深掘りできる小規模BAR。酒そのものを楽しみたい人向け",
+    "subCategories": [
+      "日本酒"
+    ],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "和酒バル 廻(MEGURI)",
+    "address": "東京都港区新橋5-12-7 富永ビルB1F",
+    "nearestStation": "新橋駅",
+    "tagline": "日本酒と肴を主役にした新橋の酒処。食中酒と酒の肴を掘りたい人向け",
+    "subCategories": [
+      "日本酒"
+    ],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 8,
+    "sourceNote": ""
   }
 ]

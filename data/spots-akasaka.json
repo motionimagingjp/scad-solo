@@ -182,5 +182,64 @@
     "senberoAvailable": false,
     "soloFriendliness": 9,
     "sourceNote": ""
+  },
+  {
+    "name": "Whisky Bottle Bar ピレネ",
+    "address": "東京都港区赤坂6-13-19 オリエント赤坂1F",
+    "nearestStation": "赤坂駅",
+    "tagline": "ボトルバー形式でウイスキーをじっくり楽しめる赤坂の専門店",
+    "subCategories": [],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "赤坂 bottle bar bloc",
+    "address": "東京都港区赤坂3-21-11 西脇ビル3F",
+    "nearestStation": "赤坂見附駅",
+    "tagline": "ボトルをじっくり選びながら飲める赤坂のウイスキー系バー",
+    "subCategories": [],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": ""
+  },
+  {
+    "name": "Whiskey Bar 赤坂 赤煉瓦",
+    "address": "東京都港区赤坂3-14-2 ドルミ赤坂B1F",
+    "nearestStation": "赤坂駅",
+    "tagline": "深夜までウイスキーを追求できる赤坂のマニア向けバー",
+    "subCategories": [],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 10,
+    "sourceNote": ""
+  },
+  {
+    "name": "和酒旬菜 縷々",
+    "address": "東京都港区赤坂6-13-6 赤坂キャステール2F",
+    "nearestStation": "赤坂駅",
+    "tagline": "和酒と旬菜を組み合わせる赤坂の小さな酒処。料理と日本酒を深掘りしたい人向け",
+    "subCategories": [
+      "日本酒"
+    ],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 8,
+    "sourceNote": ""
+  },
+  {
+    "name": "酒肴ほたる",
+    "address": "東京都港区赤坂3-19-1 東京農村ビル2F",
+    "nearestStation": "赤坂見附駅",
+    "tagline": "酒の肴を軸に日本酒を楽しむ赤坂の酒場。料理込みで酒を楽しむタイプ",
+    "subCategories": [
+      "日本酒"
+    ],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 8,
+    "sourceNote": ""
   }
 ]

@@ -173,5 +173,44 @@
     "senberoAvailable": false,
     "soloFriendliness": 9,
     "sourceNote": ""
+  },
+  {
+    "name": "サケラバ",
+    "address": "東京都千代田区内神田3-10-9 DK愛和1ビル2F",
+    "nearestStation": "神田駅",
+    "tagline": "日本酒好きが集まる専門性の高い日本酒BAR。銘柄探求型の一人飲みに強い",
+    "subCategories": [
+      "日本酒"
+    ],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 10,
+    "sourceNote": ""
+  },
+  {
+    "name": "日本酒バルかぐら 神田店",
+    "address": "東京都千代田区神田多町2-2-3 元気ビル",
+    "nearestStation": "神田駅",
+    "tagline": "神田の日本酒バル。全国の地酒と料理を合わせて楽しみたい酒好き向け",
+    "subCategories": [
+      "日本酒"
+    ],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 8,
+    "sourceNote": ""
+  },
+  {
+    "name": "sakeria BANCO",
+    "address": "東京都千代田区内神田3-2-10 トーセイホテルココネ神田1F",
+    "nearestStation": "神田駅",
+    "tagline": "日本酒を中心に酒と料理を楽しむ神田の酒場。酒好きがふらっと入れるタイプ",
+    "subCategories": [
+      "日本酒"
+    ],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": ""
   }
 ]

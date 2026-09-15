@@ -50,5 +50,53 @@
     "senberoAvailable": false,
     "soloFriendliness": 9,
     "sourceNote": ""
+  },
+  {
+    "name": "Whisky Bar 神楽坂aura",
+    "address": "東京都新宿区神楽坂5-1 神楽坂テラスB1F",
+    "nearestStation": "牛込神楽坂駅",
+    "tagline": "神楽坂でウイスキーをじっくり味わえる専門バー",
+    "subCategories": [],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 10,
+    "sourceNote": ""
+  },
+  {
+    "name": "Mizunara: In Tokyo",
+    "address": "東京都新宿区神楽坂3-1-11 かくれんぼ横丁会館103",
+    "nearestStation": "飯田橋駅",
+    "tagline": "ミズナラ樽やジャパニーズウイスキーに注目した神楽坂のマニア向けバー",
+    "subCategories": [],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 10,
+    "sourceNote": ""
+  },
+  {
+    "name": "坂下良酒倉庫",
+    "address": "東京都新宿区神楽坂1-11 ふぁーぶる1 2F",
+    "nearestStation": "飯田橋駅",
+    "tagline": "神楽坂の路地裏にある日本酒専門酒場。60mlから多銘柄を試せる酒好きの隠れ家",
+    "subCategories": [
+      "日本酒"
+    ],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 10,
+    "sourceNote": ""
+  },
+  {
+    "name": "SAKE BAR オトナリ",
+    "address": "東京都新宿区神楽坂5-35 おおとりビルB1F",
+    "nearestStation": "牛込神楽坂駅",
+    "tagline": "魚に合う日本酒をテーマにした小さなSAKE BAR。カウンターでしっぽり飲める",
+    "subCategories": [
+      "日本酒"
+    ],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 10,
+    "sourceNote": ""
   }
 ]

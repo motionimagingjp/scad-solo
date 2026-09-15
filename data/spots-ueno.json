@@ -230,5 +230,29 @@
     "senberoAvailable": true,
     "soloFriendliness": 10,
     "sourceNote": ""
+  },
+  {
+    "name": "The Auditorium",
+    "address": "東京都台東区上野7-6-7 橋本ビル1F",
+    "nearestStation": "上野駅",
+    "tagline": "ジャパニーズウイスキーと音楽をテーマにした上野の専門性高めのバー",
+    "subCategories": [],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 10,
+    "sourceNote": ""
+  },
+  {
+    "name": "Premium Sake Pub Gashue",
+    "address": "東京都台東区東上野2-13-5 興和第二ビル1F",
+    "nearestStation": "上野広小路駅",
+    "tagline": "プレミアム日本酒を主役にした酒場。希少銘柄を狙う酒好き向け",
+    "subCategories": [
+      "日本酒"
+    ],
+    "hasCounterSeat": true,
+    "senberoAvailable": false,
+    "soloFriendliness": 9,
+    "sourceNote": ""
   }
 ]
