@@ -6,6 +6,7 @@ import dateBatch1 from "@/data/scene-candidates-date-batch1.json";
 import dateBatch2 from "@/data/scene-candidates-date-batch2.json";
 import dateBatch3 from "@/data/scene-candidates-date-batch3.json";
 import groupBatch1 from "@/data/scene-candidates-group-batch1.json";
+import groupBatch2 from "@/data/scene-candidates-group-batch2.json";
 
 // デート・グループ向けに新規収集した候補店舗(data/scene-candidates-*.json)をDBへ
 // 一括投入する管理用エンドポイント。/api/admin/import-spots と同じ構成
@@ -23,7 +24,13 @@ export const preferredRegion = "sin1";
 // 逐次ジオコーディングするとVercelのデフォルトタイムアウトを超えかねないため延長
 export const maxDuration = 60;
 
-const ALL_CANDIDATES: SceneCandidate[] = [...dateBatch1, ...dateBatch2, ...dateBatch3, ...groupBatch1] as SceneCandidate[];
+const ALL_CANDIDATES: SceneCandidate[] = [
+  ...dateBatch1,
+  ...dateBatch2,
+  ...dateBatch3,
+  ...groupBatch1,
+  ...groupBatch2,
+] as SceneCandidate[];
 
 export async function GET(req: NextRequest) {
   const { searchParams } = new URL(req.url);
