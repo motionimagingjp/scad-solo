@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { ChevronLeft } from "lucide-react";
 import BottomNav from "@/components/BottomNav";
+import ShareButton from "@/components/ShareButton";
 
 // ソロチン: その場にいる複数人(2〜8人)で1台のスマホを回して遊ぶチンチロ。
 // 「人数を入れて対戦」という元の企画通り、対戦相手はランダムな胴元ではなく実在の人。
@@ -174,6 +175,15 @@ export default function ChinchiroPage() {
     .map((r, i) => ({ ...r, order: i }))
     .sort((x, y) => y.rankValue - x.rankValue || x.order - y.order);
 
+  const shareText =
+    phase === "result" && ranked.length > 0
+      ? soloMode
+        ? ranked[0].player === 2
+          ? "🎲 ソロチンでAIに勝った!"
+          : "🎲 ソロチンでAIに負けた..."
+        : `🎲 ソロチンでプレイヤー${ranked[0].player}が優勝!`
+      : "🎲 ソロチンで盛り上がり中";
+
   return (
     <div className="mx-auto flex min-h-dvh max-w-md flex-col bg-gray-50 pb-16">
       <header className="flex items-center gap-2 border-b bg-white px-4 py-3">
@@ -181,6 +191,9 @@ export default function ChinchiroPage() {
           <ChevronLeft size={16} /> 戻る
         </Link>
         <h1 className="text-base font-bold">🎲 ソロチン</h1>
+        <div className="ml-auto">
+          <ShareButton text={shareText} />
+        </div>
       </header>
 
       {phase === "setup" && (

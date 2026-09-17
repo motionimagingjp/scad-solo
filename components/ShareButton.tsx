@@ -8,12 +8,14 @@ import { APP_ABOUT } from "@/lib/data/about";
 // ヘッダーに置くアプリ共有ボタン。対応端末(主にスマホのブラウザ)はOS標準の
 // 共有シートを開き、非対応(主にPCブラウザ)ではURLをクリップボードにコピーして
 // チェックマークで一瞬フィードバックする。
-export default function ShareButton() {
+// textを渡すと、ゲーム画面から「今の結果」など状況に応じた文言でシェアできる
+// (省略時はアプリ紹介文のデフォルトにフォールバック)。
+export default function ShareButton({ text }: { text?: string } = {}) {
   const [copied, setCopied] = useState(false);
 
   const handleShare = async () => {
     const url = window.location.origin;
-    const shareData = { title: BRAND.appName, text: APP_ABOUT.tagline, url };
+    const shareData = { title: BRAND.appName, text: text ?? APP_ABOUT.tagline, url };
 
     if (navigator.share) {
       try {

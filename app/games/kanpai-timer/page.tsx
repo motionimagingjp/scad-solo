@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { ChevronLeft } from "lucide-react";
 import BottomNav from "@/components/BottomNav";
+import ShareButton from "@/components/ShareButton";
 
 // ソロ乾杯: 乾杯するたびにボタンを押すだけで、次の一杯までの間隔を記録する。
 // 記録の目的は「今日は自分のペースを知る」程度のゆるいもので、飲酒を煽る要素は入れない
@@ -116,6 +117,8 @@ export default function KanpaiTimerPage() {
   const totalElapsed = sessionStart !== null ? now - sessionStart : 0;
   const avgIntervalMs = drinks.length > 0 ? drinks.reduce((sum, d) => sum + d.intervalMs, 0) / drinks.length : 0;
 
+  const shareText = drinks.length > 0 ? `⏱ ソロ乾杯、${drinks.length}杯目に突入!` : "⏱ ソロ乾杯で飲みペースを記録中";
+
   return (
     <div className="mx-auto flex min-h-dvh max-w-md flex-col bg-gray-50 pb-16">
       <header className="flex items-center gap-2 border-b bg-white px-4 py-3">
@@ -123,6 +126,9 @@ export default function KanpaiTimerPage() {
           <ChevronLeft size={16} /> 戻る
         </Link>
         <h1 className="text-base font-bold">⏱ ソロ乾杯</h1>
+        <div className="ml-auto">
+          <ShareButton text={shareText} />
+        </div>
       </header>
 
       {phase === "idle" && (
