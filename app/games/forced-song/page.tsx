@@ -4,6 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { ChevronLeft } from "lucide-react";
 import BottomNav from "@/components/BottomNav";
+import ShareButton from "@/components/ShareButton";
 import { SONGS, type Song } from "@/lib/data/songs";
 
 // 強制選曲モード: 3曲引いて、その中から1曲を選ぶ。選んだら1番(サビ前)は最後まで歌いきる。
@@ -35,6 +36,8 @@ export default function ForcedSongPage() {
 
   const finish = () => setPhase("intro");
 
+  const shareText = selected ? `🎤 強制選曲で「${selected.title}」を熱唱中!` : "🎤 強制選曲モードに挑戦中";
+
   return (
     <div className="mx-auto flex min-h-dvh max-w-md flex-col bg-gray-50 pb-16">
       <header className="flex items-center gap-2 border-b bg-white px-4 py-3">
@@ -42,6 +45,9 @@ export default function ForcedSongPage() {
           <ChevronLeft size={16} /> 戻る
         </Link>
         <h1 className="text-base font-bold">🎤 強制選曲モード</h1>
+        <div className="ml-auto">
+          <ShareButton text={shareText} />
+        </div>
       </header>
 
       {phase === "intro" && (
