@@ -1,0 +1,92 @@
+[
+  {
+    "name": "田家",
+    "address": "東京都豊島区池袋2-43-7 ダイチツムラビル",
+    "nearestStation": "池袋駅",
+    "tagline": "旬の日本料理と希少酒",
+    "subCategories": ["日本料理", "日本酒", "豚しゃぶ"],
+    "hasCounterSeat": true,
+    "hasPrivateRoom": true,
+    "acceptsReservation": true,
+    "senberoAvailable": false,
+    "sourceNote": "公式: https://www.taya.tokyo/ WebSearchで住所を再確認済み(2026-09-17、前回提出の「西池袋1-38-1 池袋YSステージ」は誤りだった)。",
+    "scenes": [
+      { "scene": "DATE", "score": 9, "reason": "落ち着いた個室と季節料理で大切な相手との食事に向く", "budgetMin": 8800, "budgetMax": 11000 }
+    ]
+  },
+  {
+    "name": "蟹まみれTOKYO",
+    "address": "東京都豊島区東池袋1-42-8 第一イン池袋B1F",
+    "nearestStation": "池袋駅",
+    "tagline": "蟹食べ放題とカップル席",
+    "subCategories": ["かに", "寿司", "海鮮"],
+    "hasCounterSeat": true,
+    "hasPrivateRoom": true,
+    "acceptsReservation": true,
+    "senberoAvailable": false,
+    "sourceNote": "食べログ: https://tabelog.com/tokyo/A1305/A130501/13307385/ WebSearchで住所を再確認済み(2026-09-17、前回提出の「西池袋1-37-12 ロサ会館」は誤りだった。東池袋が正しい)。",
+    "scenes": [
+      { "scene": "DATE", "score": 8, "reason": "カップルシートや半個室があり2名利用に対応", "budgetMin": 6000, "budgetMax": 8000 }
+    ]
+  },
+  {
+    "name": "Madera",
+    "address": "東京都中央区銀座6-13-13 銀座S2ビルB1F",
+    "nearestStation": "東銀座駅",
+    "tagline": "銀座地下の大人のワインバー",
+    "subCategories": ["ワインバー", "スペイン料理", "イタリアン"],
+    "hasCounterSeat": true,
+    "hasPrivateRoom": true,
+    "acceptsReservation": true,
+    "senberoAvailable": false,
+    "sourceNote": "食べログ: https://tabelog.com/tokyo/A1301/A130101/13281196/ WebSearchで住所を再確認済み(2026-09-17、前回提出の「銀座6-5-15 銀座能楽堂ビル」は誤りだった)。",
+    "scenes": [
+      { "scene": "DATE", "score": 9, "reason": "落ち着いた店内と半個室がありワインデートに向く", "budgetMin": 6000, "budgetMax": 8000 }
+    ]
+  },
+  {
+    "name": "焼鳥 鐡",
+    "address": "東京都新宿区西新宿7-10-10 B1F",
+    "nearestStation": "新宿駅",
+    "tagline": "職人焼鳥とワインの隠れ家",
+    "subCategories": ["焼き鳥", "鳥料理", "ワイン"],
+    "hasCounterSeat": true,
+    "hasPrivateRoom": true,
+    "acceptsReservation": true,
+    "senberoAvailable": false,
+    "sourceNote": "食べログ100名店(2022)。西新宿地下の隠れ家。WebSearchで住所(番地)を再確認済み(2026-09-17)。",
+    "scenes": [
+      { "scene": "DATE", "score": 9, "reason": "静かな大人の空間と完全個室がありデートに適する", "budgetMin": 8800, "budgetMax": 11000 }
+    ]
+  },
+  {
+    "name": "魚心 新宿総本店",
+    "address": "東京都新宿区歌舞伎町2-36-3 新宿アシベ会館1F",
+    "nearestStation": "西武新宿駅",
+    "tagline": "大ぶりのネタが名物の寿司居酒屋",
+    "subCategories": ["寿司", "海鮮", "居酒屋"],
+    "hasCounterSeat": true,
+    "hasPrivateRoom": true,
+    "acceptsReservation": true,
+    "senberoAvailable": false,
+    "sourceNote": "食べログ: https://tabelog.com/tokyo/A1304/A130401/13072719/ WebSearchで住所を再確認済み(2026-09-17、前回提出の「歌舞伎町1-17-12 浅川ビル」は誤りだった)。",
+    "scenes": [
+      { "scene": "DATE", "score": 8, "reason": "2名から利用できる完全個室があり寿司デートに対応", "budgetMin": 8000, "budgetMax": 10000 }
+    ]
+  },
+  {
+    "name": "ヴィラッツァ",
+    "address": "東京都渋谷区代々木2-3-1 ホテルサンルートプラザ新宿1F",
+    "nearestStation": "新宿駅",
+    "tagline": "ホテル内の本格イタリアン",
+    "subCategories": ["イタリアン", "ステーキ", "ワイン"],
+    "hasCounterSeat": true,
+    "hasPrivateRoom": false,
+    "acceptsReservation": true,
+    "senberoAvailable": false,
+    "sourceNote": "公式: https://villazza.jp/shinjuku/access.html WebSearchでホテル住所を再確認済み(2026-09-17、前回は「京王プラザホテル」と誤記、かつ住所表記が割れていたため保留していた)。",
+    "scenes": [
+      { "scene": "DATE", "score": 8, "reason": "ホテル内の落ち着いた空間でテーブル席と半個室を利用できる", "budgetMin": 8000, "budgetMax": 10000 }
+    ]
+  }
+]
