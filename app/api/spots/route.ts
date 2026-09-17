@@ -14,10 +14,19 @@ export const preferredRegion = "sin1";
 
 const FIELD_FILTERS: Record<
   string,
-  "hasCounterSeat" | "senberoAvailable" | "hasPrivateRoom" | "hasAllYouCanDrink" | "hasCourse" | "canCharter"
+  | "hasCounterSeat"
+  | "senberoAvailable"
+  | "hasTableSeat"
+  | "acceptsReservation"
+  | "hasPrivateRoom"
+  | "hasAllYouCanDrink"
+  | "hasCourse"
+  | "canCharter"
 > = {
   "カウンター席": "hasCounterSeat",
   "せんべろ": "senberoAvailable",
+  "テーブル席": "hasTableSeat",
+  "予約可": "acceptsReservation",
   "個室": "hasPrivateRoom",
   "飲み放題": "hasAllYouCanDrink",
   "コース": "hasCourse",
@@ -59,8 +68,10 @@ export async function GET(req: NextRequest) {
   // 「近い順」の絞り込みはクライアント側(座標がここには来ない)で行うため、
   // ここで件数を絞ると「たまたまDBの先頭にある店」だけが対象になり、検索場所に
   // 関係なく同じ一部の店ばかり出てしまう(take:50・orderBy無しで実際に発生した不具合)。
-  // 現状194件程度なので、当面は上限だけ余裕を持たせて全件返す。
-  const spots = await prisma.spot.findMany({ where, take: 500 });
+  // 店舗が662件まで増えて上限500に達していたため引き上げた。
+  // ただし全件をクライアントに返す構造自体が件数に耐えないので、計画通り数千件まで
+  // 増やすなら基準地をAPIに渡してDB側で距離を絞る作りに変える必要がある。
+  const spots = await prisma.spot.findMany({ where, take: 5000 });
 
   return NextResponse.json({
     spots: spots.map((s) => ({

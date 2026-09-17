@@ -56,13 +56,18 @@ model Spot {
   geocodePlaceId String?
   geocodedAt     DateTime? // 座標取得日時。30日以内の再取得判定に使う
 
-  // グループ(会社同僚)向け属性。null=未確認。groupInfoVerifiedAtがセットされるまでグループ検索には出さない
+  // 席・予約の情報。null=未確認。デート・グループの判定に使う。
+  // グループは2-4名(45-65歳)がターゲットなので、テーブル席の有無が必須条件になる
+  // (4人がカウンター横一列だと会話が成立しないため)。飲み放題・コース・貸切は
+  // 8名以上の幹事向けの条件で、現ターゲットでは検索に使っていない
+  hasTableSeat        Boolean?
+  acceptsReservation  Boolean?
   maxGroupSize        Int?
   hasPrivateRoom      Boolean?
   hasAllYouCanDrink   Boolean?
   hasCourse           Boolean?
   canCharter          Boolean?
-  groupInfoVerifiedAt DateTime?
+  groupInfoVerifiedAt DateTime? // グループ向け情報の確認日時。入るまでグループ検索には出さない
 
   @@index([category])
   @@index([latitude, longitude])

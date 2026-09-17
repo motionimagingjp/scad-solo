@@ -1,0 +1,332 @@
+[
+  {
+    "name": "中目黒いぐち 上ル",
+    "address": "東京都渋谷区東3-25-6 楠ビル5F",
+    "nearestStation": "恵比寿駅",
+    "tagline": "看板のない大人の隠れ家天ぷら",
+    "subCategories": ["天ぷら", "日本料理", "日本酒", "ワイン", "隠れ家"],
+    "hasCounterSeat": true,
+    "hasPrivateRoom": true,
+    "acceptsReservation": true,
+    "senberoAvailable": false,
+    "sourceNote": "食べログ: https://tabelog.com/tokyo/A1303/A130302/13184983/ 恵比寿駅徒歩3分、カウンター8席・4名個室、予約可、夜予算8,000〜9,999円。WebSearchで実在確認済み(2026-09-17)。",
+    "scenes": [
+      { "scene": "DATE", "score": 10, "reason": "看板のない隠れ家で横並びカウンターと個室を選べる", "budgetMin": 8000, "budgetMax": 9999 }
+    ]
+  },
+  {
+    "name": "ta.bacco",
+    "address": "東京都渋谷区恵比寿西1-13-7 恵比寿西5ビル2F",
+    "nearestStation": "恵比寿駅",
+    "tagline": "ライブキッチンを囲む隠れ家ワインビストロ",
+    "subCategories": ["イタリアン", "ワイン", "ワインバー", "カウンター", "隠れ家"],
+    "hasCounterSeat": true,
+    "hasPrivateRoom": false,
+    "acceptsReservation": true,
+    "senberoAvailable": false,
+    "sourceNote": "食べログ: https://tabelog.com/tokyo/A1303/A130302/13270688/ 恵比寿駅徒歩2分、予約可。WebSearchで実在確認済み(2026-09-17)。",
+    "scenes": [
+      { "scene": "DATE", "score": 10, "reason": "看板のない隠れ家でライブキッチンを囲んで会話しやすい", "budgetMin": 8000, "budgetMax": 9999 }
+    ]
+  },
+  {
+    "name": "ビストロフジ",
+    "address": "東京都渋谷区恵比寿西1-8-10 高橋ビル2F",
+    "nearestStation": "恵比寿駅",
+    "tagline": "キャンドルが灯る隠れ家ビストロ",
+    "subCategories": ["ビストロ", "ワイン", "ステーキ", "カウンター", "隠れ家"],
+    "hasCounterSeat": true,
+    "hasPrivateRoom": false,
+    "acceptsReservation": true,
+    "senberoAvailable": false,
+    "sourceNote": "食べログ: https://tabelog.com/tokyo/A1303/A130302/13227088/ 恵比寿駅徒歩2分、カウンター席あり。WebSearchで実在確認済み(2026-09-17)。",
+    "scenes": [
+      { "scene": "DATE", "score": 9, "reason": "キャンドルの落ち着いた空間とカウンターがデート向き", "budgetMin": 8000, "budgetMax": 9999 }
+    ]
+  },
+  {
+    "name": "鳥つた",
+    "address": "東京都渋谷区恵比寿1-22-12 エビステルコ2F",
+    "nearestStation": "恵比寿駅",
+    "tagline": "落ち着いた空間で楽しむ焼鳥の名店",
+    "subCategories": ["焼鳥", "鶏料理", "カウンター", "日本酒"],
+    "hasCounterSeat": true,
+    "hasPrivateRoom": false,
+    "acceptsReservation": true,
+    "senberoAvailable": false,
+    "sourceNote": "食べログ: https://tabelog.com/tokyo/A1303/A130302/13237390/ 恵比寿駅徒歩5分、予約可。WebSearchで実在確認済み(2026-09-17)。",
+    "scenes": [
+      { "scene": "DATE", "score": 9, "reason": "カウンターで店員との距離が近く落ち着いて食事できる", "budgetMin": 8000, "budgetMax": 9999 }
+    ]
+  },
+  {
+    "name": "福味み",
+    "address": "東京都渋谷区恵比寿南2-3-15 oak7ビル2F",
+    "nearestStation": "恵比寿駅",
+    "tagline": "日本酒を楽しめる大人の和食酒場",
+    "subCategories": ["日本料理", "日本酒バー", "日本酒", "カウンター"],
+    "hasCounterSeat": true,
+    "hasPrivateRoom": false,
+    "acceptsReservation": true,
+    "senberoAvailable": false,
+    "sourceNote": "食べログ: https://tabelog.com/tokyo/A1303/A130302/13277071/ 予約可、カウンター12席。住所はWebSearchで修正(提出時は「VANDAビル」だったが実際は「恵比寿南2-3-15 oak7ビル2F」。2026-09-17確認)。",
+    "scenes": [
+      { "scene": "DATE", "score": 9, "reason": "日本酒を話題にしながらカウンターで過ごせる", "budgetMin": 8000, "budgetMax": 9999 }
+    ]
+  },
+  {
+    "name": "恵比寿 サクレフルール",
+    "address": "東京都渋谷区恵比寿西1-7-10 大須賀ビル1F・2F",
+    "nearestStation": "恵比寿駅",
+    "tagline": "薪焼きステーキと厳選ワインの隠れ家",
+    "subCategories": ["ステーキ", "ビストロ", "ワイン", "個室"],
+    "hasCounterSeat": false,
+    "hasPrivateRoom": true,
+    "acceptsReservation": true,
+    "senberoAvailable": false,
+    "sourceNote": "公式: https://sacreefleur-ebisu.com/ 食べログ: https://tabelog.com/tokyo/A1303/A130302/13295535/ 恵比寿駅徒歩3分、個室あり。WebSearchで実在確認済み(2026-09-17)。",
+    "scenes": [
+      { "scene": "DATE", "score": 10, "reason": "薪焼き料理とワインを楽しめる大人向け個室がある", "budgetMin": 6000, "budgetMax": 9999 }
+    ]
+  },
+  {
+    "name": "オステリアラリベラ",
+    "address": "東京都渋谷区恵比寿南1-18-11 西田ビル1F",
+    "nearestStation": "恵比寿駅",
+    "tagline": "鎌倉野菜とワインを楽しむ大人のオステリア",
+    "subCategories": ["イタリアン", "ワイン", "ワインバー", "カウンター"],
+    "hasCounterSeat": true,
+    "hasPrivateRoom": false,
+    "acceptsReservation": true,
+    "senberoAvailable": false,
+    "sourceNote": "食べログ: https://tabelog.com/tokyo/A1303/A130302/13130596/table/ 恵比寿駅徒歩5分、カウンターあり。WebSearchで実在確認済み(2026-09-17)。",
+    "scenes": [
+      { "scene": "DATE", "score": 9, "reason": "ワインと料理を楽しみながらカウンターで会話しやすい", "budgetMin": 6000, "budgetMax": 7999 }
+    ]
+  },
+  {
+    "name": "イル ジェンティーレ",
+    "address": "東京都渋谷区恵比寿南2-1-5 ES215ビル2F",
+    "nearestStation": "恵比寿駅",
+    "tagline": "厳選ワインを楽しむ恵比寿の隠れ家",
+    "subCategories": ["ワインバー", "イタリアン", "ワイン", "カウンター"],
+    "hasCounterSeat": true,
+    "hasPrivateRoom": false,
+    "acceptsReservation": true,
+    "senberoAvailable": false,
+    "sourceNote": "食べログ: https://tabelog.com/tokyo/A1303/A130302/13165946/ 恵比寿駅徒歩3分。住所はWebSearchで修正(提出時は「恵比寿南1-9-12 ピトレスクビル」だったが実際は「恵比寿南2-1-5 ES215ビル」。2026-09-17確認)。",
+    "scenes": [
+      { "scene": "DATE", "score": 9, "reason": "ソムリエの知識を楽しみながらワインデートができる", "budgetMin": 6000, "budgetMax": 7999 }
+    ]
+  },
+  {
+    "name": "tTure",
+    "address": "東京都渋谷区恵比寿西2-8-11 グランベル恵比寿IV 2F",
+    "nearestStation": "恵比寿駅",
+    "tagline": "100種類以上の自然派ワインとビストロ",
+    "subCategories": ["ナチュラルワイン", "ワインバー", "ビストロ", "カウンター"],
+    "hasCounterSeat": true,
+    "hasPrivateRoom": false,
+    "acceptsReservation": true,
+    "senberoAvailable": false,
+    "sourceNote": "食べログ: https://tabelog.com/tokyo/A1303/A130302/ 恵比寿駅徒歩5分、100種類以上のナチュラルワイン。WebSearchで実在確認済み(2026-09-17)。",
+    "scenes": [
+      { "scene": "DATE", "score": 9, "reason": "自然派ワインを選びながら会話を楽しめる", "budgetMin": 6000, "budgetMax": 7999 }
+    ]
+  },
+  {
+    "name": "Bistro d'ami",
+    "address": "東京都渋谷区恵比寿1-16-33 第2ASビル1F",
+    "nearestStation": "恵比寿駅",
+    "tagline": "カウンターで楽しむ日常使いのワインビストロ",
+    "subCategories": ["ビストロ", "フレンチ", "ワイン", "カウンター"],
+    "hasCounterSeat": true,
+    "hasPrivateRoom": false,
+    "acceptsReservation": true,
+    "senberoAvailable": false,
+    "sourceNote": "恵比寿駅徒歩2分。WebSearchで実在確認済み(2026-09-17)。",
+    "scenes": [
+      { "scene": "DATE", "score": 8, "reason": "カウンター中心でワインを気軽に楽しめる", "budgetMin": 6000, "budgetMax": 7999 }
+    ]
+  },
+  {
+    "name": "目黒の和食 さとう",
+    "address": "東京都品川区上大崎2-13-26 メイプルトップビルB1F",
+    "nearestStation": "目黒駅",
+    "tagline": "日本酒と牛鍋を楽しむ大人の隠れ家",
+    "subCategories": ["日本料理", "日本酒", "牛鍋", "個室", "カウンター"],
+    "hasCounterSeat": true,
+    "hasPrivateRoom": true,
+    "acceptsReservation": true,
+    "senberoAvailable": false,
+    "sourceNote": "食べログ: https://tabelog.com/tokyo/A1316/A131601/13160383/ 目黒駅徒歩3分、カウンターあり・個室あり。WebSearchで実在確認済み(2026-09-17)。",
+    "scenes": [
+      { "scene": "DATE", "score": 10, "reason": "和食と日本酒を楽しめる落ち着いた隠れ家", "budgetMin": 8000, "budgetMax": 9999 }
+    ]
+  },
+  {
+    "name": "Natural Wine Base KOTOBUKI 池袋",
+    "address": "東京都豊島区西池袋1-28 第二西池袋ビル5F",
+    "nearestStation": "池袋駅",
+    "tagline": "120種以上のナチュラルワインを楽しむ隠れ家",
+    "subCategories": ["ナチュラルワイン", "ワインバー", "イタリアン", "個室", "カウンター"],
+    "hasCounterSeat": true,
+    "hasPrivateRoom": true,
+    "acceptsReservation": true,
+    "senberoAvailable": false,
+    "sourceNote": "池袋駅徒歩1分、ナチュラルワイン常時100種以上、個室・カウンターあり。住所はWebSearchで修正(提出時は「西池袋1-1-25」だったが実際は「西池袋1-28 第二西池袋ビル5F」。2026-09-17確認)。",
+    "scenes": [
+      { "scene": "DATE", "score": 8, "reason": "豊富なナチュラルワインを選ぶ楽しみがある", "budgetMin": 6000, "budgetMax": 7999 }
+    ]
+  },
+  {
+    "name": "音音 池袋店",
+    "address": "東京都豊島区南池袋1-19-5 MI PLAZA 5F",
+    "nearestStation": "池袋駅",
+    "tagline": "個室で楽しむ和食と全国の日本酒",
+    "subCategories": ["日本料理", "日本酒", "個室", "和食"],
+    "hasCounterSeat": false,
+    "hasPrivateRoom": true,
+    "acceptsReservation": true,
+    "senberoAvailable": false,
+    "sourceNote": "池袋駅徒歩3分、2名から完全個室利用可、全国の日本酒。WebSearchで実在確認済み(2026-09-17)。",
+    "scenes": [
+      { "scene": "DATE", "score": 8, "reason": "2人から利用できる個室で日本酒と和食を楽しめる", "budgetMin": 6000, "budgetMax": 7999 }
+    ]
+  },
+  {
+    "name": "池袋焼肉kintan",
+    "address": "東京都豊島区西池袋3-27-12 池袋ウエストパークビルB1F",
+    "nearestStation": "池袋駅",
+    "tagline": "個室で楽しむ上質な黒毛和牛焼肉",
+    "subCategories": ["焼肉", "黒毛和牛", "ワイン", "個室"],
+    "hasCounterSeat": false,
+    "hasPrivateRoom": true,
+    "acceptsReservation": true,
+    "senberoAvailable": false,
+    "sourceNote": "池袋駅1b出口より徒歩10秒、2名から個室あり(個室7部屋)。WebSearchで実在確認済み(2026-09-17)。",
+    "scenes": [
+      { "scene": "DATE", "score": 9, "reason": "2名個室で上質な肉と酒をゆっくり楽しめる", "budgetMin": 8000, "budgetMax": 9999 }
+    ]
+  },
+  {
+    "name": "GINTO 池袋店",
+    "address": "東京都豊島区南池袋1-19-5 Gビル南池袋01 4F",
+    "nearestStation": "池袋駅",
+    "tagline": "記念日に使いやすい洗練されたフレンチ",
+    "subCategories": ["フレンチ", "ワイン", "記念日", "個室"],
+    "hasCounterSeat": false,
+    "hasPrivateRoom": true,
+    "acceptsReservation": true,
+    "senberoAvailable": false,
+    "sourceNote": "池袋駅徒歩3分。WebSearchで実在確認済み(2026-09-17)。",
+    "scenes": [
+      { "scene": "DATE", "score": 9, "reason": "記念日利用の実績があり個室でゆっくりできる", "budgetMin": 8000, "budgetMax": 9999 }
+    ]
+  },
+  {
+    "name": "牛兵衛 草庵 池袋西口店",
+    "address": "東京都豊島区西池袋1-10-2 日高ビル1F",
+    "nearestStation": "池袋駅",
+    "tagline": "山形牛を個室で味わう大人の焼肉",
+    "subCategories": ["焼肉", "山形牛", "個室", "ワイン"],
+    "hasCounterSeat": false,
+    "hasPrivateRoom": true,
+    "acceptsReservation": true,
+    "senberoAvailable": false,
+    "sourceNote": "完全個室2〜20名。住所はWebSearchで修正(提出時は「西池袋1-17-7 ルミエールビル」だったが実際は「西池袋1-10-2 日高ビル」。2026-09-17確認)。",
+    "scenes": [
+      { "scene": "DATE", "score": 8, "reason": "完全個室で山形牛と酒をゆっくり楽しめる", "budgetMin": 8000, "budgetMax": 9999 }
+    ]
+  },
+  {
+    "name": "鮨処 銀座福助 サンシャイン60店",
+    "address": "東京都豊島区東池袋3-1 サンシャインシティ サンシャイン60 59F",
+    "nearestStation": "池袋駅",
+    "tagline": "高層階の眺望と江戸前鮨を楽しむ店",
+    "subCategories": ["寿司", "日本酒", "海鮮", "個室", "記念日"],
+    "hasCounterSeat": true,
+    "hasPrivateRoom": true,
+    "acceptsReservation": true,
+    "senberoAvailable": false,
+    "sourceNote": "サンシャイン60 59F、地上220mの眺望、白木カウンターとテーブル席、個室2室。WebSearchで実在確認済み(2026-09-17、店名の「銀座」はブランド名で所在地は池袋)。",
+    "scenes": [
+      { "scene": "DATE", "score": 8, "reason": "高層階の眺望と鮨を楽しめる記念日向けの空間", "budgetMin": 6000, "budgetMax": 7999 }
+    ]
+  },
+  {
+    "name": "池袋 寿司 個室 空",
+    "address": "東京都豊島区西池袋1-13-5 シーガルハウス7F",
+    "nearestStation": "池袋駅",
+    "tagline": "個室で楽しむ本格江戸前鮨",
+    "subCategories": ["寿司", "江戸前鮨", "日本酒", "個室"],
+    "hasCounterSeat": false,
+    "hasPrivateRoom": true,
+    "acceptsReservation": true,
+    "senberoAvailable": false,
+    "sourceNote": "池袋駅東口すぐ、完全個室2〜6名。WebSearchで実在確認済み(2026-09-17)。",
+    "scenes": [
+      { "scene": "DATE", "score": 9, "reason": "2人利用可能な個室で鮨と日本酒を楽しめる", "budgetMin": 7980, "budgetMax": 9999 }
+    ]
+  },
+  {
+    "name": "Anchor Tokyo",
+    "address": "東京都千代田区有楽町2-2-3 THE GATE HOTEL 東京 by HULIC 4F",
+    "nearestStation": "有楽町駅",
+    "tagline": "厳選ワインと料理を楽しむホテルバー",
+    "subCategories": ["ワイン", "ビストロ", "ホテルバー", "記念日"],
+    "hasCounterSeat": true,
+    "hasPrivateRoom": false,
+    "acceptsReservation": true,
+    "senberoAvailable": false,
+    "sourceNote": "有楽町駅徒歩3分、ワインセラー約200本、バーカウンターあり。WebSearchで実在確認済み(2026-09-17)。",
+    "scenes": [
+      { "scene": "DATE", "score": 9, "reason": "ホテルの落ち着いた空間でワインと会話を楽しめる", "budgetMin": 6000, "budgetMax": 7999 }
+    ]
+  },
+  {
+    "name": "ヴァンピックル 丸の内",
+    "address": "東京都千代田区丸の内3-3-1 新東京ビルB1F",
+    "nearestStation": "有楽町駅",
+    "tagline": "炭火料理とこだわりワインの隠れ家",
+    "subCategories": ["ビストロ", "ワインバー", "炭火料理", "カウンター"],
+    "hasCounterSeat": true,
+    "hasPrivateRoom": false,
+    "acceptsReservation": true,
+    "senberoAvailable": false,
+    "sourceNote": "有楽町駅国際フォーラム口徒歩3分。WebSearchで実在確認済み(2026-09-17)。",
+    "scenes": [
+      { "scene": "DATE", "score": 9, "reason": "炭火料理とワインをカウンターで楽しめる", "budgetMin": 6000, "budgetMax": 7999 }
+    ]
+  },
+  {
+    "name": "銀座でワイン。",
+    "address": "東京都中央区銀座3-9-6 銀座マトリックスビル2F",
+    "nearestStation": "銀座駅",
+    "tagline": "ワインを主役にした大人の銀座ダイニング",
+    "subCategories": ["ワインバー", "イタリアン", "ワイン", "カウンター", "半個室"],
+    "hasCounterSeat": true,
+    "hasPrivateRoom": true,
+    "acceptsReservation": true,
+    "senberoAvailable": false,
+    "sourceNote": "食べログ: https://tabelog.com/tokyo/A1301/A130101/13169784/table/ 東銀座駅徒歩1分、世界中から500種類以上のワイン。WebSearchで実在確認済み(2026-09-17)。",
+    "scenes": [
+      { "scene": "DATE", "score": 9, "reason": "ワイン専門性があり半個室とカウンターを選べる", "budgetMin": 6000, "budgetMax": 7999 }
+    ]
+  },
+  {
+    "name": "シュタインハウス 銀座店",
+    "address": "東京都中央区銀座2-4-6 銀座ベルビア館8F",
+    "nearestStation": "有楽町駅",
+    "tagline": "直輸入ビールとワインを楽しむ隠れ家",
+    "subCategories": ["ドイツ料理", "ビール", "ワイン", "個室"],
+    "hasCounterSeat": false,
+    "hasPrivateRoom": true,
+    "acceptsReservation": true,
+    "senberoAvailable": false,
+    "sourceNote": "銀座ベルビア館8F、直輸入ビール・ワイン。WebSearchで実在確認済み(2026-09-17、提出時の「Velvia館」表記は「ベルビア館」の英語表記なので実質一致)。",
+    "scenes": [
+      { "scene": "DATE", "score": 8, "reason": "ドイツビールやワインを個室で楽しめる", "budgetMin": 6000, "budgetMax": 7999 }
+    ]
+  }
+]
