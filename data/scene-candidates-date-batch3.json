@@ -1,0 +1,437 @@
+[
+  {
+    "name": "LUCIS GARDEN 恵比寿",
+    "address": "東京都渋谷区恵比寿4-20-3 恵比寿ガーデンプレイスタワー39F",
+    "nearestStation": "恵比寿駅",
+    "tagline": "39階夜景と本格中国料理",
+    "subCategories": ["中華料理", "飲茶", "ワイン"],
+    "hasCounterSeat": false,
+    "hasPrivateRoom": true,
+    "acceptsReservation": true,
+    "senberoAvailable": false,
+    "sourceNote": "食べログ: https://tabelog.com/tokyo/A1303/A130302/13210972/ 恵比寿ガーデンプレイスタワー39F。WebSearchで実在確認済み(2026-09-17)。",
+    "scenes": [
+      { "scene": "DATE", "score": 9, "reason": "窓側席と個室があり夜景を楽しめる大人の空間", "budgetMin": 6000, "budgetMax": 8000 }
+    ]
+  },
+  {
+    "name": "四一一",
+    "address": "東京都渋谷区恵比寿西1-9-4 小熊ビル2F",
+    "nearestStation": "恵比寿駅",
+    "tagline": "落ち着いた個室で楽しむ和食",
+    "subCategories": ["和食", "居酒屋", "日本酒"],
+    "hasCounterSeat": true,
+    "hasPrivateRoom": true,
+    "acceptsReservation": true,
+    "senberoAvailable": false,
+    "sourceNote": "食べログ: https://tabelog.com/tokyo/A1303/A130302/13172714/ WebSearchで実在確認済み(2026-09-17、tabelog IDが一致)。",
+    "scenes": [
+      { "scene": "DATE", "score": 8, "reason": "4名用個室があり落ち着いて会話しやすい", "budgetMin": 6000, "budgetMax": 8000 }
+    ]
+  },
+  {
+    "name": "中目黒いぐち PIN",
+    "address": "東京都渋谷区恵比寿1-1-5 エビスオークビル2F",
+    "nearestStation": "恵比寿駅",
+    "tagline": "焼鳥と希少酒を楽しむ隠れ家",
+    "subCategories": ["焼き鳥", "日本酒", "焼酎", "ワイン"],
+    "hasCounterSeat": true,
+    "hasPrivateRoom": true,
+    "acceptsReservation": false,
+    "senberoAvailable": false,
+    "sourceNote": "食べログ: https://tabelog.com/tokyo/A1303/A130302/13188533/ WebSearchで実在確認済み(2026-09-17)。",
+    "scenes": [
+      { "scene": "DATE", "score": 7, "reason": "テーブルと半個室があり大人の隠れ家感がある", "budgetMin": 6000, "budgetMax": 8000 }
+    ]
+  },
+  {
+    "name": "えびす坂 鳥幸",
+    "address": "東京都渋谷区恵比寿4-20-3 恵比寿ガーデンプレイスタワー38F",
+    "nearestStation": "恵比寿駅",
+    "tagline": "38階夜景と焼鳥・ワイン",
+    "subCategories": ["焼き鳥", "鳥料理", "ワイン"],
+    "hasCounterSeat": true,
+    "hasPrivateRoom": true,
+    "acceptsReservation": true,
+    "senberoAvailable": false,
+    "sourceNote": "食べログ: https://tabelog.com/tokyo/A1303/A130302/13201357/ WebSearchで実在確認済み(2026-09-17)。",
+    "scenes": [
+      { "scene": "DATE", "score": 10, "reason": "夜景の見える半個室とワインのペアリングが魅力", "budgetMin": 6500, "budgetMax": 7600 }
+    ]
+  },
+  {
+    "name": "焼とりの八兵衛 六本木店",
+    "address": "東京都港区六本木7-4-5 六本木稲垣ビルB1F",
+    "nearestStation": "乃木坂駅",
+    "tagline": "大人の空間で楽しむ本格焼鳥",
+    "subCategories": ["焼き鳥", "串焼き", "日本酒"],
+    "hasCounterSeat": true,
+    "hasPrivateRoom": true,
+    "acceptsReservation": true,
+    "senberoAvailable": false,
+    "sourceNote": "食べログ: https://tabelog.com/tokyo/A1307/A130701/13058982/ WebSearchで実在確認済み(2026-09-17)。",
+    "scenes": [
+      { "scene": "DATE", "score": 9, "reason": "テーブル席と個室があり焼鳥をゆっくり楽しめる", "budgetMin": 6000, "budgetMax": 8000 }
+    ]
+  },
+  {
+    "name": "鶏匠 たけはし",
+    "address": "東京都港区六本木7-17-19 フレッグ六本木セコンド1F",
+    "nearestStation": "六本木駅",
+    "tagline": "水炊きと焼鳥の鶏料理専門店",
+    "subCategories": ["水炊き", "焼き鳥", "鶏料理"],
+    "hasCounterSeat": true,
+    "hasPrivateRoom": true,
+    "acceptsReservation": true,
+    "senberoAvailable": false,
+    "sourceNote": "食べログ: https://tabelog.com/tokyo/A1307/A130701/13093750/ WebSearchで実在確認済み(2026-09-17)。",
+    "scenes": [
+      { "scene": "DATE", "score": 9, "reason": "個室で名物水炊きと鶏料理を楽しめる", "budgetMin": 5500, "budgetMax": 7500 }
+    ]
+  },
+  {
+    "name": "KNOCK CUCINA BUONA ITALIANA 東京ミッドタウン店",
+    "address": "東京都港区赤坂9-7-4 東京ミッドタウン ガレリア ガーデンテラス2F",
+    "nearestStation": "六本木駅",
+    "tagline": "ミッドタウンの大人イタリアン",
+    "subCategories": ["イタリアン", "パスタ", "ワイン"],
+    "hasCounterSeat": true,
+    "hasPrivateRoom": true,
+    "acceptsReservation": true,
+    "senberoAvailable": false,
+    "sourceNote": "食べログ: https://tabelog.com/tokyo/A1307/A130701/13175422/ WebSearchで実在確認済み(2026-09-17)。",
+    "scenes": [
+      { "scene": "DATE", "score": 8, "reason": "テーブル席と完全個室がありワインデートに向く", "budgetMin": 6000, "budgetMax": 8000 }
+    ]
+  },
+  {
+    "name": "銀座 すきやき司郎",
+    "address": "東京都中央区銀座5-9-16 GINZA-A5 2F",
+    "nearestStation": "銀座駅",
+    "tagline": "銀座の隠れ家すき焼き専門店",
+    "subCategories": ["すき焼き", "鍋料理", "ワイン"],
+    "hasCounterSeat": false,
+    "hasPrivateRoom": true,
+    "acceptsReservation": true,
+    "senberoAvailable": false,
+    "sourceNote": "食べログ: https://tabelog.com/tokyo/A1301/A130101/13320527/ WebSearchで実在確認済み(2026-09-17)。",
+    "scenes": [
+      { "scene": "DATE", "score": 9, "reason": "2名から使える個室があり少人数デートに向く", "budgetMin": 6000, "budgetMax": 8000 }
+    ]
+  },
+  {
+    "name": "珞珈壹号 銀座店",
+    "address": "東京都中央区銀座5-8-9 BINO銀座4F",
+    "nearestStation": "銀座駅",
+    "tagline": "華やかな個室で楽しむ湖北料理",
+    "subCategories": ["中国料理", "湖北料理", "小籠包"],
+    "hasCounterSeat": false,
+    "hasPrivateRoom": true,
+    "acceptsReservation": true,
+    "senberoAvailable": false,
+    "sourceNote": "食べログ: https://tabelog.com/tokyo/A1301/A130101/13226136/ WebSearchで実在確認済み(2026-09-17)。",
+    "scenes": [
+      { "scene": "DATE", "score": 8, "reason": "華やかな個室とコース料理でデート利用に対応", "budgetMin": 6000, "budgetMax": 8000 }
+    ]
+  },
+  {
+    "name": "まるや本店 銀座グラッセ",
+    "address": "東京都中央区銀座3-2-15 ギンザ・グラッセ7F",
+    "nearestStation": "銀座駅",
+    "tagline": "上質空間で味わう国産鰻",
+    "subCategories": ["うなぎ", "ひつまぶし", "日本料理"],
+    "hasCounterSeat": true,
+    "hasPrivateRoom": true,
+    "acceptsReservation": true,
+    "senberoAvailable": false,
+    "sourceNote": "食べログ: https://tabelog.com/tokyo/A1301/A130101/13294519/ WebSearchで実在確認済み(2026-09-17)。",
+    "scenes": [
+      { "scene": "DATE", "score": 9, "reason": "窓際席や4名個室があり落ち着いて食事できる", "budgetMin": 6500, "budgetMax": 9000 }
+    ]
+  },
+  {
+    "name": "魚真 銀座店",
+    "address": "東京都中央区銀座4-8-12 コチワビルB1F",
+    "nearestStation": "東銀座駅",
+    "tagline": "鮮魚と酒を楽しむ銀座の魚料理店",
+    "subCategories": ["海鮮", "寿司", "日本酒"],
+    "hasCounterSeat": true,
+    "hasPrivateRoom": false,
+    "acceptsReservation": true,
+    "senberoAvailable": false,
+    "sourceNote": "食べログ: https://tabelog.com/tokyo/A1301/A130101/13144140/ 住所はWebSearchで修正(提出時「銀座4-10-7 銀座早川ビル」は誤り、正しくは「銀座4-8-12 コチワビル」。2026-09-17確認)。",
+    "scenes": [
+      { "scene": "DATE", "score": 7, "reason": "テーブル席で鮮魚と日本酒を楽しめる", "budgetMin": 5500, "budgetMax": 7500 }
+    ]
+  },
+  {
+    "name": "小松庵総本家 銀座",
+    "address": "東京都中央区銀座5-7-6 i liv 14F",
+    "nearestStation": "銀座駅",
+    "tagline": "老舗そばと日本酒の隠れ家",
+    "subCategories": ["そば", "日本料理", "日本酒"],
+    "hasCounterSeat": false,
+    "hasPrivateRoom": true,
+    "acceptsReservation": true,
+    "senberoAvailable": false,
+    "sourceNote": "食べログ: https://tabelog.com/tokyo/A1301/A130101/13237578/ 階数はWebSearchで修正(提出時「2F」は誤り、正しくは「14F」。2026-09-17確認)。",
+    "scenes": [
+      { "scene": "DATE", "score": 9, "reason": "大人向けの落ち着いた個室で酒と蕎麦を楽しめる", "budgetMin": 6000, "budgetMax": 8000 }
+    ]
+  },
+  {
+    "name": "銀座 木邑 和食と木のぬくもり",
+    "address": "東京都中央区銀座4-3-7 銀座スバルビル3F",
+    "nearestStation": "銀座駅",
+    "tagline": "銘酒と和食を味わう木質空間",
+    "subCategories": ["日本料理", "日本酒", "海鮮"],
+    "hasCounterSeat": true,
+    "hasPrivateRoom": true,
+    "acceptsReservation": true,
+    "senberoAvailable": false,
+    "sourceNote": "食べログ: https://tabelog.com/tokyo/A1301/A130101/13272104/ 住所はWebSearchで修正(提出時「銀座5-6-14 銀座ビルディング」は誤り、正しくは「銀座4-3-7 銀座スバルビル」。2026-09-17確認)。",
+    "scenes": [
+      { "scene": "DATE", "score": 9, "reason": "十四代や而今など銘酒を個室で楽しめる", "budgetMin": 6000, "budgetMax": 8000 }
+    ]
+  },
+  {
+    "name": "銀座でワイン。",
+    "address": "東京都中央区銀座3-9-6 銀座マトリックスビル2F",
+    "nearestStation": "東銀座駅",
+    "tagline": "銀座の隠れ家ワインダイニング",
+    "subCategories": ["ワインバー", "イタリアン", "ダイニングバー"],
+    "hasCounterSeat": true,
+    "hasPrivateRoom": true,
+    "acceptsReservation": true,
+    "senberoAvailable": false,
+    "sourceNote": "食べログ: https://tabelog.com/tokyo/A1301/A130101/13169784/ 既存登録店と同一店舗のため、DB側の表記(銀座マトリックスビル)に合わせて住所を統一。",
+    "scenes": [
+      { "scene": "DATE", "score": 9, "reason": "半個室とソファ席でワインをゆっくり楽しめる", "budgetMin": 6000, "budgetMax": 8000 }
+    ]
+  },
+  {
+    "name": "酒席銀座いさみ",
+    "address": "東京都中央区銀座8-6-4 扇やビル2F",
+    "nearestStation": "新橋駅",
+    "tagline": "約100銘柄の地酒が揃う老舗",
+    "subCategories": ["日本酒", "海鮮", "居酒屋"],
+    "hasCounterSeat": false,
+    "hasPrivateRoom": true,
+    "acceptsReservation": true,
+    "senberoAvailable": false,
+    "sourceNote": "食べログ: https://tabelog.com/tokyo/A1301/A130103/13256333/ WebSearchで実在確認済み(2026-09-17)。",
+    "scenes": [
+      { "scene": "DATE", "score": 8, "reason": "地酒の品揃えが豊富で個室も利用できる", "budgetMin": 6000, "budgetMax": 8250 }
+    ]
+  },
+  {
+    "name": "赤坂 転石亭 HANARE",
+    "address": "東京都港区赤坂4-3-15 FSK赤坂ビルB1F",
+    "nearestStation": "赤坂駅",
+    "tagline": "旬魚と銘酒の大人の隠れ家",
+    "subCategories": ["日本料理", "海鮮", "日本酒"],
+    "hasCounterSeat": true,
+    "hasPrivateRoom": true,
+    "acceptsReservation": true,
+    "senberoAvailable": false,
+    "sourceNote": "食べログ: https://tabelog.com/tokyo/A1308/A130801/13052150/ WebSearchで実在確認済み(2026-09-17)。",
+    "scenes": [
+      { "scene": "DATE", "score": 9, "reason": "完全個室と日本酒を含むペアリング向きの料理", "budgetMin": 6000, "budgetMax": 8000 }
+    ]
+  },
+  {
+    "name": "神楽坂 ほたる燈",
+    "address": "東京都新宿区神楽坂6-36-1 神楽坂ビル2F",
+    "nearestStation": "神楽坂駅",
+    "tagline": "旬魚と日本酒の神楽坂隠れ家",
+    "subCategories": ["日本料理", "海鮮", "日本酒", "自然派ワイン"],
+    "hasCounterSeat": true,
+    "hasPrivateRoom": true,
+    "acceptsReservation": true,
+    "senberoAvailable": false,
+    "sourceNote": "食べログ: https://tabelog.com/tokyo/A1309/A130905/13273739/ WebSearchで実在確認済み(2026-09-17)。",
+    "scenes": [
+      { "scene": "DATE", "score": 9, "reason": "完全個室と銘酒を備えた落ち着いた空間", "budgetMin": 6000, "budgetMax": 8000 }
+    ]
+  },
+  {
+    "name": "本家あべや 神楽坂店",
+    "address": "東京都新宿区神楽坂3-2-4 CO&COビル1F",
+    "nearestStation": "飯田橋駅",
+    "tagline": "比内地鶏と地酒の路地裏店",
+    "subCategories": ["焼き鳥", "水炊き", "日本酒"],
+    "hasCounterSeat": true,
+    "hasPrivateRoom": true,
+    "acceptsReservation": true,
+    "senberoAvailable": false,
+    "sourceNote": "食べログ: https://tabelog.com/tokyo/A1309/A130905/13034307/ 住所はWebSearchで修正(提出時「神楽坂3-2-40 CO&COビルB1F」は誤り、正しくは「神楽坂3-2-4 CO&COビル1F」。2026-09-17確認)。",
+    "scenes": [
+      { "scene": "DATE", "score": 9, "reason": "路地裏の落ち着いた空間で比内地鶏と酒を楽しめる", "budgetMin": 6000, "budgetMax": 8000 }
+    ]
+  },
+  {
+    "name": "初代 蟹よし",
+    "address": "東京都港区芝5-23-6 1F・2F",
+    "nearestStation": "三田駅",
+    "tagline": "蟹料理と日本酒を楽しむ個室店",
+    "subCategories": ["かに", "日本料理", "日本酒"],
+    "hasCounterSeat": false,
+    "hasPrivateRoom": true,
+    "acceptsReservation": true,
+    "senberoAvailable": false,
+    "sourceNote": "食べログ: https://tabelog.com/tokyo/A1314/A131402/13303856/ 住所はWebSearchで修正(提出時「芝5-32-10 土田ビル」は誤り、正しくは「芝5-23-6」。2026-09-17確認)。",
+    "scenes": [
+      { "scene": "DATE", "score": 9, "reason": "完全個室で蟹と日本酒を落ち着いて楽しめる", "budgetMin": 7000, "budgetMax": 8000 }
+    ]
+  },
+  {
+    "name": "WA酒WA食",
+    "address": "東京都港区芝5-15-2 UB.TASUKI MITA 1F",
+    "nearestStation": "田町駅",
+    "tagline": "20種以上の日本酒と創作和食",
+    "subCategories": ["創作和食", "日本酒", "海鮮"],
+    "hasCounterSeat": true,
+    "hasPrivateRoom": true,
+    "acceptsReservation": true,
+    "senberoAvailable": false,
+    "sourceNote": "食べログ: https://tabelog.com/tokyo/A1314/A131402/13312628/ 住所はWebSearchで修正(提出時「芝5-23-6 田町タワーアネックス」は誤り、正しくは「芝5-15-2 UB.TASUKI MITA」。2026-09-17確認)。",
+    "scenes": [
+      { "scene": "DATE", "score": 9, "reason": "落ち着いたテーブル席と完全個室で日本酒を楽しめる", "budgetMin": 6000, "budgetMax": 8000 }
+    ]
+  },
+  {
+    "name": "音音 池袋店",
+    "address": "東京都豊島区南池袋1-19-5 MI PLAZA 5F",
+    "nearestStation": "池袋駅",
+    "tagline": "個室で楽しむ季節の和食と銘酒",
+    "subCategories": ["日本料理", "日本酒", "うなぎ"],
+    "hasCounterSeat": false,
+    "hasPrivateRoom": true,
+    "acceptsReservation": true,
+    "senberoAvailable": false,
+    "sourceNote": "食べログ: https://tabelog.com/tokyo/A1305/A130501/13003938/ WebSearchで実在確認済み(2026-09-17)。既にGROUPシーンで登録済みの店舗にDATEを追加する形になる。",
+    "scenes": [
+      { "scene": "DATE", "score": 8, "reason": "2名から完全個室を利用でき会話しやすい", "budgetMin": 6000, "budgetMax": 8000 }
+    ]
+  },
+  {
+    "name": "しゃぶ禅 渋谷店",
+    "address": "東京都渋谷区神山町10-8 渋谷クレストンホテルB1F",
+    "nearestStation": "神泉駅",
+    "tagline": "落ち着いた個室で楽しむ和牛",
+    "subCategories": ["しゃぶしゃぶ", "すき焼き", "日本料理"],
+    "hasCounterSeat": false,
+    "hasPrivateRoom": true,
+    "acceptsReservation": true,
+    "senberoAvailable": false,
+    "sourceNote": "食べログ: https://tabelog.com/tokyo/A1303/A130301/13001711/ WebSearchで実在確認済み(2026-09-17)。",
+    "scenes": [
+      { "scene": "DATE", "score": 8, "reason": "個室で和牛料理をゆっくり楽しめる", "budgetMin": 6000, "budgetMax": 8000 }
+    ]
+  },
+  {
+    "name": "春秋 渋谷文化村通",
+    "address": "東京都渋谷区道玄坂2-23-12 フォンティスビル1F",
+    "nearestStation": "渋谷駅",
+    "tagline": "渋谷の喧騒を離れた創作和食",
+    "subCategories": ["創作和食", "日本料理", "日本酒"],
+    "hasCounterSeat": true,
+    "hasPrivateRoom": true,
+    "acceptsReservation": true,
+    "senberoAvailable": false,
+    "sourceNote": "食べログ: https://tabelog.com/tokyo/A1303/A130301/13001811/ WebSearchで実在確認済み(2026-09-17)。",
+    "scenes": [
+      { "scene": "DATE", "score": 9, "reason": "扉付き完全個室と落ち着いた店内がデート向き", "budgetMin": 6000, "budgetMax": 8000 }
+    ]
+  },
+  {
+    "name": "仙台坂 ひむか",
+    "address": "東京都港区麻布十番3-10-9 ミリオンパレス麻布仙台坂B1F",
+    "nearestStation": "麻布十番駅",
+    "tagline": "宮崎料理と焼酎の隠れ家",
+    "subCategories": ["宮崎料理", "日本料理", "焼酎"],
+    "hasCounterSeat": true,
+    "hasPrivateRoom": true,
+    "acceptsReservation": true,
+    "senberoAvailable": false,
+    "sourceNote": "食べログ: https://tabelog.com/tokyo/A1307/A130702/13003057/ 階数はWebSearchで修正(提出時「1F」は誤り、正しくは「B1F」。2026-09-17確認)。",
+    "scenes": [
+      { "scene": "DATE", "score": 8, "reason": "奥の半個室で郷土料理と焼酎を楽しめる", "budgetMin": 6000, "budgetMax": 8000 }
+    ]
+  },
+  {
+    "name": "麻布 黎明",
+    "address": "東京都港区麻布十番3-4-6 阪妻ビル2F",
+    "nearestStation": "麻布十番駅",
+    "tagline": "銘酒と旬魚を味わう隠れ家和食",
+    "subCategories": ["日本料理", "日本酒", "ワイン"],
+    "hasCounterSeat": true,
+    "hasPrivateRoom": true,
+    "acceptsReservation": true,
+    "senberoAvailable": false,
+    "sourceNote": "食べログ: https://tabelog.com/tokyo/A1307/A130702/13263374/ 住所はWebSearchで修正(提出時「麻布十番1-8-5 パステル麻布十番」は誤り、正しくは「麻布十番3-4-6 阪妻ビル」。2026-09-17確認)。",
+    "scenes": [
+      { "scene": "DATE", "score": 9, "reason": "4名個室と厳選酒を備えた落ち着いた空間", "budgetMin": 6000, "budgetMax": 8000 }
+    ]
+  },
+  {
+    "name": "焼肉家 KAZU 別邸",
+    "address": "東京都新宿区神楽坂3-2 木村屋ビル4F",
+    "nearestStation": "飯田橋駅",
+    "tagline": "全席完全個室の大人焼肉",
+    "subCategories": ["焼肉", "ホルモン", "韓国料理"],
+    "hasCounterSeat": false,
+    "hasPrivateRoom": true,
+    "acceptsReservation": true,
+    "senberoAvailable": false,
+    "sourceNote": "食べログ: https://tabelog.com/tokyo/A1309/A130905/13295633/ 住所はWebSearchで修正(提出時「神楽坂3-2 トレビスビル」は誤り、正しくは「神楽坂3-2 木村屋ビル」。2026-09-17確認)。",
+    "scenes": [
+      { "scene": "DATE", "score": 9, "reason": "2名から使える完全個室で周囲を気にせず過ごせる", "budgetMin": 6000, "budgetMax": 8000 }
+    ]
+  },
+  {
+    "name": "La Pista",
+    "address": "東京都新宿区神楽坂6-8-18",
+    "nearestStation": "神楽坂駅",
+    "tagline": "魚料理とワインを楽しむイタリアン",
+    "subCategories": ["イタリアン", "ワイン", "魚料理"],
+    "hasCounterSeat": false,
+    "hasPrivateRoom": true,
+    "acceptsReservation": true,
+    "senberoAvailable": false,
+    "sourceNote": "食べログ: https://tabelog.com/tokyo/A1309/A130905/13282411/ 住所はWebSearchで修正(提出時「神楽坂6-66 神楽坂宝生堂ビル」は誤り、正しくは「神楽坂6-8-18」。2026-09-17確認)。",
+    "scenes": [
+      { "scene": "DATE", "score": 9, "reason": "テーブル中心で4名個室もある落ち着いた空間", "budgetMin": 6000, "budgetMax": 8000 }
+    ]
+  },
+  {
+    "name": "神楽坂 てっぱんや",
+    "address": "東京都新宿区神楽坂3-1-4",
+    "nearestStation": "飯田橋駅",
+    "tagline": "古民家で楽しむ本格鉄板焼",
+    "subCategories": ["鉄板焼き", "ステーキ", "ワイン"],
+    "hasCounterSeat": true,
+    "hasPrivateRoom": true,
+    "acceptsReservation": true,
+    "senberoAvailable": false,
+    "sourceNote": "食べログ: https://tabelog.com/tokyo/A1309/A130905/13019275/ WebSearchで実在確認済み(2026-09-17)。",
+    "scenes": [
+      { "scene": "DATE", "score": 9, "reason": "古民家の落ち着いた空間にテーブル席と個室がある", "budgetMin": 6000, "budgetMax": 8000 }
+    ]
+  },
+  {
+    "name": "美食米門 品川港南 WINE&GRILL",
+    "address": "東京都港区港南2-16-3 品川グランドセントラルタワー1F グランパサージュ1",
+    "nearestStation": "品川駅",
+    "tagline": "和食と厳選ワインの上質空間",
+    "subCategories": ["日本料理", "肉料理", "ワイン"],
+    "hasCounterSeat": true,
+    "hasPrivateRoom": true,
+    "acceptsReservation": true,
+    "senberoAvailable": false,
+    "sourceNote": "食べログ: https://tabelog.com/tokyo/A1314/A131403/13183407/ WebSearchで実在確認済み(2026-09-17)。",
+    "scenes": [
+      { "scene": "DATE", "score": 9, "reason": "2名用個室とボックス席がありソムリエのワインも楽しめる", "budgetMin": 6000, "budgetMax": 8000 }
+    ]
+  }
+]
