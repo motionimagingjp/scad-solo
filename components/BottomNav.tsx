@@ -1,8 +1,9 @@
 "use client";
 
+import { Suspense } from "react";
 import { Store, Map as MapIcon, Gamepad2, User } from "lucide-react";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useSearchParams } from "next/navigation";
 
 // ナビ高さは 56px 固定(NAV_HEIGHT)で、他コンポーネントはこの値を基準に配置する。
 //
@@ -22,7 +23,21 @@ const NAV_ITEMS = [
 ];
 
 export default function BottomNav() {
+  // useSearchParams()はSuspense境界を要求する(ビルド時の静的プリレンダリングのため)。
+  // BottomNavを使う全ページ側に個別対応させたくないので、ここで内側だけラップして吸収する
+  return (
+    <Suspense fallback={null}>
+      <BottomNavInner />
+    </Suspense>
+  );
+}
+
+function BottomNavInner() {
   const pathname = usePathname();
+  const searchParams = useSearchParams();
+  // SCAD CHATからiframe埋め込みされている場合(?embed=1)は、SCAD側の下部タブバーが
+  // ナビゲーションを担うため、二重にならないようこのナビ自体を出さない
+  if (searchParams.get("embed") === "1") return null;
   return (
     <nav
       className="fixed inset-x-0 bottom-0 z-40 border-t bg-white/95 backdrop-blur-sm"
