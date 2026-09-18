@@ -1,0 +1,386 @@
+[
+  {
+    "name": "鮮魚 日本酒 えどわん",
+    "address": "東京都中央区銀座5-1-7 数寄屋橋ビルB1F",
+    "nearestStation": "銀座駅",
+    "tagline": "鮮魚と厳選日本酒の個室和食",
+    "subCategories": ["海鮮", "日本酒", "しゃぶしゃぶ"],
+    "hasTableSeat": true,
+    "hasPrivateRoom": true,
+    "acceptsReservation": true,
+    "senberoAvailable": false,
+    "maxGroupSize": 20,
+    "sourceNote": "食べログ: https://tabelog.com/tokyo/A1301/A130101/13213162/ WebSearchで実在確認済み(2026-09-17)。同一店の重複提出(鮮魚・日本酒 えどわん)を統合。",
+    "scenes": [
+      { "scene": "GROUP", "score": 10, "reason": "4・6・8名個室があり日本酒と鮮魚を囲みやすい", "budgetMin": 5000, "budgetMax": 8000 }
+    ]
+  },
+  {
+    "name": "夢酒みずき",
+    "address": "東京都中央区銀座6-7-6 ラペビルB1F",
+    "nearestStation": "銀座駅",
+    "tagline": "銘酒と和食を楽しむ銀座の個室",
+    "subCategories": ["日本料理", "日本酒", "海鮮"],
+    "hasTableSeat": true,
+    "hasPrivateRoom": true,
+    "acceptsReservation": true,
+    "senberoAvailable": false,
+    "maxGroupSize": 6,
+    "sourceNote": "食べログ: https://tabelog.com/tokyo/A1301/A130101/13004898/ WebSearchで実在確認済み(2026-09-17)。",
+    "scenes": [
+      { "scene": "GROUP", "score": 9, "reason": "4名・6名完全個室とテーブル席がある", "budgetMin": 6000, "budgetMax": 8000 }
+    ]
+  },
+  {
+    "name": "和匠 銀座松月",
+    "address": "東京都中央区銀座8-8-8 GINZA888ビル3F",
+    "nearestStation": "新橋駅",
+    "tagline": "唎酒師が選ぶ銘酒と本格和食",
+    "subCategories": ["日本料理", "日本酒", "和食"],
+    "hasTableSeat": true,
+    "hasPrivateRoom": true,
+    "acceptsReservation": true,
+    "senberoAvailable": false,
+    "maxGroupSize": 26,
+    "sourceNote": "公式: https://www.ginza-syogetsu.jp/ WebSearchで実在確認済み(2026-09-17)。",
+    "scenes": [
+      { "scene": "GROUP", "score": 10, "reason": "個室と窓側半個室があり最大26名まで対応", "budgetMin": 10000, "budgetMax": 10000 }
+    ]
+  },
+  {
+    "name": "和食ビヤホール 枡々益 銀座七丁目店",
+    "address": "東京都中央区銀座7-9-20 銀座ライオンビル3F",
+    "nearestStation": "銀座駅",
+    "tagline": "和食と銀座ライオン生ビール",
+    "subCategories": ["和食", "ビール", "海鮮"],
+    "hasTableSeat": true,
+    "hasPrivateRoom": true,
+    "acceptsReservation": true,
+    "senberoAvailable": false,
+    "maxGroupSize": 36,
+    "sourceNote": "公式: https://ginzalion-masumi-ginza.com/ WebSearchで実在確認済み(2026-09-17)。重複提出を統合。",
+    "scenes": [
+      { "scene": "GROUP", "score": 9, "reason": "2〜8名個室・BOX席と中規模宴会個室がある", "budgetMin": 6500, "budgetMax": 7500 }
+    ]
+  },
+  {
+    "name": "日本酒個室バル 蔵ノ助 有楽町日比谷店",
+    "address": "東京都千代田区有楽町1-3-7 なる巳ビル4F",
+    "nearestStation": "有楽町駅",
+    "tagline": "全国の日本酒60種を個室で堪能",
+    "subCategories": ["日本酒", "海鮮", "個室居酒屋"],
+    "hasTableSeat": true,
+    "hasPrivateRoom": true,
+    "acceptsReservation": true,
+    "senberoAvailable": false,
+    "maxGroupSize": 32,
+    "sourceNote": "食べログ: https://tabelog.com/tokyo/A1301/A130102/13119425/ WebSearchで実在確認済み(2026-09-17)。",
+    "scenes": [
+      { "scene": "GROUP", "score": 10, "reason": "全席個室で2〜32名のグループに対応", "budgetMin": 5000, "budgetMax": 7500 }
+    ]
+  },
+  {
+    "name": "銀座 独楽",
+    "address": "東京都中央区銀座1-3-3 G1ビルB1F",
+    "nearestStation": "銀座一丁目駅",
+    "tagline": "地酒と鮮魚の和モダン個室",
+    "subCategories": ["日本酒", "海鮮", "創作和食"],
+    "hasTableSeat": true,
+    "hasPrivateRoom": true,
+    "acceptsReservation": true,
+    "senberoAvailable": false,
+    "maxGroupSize": 20,
+    "sourceNote": "食べログ: https://tabelog.com/tokyo/A1301/A130101/13002432/ WebSearchで実在確認済み(2026-09-17)。",
+    "scenes": [
+      { "scene": "GROUP", "score": 10, "reason": "大小個室とロフト席があり少人数宴会に使いやすい", "budgetMin": 5000, "budgetMax": 8000 }
+    ]
+  },
+  {
+    "name": "金の独楽",
+    "address": "東京都中央区京橋3-4-4 イーストサイドビル2F",
+    "nearestStation": "銀座一丁目駅",
+    "tagline": "銀座・京橋の隠れ家個室と厳選地酒",
+    "subCategories": ["日本酒", "海鮮", "居酒屋"],
+    "hasTableSeat": true,
+    "hasPrivateRoom": true,
+    "acceptsReservation": true,
+    "senberoAvailable": false,
+    "maxGroupSize": 20,
+    "sourceNote": "食べログ: https://tabelog.com/tokyo/A1301/A130101/13042322/ 住所はWebSearchで修正(提出時「銀座3-3-9 金の独楽ビル」は誤り、正しくは「京橋3-4-4 イーストサイドビル」。2026-09-17確認)。",
+    "scenes": [
+      { "scene": "GROUP", "score": 9, "reason": "4名半個室から大人数完全個室まで揃う", "budgetMin": 5000, "budgetMax": 8000 }
+    ]
+  },
+  {
+    "name": "日月火 銀座店",
+    "address": "東京都中央区銀座3-3-1 ZOE銀座6F",
+    "nearestStation": "銀座駅",
+    "tagline": "日本酒と会席料理を個室で",
+    "subCategories": ["日本料理", "日本酒", "会席"],
+    "hasTableSeat": true,
+    "hasPrivateRoom": true,
+    "acceptsReservation": true,
+    "senberoAvailable": false,
+    "maxGroupSize": 30,
+    "sourceNote": "食べログ: https://tabelog.com/tokyo/A1301/A130101/13016541/ WebSearchで実在確認済み(2026-09-17)。",
+    "scenes": [
+      { "scene": "GROUP", "score": 9, "reason": "15室の個室とテーブル席があり宴会対応力が高い", "budgetMin": 6000, "budgetMax": 8000 }
+    ]
+  },
+  {
+    "name": "和酒BAL だんない",
+    "address": "東京都中央区銀座7-2-20 銀座小林ビル1F",
+    "nearestStation": "銀座駅",
+    "tagline": "和酒と創作料理の銀座バル",
+    "subCategories": ["日本酒", "創作和食", "居酒屋"],
+    "hasTableSeat": true,
+    "hasPrivateRoom": false,
+    "acceptsReservation": true,
+    "senberoAvailable": false,
+    "maxGroupSize": 10,
+    "sourceNote": "食べログ: https://tabelog.com/tokyo/A1301/A130101/13179395/ WebSearchでビル名を補完(銀座小林ビル)。2026-09-17確認。",
+    "scenes": [
+      { "scene": "GROUP", "score": 8, "reason": "テーブル中心で少人数の会話をしやすい", "budgetMin": 4000, "budgetMax": 6000 }
+    ]
+  },
+  {
+    "name": "唎き酒処 酒の穴",
+    "address": "東京都中央区銀座3-3-1 ZOE銀座5F",
+    "nearestStation": "有楽町駅",
+    "tagline": "日本酒好きが集う老舗酒処",
+    "subCategories": ["日本酒", "日本料理", "居酒屋"],
+    "hasTableSeat": true,
+    "hasPrivateRoom": false,
+    "acceptsReservation": true,
+    "senberoAvailable": false,
+    "maxGroupSize": 10,
+    "sourceNote": "食べログ: https://tabelog.com/tokyo/A1301/A130101/13286727/ WebSearchで実在確認済み(2026-09-17)。",
+    "scenes": [
+      { "scene": "GROUP", "score": 8, "reason": "日本酒中心でテーブルを囲んで飲み比べしやすい", "budgetMin": 5000, "budgetMax": 8000 }
+    ]
+  },
+  {
+    "name": "個室会席 北大路 銀座本店",
+    "address": "東京都中央区銀座8-5-12 第二ウルワシビルB1・B2",
+    "nearestStation": "新橋駅",
+    "tagline": "全席完全個室の本格会席",
+    "subCategories": ["会席料理", "日本料理", "日本酒"],
+    "hasTableSeat": true,
+    "hasPrivateRoom": true,
+    "acceptsReservation": true,
+    "senberoAvailable": false,
+    "maxGroupSize": 30,
+    "sourceNote": "食べログ: https://tabelog.com/tokyo/A1301/A130103/13019429/ WebSearchで実在確認済み(2026-09-17)。",
+    "scenes": [
+      { "scene": "GROUP", "score": 8, "reason": "2名用から30名までの完全個室を備える", "budgetMin": 9350, "budgetMax": 9350 }
+    ]
+  },
+  {
+    "name": "神楽坂 和らく",
+    "address": "東京都新宿区白銀町2-3",
+    "nearestStation": "神楽坂駅",
+    "tagline": "古民家個室で楽しむ季節料理",
+    "subCategories": ["日本料理", "和洋料理", "日本酒"],
+    "hasTableSeat": true,
+    "hasPrivateRoom": true,
+    "acceptsReservation": true,
+    "senberoAvailable": false,
+    "maxGroupSize": 20,
+    "sourceNote": "食べログ: https://tabelog.com/tokyo/A1309/A130905/13260657/ WebSearchで実在確認済み(2026-09-17)。重複提出を統合。",
+    "scenes": [
+      { "scene": "GROUP", "score": 9, "reason": "古民家の個室と4名テーブルがあり会話しやすい", "budgetMin": 5000, "budgetMax": 8000 }
+    ]
+  },
+  {
+    "name": "本家あべや 神楽坂店",
+    "address": "東京都新宿区神楽坂3-2-4 CO&COビル1F",
+    "nearestStation": "飯田橋駅",
+    "tagline": "比内地鶏と地酒の神楽坂店",
+    "subCategories": ["焼き鳥", "水炊き", "日本酒"],
+    "hasTableSeat": true,
+    "hasPrivateRoom": true,
+    "acceptsReservation": true,
+    "senberoAvailable": false,
+    "maxGroupSize": 20,
+    "sourceNote": "食べログ: https://tabelog.com/tokyo/A1309/A130905/13034307/ 既存DB登録店(DATEシーンで登録済み)と同一店舗のため、住所をDB側の正しい表記(神楽坂3-2-4)に統一。",
+    "scenes": [
+      { "scene": "GROUP", "score": 9, "reason": "テーブル個室と半個室があり少人数宴会に対応", "budgetMin": 6000, "budgetMax": 8000 }
+    ]
+  },
+  {
+    "name": "赤坂うまや",
+    "address": "東京都港区赤坂4-2-32",
+    "nearestStation": "赤坂見附駅",
+    "tagline": "一軒家で楽しむ九州創菜料理",
+    "subCategories": ["焼き鳥", "しゃぶしゃぶ", "和食"],
+    "hasTableSeat": true,
+    "hasPrivateRoom": true,
+    "acceptsReservation": true,
+    "senberoAvailable": false,
+    "maxGroupSize": 30,
+    "sourceNote": "食べログ: https://tabelog.com/tokyo/A1308/A130801/13005690/ WebSearchで実在確認済み(2026-09-17)。重複提出を統合。",
+    "scenes": [
+      { "scene": "GROUP", "score": 9, "reason": "テーブル・半個室・完全個室を使い分けられる", "budgetMin": 7000, "budgetMax": 8000 }
+    ]
+  },
+  {
+    "name": "小さな くらのすけ",
+    "address": "東京都中央区銀座6-3-16 泰明ビル本館1F",
+    "nearestStation": "銀座駅",
+    "tagline": "銀座の小さな大人の酒処",
+    "subCategories": ["日本酒", "和食", "居酒屋"],
+    "hasTableSeat": true,
+    "hasPrivateRoom": false,
+    "acceptsReservation": true,
+    "senberoAvailable": false,
+    "maxGroupSize": 10,
+    "sourceNote": "食べログ: https://tabelog.com/tokyo/A1301/A130101/13179388/ WebSearchで実在確認済み(2026-09-17)。",
+    "scenes": [
+      { "scene": "GROUP", "score": 8, "reason": "小規模で落ち着いた店内をグループ利用しやすい", "budgetMin": 5000, "budgetMax": 7000 }
+    ]
+  },
+  {
+    "name": "銀座 ぼくじん",
+    "address": "東京都中央区銀座3-7-13 成田屋ビル7F",
+    "nearestStation": "銀座駅",
+    "tagline": "銀座の隠れ家で味わう和食と酒",
+    "subCategories": ["和食", "日本酒", "海鮮"],
+    "hasTableSeat": true,
+    "hasPrivateRoom": true,
+    "acceptsReservation": true,
+    "senberoAvailable": false,
+    "maxGroupSize": 20,
+    "sourceNote": "食べログ: https://tabelog.com/tokyo/A1301/A130101/13014827/ WebSearchで実在確認済み(2026-09-17)。",
+    "scenes": [
+      { "scene": "GROUP", "score": 8, "reason": "個室とテーブル席があり少人数の会食に対応", "budgetMin": 5000, "budgetMax": 7000 }
+    ]
+  },
+  {
+    "name": "魚の中俣 銀座",
+    "address": "東京都中央区銀座3-14-17 kobikissGINZA2F",
+    "nearestStation": "東銀座駅",
+    "tagline": "魚料理と焼酎を楽しむ専門店",
+    "subCategories": ["魚料理", "日本酒", "焼酎"],
+    "hasTableSeat": true,
+    "hasPrivateRoom": true,
+    "acceptsReservation": true,
+    "senberoAvailable": false,
+    "maxGroupSize": 20,
+    "sourceNote": "公式: https://nakamata-nodoguro.com/sakananonakamata/space/ WebSearchで実在確認済み(2026-09-17)。",
+    "scenes": [
+      { "scene": "GROUP", "score": 9, "reason": "3〜4名半個室と団体用完全個室がある", "budgetMin": 6000, "budgetMax": 8000 }
+    ]
+  },
+  {
+    "name": "瓢斗 新橋店",
+    "address": "東京都港区新橋1-15-5 ぺルサ115 7F",
+    "nearestStation": "新橋駅",
+    "tagline": "京都風しゃぶしゃぶと和食の個室",
+    "subCategories": ["しゃぶしゃぶ", "和食", "日本酒"],
+    "hasTableSeat": true,
+    "hasPrivateRoom": true,
+    "acceptsReservation": true,
+    "senberoAvailable": false,
+    "maxGroupSize": 30,
+    "sourceNote": "公式: https://hyoto.jp/shinbashi/ WebSearchで実在確認済み(2026-09-17)。",
+    "scenes": [
+      { "scene": "GROUP", "score": 9, "reason": "個室中心で2〜4名の会食から宴会まで対応", "budgetMin": 6000, "budgetMax": 8000 }
+    ]
+  },
+  {
+    "name": "個室和食 東山 新宿本店",
+    "address": "東京都新宿区西新宿2-4-1 新宿NSビル29F",
+    "nearestStation": "新宿駅",
+    "tagline": "高層階で楽しむ個室和食",
+    "subCategories": ["日本料理", "会席", "日本酒"],
+    "hasTableSeat": true,
+    "hasPrivateRoom": true,
+    "acceptsReservation": true,
+    "senberoAvailable": false,
+    "maxGroupSize": 30,
+    "sourceNote": "食べログ: https://tabelog.com/tokyo/A1304/A130401/13278965/ WebSearchで実在確認済み(2026-09-17)。",
+    "scenes": [
+      { "scene": "GROUP", "score": 9, "reason": "高層階の個室で落ち着いて会話できる", "budgetMin": 6000, "budgetMax": 8000 }
+    ]
+  },
+  {
+    "name": "天空の庭 星のなる木",
+    "address": "東京都豊島区東池袋3-1 サンシャイン60 59F",
+    "nearestStation": "池袋駅",
+    "tagline": "59階の夜景と懐石料理",
+    "subCategories": ["懐石料理", "日本料理", "日本酒"],
+    "hasTableSeat": true,
+    "hasPrivateRoom": true,
+    "acceptsReservation": true,
+    "senberoAvailable": false,
+    "maxGroupSize": 30,
+    "sourceNote": "公式: https://hoshinonaruki.jp/tenku/ WebSearchで実在確認済み(2026-09-17)。",
+    "scenes": [
+      { "scene": "GROUP", "score": 9, "reason": "個室と夜景を備えた大人向け会食空間", "budgetMin": 7000, "budgetMax": 8000 }
+    ]
+  },
+  {
+    "name": "青山 星のなる木",
+    "address": "東京都渋谷区神宮前5-51-8 ラ・ポルト青山4F",
+    "nearestStation": "表参道駅",
+    "tagline": "青山で味わう季節の懐石料理",
+    "subCategories": ["懐石料理", "日本料理", "日本酒"],
+    "hasTableSeat": true,
+    "hasPrivateRoom": true,
+    "acceptsReservation": true,
+    "senberoAvailable": false,
+    "maxGroupSize": 30,
+    "sourceNote": "公式: https://hoshinonaruki.jp/aoyama/ WebSearchで実在確認済み(2026-09-17)。",
+    "scenes": [
+      { "scene": "GROUP", "score": 9, "reason": "個室で少人数会食からグループ利用まで対応", "budgetMin": 7000, "budgetMax": 8000 }
+    ]
+  },
+  {
+    "name": "個室和食東山 東京駅前店",
+    "address": "東京都中央区日本橋3-3-15 ホテルモンテエルマーナ東京2F",
+    "nearestStation": "東京駅",
+    "tagline": "駅近の落ち着いた個室和食",
+    "subCategories": ["日本料理", "会席", "海鮮"],
+    "hasTableSeat": true,
+    "hasPrivateRoom": true,
+    "acceptsReservation": true,
+    "senberoAvailable": false,
+    "maxGroupSize": 30,
+    "sourceNote": "食べログ: https://tabelog.com/tokyo/A1302/A130201/13293535/ WebSearchで実在確認済み(2026-09-17)。",
+    "scenes": [
+      { "scene": "GROUP", "score": 9, "reason": "完全個室で少人数の会話をしやすい", "budgetMin": 6000, "budgetMax": 8000 }
+    ]
+  },
+  {
+    "name": "串焼BISTRO 福みみ 銀座5丁目店",
+    "address": "東京都中央区銀座5-10-9 銀座YKビルB1F",
+    "nearestStation": "銀座駅",
+    "tagline": "串焼きと酒を楽しむ銀座ビストロ",
+    "subCategories": ["串焼き", "焼き鳥", "ワイン"],
+    "hasTableSeat": true,
+    "hasPrivateRoom": true,
+    "acceptsReservation": true,
+    "senberoAvailable": false,
+    "maxGroupSize": 20,
+    "sourceNote": "食べログ: https://tabelog.com/tokyo/A1301/A130101/13041234/ WebSearchで実在確認済み(2026-09-17)。",
+    "scenes": [
+      { "scene": "GROUP", "score": 8, "reason": "テーブル席と個室がありグループで料理を囲める", "budgetMin": 5000, "budgetMax": 7000 }
+    ]
+  },
+  {
+    "name": "割烹 い奈本",
+    "address": "東京都港区芝浦1-11-11 ハーモニーレジデンス田町1F",
+    "nearestStation": "田町駅",
+    "tagline": "魚料理と日本酒の老舗割烹",
+    "subCategories": ["割烹", "魚料理", "日本酒"],
+    "hasTableSeat": true,
+    "hasPrivateRoom": true,
+    "acceptsReservation": true,
+    "senberoAvailable": false,
+    "maxGroupSize": 12,
+    "sourceNote": "食べログ: https://tabelog.com/tokyo/A1314/A131402/13014137/ WebSearchで実在確認済み(2026-09-17)。",
+    "scenes": [
+      { "scene": "GROUP", "score": 9, "reason": "落ち着いた和食空間で料理と酒を楽しめる", "budgetMin": 5000, "budgetMax": 8000 }
+    ]
+  }
+]

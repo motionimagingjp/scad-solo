@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { ChevronLeft, VenetianMask } from "lucide-react";
 import BottomNav from "@/components/BottomNav";
+import ShareButton from "@/components/ShareButton";
 
 // ソロビンゴ: 3×3のマスに並んだお題を、達成したら自己申告でタップしてチェックする
 // (店員さんへの過度な要求や、見知らぬ客への突撃のような、店や周りに迷惑がかかる
@@ -157,6 +158,14 @@ export default function SoloBingoPage() {
     BINGO_TASKS.reduce((sum, task, i) => sum + (achieved[i] ? task.difficulty * 10 : 0), 0) +
     completedLines.length * POINTS_PER_LINE;
 
+  const shareText = isPerfect
+    ? "🎯 ソロビンゴ、パーフェクト達成!"
+    : completedLines.length > 0
+      ? `🎯 ソロビンゴ、${completedLines.length}ライン達成中!`
+      : achievedCount > 0
+        ? `🎯 ソロビンゴ、${achievedCount}個お題達成中!`
+        : "🎯 ソロビンゴに挑戦中";
+
   return (
     <div className="mx-auto flex min-h-dvh max-w-md flex-col bg-gray-50 pb-16">
       <header className="flex items-center gap-2 border-b bg-white px-4 py-3">
@@ -164,6 +173,9 @@ export default function SoloBingoPage() {
           <ChevronLeft size={16} /> 戻る
         </Link>
         <h1 className="text-base font-bold">🎯 ソロビンゴ</h1>
+        <div className="ml-auto">
+          <ShareButton text={shareText} />
+        </div>
       </header>
 
       <div className="flex flex-1 flex-col items-center gap-4 px-6 py-6">

@@ -244,19 +244,6 @@
     "sourceNote": ""
   },
   {
-    "name": "CRAFT BEER BAR IBREW GINZA",
-    "address": "東京都中央区八重洲2-11-7 東栄八重洲ビル1F",
-    "nearestStation": "銀座一丁目駅",
-    "tagline": "東京駅・銀座エリアで多彩なクラフトビールを飲み比べできる専門店",
-    "subCategories": [
-      "ビール"
-    ],
-    "hasCounterSeat": true,
-    "senberoAvailable": false,
-    "soloFriendliness": 10,
-    "sourceNote": ""
-  },
-  {
     "name": "orca GINZA BREWERY",
     "address": "東京都中央区銀座8-11-12 正金ビルB1F",
     "nearestStation": "銀座駅",

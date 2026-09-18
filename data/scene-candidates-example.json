@@ -1,0 +1,36 @@
+[
+  {
+    "name": "ワインバー・サンプルA",
+    "address": "東京都千代田区四谷1-1-1",
+    "nearestStation": "四ツ谷駅",
+    "tagline": "落ち着いたカウンターでワインを2人でじっくり楽しめる",
+    "subCategories": ["ワイン"],
+    "hasCounterSeat": true,
+    "hasTableSeat": false,
+    "hasPrivateRoom": false,
+    "acceptsReservation": true,
+    "senberoAvailable": false,
+    "sourceNote": "検索例: 「四ツ谷駅 デート ワインバー 隠れ家」",
+    "scenes": [
+      { "scene": "DATE", "score": 8, "reason": "カウンター横並び・薄暗い・予約可", "budgetMin": 7000, "budgetMax": 11000 },
+      { "scene": "SOLO", "score": 7, "reason": "一人でも入りやすいカウンター" }
+    ]
+  },
+  {
+    "name": "和食処・サンプルB",
+    "address": "東京都千代田区四谷2-2-2",
+    "nearestStation": "四ツ谷駅",
+    "tagline": "個室で少人数の飲み会に対応できる和食店",
+    "subCategories": ["日本酒"],
+    "hasCounterSeat": false,
+    "hasTableSeat": true,
+    "hasPrivateRoom": true,
+    "acceptsReservation": true,
+    "senberoAvailable": false,
+    "maxGroupSize": 4,
+    "sourceNote": "検索例: 「四ツ谷駅 個室 少人数 飲み会」",
+    "scenes": [
+      { "scene": "GROUP", "score": 8, "reason": "個室・テーブル席・4名まで予約確認済み", "budgetMin": 5000, "budgetMax": 8000 }
+    ]
+  }
+]

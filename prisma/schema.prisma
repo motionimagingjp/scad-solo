@@ -25,37 +25,84 @@ model UserProfile {
 // スポット(恒常的に存在する場所)
 // ============================================================
 model Spot {
-  id               String     @id @default(cuid())
+  id               String      @id @default(cuid())
   name             String
   category         Category // 大分類
   // 小分類タグ。場所の種類("カラオケ","サウナ")と店選びの基準("立ち飲み","日本酒",
   // "ワイン","ビール","女性ひとり歓迎")を同じ配列で持ち、検索フィルターと1対1で対応させる
-  subCategories    String[]   @default([])
+  subCategories    String[]    @default([])
   address          String
   // 推し文。「一人客が7割のカウンター」のような一言で、カードに出して決め手にする。
   // AI検索で店を取り込む際は、店の情報と一緒にこの一言も生成させる
   tagline          String?
   latitude         Float
   longitude        Float
-  hasCounterSeat   Boolean    @default(true)
-  senberoAvailable Boolean    @default(false)
-  soloFriendliness Int        @default(5) // 1-10
+  hasCounterSeat   Boolean     @default(true)
+  senberoAvailable Boolean     @default(false)
+  soloFriendliness Int         @default(5) // 1-10
   visitLogs        VisitLog[]
   events           Event[]
-  createdAt        DateTime   @default(now())
+  scenes           SpotScene[]
+  createdAt        DateTime    @default(now())
 
   // 実店舗データ収集(AI検索での発掘)と閉店確認の月次バッチ用のメタ情報
   nearestStation String? // 収集計画(駅ごとの件数ノルマ)の集計キー
-  googlePlaceId  String?     @unique // Places APIで営業状態(閉店)を確認するための紐付け
-  status         SpotStatus  @default(ACTIVE)
+  googlePlaceId  String?    @unique // Places APIで営業状態(閉店)を確認するための紐付け
+  status         SpotStatus @default(ACTIVE)
   lastVerifiedAt DateTime? // 最後にPlaces APIで営業状態を確認した日時
   sourceNote     String? // どうやって見つけたか(検索クエリ・出典URL等)。人力レビューの参考用
+
+  // Geocoding API由来の座標紐付け情報(googlePlaceIdとは別用途。住所/ビル単位のIDで重複しうるためunique制約なし)
+  geocodePlaceId String?
+  geocodedAt     DateTime? // 座標取得日時。30日以内の再取得判定に使う
+
+  // 席・予約の情報。null=未確認。デート・グループの判定に使う。
+  // グループは2-4名(45-65歳)がターゲットなので、テーブル席の有無が必須条件になる
+  // (4人がカウンター横一列だと会話が成立しないため)。飲み放題・コース・貸切は
+  // 8名以上の幹事向けの条件で、現ターゲットでは検索に使っていない
+  hasTableSeat        Boolean?
+  acceptsReservation  Boolean?
+  maxGroupSize        Int?
+  hasPrivateRoom      Boolean?
+  hasAllYouCanDrink   Boolean?
+  hasCourse           Boolean?
+  canCharter          Boolean?
+  groupInfoVerifiedAt DateTime? // グループ向け情報の確認日時。入るまでグループ検索には出さない
 
   @@index([category])
   @@index([latitude, longitude])
   @@index([subCategories], type: Gin) // 配列タグ検索用
   @@index([nearestStation])
   @@index([status])
+}
+
+// ============================================================
+// シーン別スコア(ソロ/デート/グループ/高級)。店舗マスタ(Spot)は共通利用し、
+// シーンごとの適性はここで管理する。既存のSpot.soloFriendlinessは
+// 既存ソロ機能用にそのまま残し、SpotScene(scene=SOLO)と並行稼働させる
+// ============================================================
+model SpotScene {
+  id         String    @id @default(cuid())
+  spotId     String
+  spot       Spot      @relation(fields: [spotId], references: [id], onDelete: Cascade)
+  scene      Scene
+  score      Int       @default(5)
+  reason     String?
+  budgetMin  Int?
+  budgetMax  Int?
+  verifiedAt DateTime?
+  createdAt  DateTime  @default(now())
+  updatedAt  DateTime  @updatedAt
+
+  @@unique([spotId, scene])
+  @@index([scene, score])
+}
+
+enum Scene {
+  SOLO
+  DATE
+  GROUP
+  LUXURY
 }
 
 // ============================================================

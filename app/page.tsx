@@ -1,7 +1,8 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { Suspense, useEffect, useMemo, useState } from "react";
 import Link from "next/link";
+import { useSearchParams } from "next/navigation";
 import { Store, MapPin } from "lucide-react";
 import BottomNav, { NAV_HEIGHT } from "@/components/BottomNav";
 import InfoButton from "@/components/InfoButton";
@@ -11,42 +12,65 @@ import { AiSuggestedBadge, spotMetaLine, type SpotSummary } from "@/components/S
 import { distanceLabel, googleMapsUrl, haversineMeters } from "@/lib/geo";
 import { useBaseLocation } from "@/lib/useBaseLocation";
 import { BRAND } from "@/lib/brand";
+import { DEFAULT_SCENE, SCENES, type SceneKey } from "@/lib/data/scenes";
 
 // 「今夜の3軒」: 近い順に絞った3軒をそのまま提示する検索画面。
 // シャッフル性は持たせない(エンターテイメント性はゲームタブ側で担うため)。
 // 「次の3軒」は距離順プールを先頭から3件ずつページ送りするだけで、乱数は使わない。
+//
+// シーン(ソロ/デート/グループ)は画面上部で切り替える。ナビのタブは増やさない
+// (来店ログ・ランクなどソロ前提の機能の置き場所が分裂するため)。
 
 const PICK_SIZE = 3;
 const MAX_REDRAWS = 2; // 「次の3軒」を送れる回数(無制限だと結局「迷う」体験に戻るため)
 const POOL_SIZE = 15; // 近い順にこの件数までを候補にする
 const MAX_DISTANCE_METERS = 5000; // これより遠い店は「今夜」の範囲外として候補から外す
 
-// 飲みに絞った気分の指定。複数選ぶと「ワインが飲めてカウンターがある店」のように絞り込まれる。
-// カラオケ・サウナは飲みではないので、ここには置かず地図側のフィルターに残してある。
-const MODES = ["カウンター席", "立ち飲み", "せんべろ", "日本酒", "ワイン", "ビール", "女性ひとり歓迎"];
-
 // 「このエリアにはデータがない」空状態から1タップで実データのあるエリアへ逃がすための固定値
 const TOKYO_STATION = { lat: 35.681236, lng: 139.767125, label: "東京駅" };
 
 export default function HomePage() {
+  return (
+    <Suspense fallback={null}>
+      <HomePageInner />
+    </Suspense>
+  );
+}
+
+// useSearchParams()はSuspense境界を要求する(ビルド時の静的プリレンダリングのため)ので、
+// 本体を内側のコンポーネントに分離している
+function HomePageInner() {
+  const searchParams = useSearchParams();
+  const embed = searchParams.get("embed") === "1";
   const { location, setManualLocation, requestGps, gpsDenied } = useBaseLocation();
+  const [sceneKey, setSceneKey] = useState<SceneKey>(DEFAULT_SCENE);
   const [modes, setModes] = useState<Set<string>>(new Set());
   const [spots, setSpots] = useState<SpotSummary[] | null>(null);
   const [page, setPage] = useState(0);
 
+  const scene = SCENES.find((s) => s.key === sceneKey) ?? SCENES[0];
+
   const toggleMode = (mode: string) =>
     setModes((prev) => { const n = new Set(prev); n.has(mode) ? n.delete(mode) : n.add(mode); return n; });
 
+  // シーンごとにモードの選択肢が違うので、切り替えたら絞り込みは解除する
+  const selectScene = (key: SceneKey) => {
+    setSceneKey(key);
+    setModes(new Set());
+  };
+
   // 「今夜の3軒」は飲み屋(SOLO_NOMI)だけを候補にする。
   // サウナやラーメン屋が混ざると体験が壊れるため、大分類でAPI側で絞る。
+  // Categoryの名称はソロ前提だが実体は「飲み屋」なので、どのシーンでもSOLO_NOMIを使う。
   useEffect(() => {
     setSpots(null);
-    const filters = modes.size > 0 ? `&filters=${encodeURIComponent([...modes].join(","))}` : "";
-    fetch(`/api/spots?category=SOLO_NOMI${filters}`)
+    const params = new URLSearchParams({ category: "SOLO_NOMI", scene: sceneKey });
+    if (modes.size > 0) params.set("filters", [...modes].join(","));
+    fetch(`/api/spots?${params}`)
       .then((res) => (res.ok ? res.json() : { spots: [] }))
       .then((data) => setSpots(data.spots ?? []))
       .catch(() => setSpots([]));
-  }, [modes]);
+  }, [modes, sceneKey]);
 
   // 基準地からの近い順。5km圏外の店は「今夜ふらっと」の範囲外として除外する
   // (店が少ないエリアだと無理に遠方を出してしまい、「約28km」のような結果になるため)。
@@ -81,9 +105,11 @@ export default function HomePage() {
 
   const canShowNext = pool !== null && page < MAX_REDRAWS && (page + 1) * PICK_SIZE < pool.length;
   const loading = pool === null;
+  // 基準地の問題(近くに無い)ではなく、そのシーンの店がまだ1件も登録されていない状態
+  const sceneHasNoData = Boolean(scene.comingSoonNote) && spots?.length === 0;
 
   return (
-    <div className="mx-auto min-h-dvh max-w-md bg-gray-50" style={{ paddingBottom: NAV_HEIGHT + 16 }}>
+    <div className="mx-auto min-h-dvh max-w-md bg-gray-50" style={{ paddingBottom: embed ? 16 : NAV_HEIGHT + 16 }}>
       <header className="flex items-center justify-between border-b bg-white px-4 py-3">
         <h1 className="text-base font-bold text-orange-500">{BRAND.appName}</h1>
         <div className="flex items-center gap-2">
@@ -93,10 +119,26 @@ export default function HomePage() {
         </div>
       </header>
 
+      {/* シーン切替。モードチップ(丸い枠線)と役割が違うことが分かるよう、塗りのセグメントで出す */}
+      <div className="mx-4 mt-4 flex rounded-full bg-white p-1 shadow-sm">
+        {SCENES.map((s) => (
+          <button
+            key={s.key}
+            onClick={() => selectScene(s.key)}
+            aria-pressed={s.key === sceneKey}
+            className={`flex-1 rounded-full py-2 text-xs font-bold ${
+              s.key === sceneKey ? "bg-orange-500 text-white" : "text-gray-500"
+            }`}
+          >
+            {s.label}
+          </button>
+        ))}
+      </div>
+
       <div className="px-4 pt-5">
         <p className="flex items-center gap-1.5 text-lg font-bold">
           <Store size={20} className="text-orange-500" />
-          今夜のおすすめ3軒
+          {scene.heading}
         </p>
         <p className="mt-1 text-xs text-gray-400">現在地は不明の場合は東京駅が出ます</p>
       </div>
@@ -119,7 +161,7 @@ export default function HomePage() {
           >
             おまかせ
           </button>
-          {MODES.map((mode) => {
+          {scene.modes.map((mode) => {
             const on = modes.has(mode);
             return (
               <button
@@ -157,20 +199,35 @@ export default function HomePage() {
               className="pointer-events-none absolute inset-0 bg-cover bg-center opacity-10"
               style={{ backgroundImage: "url(/images/bar-mood.jpg)" }}
             />
+            {/* 「絞りすぎ」「シーンのデータがまだ無い」「この周辺に無い」で案内も逃し先も変える */}
             <div className="relative">
-              <p className="text-sm text-gray-500">
-                {modes.size > 0 ? "条件に合うお店が見つかりませんでした" : "この周辺にはまだ登録されたお店がありません"}
-              </p>
-              <p className="mt-2 text-xs text-gray-400">
-                {modes.size > 0 ? "モードを減らすか、別のエリアを試してみてください" : "上の場所ボタンから、別のエリアを指定してみてください"}
-              </p>
-              {modes.size === 0 && (
-                <button
-                  onClick={() => setManualLocation(TOKYO_STATION)}
-                  className="mt-4 rounded-full border border-orange-400 bg-orange-50 px-4 py-2 text-xs font-medium text-orange-600"
-                >
-                  東京駅エリアを見る
-                </button>
+              {modes.size > 0 ? (
+                <>
+                  <p className="text-sm text-gray-500">条件に合うお店が見つかりませんでした</p>
+                  <p className="mt-2 text-xs text-gray-400">モードを減らすか、別のエリアを試してみてください</p>
+                </>
+              ) : sceneHasNoData ? (
+                <>
+                  <p className="text-sm text-gray-500">{scene.comingSoonNote}</p>
+                  <p className="mt-2 text-xs text-gray-400">お店の登録が進むとここに表示されます</p>
+                  <button
+                    onClick={() => selectScene(DEFAULT_SCENE)}
+                    className="mt-4 rounded-full border border-orange-400 bg-orange-50 px-4 py-2 text-xs font-medium text-orange-600"
+                  >
+                    ソロで探す
+                  </button>
+                </>
+              ) : (
+                <>
+                  <p className="text-sm text-gray-500">この周辺にはまだ登録されたお店がありません</p>
+                  <p className="mt-2 text-xs text-gray-400">上の場所ボタンから、別のエリアを指定してみてください</p>
+                  <button
+                    onClick={() => setManualLocation(TOKYO_STATION)}
+                    className="mt-4 rounded-full border border-orange-400 bg-orange-50 px-4 py-2 text-xs font-medium text-orange-600"
+                  >
+                    東京駅エリアを見る
+                  </button>
+                </>
               )}
             </div>
           </div>

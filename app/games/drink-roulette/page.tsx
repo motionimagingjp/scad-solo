@@ -4,6 +4,7 @@ import { useRef, useState } from "react";
 import Link from "next/link";
 import { ChevronLeft, Camera, Image as ImageIcon } from "lucide-react";
 import BottomNav from "@/components/BottomNav";
+import ShareButton from "@/components/ShareButton";
 import { FALLBACK_DRINKS } from "@/lib/data/drinkRouletteFallback";
 
 // ドリンクルーレット: 開いた瞬間から定番5候補でルーレットを回せる。
@@ -92,6 +93,9 @@ export default function DrinkRoulettePage() {
           <ChevronLeft size={16} /> 戻る
         </Link>
         <h1 className="text-base font-bold">🍹 ドリンクルーレット</h1>
+        <div className="ml-auto">
+          <ShareButton text={result ? `🍹 ドリンクルーレットで「${result}」に決定!` : "🍹 ドリンクルーレットで一杯決めてる"} />
+        </div>
       </header>
 
       <input ref={cameraInputRef} type="file" accept="image/*" capture="environment" className="hidden" onChange={handleFile} />

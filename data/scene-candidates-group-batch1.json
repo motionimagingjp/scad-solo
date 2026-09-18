@@ -1,0 +1,354 @@
+[
+  {
+    "name": "日本酒と創作懐石 恵比寿ちょこっと",
+    "address": "東京都渋谷区恵比寿西1-7-10 恵比寿ファーストビル8F",
+    "nearestStation": "恵比寿駅",
+    "tagline": "日本酒と創作懐石の大人の隠れ家",
+    "subCategories": ["日本酒", "日本料理", "懐石", "個室"],
+    "hasTableSeat": true,
+    "hasPrivateRoom": true,
+    "acceptsReservation": true,
+    "senberoAvailable": false,
+    "maxGroupSize": 4,
+    "sourceNote": "食べログ座席情報: https://selection.tabelog.com/tokyo/A1303/A130302/13209679/table/ 完全個室2〜3名、半個室テーブル4名・6名、夜予算6,000〜7,999円、ネット予約可。",
+    "scenes": [
+      { "scene": "GROUP", "score": 10, "reason": "4名までの半個室テーブルがあり日本酒も楽しめる", "budgetMin": 6000, "budgetMax": 7999 }
+    ]
+  },
+  {
+    "name": "BLU",
+    "address": "東京都渋谷区恵比寿1-22-8 EBISU FIRST PLACE 2F",
+    "nearestStation": "恵比寿駅",
+    "tagline": "自然派ワインと料理の大人バル",
+    "subCategories": ["ナチュラルワイン", "イタリアン", "ワインバー", "個室"],
+    "hasTableSeat": true,
+    "hasPrivateRoom": true,
+    "acceptsReservation": true,
+    "senberoAvailable": false,
+    "maxGroupSize": 4,
+    "sourceNote": "食べログ: https://selection.tabelog.com/tokyo/A1303/A130302/13243741/table/ テーブル席・完全個室あり、夜予算6,000〜7,999円、ネット予約可。",
+    "scenes": [
+      { "scene": "GROUP", "score": 9, "reason": "テーブル・個室があり自然派ワインを囲める", "budgetMin": 6000, "budgetMax": 7999 }
+    ]
+  },
+  {
+    "name": "酒場 シナトラ 恵比寿店",
+    "address": "東京都渋谷区恵比寿南2-1-4 ジョワレ恵比寿B1F",
+    "nearestStation": "恵比寿駅",
+    "tagline": "旬魚と日本酒のカジュアル割烹",
+    "subCategories": ["日本酒", "割烹", "海鮮", "個室", "テーブル"],
+    "hasTableSeat": true,
+    "hasPrivateRoom": true,
+    "acceptsReservation": true,
+    "senberoAvailable": false,
+    "maxGroupSize": 4,
+    "sourceNote": "食べログ: https://tabelog.com/tokyo/A1303/A130302/13231547/ 個室6〜12名・テーブル席あり、予約可。住所はWebSearchで修正(提出時「恵比寿南1-1-3 今鉾ビル」は誤り、正しくは「恵比寿南2-1-4 ジョワレ恵比寿」)。",
+    "scenes": [
+      { "scene": "GROUP", "score": 9, "reason": "旬魚と日本酒をテーブルで楽しめ個室利用も可能", "budgetMin": 6000, "budgetMax": 7999 }
+    ]
+  },
+  {
+    "name": "うなぎ四代目 菊川 恵比寿ガーデンプレイス店",
+    "address": "東京都渋谷区恵比寿4-20-3 恵比寿ガーデンプレイスタワー38F",
+    "nearestStation": "恵比寿駅",
+    "tagline": "絶景と鰻を楽しむ大人の和食店",
+    "subCategories": ["うなぎ", "日本料理", "日本酒", "個室"],
+    "hasTableSeat": true,
+    "hasPrivateRoom": true,
+    "acceptsReservation": true,
+    "senberoAvailable": false,
+    "maxGroupSize": 4,
+    "sourceNote": "食べログ座席情報: https://selection.tabelog.com/tokyo/A1303/A130302/13279035/table/ 窓際テーブル、2〜4名個室、3〜6名特別室、ネット予約可、夜予算6,000〜7,999円。",
+    "scenes": [
+      { "scene": "GROUP", "score": 10, "reason": "2〜4名個室と38階のテーブル席がある", "budgetMin": 6000, "budgetMax": 7999 }
+    ]
+  },
+  {
+    "name": "SAKE story",
+    "address": "東京都品川区西五反田2-17-8 安東ビル2F",
+    "nearestStation": "五反田駅",
+    "tagline": "日本酒好きが集う専門性の高い酒処",
+    "subCategories": ["日本酒", "日本料理", "日本酒バー", "個室"],
+    "hasTableSeat": true,
+    "hasPrivateRoom": true,
+    "acceptsReservation": true,
+    "senberoAvailable": false,
+    "maxGroupSize": 4,
+    "sourceNote": "食べログ座席情報: https://tabelog.com/tokyo/A1316/A131603/13212028/table/ 4名テーブル席、5〜8名完全個室、夜予算6,000〜7,999円、予約可。WebSearchでは「カウンター15席+個室(5-8名)」という記載もあり、2名予約時はカウンター案内になる場合がある点に注意。",
+    "scenes": [
+      { "scene": "GROUP", "score": 9, "reason": "4名テーブルと日本酒専門性が条件に合う", "budgetMin": 6000, "budgetMax": 7999 }
+    ]
+  },
+  {
+    "name": "フリコトー",
+    "address": "東京都品川区西五反田2-24-7 シティコープ西五反田1F",
+    "nearestStation": "五反田駅",
+    "tagline": "落ち着いた空間の本格フレンチ",
+    "subCategories": ["フレンチ", "ワイン", "テーブル", "大人向け"],
+    "hasTableSeat": true,
+    "hasPrivateRoom": false,
+    "acceptsReservation": true,
+    "senberoAvailable": false,
+    "maxGroupSize": 4,
+    "sourceNote": "食べログ: https://selection.tabelog.com/tokyo/A1316/A131603/13009332/table/ テーブル席あり、五反田駅徒歩5分、ネット予約可、夜予算6,000〜7,999円。",
+    "scenes": [
+      { "scene": "GROUP", "score": 9, "reason": "落ち着いたフレンチでワインを囲めるテーブル席", "budgetMin": 6000, "budgetMax": 7999 }
+    ]
+  },
+  {
+    "name": "五反田 鳥心",
+    "address": "東京都品川区西五反田2-6-12 東洋ビル1F",
+    "nearestStation": "五反田駅",
+    "tagline": "焼鳥とワインを楽しむ大人の隠れ家",
+    "subCategories": ["焼鳥", "ワイン", "日本酒", "テーブル"],
+    "hasTableSeat": true,
+    "hasPrivateRoom": false,
+    "acceptsReservation": true,
+    "senberoAvailable": false,
+    "maxGroupSize": 4,
+    "sourceNote": "食べログ座席情報: https://selection.tabelog.com/tokyo/A1316/A131603/13214720/table/ テーブル席2名×11卓、予約可、夜予算5,000〜5,999円。",
+    "scenes": [
+      { "scene": "GROUP", "score": 9, "reason": "2名テーブルを組み合わせて少人数会食に使える", "budgetMin": 5000, "budgetMax": 5999 }
+    ]
+  },
+  {
+    "name": "個室居酒屋 五反田 日々喜",
+    "address": "東京都品川区西五反田1-32-2 五反田ALCOVE 1F",
+    "nearestStation": "五反田駅",
+    "tagline": "鮮魚と酒を楽しむ個室和食酒場",
+    "subCategories": ["海鮮", "日本料理", "日本酒", "個室"],
+    "hasTableSeat": true,
+    "hasPrivateRoom": true,
+    "acceptsReservation": true,
+    "senberoAvailable": false,
+    "maxGroupSize": 4,
+    "sourceNote": "食べログ: https://tabelog.com/tokyo/A1316/A131603/13234652/ 完全個室2名〜、テーブル席・半個室あり、予約可、夜予算5,000〜5,999円。",
+    "scenes": [
+      { "scene": "GROUP", "score": 8, "reason": "2名から個室利用でき鮮魚と酒を楽しめる", "budgetMin": 5000, "budgetMax": 5999 }
+    ]
+  },
+  {
+    "name": "俺の割烹 たくみ 五反田",
+    "address": "東京都品川区東五反田1-13-3 デュロス五反田ビル3F",
+    "nearestStation": "五反田駅",
+    "tagline": "本格和食と銘酒を楽しむ割烹酒場",
+    "subCategories": ["割烹", "日本酒", "海鮮", "テーブル"],
+    "hasTableSeat": true,
+    "hasPrivateRoom": true,
+    "acceptsReservation": true,
+    "senberoAvailable": false,
+    "maxGroupSize": 4,
+    "sourceNote": "ホットペッパー: https://www.hotpepper.jp/strJ001192613/ 2026年8月の4名利用で4,001〜5,000円、2名利用で日本酒6種付き8品6,500円コースの掲載あり、予約可。住所はWebSearchで修正(提出時「西五反田1-24-4 タキゲンビル」は誤り、正しくは「東五反田1-13-3 デュロス五反田ビル」)。個室は2〜30名対応を確認。",
+    "scenes": [
+      { "scene": "GROUP", "score": 8, "reason": "日本酒銘柄を楽しめるコースがあり少人数会食に向く", "budgetMin": 5000, "budgetMax": 6500 }
+    ]
+  },
+  {
+    "name": "酒場それがし",
+    "address": "東京都品川区西五反田1-27-7",
+    "nearestStation": "五反田駅",
+    "tagline": "日本酒と魚料理に強い大人の酒場",
+    "subCategories": ["日本酒", "焼酎", "魚料理", "テーブル"],
+    "hasTableSeat": true,
+    "hasPrivateRoom": false,
+    "acceptsReservation": true,
+    "senberoAvailable": false,
+    "maxGroupSize": 4,
+    "sourceNote": "食べログ: https://tabelog.com/tokyo/A1316/A131603/13122590/ 2階テーブル席22席、予約可、日本酒10種類、夜予算4,000〜4,999円。",
+    "scenes": [
+      { "scene": "GROUP", "score": 8, "reason": "2階テーブル席で日本酒と魚料理を囲める", "budgetMin": 4000, "budgetMax": 4999 }
+    ]
+  },
+  {
+    "name": "和牛一頭流 出汁タン塩 じゅう兵衛 本店",
+    "address": "東京都品川区西五反田1-4-8 秀和五反田駅前レジデンス2F",
+    "nearestStation": "五反田駅",
+    "tagline": "和牛を囲む大人の焼肉酒場",
+    "subCategories": ["焼肉", "和牛", "日本酒", "個室"],
+    "hasTableSeat": true,
+    "hasPrivateRoom": true,
+    "acceptsReservation": true,
+    "senberoAvailable": false,
+    "maxGroupSize": 4,
+    "sourceNote": "食べログ座席情報: https://tabelog.com/tokyo/A1316/A131603/13029830/table/ 夜予算6,000〜7,999円、ネット予約可。住所はWebSearchで修正(提出時「西五反田1-11-6 安藤ビル」は誤り、正しくは「西五反田1-4-8 秀和五反田駅前レジデンス」)。",
+    "scenes": [
+      { "scene": "GROUP", "score": 8, "reason": "和牛を囲むテーブル席で少人数飲み会に向く", "budgetMin": 6000, "budgetMax": 7999 }
+    ]
+  },
+  {
+    "name": "ワイン÷炭火焼き酒場cacco",
+    "address": "東京都品川区西五反田8-1-10 ヒキタカ五反田ビル1F",
+    "nearestStation": "五反田駅",
+    "tagline": "本格ワインと炭火焼きの隠れ家",
+    "subCategories": ["ワイン", "炭火焼き", "焼鳥", "個室"],
+    "hasTableSeat": true,
+    "hasPrivateRoom": true,
+    "acceptsReservation": true,
+    "senberoAvailable": false,
+    "maxGroupSize": 4,
+    "sourceNote": "WebSearchで座席構成(カウンター7・テーブル28・個室8)を確認。住所を修正(提出時「西五反田1-32-4 サンユー西五反田ビル」は誤り、正しくは「西五反田8-1-10 ヒキタカ五反田ビル」)。予算もWebSearchで確認した4,000〜4,999円に修正。",
+    "scenes": [
+      { "scene": "GROUP", "score": 9, "reason": "本格ワインと炭火料理を個室で楽しめる", "budgetMin": 4000, "budgetMax": 4999 }
+    ]
+  },
+  {
+    "name": "日本料理 ざぜん",
+    "address": "東京都港区港南2-18-1 アトレ品川4F",
+    "nearestStation": "品川駅",
+    "tagline": "夜景と日本酒を楽しむ大人の和食",
+    "subCategories": ["日本料理", "日本酒", "海鮮", "半個室"],
+    "hasTableSeat": true,
+    "hasPrivateRoom": true,
+    "acceptsReservation": true,
+    "senberoAvailable": false,
+    "maxGroupSize": 4,
+    "sourceNote": "食べログ: https://selection.tabelog.com/tokyo/A1314/A131403/13005722/ 半個室・ボックス席・テーブル席あり、夜予算5,000〜5,999円。日本酒にこだわり、夜景あり。",
+    "scenes": [
+      { "scene": "GROUP", "score": 9, "reason": "半個室とボックス席があり日本酒と夜景を楽しめる", "budgetMin": 5000, "budgetMax": 5999 }
+    ]
+  },
+  {
+    "name": "全席個室 六献 品川店",
+    "address": "東京都港区港南1-8-27 日新ビルB1F",
+    "nearestStation": "品川駅",
+    "tagline": "佐賀牛と全国の銘酒を完全個室で",
+    "subCategories": ["日本料理", "日本酒", "佐賀牛", "完全個室"],
+    "hasTableSeat": true,
+    "hasPrivateRoom": true,
+    "acceptsReservation": true,
+    "senberoAvailable": false,
+    "maxGroupSize": 4,
+    "sourceNote": "食べログ: https://selection.tabelog.com/tokyo/A1314/A131403/13171572/ 全室扉付き完全個室2〜10名、佐賀牛と全国の銘酒、夜予算6,000〜7,999円。住所はWebSearchで修正(提出時「港南2-16-1 品川イーストワンタワー」は誤り、正しくは「港南1-8-27 日新ビル」)。",
+    "scenes": [
+      { "scene": "GROUP", "score": 10, "reason": "2名から使える完全個室と希少日本酒が魅力", "budgetMin": 6000, "budgetMax": 7999 }
+    ]
+  },
+  {
+    "name": "品川 個室和食 まつもと",
+    "address": "東京都港区港南2-16-1 品川イーストワンタワー1F-C",
+    "nearestStation": "品川駅",
+    "tagline": "個室で味わう魚料理と全国の銘酒",
+    "subCategories": ["日本料理", "日本酒", "海鮮", "完全個室"],
+    "hasTableSeat": true,
+    "hasPrivateRoom": true,
+    "acceptsReservation": true,
+    "senberoAvailable": false,
+    "maxGroupSize": 4,
+    "sourceNote": "食べログ: https://tabelog.com/tokyo/A1314/A131403/13257406/ 2〜4名個室あり、品川駅直結、夜予算6,000〜7,999円。",
+    "scenes": [
+      { "scene": "GROUP", "score": 9, "reason": "2〜4名個室があり魚料理と酒を落ち着いて楽しめる", "budgetMin": 6000, "budgetMax": 7999 }
+    ]
+  },
+  {
+    "name": "和響",
+    "address": "東京都港区港南2-2-1 6F",
+    "nearestStation": "品川駅",
+    "tagline": "夜景と創作和食を楽しむ完全個室",
+    "subCategories": ["創作和食", "日本酒", "海鮮", "完全個室"],
+    "hasTableSeat": true,
+    "hasPrivateRoom": true,
+    "acceptsReservation": true,
+    "senberoAvailable": false,
+    "maxGroupSize": 4,
+    "sourceNote": "全席個室、夜景個室など最大54名まで。住所はWebSearchで修正(提出時「港南2-2-9 朝日ビル」は誤り、正しくは「港南2-2-1」)。",
+    "scenes": [
+      { "scene": "GROUP", "score": 8, "reason": "4名までの完全個室で夜景を楽しめる", "budgetMin": 4000, "budgetMax": 4999 }
+    ]
+  },
+  {
+    "name": "日本酒と和食 花びし",
+    "address": "東京都港区新橋3-9-6",
+    "nearestStation": "新橋駅",
+    "tagline": "のどぐろと日本酒の和モダン個室",
+    "subCategories": ["日本酒", "日本料理", "海鮮", "完全個室"],
+    "hasTableSeat": true,
+    "hasPrivateRoom": true,
+    "acceptsReservation": true,
+    "senberoAvailable": false,
+    "maxGroupSize": 4,
+    "sourceNote": "食べログ: https://tabelog.com/tokyo/A1301/A130103/13285719/ 新橋駅徒歩3分、4名完全個室3室、6名完全個室1室、予約可、夜予算6,000〜7,999円。",
+    "scenes": [
+      { "scene": "GROUP", "score": 10, "reason": "4名完全個室と本格和食・日本酒の組み合わせ", "budgetMin": 6000, "budgetMax": 7999 }
+    ]
+  },
+  {
+    "name": "全席完全個室ワインダイニング ダイヤモンドフィッシュ",
+    "address": "東京都港区新橋2-9-6 烏森神社ビル5F",
+    "nearestStation": "新橋駅",
+    "tagline": "静かな完全個室で楽しむ厳選ワイン",
+    "subCategories": ["ワイン", "フレンチ", "イタリアン", "完全個室"],
+    "hasTableSeat": true,
+    "hasPrivateRoom": true,
+    "acceptsReservation": true,
+    "senberoAvailable": false,
+    "maxGroupSize": 4,
+    "sourceNote": "食べログ: https://selection.tabelog.com/tokyo/A1301/A130103/13146507/ 全席完全個室、2〜6名コース5,200円・5,800円・6,800円、厳選ワイン、予約可。",
+    "scenes": [
+      { "scene": "GROUP", "score": 10, "reason": "全席完全個室で静かにワインと料理を楽しめる", "budgetMin": 5200, "budgetMax": 6800 }
+    ]
+  },
+  {
+    "name": "NB CLUB",
+    "address": "東京都中央区銀座8-5-6 中島商事ビルB2F",
+    "nearestStation": "新橋駅",
+    "tagline": "非日常空間で味わうビストロとワイン",
+    "subCategories": ["ビストロ", "ワインバー", "黒毛和牛", "個室"],
+    "hasTableSeat": true,
+    "hasPrivateRoom": true,
+    "acceptsReservation": true,
+    "senberoAvailable": false,
+    "maxGroupSize": 4,
+    "sourceNote": "食べログ: https://selection.tabelog.com/tokyo/A1301/A130101/13014981/ 新橋駅徒歩2分、個室3室、2〜8名コース5,000〜7,000円、厳選ワイン、予約可。",
+    "scenes": [
+      { "scene": "GROUP", "score": 9, "reason": "個室とワインを楽しめる大人向けビストロ", "budgetMin": 5000, "budgetMax": 7000 }
+    ]
+  },
+  {
+    "name": "RIGOLETTO KITCHEN",
+    "address": "東京都中央区銀座8-2-1 ニッタビルB1F",
+    "nearestStation": "新橋駅",
+    "tagline": "ワインと料理を楽しむ大人の隠れ家",
+    "subCategories": ["イタリアン", "スペイン料理", "ワイン", "個室"],
+    "hasTableSeat": true,
+    "hasPrivateRoom": true,
+    "acceptsReservation": true,
+    "senberoAvailable": false,
+    "maxGroupSize": 4,
+    "sourceNote": "食べログ: https://selection.tabelog.com/tokyo/A1301/A130103/13043443/table/ テーブル席・ソファ席・6〜12名個室あり、予約可、夜予算5,000〜5,999円。",
+    "scenes": [
+      { "scene": "GROUP", "score": 9, "reason": "テーブル席と個室がありワインを囲める", "budgetMin": 5000, "budgetMax": 5999 }
+    ]
+  },
+  {
+    "name": "和心ぎんすい",
+    "address": "東京都港区新橋2-19-6 新和ビルB1F",
+    "nearestStation": "新橋駅",
+    "tagline": "地酒と旬魚を楽しむ落ち着いた和食店",
+    "subCategories": ["日本料理", "日本酒", "焼酎", "個室"],
+    "hasTableSeat": true,
+    "hasPrivateRoom": true,
+    "acceptsReservation": true,
+    "senberoAvailable": false,
+    "maxGroupSize": 4,
+    "sourceNote": "食べログ: https://tabelog.com/tokyo/A1301/A130103/13020621/ テーブル席4〜5名、お座敷個室4〜8名。WebSearchで座席構成(カウンター7・テーブル4・小上がり6)を確認。夜予算8,000〜9,999円の掲載もあるため通常利用は予算上限に近い点に注意。",
+    "scenes": [
+      { "scene": "GROUP", "score": 7, "reason": "テーブル席と個室があり地酒を楽しめる", "budgetMin": 6000, "budgetMax": 8000 }
+    ]
+  },
+  {
+    "name": "和食 いぶり別邸 新橋店",
+    "address": "東京都港区新橋3-16-2 太洋ビル2F・3F",
+    "nearestStation": "新橋駅",
+    "tagline": "希少酒と寿司を楽しむ完全個室和食",
+    "subCategories": ["日本酒", "寿司", "和食", "完全個室"],
+    "hasTableSeat": true,
+    "hasPrivateRoom": true,
+    "acceptsReservation": true,
+    "senberoAvailable": false,
+    "maxGroupSize": 4,
+    "sourceNote": "食べログ: https://tabelog.com/tokyo/A1301/A130103/13281809/ 全席完全個室、十四代・新政・山崎12年などを案内、夜予算6,000〜7,999円、予約可。住所はWebSearchで修正(提出時「新橋3-5-11 プラザ新橋ビル」は誤り、正しくは「新橋3-16-2 太洋ビル」)。",
+    "scenes": [
+      { "scene": "GROUP", "score": 9, "reason": "全席個室で希少銘柄を含む酒を楽しめる", "budgetMin": 6000, "budgetMax": 7999 }
+    ]
+  }
+]

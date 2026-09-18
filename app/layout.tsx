@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import { BRAND, IS_DEMO } from "@/lib/brand";
 import PwaInstallPrompt from "@/components/PwaInstallPrompt";
@@ -38,6 +38,15 @@ export const metadata: Metadata = {
   },
   // デモ版は本番サイトと検索結果で競合させないためインデックスさせない
   ...(IS_DEMO ? { robots: { index: false, follow: false } } : {}),
+};
+
+// viewportFit:"cover" が無いと、ノッチ/ダイナミックアイランド付きiPhoneでSafariが
+// env(safe-area-inset-*)を有効化せず、BottomNav・PwaInstallPromptの余白計算が0扱いになり
+// 画面いっぱいに表示されない(上下に隙間ができる/ホームバーに被る)ことがあったため追加。
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  viewportFit: "cover",
 };
 
 export default function RootLayout({
