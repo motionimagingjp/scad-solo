@@ -12,7 +12,8 @@ const SITE_URL = process.env.VERCEL_PROJECT_PRODUCTION_URL
     : "http://localhost:3000";
 
 // 開発コード名は SCAD-SOLO のまま維持。ユーザーに見せるブランド名のみ
-// Tokyo Solo Club を使用する(対象エリアを東京23区中心に絞った命名)。
+// ヨイナビ を使用する(ソロ限定の命名だったTokyo Solo Clubから、
+// ソロ・グループ・デートのシーン拡張に合わせて2026年9月に改名)。
 // 会社共有用デモ版では lib/brand.ts 側で MIRAI-Dev-Solo に切り替わる。
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),

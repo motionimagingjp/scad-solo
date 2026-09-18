@@ -16,7 +16,7 @@ export const SCAD_APPS: ScadApp[] = [
   {
     id: "scad-solo",
     name: BRAND.appName,
-    tagline: "ソロ活・ソロ飲みナビ",
+    tagline: "今夜の店探しナビ",
     benefit: "今使っているアプリです",
     url: "/",
     isCurrent: true,

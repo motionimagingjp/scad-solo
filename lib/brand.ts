@@ -32,9 +32,9 @@ type Brand = {
 };
 
 const PRODUCTION: Brand = {
-  appName: "Tokyo Solo Club（ソロ飲みDB)",
-  description: "今夜のソロ飲みを1秒で決める",
-  shareText: "一人でも気兼ねなく行ける店が、すぐ見つかる。SCAD-SOLO",
+  appName: "ヨイナビ",
+  description: "今夜、行く店を1秒で決める",
+  shareText: "一人でも、誰かとでも。今夜行ける店が、すぐ見つかる。ヨイナビ",
   userId: "demo-user",
   seriesLabel: "SCADシリーズ",
   beautyName: "SCAD-BEAUTY",
@@ -43,7 +43,7 @@ const PRODUCTION: Brand = {
   chatUrl: "https://scad-chat.vercel.app/",
   sns: [{ label: "X (旧Twitter)", url: "https://x.com/jakeimages" }],
   story:
-    "一人で飲みに行きたい日はあるのに、「入りにくそう」「浮きそう」で結局いつもの店に戻ってしまう。そんな経験から、カウンター席があって一人客に慣れた店だけを集めたら、もっと気軽に新しい店に挑戦できるはずだと思い、個人でこのアプリを開発しています。",
+    "一人で飲みに行きたい日はあるのに、「入りにくそう」「浮きそう」で結局いつもの店に戻ってしまう。そんな経験から、カウンター席があって一人客に慣れた店だけを集めたら、もっと気軽に新しい店に挑戦できるはずだと思い、個人でこのアプリを開発しています。最初はソロ飲み専用でしたが、今は友人とのグループ飲みやデートの店探しにも使えるように広がっています。",
   ecosystemContact: "✉️ @motion.imaging がおすすめする関連サービス",
   // 元は app/opengraph-image.jpg (Next.jsのファイル規約) だったが、
   // デモ版で画像を出し分けるため public/ 側の静的ファイル+明示メタデータに変更した
