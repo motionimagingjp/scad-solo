@@ -1,7 +1,8 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { Suspense, useEffect, useMemo, useState } from "react";
 import Link from "next/link";
+import { useSearchParams } from "next/navigation";
 import { Store, MapPin } from "lucide-react";
 import BottomNav, { NAV_HEIGHT } from "@/components/BottomNav";
 import InfoButton from "@/components/InfoButton";
@@ -29,6 +30,18 @@ const MAX_DISTANCE_METERS = 5000; // これより遠い店は「今夜」の範�
 const TOKYO_STATION = { lat: 35.681236, lng: 139.767125, label: "東京駅" };
 
 export default function HomePage() {
+  return (
+    <Suspense fallback={null}>
+      <HomePageInner />
+    </Suspense>
+  );
+}
+
+// useSearchParams()はSuspense境界を要求する(ビルド時の静的プリレンダリングのため)ので、
+// 本体を内側のコンポーネントに分離している
+function HomePageInner() {
+  const searchParams = useSearchParams();
+  const embed = searchParams.get("embed") === "1";
   const { location, setManualLocation, requestGps, gpsDenied } = useBaseLocation();
   const [sceneKey, setSceneKey] = useState<SceneKey>(DEFAULT_SCENE);
   const [modes, setModes] = useState<Set<string>>(new Set());
@@ -96,7 +109,7 @@ export default function HomePage() {
   const sceneHasNoData = Boolean(scene.comingSoonNote) && spots?.length === 0;
 
   return (
-    <div className="mx-auto min-h-dvh max-w-md bg-gray-50" style={{ paddingBottom: NAV_HEIGHT + 16 }}>
+    <div className="mx-auto min-h-dvh max-w-md bg-gray-50" style={{ paddingBottom: embed ? 16 : NAV_HEIGHT + 16 }}>
       <header className="flex items-center justify-between border-b bg-white px-4 py-3">
         <h1 className="text-base font-bold text-orange-500">{BRAND.appName}</h1>
         <div className="flex items-center gap-2">
