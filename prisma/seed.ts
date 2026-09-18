@@ -31,16 +31,23 @@ const DEMO_SPOTS: DemoSpot[] = [
   { id: "spot_demo_ramen", name: "一人ラーメン・▲▲", category: "SOLO_MESHI", subCategories: [], address: "東京都渋谷区テスト3-1-1", tagline: "全席仕切り付き。誰とも顔を合わせず食べられる", latitude: 35.6588, longitude: 139.7042, hasCounterSeat: true, senberoAvailable: false, soloFriendliness: 10 },
   { id: "spot_demo_yakitori", name: "焼き鳥・◎◎", category: "SOLO_NOMI", subCategories: ["ビール"], address: "東京都渋谷区テスト3-2-2", tagline: "1本120円から。串2本+ビールでサクッと", latitude: 35.6621, longitude: 139.7008, hasCounterSeat: true, senberoAvailable: true, soloFriendliness: 8 },
 
-  // --- 池袋エリア ---
-  { id: "spot_demo_ike_tachinomi", name: "立飲み・▽▽", category: "SOLO_NOMI", subCategories: ["立ち飲み", "ビール"], address: "東京都豊島区テスト1-1-1", tagline: "駅から徒歩1分。仕事帰りの一杯にちょうどいい", latitude: 35.7295, longitude: 139.7109, hasCounterSeat: true, senberoAvailable: true, soloFriendliness: 9 },
-  { id: "spot_demo_ike_sake", name: "日本酒処・◆◆", category: "SOLO_NOMI", subCategories: ["日本酒", "女性ひとり歓迎"], address: "東京都豊島区テスト1-2-2", tagline: "静かめの店内。読書しながら飲む常連も", latitude: 35.7312, longitude: 139.7135, hasCounterSeat: true, senberoAvailable: false, soloFriendliness: 8 },
-  { id: "spot_demo_ike_sauna", name: "サウナ・▼▼", category: "SOLO_SPOT", subCategories: ["サウナ"], address: "東京都豊島区テスト2-1-1", tagline: "24時間営業。終電を逃しても駆け込める", latitude: 35.7268, longitude: 139.7091, hasCounterSeat: false, senberoAvailable: false, soloFriendliness: 8 },
-  { id: "spot_demo_ike_karaoke", name: "ソロカラオケ・◇▽", category: "SOLO_SPOT", subCategories: ["カラオケ", "女性ひとり歓迎"], address: "東京都豊島区テスト2-2-2", tagline: "平日昼は1時間300円。防音室で思い切り歌える", latitude: 35.7331, longitude: 139.7118, hasCounterSeat: false, senberoAvailable: false, soloFriendliness: 9 },
-  { id: "spot_demo_ike_wine", name: "ワイン酒場・◇◆", category: "SOLO_NOMI", subCategories: ["ワイン", "立ち飲み"], address: "東京都豊島区テスト2-3-3", tagline: "立ち飲みでグラス500円から。回転が速い", latitude: 35.7304, longitude: 139.7088, hasCounterSeat: true, senberoAvailable: false, soloFriendliness: 8 },
-  { id: "spot_demo_ike_yakitori", name: "焼き鳥・▲▽", category: "SOLO_NOMI", subCategories: ["ビール"], address: "東京都豊島区テスト3-2-2", tagline: "カウンター8席のみ。大将と無言でも許される空気", latitude: 35.7318, longitude: 139.7096, hasCounterSeat: true, senberoAvailable: true, soloFriendliness: 8 },
-  { id: "spot_demo_ike_bar", name: "バー・◆◇", category: "SOLO_NOMI", subCategories: ["ワイン", "女性ひとり歓迎"], address: "東京都豊島区テスト3-3-3", tagline: "薄暗く静か。一人で長居しても声をかけられない", latitude: 35.7276, longitude: 139.7124, hasCounterSeat: true, senberoAvailable: false, soloFriendliness: 7 },
-  { id: "spot_demo_ike_kakuuchi", name: "角打ち・▽◇", category: "SOLO_NOMI", subCategories: ["立ち飲み", "日本酒", "ビール"], address: "東京都豊島区テスト4-1-1", tagline: "酒屋の一角。缶ビール1本から店内で飲める", latitude: 35.7289, longitude: 139.7078, hasCounterSeat: true, senberoAvailable: true, soloFriendliness: 9 },
-  { id: "spot_demo_ike_meshi", name: "一人定食・○△", category: "SOLO_MESHI", subCategories: [], address: "東京都豊島区テスト3-1-1", tagline: "全席カウンター。15分で食べて出られる", latitude: 35.7281, longitude: 139.7152, hasCounterSeat: true, senberoAvailable: false, soloFriendliness: 10 },
+  // 池袋エリアは実店舗データ投入済み(data/spots-ikebukuro.json等)のため、
+  // ここには仮データを置かない。
+];
+
+// 実店舗データ投入により不要になった、旧・池袋エリアの仮データID。
+// prisma db seed はビルドのたびに実行されるため、DEMO_SPOTSから外すだけでは
+// 既存レコードが残ってしまう。ここに列挙してmain()で明示的に削除する。
+const OBSOLETE_DEMO_SPOT_IDS = [
+  "spot_demo_ike_tachinomi",
+  "spot_demo_ike_sake",
+  "spot_demo_ike_sauna",
+  "spot_demo_ike_karaoke",
+  "spot_demo_ike_wine",
+  "spot_demo_ike_yakitori",
+  "spot_demo_ike_bar",
+  "spot_demo_ike_kakuuchi",
+  "spot_demo_ike_meshi",
 ];
 
 async function main() {
@@ -52,7 +59,16 @@ async function main() {
       create: spot,
     });
   }
-  console.log(`seed完了: デモ店舗${DEMO_SPOTS.length}件を作成/更新しました`);
+  try {
+    const { count } = await prisma.spot.deleteMany({
+      where: { id: { in: OBSOLETE_DEMO_SPOT_IDS } },
+    });
+    console.log(`seed完了: デモ店舗${DEMO_SPOTS.length}件を作成/更新、旧仮データ${count}件を削除しました`);
+  } catch (e) {
+    // 来店ログ等から参照されているとFK制約で削除できない場合がある。
+    // ビルド自体は止めず、警告だけ出して続行する。
+    console.warn("旧仮データの削除に失敗しました(参照が残っている可能性):", e);
+  }
 }
 
 main()
