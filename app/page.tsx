@@ -138,7 +138,18 @@ export default function HomePage() {
       </div>
 
       <div className="space-y-3 px-4 pt-4">
-        {loading && <p className="py-10 text-center text-xs text-gray-400">お店を探しています...</p>}
+        {loading &&
+          Array.from({ length: PICK_SIZE }).map((_, i) => (
+            <div key={i} className="animate-pulse rounded-2xl bg-white p-4 shadow-sm">
+              <div className="h-4 w-2/3 rounded bg-gray-200" />
+              <div className="mt-2 h-3 w-1/3 rounded bg-gray-100" />
+              <div className="mt-2 h-3 w-1/2 rounded bg-gray-100" />
+              <div className="mt-3 flex gap-2">
+                <div className="h-10 flex-1 rounded-full bg-gray-100" />
+                <div className="h-10 w-12 rounded-full bg-gray-100" />
+              </div>
+            </div>
+          ))}
 
         {!loading && picks.length === 0 && (
           <div className="relative overflow-hidden rounded-2xl bg-white p-6 text-center">
