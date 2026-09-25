@@ -21,10 +21,6 @@ type Brand = {
   beautyUrl: string;
   chatName: string;
   chatUrl: string;
-  /** url が null のSNSはアイコンのみ表示し、リンクを張らない */
-  sns: { label: string; url: string | null }[];
-  /** 「私について」の文面。デモ版では個人の背景に踏み込まない表現にする */
-  story: string;
   /** マイページのエコシステムセクション見出し。本番は開発者個人のInstagramハンドルを含む */
   ecosystemContact: string;
   /** リンク共有時のプレビュー画像(og:image / twitter:image)。public/直下の絶対パス */
@@ -32,18 +28,15 @@ type Brand = {
 };
 
 const PRODUCTION: Brand = {
-  appName: "Tokyo Solo Club（ソロ飲みDB)",
+  appName: "ヨイナビ",
   description: "今夜のソロ飲みを1秒で決める",
-  shareText: "一人でも気兼ねなく行ける店が、すぐ見つかる。SCAD-SOLO",
+  shareText: "一人でも気兼ねなく行ける店が、すぐ見つかる。ヨイナビ",
   userId: "demo-user",
   seriesLabel: "SCADシリーズ",
-  beautyName: "SCAD-BEAUTY",
+  beautyName: "イロナビ",
   beautyUrl: "https://scad-beauty.vercel.app/",
   chatName: "SCAD-CHAT",
   chatUrl: "https://scad-chat.vercel.app/",
-  sns: [{ label: "X (旧Twitter)", url: "https://x.com/jakeimages" }],
-  story:
-    "一人で飲みに行きたい日はあるのに、「入りにくそう」「浮きそう」で結局いつもの店に戻ってしまう。そんな経験から、カウンター席があって一人客に慣れた店だけを集めたら、もっと気軽に新しい店に挑戦できるはずだと思い、個人でこのアプリを開発しています。",
   ecosystemContact: "✉️ @motion.imaging がおすすめする関連サービス",
   // 元は app/opengraph-image.jpg (Next.jsのファイル規約) だったが、
   // デモ版で画像を出し分けるため public/ 側の静的ファイル+明示メタデータに変更した
@@ -61,9 +54,6 @@ const DEMO: Brand = {
   beautyUrl: "https://mirai-dev-beauty.vercel.app/",
   chatName: "MIRAI-Dev-Chat",
   chatUrl: "https://mirai-dev-chat.vercel.app/",
-  sns: [{ label: "X (旧Twitter)", url: null }],
-  story:
-    "一人で飲みに行きたい日はあるのに、「入りにくそう」「浮きそう」で結局いつもの店に戻ってしまう。そんな状況を解消するため、カウンター席があって一人客に慣れた店だけを集め、気軽に新しい店へ挑戦できるようにしたアプリです。",
   // 開発者個人のSNSハンドルを含めないよう、一般的な表現にする
   ecosystemContact: "✉️ 関連サービスのご紹介",
   ogImage: { url: "/ogp-solo-demo.png", width: 1200, height: 630 },

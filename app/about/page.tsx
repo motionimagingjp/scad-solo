@@ -1,11 +1,15 @@
 import Link from "next/link";
 import { ChevronLeft } from "lucide-react";
 import { APP_ABOUT } from "@/lib/data/about";
-import { SCAD_APPS } from "@/lib/data/scadApps";
-import { BRAND } from "@/lib/brand";
+import { BRAND, IS_DEMO } from "@/lib/brand";
+import { getSharedAbout } from "@/lib/getSharedAbout";
 
 // 「このアプリについて」画面。SCAD-BEAUTYの共通フォーマット(APP_ABOUT)に合わせた構成。
-export default function AboutPage() {
+// 「私について」「アプリ一覧」「お問い合わせ・SNS」はMOTION IMAGINGシリーズ共通データを使用。
+export default async function AboutPage() {
+  const shared = await getSharedAbout();
+  const apps = shared.apps.filter((app) => app.id === "solo" || !IS_DEMO || app.demoUrl);
+
   return (
     <div className="mx-auto min-h-dvh max-w-md bg-gray-50 pb-10">
       <header className="flex items-center gap-2 border-b bg-white px-4 py-3">
@@ -19,12 +23,12 @@ export default function AboutPage() {
         <div className="flex items-center gap-3.5">
           <img
             src={APP_ABOUT.avatarImage}
-            alt={APP_ABOUT.name}
+            alt={shared.me.name}
             className="h-15 w-15 rounded-full object-cover"
             style={{ width: 60, height: 60 }}
           />
           <div>
-            <p className="text-sm font-bold">{APP_ABOUT.name}</p>
+            <p className="text-sm font-bold">{shared.me.name}</p>
             <p className="mt-0.5 text-xs leading-relaxed text-gray-500">{APP_ABOUT.tagline}</p>
           </div>
         </div>
@@ -32,7 +36,7 @@ export default function AboutPage() {
         <section>
           <p className="text-[11px] font-bold uppercase tracking-wide text-gray-400">私について</p>
           <div className="mt-2 rounded-r-xl border-l-[3px] border-orange-400 bg-white py-2.5 px-3.5 text-xs leading-relaxed">
-            {APP_ABOUT.story}
+            {shared.me.text}
           </div>
         </section>
 
@@ -66,16 +70,17 @@ export default function AboutPage() {
         <section>
           <p className="text-[11px] font-bold uppercase tracking-wide text-gray-400">{BRAND.seriesLabel}</p>
           <div className="mt-2 flex flex-col">
-            {SCAD_APPS.map((app) => {
-              const isCurrent = app.isCurrent;
+            {apps.map((app) => {
+              const isCurrent = app.id === "solo";
+              const url = IS_DEMO ? app.demoUrl : app.prodUrl;
               const row = (
                 <>
-                  <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-orange-50 text-xs font-bold text-orange-500">
-                    {app.name.replace("SCAD-", "").slice(0, 1)}
+                  <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-orange-50 text-xs">
+                    {app.emoji}
                   </span>
                   <span className="flex min-w-0 flex-1 flex-wrap items-baseline gap-1.5">
                     <span className="text-sm font-bold">{app.name}</span>
-                    <span className="text-[11px] text-gray-400">{app.tagline}</span>
+                    <span className="text-[11px] text-gray-400">{app.sub}</span>
                   </span>
                   {!isCurrent && <span className="shrink-0 text-gray-300">›</span>}
                 </>
@@ -90,7 +95,7 @@ export default function AboutPage() {
               ) : (
                 <a
                   key={app.id}
-                  href={app.url}
+                  href={url}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2.5 border-b py-2.5 last:border-b-0"
@@ -105,12 +110,13 @@ export default function AboutPage() {
         <section>
           <p className="text-[11px] font-bold uppercase tracking-wide text-gray-400">お問い合わせ・SNS</p>
           <div className="mt-2 flex gap-2.5">
-            {APP_ABOUT.sns.map((s) => {
+            {shared.sns.map((s) => {
               const className =
                 "flex h-9.5 w-9.5 items-center justify-center rounded-full border bg-white text-xs font-bold text-gray-600";
               const style = { width: 38, height: 38 };
-              // url が無い場合はリンクを張らず、アイコンの見た目だけを残す
-              if (!s.url) {
+              const url = IS_DEMO ? null : s.url;
+              // デモ版ではリンクを張らず、アイコンの見た目だけを残す
+              if (!url) {
                 return (
                   <span key={s.label} aria-label={s.label} className={className} style={style}>
                     {s.label.slice(0, 1)}
@@ -120,7 +126,7 @@ export default function AboutPage() {
               return (
                 <a
                   key={s.label}
-                  href={s.url}
+                  href={url}
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={s.label}

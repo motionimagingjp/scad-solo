@@ -1,16 +1,15 @@
 // 「このアプリについて」画面の内容。SCAD-BEAUTYの共通フォーマットを踏襲し、
 // SCAD-SOLO向けに内容だけ差し替えたもの。他のSCADアプリを増やす際もこの形をコピーすればいい。
+//
+// 「私について」「お問い合わせ・SNS」はMOTION IMAGINGシリーズ共通データ(lib/getSharedAbout)
+// を使うため、ここではアプリ固有の内容のみを持つ。
 import { BRAND } from "@/lib/brand";
 
 export type AboutFeature = { emoji: string; label: string; desc: string };
-// url が null のSNSはアイコンのみ表示し、リンクを張らない(デモ版で使用)
-export type AboutSns = { label: string; url: string | null };
 
 export const APP_ABOUT = {
   avatarImage: "/images/profile-avatar.jpg",
-  name: "はじめまして",
   tagline: "一人でも気兼ねなく行ける店を、すぐに見つけられるように。",
-  story: BRAND.story,
   appIntro:
     `${BRAND.appName}は、一人飲みに向いている店だけを絞り込んで提案する、ソロ活・ソロ飲み専用のナビアプリです。`,
   appFeatures: [
@@ -20,5 +19,4 @@ export const APP_ABOUT = {
   ] satisfies AboutFeature[],
   dataNote:
     "現在地は近くの店を探すためだけに使われ、位置情報そのものが保存されることはありません。来店ログやランクなどのソロ活の記録は、あなたの活動履歴としてこのアプリに保存されます。",
-  sns: BRAND.sns satisfies AboutSns[],
 };
