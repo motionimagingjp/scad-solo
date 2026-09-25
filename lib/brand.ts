@@ -32,12 +32,12 @@ type Brand = {
 };
 
 const PRODUCTION: Brand = {
-  appName: "Tokyo Solo Club（ソロ飲みDB)",
+  appName: "ヨイナビ",
   description: "今夜のソロ飲みを1秒で決める",
-  shareText: "一人でも気兼ねなく行ける店が、すぐ見つかる。SCAD-SOLO",
+  shareText: "一人でも気兼ねなく行ける店が、すぐ見つかる。ヨイナビ",
   userId: "demo-user",
   seriesLabel: "SCADシリーズ",
-  beautyName: "SCAD-BEAUTY",
+  beautyName: "イロナビ",
   beautyUrl: "https://scad-beauty.vercel.app/",
   chatName: "SCAD-CHAT",
   chatUrl: "https://scad-chat.vercel.app/",
