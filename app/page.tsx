@@ -224,10 +224,13 @@ function HomePageInner() {
 
         {picks.map((spot) => (
           <div key={spot.id} className="rounded-2xl bg-white p-4 shadow-sm">
-            <p className="font-bold">
-              {spot.name}
-              <AiSuggestedBadge status={spot.status} />
-            </p>
+            <Link href={`/spot/${spot.id}`} className="block">
+              <p className="font-bold">
+                {spot.name}
+                <AiSuggestedBadge status={spot.status} />
+                <span className="ml-1.5 text-xs font-normal text-orange-500">詳細 ›</span>
+              </p>
+            </Link>
             <p className="mt-1 text-xs text-gray-400">{spotMetaLine(spot)}</p>
             {spot.tagline && <p className="mt-1 text-xs text-gray-600">{spot.tagline}</p>}
             <p className="mt-1 text-[11px] text-gray-400">{spot.address}</p>

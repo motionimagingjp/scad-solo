@@ -39,10 +39,13 @@ export default function SpotCard({ spot, onClose }: { spot: SpotSummary; onClose
   return (
     <div className="fixed inset-x-0 z-30 mx-auto max-w-md rounded-t-2xl bg-white p-4 shadow-2xl" style={{ bottom: NAV_HEIGHT }}>
       <button onClick={onClose} className="absolute right-3 top-2 text-xs text-gray-400">閉じる</button>
-      <p className="font-bold">
-        {spot.name}
-        <AiSuggestedBadge status={spot.status} />
-      </p>
+      <Link href={`/spot/${spot.id}`} className="block pr-12">
+        <p className="font-bold">
+          {spot.name}
+          <AiSuggestedBadge status={spot.status} />
+          <span className="ml-1.5 text-xs font-normal text-orange-500">詳細 ›</span>
+        </p>
+      </Link>
       <p className="mt-1 text-xs text-gray-400">{spotMetaLine(spot)}</p>
       {spot.tagline && <p className="mt-1 text-xs text-gray-600">{spot.tagline}</p>}
       <p className="mt-1 text-[11px] text-gray-400">{spot.address}</p>
