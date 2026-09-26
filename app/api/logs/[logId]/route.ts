@@ -20,7 +20,7 @@ const MEMO_MAX_LENGTH = 500;
 
 /** 本人のログか確認する。他人のログを触られないよう、更新・削除の前に必ず通す */
 async function findOwnLog(req: NextRequest, logId: string) {
-  const userId = getUserIdFromRequest(req);
+  const userId = await getUserIdFromRequest(req);
   if (!userId) return { error: NextResponse.json({ error: "unauthorized" }, { status: 401 }) };
 
   const log = await prisma.visitLog.findUnique({ where: { id: logId } });
