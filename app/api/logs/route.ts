@@ -17,7 +17,7 @@ import { pickActivities } from "@/lib/data/activities";
 export const preferredRegion = "sin1";
 
 export async function POST(req: NextRequest) {
-  const userId = getUserIdFromRequest(req);
+  const userId = await getUserIdFromRequest(req);
   if (!userId) return NextResponse.json({ error: "unauthorized" }, { status: 401 });
 
   const { spotId, comment, imageUrl } = await req.json();
