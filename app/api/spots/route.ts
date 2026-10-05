@@ -71,7 +71,18 @@ export async function GET(req: NextRequest) {
   // 店舗が662件まで増えて上限500に達していたため引き上げた。
   // ただし全件をクライアントに返す構造自体が件数に耐えないので、計画通り数千件まで
   // 増やすなら基準地をAPIに渡してDB側で距離を絞る作りに変える必要がある。
-  const spots = await prisma.spot.findMany({ where, take: 5000 });
+  const found = await prisma.spot.findMany({ where, take: 5000, orderBy: { createdAt: "asc" } });
+
+  // 取り込み処理の二重実行で、店名+住所が同じSpotが別IDで複数登録されていることがある。
+  // そのまま返すと同じ店が並んで表示されるため1件に絞る。残すのは最古の行
+  // (/api/admin/dedupe-spots で統合する際に残す側と同じ)
+  const seen = new Set<string>();
+  const spots = found.filter((s) => {
+    const key = `${s.name.trim()}\u0000${s.address.trim()}`;
+    if (seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
 
   return NextResponse.json({
     spots: spots.map((s) => ({

@@ -53,6 +53,21 @@ export async function GET(req: NextRequest) {
       await prisma.visitLog.updateMany({ where: { spotId: dupe.id }, data: { spotId: keep.id } });
       await prisma.event.updateMany({ where: { spotId: dupe.id }, data: { spotId: keep.id } });
 
+      // Favorite・Visit は onDelete: Cascade なので、付け替えないとユーザーの記録が消える。
+      // 残す側に同じ記録(一意制約の対象)が既にある分は重複になるため先に消してから付け替える
+      const keepFavUsers = (await prisma.favorite.findMany({ where: { spotId: keep.id }, select: { userId: true } }))
+        .map((f) => f.userId);
+      await prisma.favorite.deleteMany({ where: { spotId: dupe.id, userId: { in: keepFavUsers } } });
+      await prisma.favorite.updateMany({ where: { spotId: dupe.id }, data: { spotId: keep.id } });
+
+      const keepVisits = await prisma.visit.findMany({ where: { spotId: keep.id }, select: { userId: true, visitDate: true } });
+      if (keepVisits.length > 0) {
+        await prisma.visit.deleteMany({
+          where: { spotId: dupe.id, OR: keepVisits.map((v) => ({ userId: v.userId, visitDate: v.visitDate })) },
+        });
+      }
+      await prisma.visit.updateMany({ where: { spotId: dupe.id }, data: { spotId: keep.id } });
+
       try {
         await prisma.spot.delete({ where: { id: dupe.id } });
         merged += 1;
