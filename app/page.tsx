@@ -140,7 +140,7 @@ function HomePageInner() {
           <Store size={20} className="text-orange-500" />
           {scene.heading}
         </p>
-        <p className="mt-1 text-xs text-gray-400">現在地は不明の場合は東京駅が出ます</p>
+        <p className="mt-1 text-xs text-gray-400">現在地が不明な場合は、東京駅が表示されます</p>
       </div>
 
       {gpsDenied && location?.source !== "manual" && location?.source !== "gps" && (
