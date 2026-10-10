@@ -29,7 +29,7 @@ type Brand = {
 
 const PRODUCTION: Brand = {
   appName: "ヨイナビ",
-  description: "今夜のソロ飲みを1秒で決める",
+  description: "ソロ・デート・グループ、シーンと席で今夜の店が決まる",
   shareText: "一人でも気兼ねなく行ける店が、すぐ見つかる。ヨイナビ",
   userId: "demo-user",
   seriesLabel: "SCADシリーズ",
@@ -40,7 +40,7 @@ const PRODUCTION: Brand = {
   ecosystemContact: "✉️ @motion.imaging がおすすめする関連サービス",
   // 元は app/opengraph-image.jpg (Next.jsのファイル規約) だったが、
   // デモ版で画像を出し分けるため public/ 側の静的ファイル+明示メタデータに変更した
-  ogImage: { url: "/ogp-solo.jpg", width: 768, height: 1376 },
+  ogImage: { url: "/ogp-yoinavi.jpg", width: 1200, height: 630 },
 };
 
 const DEMO: Brand = {
