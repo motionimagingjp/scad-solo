@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { Category, Scene, SpotStatus } from "@prisma/client";
 import { prisma } from "@/lib/prisma";
+import { spotKey } from "@/lib/spot-dedupe";
 
 // 「さがす」画面用の検索API。
 // カウンター席・せんべろ・個室などはSpotの専用フィールド、それ以外の条件(立ち飲み・日本酒・
@@ -78,7 +79,7 @@ export async function GET(req: NextRequest) {
   // (/api/admin/dedupe-spots で統合する際に残す側と同じ)
   const seen = new Set<string>();
   const spots = found.filter((s) => {
-    const key = `${s.name.trim()}\u0000${s.address.trim()}`;
+    const key = spotKey(s.name, s.address);
     if (seen.has(key)) return false;
     seen.add(key);
     return true;
