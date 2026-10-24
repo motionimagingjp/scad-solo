@@ -8,10 +8,12 @@ import { prisma } from "@/lib/prisma";
 
 export const preferredRegion = "sin1";
 
-export async function GET(req: NextRequest, { params }: { params: { id: string } }) {
+export async function GET(req: NextRequest, props: { params: Promise<{ id: string }> }) {
+  const params = await props.params;
   const { searchParams } = new URL(req.url);
   const auth = req.headers.get("authorization");
-  const authorized = auth === `Bearer ${process.env.CRON_SECRET}` || searchParams.get("secret") === process.env.CRON_SECRET;
+  // CRON_SECRET未設定時に「Bearer undefined」等で通らないよう、先に存在を確認する
+  const authorized = !!process.env.CRON_SECRET && (auth === `Bearer ${process.env.CRON_SECRET}` || searchParams.get("secret") === process.env.CRON_SECRET);
   if (!authorized) return NextResponse.json({ error: "unauthorized" }, { status: 401 });
 
   const spot = await prisma.spot.findUnique({ where: { id: params.id } });

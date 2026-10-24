@@ -10,6 +10,9 @@ export const maxDuration = 30;
 const MODEL = "gemini-3.7-flash";
 const MIN_DRINKS = 4;
 const MAX_DRINKS = 6;
+// 受け付ける画像の上限(Geminiへの送信量・メモリ使用量を抑える)
+const MAX_IMAGE_BYTES = 6 * 1024 * 1024;
+const ALLOWED_MIME = ["image/jpeg", "image/png", "image/webp", "image/heic", "image/heif"];
 
 function pickFallback(): string[] {
   return [...FALLBACK_DRINKS];
@@ -24,6 +27,12 @@ export async function POST(request: NextRequest) {
   const file = formData?.get("image");
   if (!file || !(file instanceof File)) {
     return NextResponse.json({ error: "image is required" }, { status: 400 });
+  }
+  if (file.size > MAX_IMAGE_BYTES) {
+    return NextResponse.json({ error: "image is too large" }, { status: 413 });
+  }
+  if (file.type && !ALLOWED_MIME.includes(file.type)) {
+    return NextResponse.json({ error: "unsupported image type" }, { status: 415 });
   }
 
   const apiKey = process.env.GEMINI_API_KEY;

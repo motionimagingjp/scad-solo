@@ -154,7 +154,8 @@ async function geocode(address: string, apiKey: string): Promise<GeocodeResult> 
 export async function GET(req: NextRequest) {
   const { searchParams } = new URL(req.url);
   const auth = req.headers.get("authorization");
-  const authorized = auth === `Bearer ${process.env.CRON_SECRET}` || searchParams.get("secret") === process.env.CRON_SECRET;
+  // CRON_SECRET未設定時に「Bearer undefined」等で通らないよう、先に存在を確認する
+  const authorized = !!process.env.CRON_SECRET && (auth === `Bearer ${process.env.CRON_SECRET}` || searchParams.get("secret") === process.env.CRON_SECRET);
   if (!authorized) return NextResponse.json({ error: "unauthorized" }, { status: 401 });
 
   const apiKey = process.env.GOOGLE_SERVER_API_KEY;

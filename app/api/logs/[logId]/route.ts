@@ -30,7 +30,8 @@ async function findOwnLog(req: NextRequest, logId: string) {
   return { userId, log };
 }
 
-export async function PATCH(req: NextRequest, { params }: { params: { logId: string } }) {
+export async function PATCH(req: NextRequest, props: { params: Promise<{ logId: string }> }) {
+  const params = await props.params;
   const found = await findOwnLog(req, params.logId);
   if (found.error) return found.error;
 
@@ -49,7 +50,8 @@ export async function PATCH(req: NextRequest, { params }: { params: { logId: str
   return NextResponse.json({ id: updated.id, comment: updated.comment });
 }
 
-export async function DELETE(req: NextRequest, { params }: { params: { logId: string } }) {
+export async function DELETE(req: NextRequest, props: { params: Promise<{ logId: string }> }) {
+  const params = await props.params;
   const found = await findOwnLog(req, params.logId);
   if (found.error) return found.error;
   const { userId } = found;
