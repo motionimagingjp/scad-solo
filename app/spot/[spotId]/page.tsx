@@ -12,7 +12,8 @@ import { jstDateString } from "@/lib/jst";
 export const dynamic = "force-dynamic";
 export const preferredRegion = "sin1";
 
-export default async function SpotDetailPage({ params }: { params: { spotId: string } }) {
+export default async function SpotDetailPage(props: { params: Promise<{ spotId: string }> }) {
+  const params = await props.params;
   const [spot, session] = await Promise.all([
     prisma.spot.findUnique({ where: { id: params.spotId } }),
     auth(),

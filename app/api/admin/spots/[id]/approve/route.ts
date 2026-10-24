@@ -8,7 +8,8 @@ import { prisma } from "@/lib/prisma";
 
 export const preferredRegion = "sin1";
 
-export async function GET(req: NextRequest, { params }: { params: { id: string } }) {
+export async function GET(req: NextRequest, props: { params: Promise<{ id: string }> }) {
+  const params = await props.params;
   const { searchParams } = new URL(req.url);
   const auth = req.headers.get("authorization");
   // CRON_SECRET未設定時に「Bearer undefined」等で通らないよう、先に存在を確認する
