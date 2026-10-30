@@ -13,6 +13,7 @@ import { distanceLabel, googleMapsUrl, haversineMeters } from "@/lib/geo";
 import { useBaseLocation } from "@/lib/useBaseLocation";
 import { BRAND } from "@/lib/brand";
 import { DEFAULT_SCENE, SCENES, type SceneKey } from "@/lib/data/scenes";
+import { dedupeByNameAndPlace } from "@/lib/spot-dedupe";
 
 // 「今夜の3軒」: 近い順に絞った3軒をそのまま提示する検索画面。
 // シャッフル性は持たせない(エンターテイメント性はゲームタブ側で担うため)。
@@ -76,13 +77,17 @@ function HomePageInner() {
   // (店が少ないエリアだと無理に遠方を出してしまい、「約28km」のような結果になるため)。
   const pool = useMemo(() => {
     if (!spots || !location) return null;
-    return spots
+    const sorted = spots
       .map((s) => ({
         spot: s,
         meters: haversineMeters(location, { lat: s.latitude, lng: s.longitude }),
       }))
       .filter(({ meters }) => meters <= MAX_DISTANCE_METERS)
-      .sort((a, b) => a.meters - b.meters)
+      .sort((a, b) => a.meters - b.meters);
+    // 表記ゆれで別店舗扱いされた同一店を除く(3軒・次の3軒に同じ店が出ないように)
+    const seenIds = new Set(dedupeByNameAndPlace(sorted.map((x) => x.spot)).map((s) => s.id));
+    return sorted
+      .filter(({ spot }) => seenIds.has(spot.id))
       .slice(0, POOL_SIZE)
       .map(({ spot, meters }) => ({ ...spot, distanceLabel: distanceLabel(meters) }));
   }, [spots, location]);
